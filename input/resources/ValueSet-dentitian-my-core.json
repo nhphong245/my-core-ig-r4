@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-dentitian-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetdentitian (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/dentitian-my-core</tt><p>Dentitian</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/dentitian-my-core",
+  "name": "ValueSetDentitianMyCore",
+  "title": "ValueSetDentitian (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Dentitian",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/dentitian-my-core"
+      }
+    ]
+  }
+}

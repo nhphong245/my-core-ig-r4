@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "procedure-primary-discipline-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/procedure-primary-discipline-my-core",
+  "name": "ExtensionProcedurePrimaryDisciplineMyCore",
+  "title": "ExtensionProcedurePrimaryDiscipline (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension about the discipline performing the procedure",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Procedure"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/procedure-primary-discipline-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/specialty-my-core"
+        }
+      }
+    ]
+  }
+}

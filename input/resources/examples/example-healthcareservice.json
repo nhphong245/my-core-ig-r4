@@ -1,0 +1,57 @@
+{
+    "resourceType": "HealthcareService",
+    "id": "example-HealthcareService",
+    "meta": {
+        "versionId": "2",
+        "lastUpdated": "2022-09-29T01:41:55.318+08:00",
+        "source": "http://provider.hie.moh.gov.my#fBFuoM0xgFTn52vn",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/HealthcareService-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/public-booking-my-core",
+            "valueBoolean": true
+        }
+    ],
+    "active": true,
+    "providedBy": {
+        "reference": "Organization/11-05040012"
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+                    "code": "AMB",
+                    "display": "Outpatient"
+                }
+            ]
+        }
+    ],
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                    "code": "03",
+                    "display": "Outpatient"
+                }
+            ]
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                    "code": "552",
+                    "display": "Primary Oral Health Care"
+                }
+            ]
+        }
+    ],
+    "name": "Primary Oral Health Care",
+    "appointmentRequired": true
+}

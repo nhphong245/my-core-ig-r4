@@ -1,0 +1,230 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hajj-prerequisite-form",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-prerequisite-form",
+  "version": "1.0.0",
+  "name": "QHajjPrerequisiteForm",
+  "title": "Borang Saringan Awal",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Account No.",
+          "type": "string"
+        },
+        {
+          "linkId": "1.2",
+          "text": "Examination Place",
+          "type": "string"
+        },
+        {
+          "linkId": "1.3",
+          "text": "Examination Date",
+          "type": "dateTime"
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Vital Signs",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "Blood Pressure",
+          "type": "group",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minValue-my-core",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/maxValue-my-core",
+                  "valueInteger": 400
+                }
+              ],
+              "linkId": "2.1.1",
+              "text": "Systolic",
+              "type": "quantity"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minValue-my-core",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/maxValue-my-core",
+                  "valueInteger": 250
+                }
+              ],
+              "linkId": "2.1.2",
+              "text": "Diastolic",
+              "type": "quantity"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue-my-core",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue-my-core",
+              "valueInteger": 400
+            }
+          ],
+          "linkId": "2.3",
+          "text": "Pulse Rate",
+          "type": "quantity"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue-my-core",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue-my-core",
+              "valueInteger": 80
+            }
+          ],
+          "linkId": "2.4",
+          "text": "Respiratory Rate",
+          "type": "quantity"
+        },
+        {
+          "linkId": "2.5",
+          "text": "Hemoglobin",
+          "type": "quantity"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue-my-core",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue-my-core",
+              "valueInteger": 650
+            }
+          ],
+          "linkId": "2.6",
+          "text": "Weight",
+          "type": "quantity"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue-my-core",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue-my-core",
+              "valueInteger": 250
+            }
+          ],
+          "linkId": "2.7",
+          "text": "Height",
+          "type": "quantity"
+        },
+        {
+          "linkId": "2.8",
+          "text": "BMI",
+          "type": "decimal"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue-my-core",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue-my-core",
+              "valueInteger": 100
+            }
+          ],
+          "linkId": "2.9",
+          "text": "Oxygen Saturation",
+          "type": "quantity"
+        },
+        {
+          "linkId": "2.10",
+          "text": "Others",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "2.10.1",
+              "text": "Others",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "2.10",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "repeats": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Full Diagnosis",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "Cardiovascular",
+          "type": "boolean"
+        },
+        {
+          "linkId": "3.2",
+          "text": "Psychiatry",
+          "type": "boolean"
+        },
+        {
+          "linkId": "3.3",
+          "text": "Cancer",
+          "type": "boolean"
+        },
+        {
+          "linkId": "3.4",
+          "text": "Pulmunory Tuberculosis",
+          "type": "boolean"
+        },
+        {
+          "linkId": "3.5",
+          "text": "Cerebrovascular Accident (CVA)",
+          "type": "boolean"
+        },
+        {
+          "linkId": "3.6",
+          "text": "Chronic Kidney Disease",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Treatment",
+      "type": "text"
+    },
+    {
+      "linkId": "5",
+      "text": "Notes",
+      "type": "text"
+    }
+  ]
+}

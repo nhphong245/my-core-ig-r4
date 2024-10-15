@@ -1,0 +1,65 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "code-system-payment-method-my-core",
+    "url": "http://fhir.hie.moh.gov.my/CodeSystem/payment-method-my-core",
+    "name": "CodeSystemPaymentMethodMyCore",
+    "title": "CodeSystemPaymentMethod (MY Core)",
+    "status": "active",
+    "date": "2023-06-26T00:55:17.2867281+00:00",
+    "description": "Payment Method",
+    "compositional": false,
+    "content": "complete",
+    "count": 10,
+    "concept": [
+        {
+            "code": "CASH",
+            "display": "Cash",
+            "definition": "Cash"
+        },
+        {
+            "code": "CCCA",
+            "display": "Credit Card",
+            "definition": "Credit Card"
+        },
+        {
+            "code": "CCHK",
+            "display": "Cashier's Check",
+            "definition": "Cashier's Check"
+        },
+        {
+            "code": "CDAC",
+            "display": "Credit/Debit Account",
+            "definition": "Credit/Debit Account"
+        },
+        {
+            "code": "CHCK",
+            "display": "Check",
+            "definition": "Check"
+        },
+        {
+            "code": "DDPO",
+            "display": "Direct Deposit",
+            "definition": "Direct Deposit"
+        },
+        {
+            "code": "DEBC",
+            "display": "Debit Card",
+            "definition": "Debit Card"
+        },
+        {
+            "code": "SWFT",
+            "display": "Society for Worldwide Interbank Financial Telecommunications (S.W.I.F.T.)",
+            "definition": "Society for Worldwide Interbank Financial Telecommunications (S.W.I.F.T.)"
+        },
+        {
+            "code": "TRAC",
+            "display": "Traveler's Check",
+            "definition": "Traveler's Check"
+        },
+        {
+            "code": "VISN",
+            "display": "VISA Special Electronic Funds Transfer Network",
+            "definition": "VISA Special Electronic Funds Transfer Network"
+        }
+    ]
+}

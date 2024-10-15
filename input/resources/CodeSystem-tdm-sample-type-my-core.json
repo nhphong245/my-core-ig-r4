@@ -1,0 +1,55 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-tdm-sample-type-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemTdmSampleType (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/CodeSystem/tdm-sample-type-my-core</tt><p>TDM sample type</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/tdm-sample-type-my-core",
+  "version": "1.0.0",
+  "name": "CodeSystemTdmSampleTypeMyCore",
+  "title": "CodeSystemTdmSampleType (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "TDM sample type",
+  "compositional": false,
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "OTH",
+      "display": "Others",
+      "definition": "Others"
+    },
+    {
+      "code": "POST",
+      "display": "Post",
+      "definition": "Post"
+    },
+    {
+      "code": "PRE",
+      "display": "Pre",
+      "definition": "Pre"
+    },
+    {
+      "code": "RANDOM",
+      "display": "Random",
+      "definition": "Random"
+    },
+    {
+      "code": "POST1",
+      "display": "POST1",
+      "definition": "POST1"
+    },
+    {
+      "code": "POST6",
+      "display": "POST2",
+      "definition": "POST2"
+    },
+    {
+      "code": "RANDOM_2",
+      "display": "Random_2",
+      "definition": "Random_2"
+    }
+  ]
+}

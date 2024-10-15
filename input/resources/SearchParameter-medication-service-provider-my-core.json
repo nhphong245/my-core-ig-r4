@@ -1,0 +1,24 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "medication-service-provider-my-core",
+  "meta": {
+    "versionId": "3",
+    "lastUpdated": "2022-09-15T13:34:43.802+08:00",
+    "source": "#UNDyq2JNUKIEZdeo"
+  },
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/medication-service-provider-my-core",
+  "name": "SearchParameterMedicationServiceProviderMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Orgranization who provide this medication",
+  "code": "service-provider",
+  "base": [
+    "Medication"
+  ],
+  "type": "reference",
+  "expression": "Medication.extension('http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core')",
+  "xpathUsage": "normal",
+  "target": [
+    "Organization"
+  ]
+}

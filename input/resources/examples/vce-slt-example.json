@@ -1,0 +1,80 @@
+{
+    "resourceType": "Slot",
+    "id": "vce-slt-example",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Slot-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/slot-quota-my-core",
+            "extension": [
+                {
+                    "url": "available",
+                    "valueString": "9"
+                },
+                {
+                    "url": "quota",
+                    "valueString": "10"
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/vc-token",
+            "value": "19d3b96a-6c4d-485a-9514-cbf6ccfeed6b"
+        }
+    ],
+    "serviceCategory": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+                    "code": "VR",
+                    "display": "Virtual"
+                }
+            ]
+        }
+    ],
+    "serviceType": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                    "code": "VCE",
+                    "display": "Education Virtual Consultation"
+                }
+            ]
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                    "code": "149",
+                    "display": "Communicable Disease"
+                }
+            ]
+        }
+    ],
+    "appointmentType": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core",
+                "code": "affiliate",
+                "display": "Affiliate"
+            }
+        ]
+    },
+    "schedule": {
+        "reference": "Schedule/vce-sch-example"
+    },
+    "status": "free",
+    "start": "2023-07-10T21:00:00+08:00",
+    "end": "2023-07-10T22:00:00+08:00",
+    "comment": "HTJ-Communicable Disease"
+}

@@ -1,0 +1,126 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PaymentReconciliation-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/PaymentReconciliation-my-core",
+  "name": "PaymentReconciliationMyCore",
+  "title": "PaymentReconciliation (MY Core)",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PaymentReconciliation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PaymentReconciliation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PaymentReconciliation.extension:type",
+        "path": "PaymentReconciliation.extension",
+        "sliceName": "type",
+        "short": "Extension about the type of PaymentReconciliation",
+        "definition": "Extension about the type of PaymentReconciliation",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/pr-type-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "PaymentReconciliation.extension:print",
+        "path": "PaymentReconciliation.extension",
+        "sliceName": "print",
+        "short": "Extension to define whether this PaymentReconciliation has been printed at least once or not",
+        "definition": "Extension to define whether this PaymentReconciliation has been printed at least once or not",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/pr-print-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "PaymentReconciliation.identifier",
+        "path": "PaymentReconciliation.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PaymentReconciliation.identifier:receiptNo",
+        "path": "PaymentReconciliation.identifier",
+        "sliceName": "receiptNo"
+      },
+      {
+        "id": "PaymentReconciliation.identifier:receiptNo.system",
+        "path": "PaymentReconciliation.identifier.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/sid/receipt-no"
+      },
+      {
+        "id": "PaymentReconciliation.identifier:receiptNo.value",
+        "path": "PaymentReconciliation.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "PaymentReconciliation.identifier:ptjNo",
+        "path": "PaymentReconciliation.identifier",
+        "sliceName": "ptjNo"
+      },
+      {
+        "id": "PaymentReconciliation.identifier:ptjNo.system",
+        "path": "PaymentReconciliation.identifier.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/sid/ptj-no"
+      },
+      {
+        "id": "PaymentReconciliation.identifier:ptjNo.value",
+        "path": "PaymentReconciliation.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "PaymentReconciliation.paymentIdentifier.system",
+        "path": "PaymentReconciliation.paymentIdentifier.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/sid/payment-transaction-no"
+      },
+      {
+        "id": "PaymentReconciliation.paymentIdentifier.value",
+        "path": "PaymentReconciliation.paymentIdentifier.value",
+        "min": 1
+      },
+      {
+        "id": "PaymentReconciliation.detail.identifier.system",
+        "path": "PaymentReconciliation.detail.identifier.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/sid/bank-code"
+      },
+      {
+        "id": "PaymentReconciliation.detail.identifier.value",
+        "path": "PaymentReconciliation.detail.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "PaymentReconciliation.detail.type",
+        "path": "PaymentReconciliation.detail.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/payment-type-my-core"
+        }
+      }
+    ]
+  }
+}

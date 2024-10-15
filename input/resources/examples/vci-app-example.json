@@ -1,0 +1,85 @@
+{
+    "resourceType": "Appointment",
+    "id": "vci-app-example",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Appointment-my-core"
+        ]
+    },
+    "status": "booked",
+    "serviceCategory": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+                    "code": "VR",
+                    "display": "Virtual"
+                }
+            ]
+        }
+    ],
+    "serviceType": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                    "code": "VCI",
+                    "display": "Individual Virtual Consultation"
+                }
+            ]
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                    "code": "86",
+                    "display": "Addiction & Substance Abuse"
+                }
+            ]
+        }
+    ],
+    "appointmentType": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core",
+                "code": "affiliate",
+                "display": "Affiliate"
+            }
+        ]
+    },
+    "start": "2023-07-10T21:00:00+08:00",
+    "end": "2023-07-10T22:00:00+08:00",
+    "slot": [
+        {
+            "reference": "Slot/vci-slt-example"
+        }
+    ],
+    "created": "2023-07-10T21:00:00+08:00",
+    "participant": [
+        {
+            "actor": {
+                "reference": "HealthcareService/34245d33-4601-44ed-8069-6c6f160f4a84",
+                "type": "HealthcareService",
+                "display": "Addiction & Substance Abuse"
+            },
+            "status": "accepted"
+        },
+        {
+            "actor": {
+                "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59",
+                "type": "Patient",
+                "display": "SYAZA NUR IZZATI"
+            },
+            "status": "accepted"
+        }
+    ],
+    "requestedPeriod": [
+        {
+            "start": "2023-07-10T21:00:00+08:00",
+            "end": "2023-07-10T22:00:00+08:00"
+        }
+    ]
+}

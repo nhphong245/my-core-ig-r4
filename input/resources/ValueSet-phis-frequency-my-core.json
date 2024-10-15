@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-phis-frequency-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetPhisFrequency (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/phis-frequency-my-core</tt><p>Phis frequency</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/phis-frequency-my-core",
+  "name": "ValueSetPhisFrequencyMyCore",
+  "title": "ValueSetPhisFrequency (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Phis frequency",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/phis-frequency-my-core"
+      }
+    ]
+  }
+}

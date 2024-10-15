@@ -1,0 +1,97 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oa-region-quota-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/oa-region-quota-my-core",
+  "name": "ExtensionOaRegionQuotaMyCore",
+  "title": "ExtensionOaRegionQuota (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "An extension to define the maximum quota of a agree outsource arrangement for a particular body/category region",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "OrganizationAffiliation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:region",
+        "path": "Extension.extension",
+        "sliceName": "region"
+      },
+      {
+        "id": "Extension.extension:region.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "region"
+      },
+      {
+        "id": "Extension.extension:region.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/imaging-region-my-core"
+        }
+      },
+      {
+        "id": "Extension.extension:quota",
+        "path": "Extension.extension",
+        "sliceName": "quota"
+      },
+      {
+        "id": "Extension.extension:quota.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "quota"
+      },
+      {
+        "id": "Extension.extension:quota.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:available",
+        "path": "Extension.extension",
+        "sliceName": "available"
+      },
+      {
+        "id": "Extension.extension:available.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "available"
+      },
+      {
+        "id": "Extension.extension:available.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/oa-region-quota-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

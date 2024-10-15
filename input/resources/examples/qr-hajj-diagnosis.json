@@ -1,0 +1,40 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "qr-hajj-diagnosis",
+  "meta": {
+      "source": "http://provider.hie.moh.gov.my",
+      "profile": [
+          "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+      ]
+  },
+  "identifier": {
+      "system": "http://fhir.hie.moh.gov.my/sid/template-section",
+      "value": "qr-hajj-diagnosis"
+  },
+  "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-diagnosis",
+  "status": "completed",
+  "subject": {
+      "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7"
+  },
+  "authored": "2023-12-07T09:00:00+08:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Tiada Penyakit yang dikesan",
+      "answer": [
+        {
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Penyakit yang dikesan / dihadapi",
+      "answer": [
+        {
+          "valueString": "Breast Tumor"
+        }
+      ]
+    }
+  ]
+}

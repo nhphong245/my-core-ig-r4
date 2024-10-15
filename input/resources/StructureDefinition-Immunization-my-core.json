@@ -1,0 +1,47 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Immunization-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/Immunization-my-core",
+  "version": "1.0.0",
+  "name": "ImmunizationMyCore",
+  "title": "Immunization (MY Core)",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "description": "This profile represents the constraints applied to the Immunization resource by MY Core FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.\r\n\r\nIt describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party.",
+  "purpose": "This profile constrains the representation of a record of a vaccination of the patient, in the context of the international patient summary as specified by the MY Core project.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Immunization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Immunization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Immunization.vaccineCode",
+        "path": "Immunization.vaccineCode",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/vaccine-code-my-core"
+        }
+      },
+      {
+        "id": "Immunization.protocolApplied.extension:booster",
+        "path": "Immunization.protocolApplied.extension",
+        "sliceName": "booster",
+        "short": "Extension to determine if the vaccine is a booster dose",
+        "definition": "Extension to determine if the vaccine is a booster dose",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/extension-booster-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      }
+    ]
+  }
+}

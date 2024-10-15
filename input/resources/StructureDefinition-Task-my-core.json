@@ -1,0 +1,567 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Task-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/Task-my-core",
+  "version": "1.0.0",
+  "name": "TaskMyCore",
+  "title": "Task (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Task",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Task",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Task.basedOn",
+        "path": "Task.basedOn",
+        "min": 1
+      },
+      {
+        "id": "Task.businessStatus",
+        "path": "Task.businessStatus",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/task-business-status-my-core"
+        }
+      },
+      {
+        "id": "Task.performerType",
+        "path": "Task.performerType",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/schedule-type-my-core"
+        }
+      },
+      {
+        "id": "Task.input",
+        "path": "Task.input",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type.coding.code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Task.input.type",
+        "path": "Task.input.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/task-input-type-my-core"
+        }
+      },
+      {
+        "id": "Task.input.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Task.input:serviceRequestCategory",
+        "path": "Task.input",
+        "sliceName": "serviceRequestCategory"
+      },
+      {
+        "id": "Task.input:serviceRequestCategory.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "001"
+      },
+      {
+        "id": "Task.input:serviceRequestCategory.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:specimen",
+        "path": "Task.input",
+        "sliceName": "specimen"
+      },
+      {
+        "id": "Task.input:specimen.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "002"
+      },
+      {
+        "id": "Task.input:specimen.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:imagingModality",
+        "path": "Task.input",
+        "sliceName": "imagingModality"
+      },
+      {
+        "id": "Task.input:imagingModality.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "003"
+      },
+      {
+        "id": "Task.input:imagingModality.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:imagingRegion",
+        "path": "Task.input",
+        "sliceName": "imagingRegion"
+      },
+      {
+        "id": "Task.input:imagingRegion.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "004"
+      },
+      {
+        "id": "Task.input:imagingRegion.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:imagingOrderable",
+        "path": "Task.input",
+        "sliceName": "imagingOrderable"
+      },
+      {
+        "id": "Task.input:imagingOrderable.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "005"
+      },
+      {
+        "id": "Task.input:imagingOrderable.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:imagingStudy",
+        "path": "Task.input",
+        "sliceName": "imagingStudy"
+      },
+      {
+        "id": "Task.input:imagingStudy.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "006"
+      },
+      {
+        "id": "Task.input:imagingStudy.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:contrast",
+        "path": "Task.input",
+        "sliceName": "contrast"
+      },
+      {
+        "id": "Task.input:contrast.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "007"
+      },
+      {
+        "id": "Task.input:contrast.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:contrastStrength",
+        "path": "Task.input",
+        "sliceName": "contrastStrength"
+      },
+      {
+        "id": "Task.input:contrastStrength.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "008"
+      },
+      {
+        "id": "Task.input:contrastStrength.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:cdDvd",
+        "path": "Task.input",
+        "sliceName": "cdDvd"
+      },
+      {
+        "id": "Task.input:cdDvd.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "009"
+      },
+      {
+        "id": "Task.input:cdDvd.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:labSubGroup",
+        "path": "Task.input",
+        "sliceName": "labSubGroup"
+      },
+      {
+        "id": "Task.input:labSubGroup.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "010"
+      },
+      {
+        "id": "Task.input:labSubGroup.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:primaryPerformer",
+        "path": "Task.input",
+        "sliceName": "primaryPerformer"
+      },
+      {
+        "id": "Task.input:primaryPerformer.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "011"
+      },
+      {
+        "id": "Task.input:primaryPerformer.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:secondaryPerformer",
+        "path": "Task.input",
+        "sliceName": "secondaryPerformer"
+      },
+      {
+        "id": "Task.input:secondaryPerformer.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "012"
+      },
+      {
+        "id": "Task.input:secondaryPerformer.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:barcodePrinter",
+        "path": "Task.input",
+        "sliceName": "barcodePrinter"
+      },
+      {
+        "id": "Task.input:barcodePrinter.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "013"
+      },
+      {
+        "id": "Task.input:referralSummary",
+        "path": "Task.input",
+        "sliceName": "referralSummary"
+      },
+      {
+        "id": "Task.input:referralSummary.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "014"
+      },
+      {
+        "id": "Task.input:referralSummary.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:receivedNotReceivedDateTime",
+        "path": "Task.input",
+        "sliceName": "receivedNotReceivedDateTime"
+      },
+      {
+        "id": "Task.input:receivedNotReceivedDateTime.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "015"
+      },
+      {
+        "id": "Task.input:receivedNotReceivedDateTime.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:acceptedDateTime",
+        "path": "Task.input",
+        "sliceName": "acceptedDateTime"
+      },
+      {
+        "id": "Task.input:acceptedDateTime.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "016"
+      },
+      {
+        "id": "Task.input:acceptedDateTime.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:dispatchedDateTime",
+        "path": "Task.input",
+        "sliceName": "dispatchedDateTime"
+      },
+      {
+        "id": "Task.input:dispatchedDateTime.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "017"
+      },
+      {
+        "id": "Task.input:dispatchedDateTime.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:printedStatus",
+        "path": "Task.input",
+        "sliceName": "printedStatus"
+      },
+      {
+        "id": "Task.input:printedStatus.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "018"
+      },
+      {
+        "id": "Task.input:printedStatus.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:printedDateTime",
+        "path": "Task.input",
+        "sliceName": "printedDateTime"
+      },
+      {
+        "id": "Task.input:printedDateTime.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "019"
+      },
+      {
+        "id": "Task.input:printedDateTime.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:printedBy",
+        "path": "Task.input",
+        "sliceName": "printedBy"
+      },
+      {
+        "id": "Task.input:printedBy.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "020"
+      },
+      {
+        "id": "Task.input:printedBy.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:outsourceBy",
+        "path": "Task.input",
+        "sliceName": "outsourceBy"
+      },
+      {
+        "id": "Task.input:outsourceBy.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "021"
+      },
+      {
+        "id": "Task.input:outsourceBy.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:sampleTakenTime",
+        "path": "Task.input",
+        "sliceName": "sampleTakenTime"
+      },
+      {
+        "id": "Task.input:sampleTakenTime.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "022"
+      },
+      {
+        "id": "Task.input:sampleTakenTime.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Task.input:Frequency",
+        "path": "Task.input",
+        "sliceName": "Frequency"
+      },
+      {
+        "id": "Task.input:Frequency.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "fixedCode": "023"
+      },
+      {
+        "id": "Task.input:Frequency.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Task.output",
+        "path": "Task.output",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type.coding.code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Task.output.type",
+        "path": "Task.output.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/task-output-type-my-core"
+        }
+      },
+      {
+        "id": "Task.output.type.coding.code",
+        "path": "Task.output.type.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Task.output:diagnosticReport",
+        "path": "Task.output",
+        "sliceName": "diagnosticReport"
+      },
+      {
+        "id": "Task.output:diagnosticReport.type.coding.code",
+        "path": "Task.output.type.coding.code",
+        "short": "Diagnostic Report",
+        "fixedCode": "001"
+      },
+      {
+        "id": "Task.output:diagnosticReport.value[x]",
+        "path": "Task.output.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Task.output:referralResponse",
+        "path": "Task.output",
+        "sliceName": "referralResponse"
+      },
+      {
+        "id": "Task.output:referralResponse.type.coding.code",
+        "path": "Task.output.type.coding.code",
+        "short": "Referral Response",
+        "fixedCode": "002"
+      },
+      {
+        "id": "Task.output:referralResponse.value[x]",
+        "path": "Task.output.value[x]",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      }
+    ]
+  }
+}

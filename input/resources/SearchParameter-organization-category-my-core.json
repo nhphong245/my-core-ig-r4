@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organization-category-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/organization-category-my-core",
+  "name": "SearchParameterOrganizationCategoryMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "A code for the category of organization",
+  "code": "category",
+  "base": [
+    "Organization"
+  ],
+  "type": "token",
+  "expression": "Organization.extension('http://fhir.hie.moh.gov.my/StructureDefinition/organization-category-my-core')",
+  "xpathUsage": "normal"
+}

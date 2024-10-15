@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-flag-category-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemFlagCategory (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/CodeSystem/flag-category-my-core</tt><p>Flag Category</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/flag-category-my-core",
+  "version": "1.0.0",
+  "name": "CodeSystemFlagCategoryMyCore",
+  "title": "CodeSystemFlagCategory (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Flag Category",
+  "compositional": false,
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "safety",
+      "display": "Safety",
+      "definition": "Flags related to safety precautions"
+    },
+    {
+      "code": "admin",
+      "display": "Administrative",
+      "definition": "Flags related to administrative and financial processes"
+    },
+    {
+      "code": "clinical",
+      "display": "Clinical",
+      "definition": "Flags related to the subject's clinical data and condition"
+    },
+    {
+      "code": "organ-donor-pledger",
+      "display": "Organ Donor Pledger",
+      "definition": "Flags related to the patient pledging to allow organ donation"
+    }
+  ]
+}

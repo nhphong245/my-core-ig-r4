@@ -1,0 +1,20 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "procedure-report-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/procedure-report-my-core",
+  "name": "SearchParameterProcedureReportMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Any report resulting from the procedure",
+  "code": "report",
+  "base": [
+    "Procedure"
+  ],
+  "type": "reference",
+  "expression": "Procedure.report",
+  "target": [
+    "DiagnosticReport",
+    "DocumentReference",
+    "Condition"
+  ]
+}

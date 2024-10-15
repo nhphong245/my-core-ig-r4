@@ -1,0 +1,51 @@
+{
+    "resourceType": "Observation",
+    "id": "obs-rbs-hajj",
+    "meta": {
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-random-glucose-my-core"
+        ],
+        "source": "http://provider.hie.moh.gov.my"
+    },
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/observation-category-my-core",
+                    "code": "hajj",
+                    "display": "Hajj"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "271061004",
+                "display": "Random blood glucose"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7"
+    },
+    "encounter": {
+        "reference": "Encounter/a3b25fc6-7590-4058-a1dd-a76b14347b5e"
+    },
+    "effectiveDateTime": "2023-01-01T08:00:00+08:00",
+    "issued": "2023-01-01T08:00:00+08:00",
+    "performer": [
+        {
+            "reference": "PractitionerRole/b9797173-7e15-4fc3-8f85-d58627935956/_history/2",
+            "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+        }
+    ],
+    "valueQuantity": {
+        "value": 6,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+    }
+}

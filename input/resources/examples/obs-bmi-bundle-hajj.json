@@ -1,0 +1,245 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "id": "obs-bmi-bundle-hajj",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:00000001-0001-0001-0001-000000000004",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-panel-my-core"
+                    ],
+                    "source": "http://provider.hie.moh.gov.my"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/observation-category-my-core",
+                                "code": "panel",
+                                "display": "Panel"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/observation-category-my-core",
+                                "code": "hajj",
+                                "display": "Hajj"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "55418-8",
+                            "display": "Anthropometry panel"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7"
+                },
+                "encounter": {
+                    "reference": "Encounter/a3b25fc6-7590-4058-a1dd-a76b14347b5e"
+                },
+                "effectiveDateTime": "2023-01-20T08:00:00+08:00",
+                "issued": "2023-01-20T08:00:00+08:00",
+                "performer": [
+                    {
+                        "reference": "PractitionerRole/b9797173-7e15-4fc3-8f85-d58627935956/_history/2",
+                        "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+                    }
+                ],
+                "hasMember": [
+                    {
+                        "reference": "Observation/urn:uuid:00000012-0005-0005-0005-000000000002"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:00000012-0005-0005-0005-000000000003"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:00000012-0005-0005-0005-000000000004"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00000012-0005-0005-0005-000000000002",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-weight-my-core"
+                    ],
+                    "source": "http://provider.hie.moh.gov.my"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/observation-category-my-core",
+                                "code": "hajj",
+                                "display": "Hajj"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "29463-7",
+                            "display": "Weight"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7"
+                },
+                "encounter": {
+                    "reference": "Encounter/a3b25fc6-7590-4058-a1dd-a76b14347b5e"
+                },
+                "effectiveDateTime": "2023-01-20T08:00:00+08:00",
+                "issued": "2023-01-20T08:00:00+08:00",
+                "performer": [
+                    {
+                        "reference": "PractitionerRole/b9797173-7e15-4fc3-8f85-d58627935956/_history/2",
+                        "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 55,
+                    "unit": "kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00000012-0005-0005-0005-000000000003",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-height-my-core"
+                    ],
+                    "source": "http://provider.hie.moh.gov.my"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/observation-category-my-core",
+                                "code": "hajj",
+                                "display": "Hajj"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8302-2",
+                            "display": "Height"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7"
+                },
+                "encounter": {
+                    "reference": "Encounter/a3b25fc6-7590-4058-a1dd-a76b14347b5e"
+                },
+                "effectiveDateTime": "2023-01-20T08:00:00+08:00",
+                "issued": "2023-01-20T08:00:00+08:00",
+                "performer": [
+                    {
+                        "reference": "PractitionerRole/b9797173-7e15-4fc3-8f85-d58627935956/_history/2",
+                        "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 168,
+                    "unit": "cm",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00000012-0005-0005-0005-000000000004",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-bmi-my-core"
+                    ],
+                    "source": "http://provider.hie.moh.gov.my"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/observation-category-my-core",
+                                "code": "hajj",
+                                "display": "Hajj"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "39156-5",
+                            "display": "BMI"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7"
+                },
+                "encounter": {
+                    "reference": "Encounter/a3b25fc6-7590-4058-a1dd-a76b14347b5e"
+                },
+                "effectiveDateTime": "2023-01-20T08:00:00+08:00",
+                "issued": "2023-01-20T08:00:00+08:00",
+                "performer": [
+                    {
+                        "reference": "PractitionerRole/b9797173-7e15-4fc3-8f85-d58627935956/_history/2",
+                        "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 19.5,
+                    "unit": "kg/m2",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg/m2"
+                }
+            }
+        }
+    ]
+}

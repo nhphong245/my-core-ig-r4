@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "servicerequest-requester-facility-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/ServiceRequest-requester-facility-my-core",
+  "name": "SearchParameterServiceRequestRequestFacilityMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "ServiceRequest requester-facility",
+  "code": "requester-facility",
+  "base": [
+    "ServiceRequest"
+  ],
+  "type": "reference",
+  "expression": "ServiceRequest.performer.where (identifier.value = 'requester-facility')",
+  "target": [
+    "Organization"
+  ]
+}

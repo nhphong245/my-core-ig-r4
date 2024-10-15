@@ -1,0 +1,132 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "bundle",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2023-01-31T02:13:40.182+08:00",
+    "source": "http://provider.hie.moh.gov.my",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Questionnaire"
+    ]
+  },
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/questionnaire-bundle",
+  "title": "Bundle Test",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "description": "Description Bundle Test",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://hl7.org/fhir/CodeSystem/usage-context-type",
+        "code": "workflow",
+        "display": "Workflow Setting"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "self-assessment",
+            "display": "Self-Assessment"
+          }
+        ]
+      }
+    }
+  ],
+  "purpose": "Purpose Bundle Test",
+  "code": [
+    {
+      "code": "bundle"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "A1",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "54125-0"
+        }
+      ],
+      "text": "What is your name?",
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    {
+      "linkId": "A2",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "30525-0"
+        }
+      ],
+      "text": "how old are you?",
+      "type": "integer",
+      "required": true,
+      "maxLength": 3
+    },
+    {
+      "linkId": "A3",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "46098-0"
+        }
+      ],
+      "text": "Please select your gender",
+      "type": "choice",
+      "required": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "code": "male",
+            "display": "Male"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "code": "female",
+            "display": "Female"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "code": "other",
+            "display": "Undetermine"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "B",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "72109-2",
+          "display": "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C]"
+        },
+        {
+          "system": "http://fhir.hie.moh.gov.my/reference-type",
+          "code": "Questionnaire"
+        }
+      ],
+      "text": "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C]",
+      "type": "reference",
+      "required": true
+    },
+    {
+      "linkId": "C",
+      "code": [
+        {
+          "system": "http://fhir.hie.moh.gov.my/reference-type",
+          "code": "Condition"
+        }
+      ],
+      "text": "Select Diagnosis",
+      "type": "reference",
+      "required": true
+    }
+  ]
+}

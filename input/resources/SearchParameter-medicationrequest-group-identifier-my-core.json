@@ -1,0 +1,20 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "medicationrequest-group-identifier-my-core",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-10-31T23:27:22.534+08:00",
+    "source": "#4iNNBmX5j0fnRHVy"
+  },
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/medicationrequest-group-identifier-my-core",
+  "name": "SearchParameterMedicationRequestGroupIdentifierMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Prescription medication identifier",
+  "code": "group-identifier",
+  "base": [
+    "MedicationRequest"
+  ],
+  "type": "token",
+  "expression": "MedicationRequest.groupIdentifier"
+}

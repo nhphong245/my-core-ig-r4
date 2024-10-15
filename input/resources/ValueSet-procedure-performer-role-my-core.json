@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-procedure-performer-role-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetProcedurePerformerRole (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/procedure-performer-role-my-core</tt><p>PIK procedure performer role</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/procedure-performer-role-my-core",
+  "name": "ValueSetProcedurePerformerRole",
+  "title": "ValueSetProcedurePerformerRole (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "PIK procedure performer role",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/procedure-performer-role-my-core"
+      }
+    ]
+  }
+}

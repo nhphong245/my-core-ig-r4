@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "location-recorded-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/location-recorded-my-core",
+  "version": "1.0.0",
+  "name": "ExtensionLocationRecordedMyCore",
+  "title": "ExtensionLocationRecorded (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "An extension to define where the Composition was recorded (Location Resource)",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Composition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Location where information was recorded",
+        "definition": "Location where information was recorded",
+        "comment": "Location where information was recorded",
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/location-recorded-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ],
+            "aggregation": [
+              "referenced"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

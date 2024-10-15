@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "relates-to-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/relates-to-my-core",
+  "name": "ExtensionRelatesToMyCore",
+  "title": "ExtensionRelatesTo (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension that allows ServiceRequest to be able to reference Resources that led up to this record creation",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/document-relationship-type"
+        }
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:targetReference",
+        "path": "Extension.extension",
+        "sliceName": "targetReference"
+      },
+      {
+        "id": "Extension.extension:targetReference.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "targetReference"
+      },
+      {
+        "id": "Extension.extension:targetReference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Composition",
+              "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/relates-to-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

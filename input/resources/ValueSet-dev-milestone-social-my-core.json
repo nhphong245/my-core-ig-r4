@@ -1,0 +1,71 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-dev-milestone-social-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>http://fhir.hie.moh.gov.my/ValueSet/dev-milestone-social-my-core</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/dev-milestone-social-my-core</tt><p>Dev Milestone</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/dev-milestone-social-my-core",
+  "name": "ValueSetDevMilestoneSocialMyCore",
+  "title": "http://fhir.hie.moh.gov.my/ValueSet/dev-milestone-social-my-core",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Dev Milestone",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/dev-milestone-social-my-core",
+        "concept": [
+          {
+            "code": "sc6w",
+            "display": "Up to 6 weeks of age"
+          },
+          {
+            "code": "sc3m",
+            "display": "Up to 3 months of age"
+          },
+          {
+            "code": "sc6m",
+            "display": "Up to 6 months of age"
+          },
+          {
+            "code": "sc9m",
+            "display": "Up to 9 months of age"
+          },
+          {
+            "code": "sc12m",
+            "display": "Up to 12 months of age"
+          },
+          {
+            "code": "sc15m",
+            "display": "Up to 15 months of age"
+          },
+          {
+            "code": "sc18m",
+            "display": "Up to 18 months of age"
+          },
+          {
+            "code": "sc2y",
+            "display": "Up to 2 years of age"
+          },
+          {
+            "code": "sc2.5y",
+            "display": "Up to 2.5 years of age"
+          },
+          {
+            "code": "sc3y",
+            "display": "Up to 3 years of age"
+          },
+          {
+            "code": "sc4y",
+            "display": "Up to 4 years of age"
+          },
+          {
+            "code": "sc5y",
+            "display": "Up to 5 years of age"
+          }
+        ]
+      }
+    ]
+  }
+}

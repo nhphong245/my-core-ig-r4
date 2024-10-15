@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "pr-detail-type-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/pr-detail-type-my-core",
+  "name": "SearchParameterDetailTypeMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "PaymentReconciliation detail type",
+  "code": "detail-type",
+  "base": [
+    "PaymentReconciliation"
+  ],
+  "type": "token",
+  "expression": "PaymentReconciliation.detail.type",
+  "xpathUsage": "normal"
+}

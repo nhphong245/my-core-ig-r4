@@ -1,0 +1,100 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-internal-referral-source-type-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemInternalReferralSourceType (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/CodeSystem/internal-referral-source-type-my-core</tt><p>Internal Referral Source Type</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/internal-referral-source-type-my-core",
+  "version": "1.0.0",
+  "name": "CodeSystemInternalReferralSourceMyCore",
+  "title": "CodeSystemInternalReferralSourceType (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Internal Referral Source Type",
+  "compositional": false,
+  "content": "complete",
+  "count": 16,
+  "concept": [
+    {
+      "code": "10",
+      "display": "Klinik Perubatan Keluarga",
+      "definition": "Klinik Perubatan Keluarga"
+    },
+    {
+      "code": "11",
+      "display": "Unit Domisiliari",
+      "definition": "Unit Domisiliari"
+    },
+    {
+      "code": "12",
+      "display": "Unit Sekolah",
+      "definition": "Unit Sekolah"
+    },
+    {
+      "code": "13",
+      "display": "Unit Bencana",
+      "definition": "Unit Bencana"
+    },
+    {
+      "code": "14",
+      "display": "Daycare",
+      "definition": "Daycare"
+    },
+    {
+      "code": "99",
+      "display": "Others",
+      "definition": "Others"
+    },
+    {
+      "code": "00",
+      "display": "No information",
+      "definition": "No information"
+    },
+    {
+      "code": "01",
+      "display": "Emergency & Trauma Department",
+      "definition": "Emergency & Trauma Department"
+    },
+    {
+      "code": "02",
+      "display": "General Outpatient Department",
+      "definition": "General Outpatient Department"
+    },
+    {
+      "code": "03",
+      "display": "Specialist Clinic",
+      "definition": "Specialist Clinic"
+    },
+    {
+      "code": "04",
+      "display": "Pregnancy Assessment Centre (PAC)",
+      "definition": "Pregnancy Assessment Centre (PAC)"
+    },
+    {
+      "code": "05",
+      "display": "Ward",
+      "definition": "Ward"
+    },
+    {
+      "code": "06",
+      "display": "Clinical Support",
+      "definition": "Clinical Support"
+    },
+    {
+      "code": "07",
+      "display": "Klinik Ibu Dan Anak",
+      "definition": "Klinik Ibu Dan Anak"
+    },
+    {
+      "code": "08",
+      "display": "Klinik Methadone",
+      "definition": "Klinik Methadone"
+    },
+    {
+      "code": "09",
+      "display": "Klinik Kesihatan Mental",
+      "definition": "Klinik Kesihatan Mental"
+    }
+  ]
+}

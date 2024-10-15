@@ -1,0 +1,19 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "questionnaireresponse-service-provider-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/questionnaireresponse-service-provider-my-core",
+  "name": "SearchParameterQuestionnaireResponseServiceProviderMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Orgranization who provide this QuestionnaireResponse",
+  "code": "service-provider",
+  "base": [
+    "QuestionnaireResponse"
+  ],
+  "type": "reference",
+  "expression": "QuestionnaireResponse.extension('http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core')",
+  "xpathUsage": "normal",
+  "target": [
+    "Organization"
+  ]
+}

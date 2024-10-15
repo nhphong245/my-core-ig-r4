@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "QuestionnaireResponse-my-core",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2024-03-06T08:33:00.6563039+00:00",
+    "source": "#YiSmSUqbyNinTYQ0"
+  },
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core",
+  "version": "1.0.1",
+  "name": "QuestionnaireResponseMyCore",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "QuestionnaireResponse",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "QuestionnaireResponse.extension:serviceProvider",
+        "path": "QuestionnaireResponse.extension",
+        "sliceName": "serviceProvider",
+        "short": "Extension to reference the custodian of this Resource",
+        "definition": "Extension to reference the custodian of this Resource",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "QuestionnaireResponse.extension:questionnaireReference",
+        "path": "QuestionnaireResponse.extension",
+        "sliceName": "questionnaireReference",
+        "short": "Extension to create reference to Questionnaire's QuestionnaireResponse",
+        "definition": "Extension to create reference to Questionnaire's QuestionnaireResponse",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/questionnaire-reference-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "QuestionnaireResponse.subject",
+        "path": "QuestionnaireResponse.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

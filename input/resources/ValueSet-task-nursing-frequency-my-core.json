@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-task-nursing-input-my-core",
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/task-nursing-input-my-core",
+  "name": "ValueSetTaskNursingInputMyCore",
+  "title": "ValueSetTaskNursingInput (MY Core)",
+  "status": "active",
+  "date": "2024-02-14T07:47:10.4519661+00:00",
+  "description": "Task Output Type Code System",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+        "concept": [
+          {
+            "code": "Q1H",
+            "display": "Hourly"
+          },
+          {
+            "code": "QD",
+            "display": "OD"
+          },
+          {
+            "code": "BID",
+            "display": "BD"
+          },
+          {
+            "code": "TID",
+            "display": "TDS"
+          },
+          {
+            "code": "QID",
+            "display": "QID"
+          }
+        ]
+      }
+    ]
+  }
+}

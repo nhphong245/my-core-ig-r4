@@ -1,0 +1,21 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "servicerequest-reason-reference-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/ServiceRequest-reason-reference-my-core",
+  "name": "SearchParameterServiceRequestReasonReferenceMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "ServiceRequest reason reference",
+  "code": "reason-reference",
+  "base": [
+    "ServiceRequest"
+  ],
+  "type": "reference",
+  "expression": "ServiceRequest.reasonReference",
+  "target": [
+    "Condition",
+    "Observation",
+    "DiagnosticReport",
+    "DocumentReference"
+  ]
+}

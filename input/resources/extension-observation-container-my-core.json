@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "observation-container-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/observation-container-my-core",
+  "version": "1.0.0",
+  "name": "ExtensionObservationContainerMyCore",
+  "title": "ExtensionObservationContainer (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension to reference a SpecimenDefinition Resource",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Observation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/observation-container-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/SpecimenDefinition"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

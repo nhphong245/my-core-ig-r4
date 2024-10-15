@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "task-execution-date-end-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/task-execution-date-end-my-core",
+  "name": "SearchParameterTaskExecutionDateEndMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Task Execution Date End",
+  "code": "execution-date-end",
+  "base": [
+    "Task"
+  ],
+  "type": "date",
+  "expression": "Task.executionPeriod.end"
+}

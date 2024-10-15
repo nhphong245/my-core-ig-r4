@@ -1,0 +1,45 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-drug-form-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/drug-form-my-core",
+  "version": "1.0.0",
+  "name": "ExtensionDrugFormMyCore",
+  "title": "DrugForm (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension about drug form",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/drug-form-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/drug-dose-form-my-core"
+        }
+      }
+    ]
+  }
+}

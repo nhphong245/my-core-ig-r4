@@ -1,0 +1,56 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hajj-outcome",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-outcome",
+  "version": "1.0.0",
+  "name": "QHajjOutcome",
+  "title": "Keputusan Pemeriksaan Kesihatan",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "SIHAT & LULUS untuk ke Tanah Suci",
+      "type": "boolean"
+    },
+    {
+      "linkId": "2",
+      "text": "Menghidap penyakit, keadaannya stabil dan LULUS ke Tanah Suci (Diagnosa & Rawatan seperti di m/s 31)",
+      "type": "boolean"
+    },
+    {
+      "linkId": "3",
+      "text": "Memerlukan RUJUKAN PAKAR",
+      "type": "boolean"
+    },
+    {
+      "linkId": "4",
+      "text": "Tarikh dirujuk",
+      "type": "date",
+      "enableWhen": [
+        {
+          "question": "3",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Pakar rujukan",
+      "type": "string",
+      "enableWhen": [
+        {
+          "question": "3",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "Mengalami masalah kesihatan yang kronik / serius dan dinasihatkan suapaya MENANGGUHKAN pemergian ke Tanah Suci",
+      "type": "boolean"
+    }
+  ]
+}

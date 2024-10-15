@@ -1,0 +1,93 @@
+{
+    "resourceType": "Appointment",
+    "id": "vce-app-example",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-07-11T09:23:11.609+08:00",
+        "source": "http://provider.hie.moh.gov.my#t1RCErxSyVus3B0h",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Appointment-my-core"
+        ]
+    },
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/vc-token",
+            "value": "19d3b96a-6c4d-485a-9514-cbf6ccfeed6b"
+        }
+    ],
+    "status": "booked",
+    "serviceCategory": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+                    "code": "VR",
+                    "display": "Virtual"
+                }
+            ]
+        }
+    ],
+    "serviceType": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                    "code": "VCE",
+                    "display": "Education Virtual Consultation"
+                }
+            ]
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                    "code": "149",
+                    "display": "Communicable Disease"
+                }
+            ]
+        }
+    ],
+    "appointmentType": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core",
+                "code": "internal",
+                "display": "Internal"
+            }
+        ]
+    },
+    "start": "2023-07-07T17:50:00+08:00",
+    "end": "2023-07-07T18:20:00+08:00",
+    "slot": [
+        {
+            "reference": "Slot/f3beea3f-b09c-4422-a552-82fa8442fd8a"
+        }
+    ],
+    "created": "2023-07-07T21:00:00+08:00",
+    "participant": [
+        {
+            "actor": {
+                "reference": "HealthcareService/368d90f6-d0d0-4b8c-a83b-45f1e3034dcc",
+                "type": "HealthcareService",
+                "display": "Communicable Disease"
+            },
+            "status": "accepted"
+        },
+        {
+            "actor": {
+                "reference": "Patient/48e364a3-aa9b-4364-8458-d75c1591ef0d",
+                "type": "Patient",
+                "display": "SIVAKUMAR A/L ARUMUGAM "
+            },
+            "status": "accepted"
+        }
+    ],
+    "requestedPeriod": [
+        {
+            "start": "2023-07-07T17:50:00+08:00",
+            "end": "2023-07-07T18:20:00+08:00"
+        }
+    ]
+}

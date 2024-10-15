@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ImmunizationRecommendation-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/ImmunizationRecommendation-my-core",
+  "version": "1.0.0",
+  "name": "ImmunizationRecommendation",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "description": "A patient's point-in-time set of recommendations (i.e. forecasting) according to a published schedule with optional supporting justification.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ImmunizationRecommendation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ImmunizationRecommendation.recommendation",
+        "path": "ImmunizationRecommendation.recommendation",
+        "max": "1"
+      },
+      {
+        "id": "ImmunizationRecommendation.recommendation.extension:booster",
+        "path": "ImmunizationRecommendation.recommendation.extension",
+        "sliceName": "booster",
+        "short": "Extension to determine if the vaccine is a booster dose",
+        "definition": "Extension to determine if the vaccine is a booster dose",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/extension-booster-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ImmunizationRecommendation.recommendation.vaccineCode",
+        "path": "ImmunizationRecommendation.recommendation.vaccineCode",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/vaccine-code-my-core"
+        }
+      },
+      {
+        "id": "ImmunizationRecommendation.recommendation.forecastStatus",
+        "path": "ImmunizationRecommendation.recommendation.forecastStatus",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/immunization-recommendation-status-my-core"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncd-vc-dx-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/ncd-vc-dx-my-core",
+  "version": "1",
+  "name": "ExtensionNcdVcDxMyCore",
+  "title": "ExtensionNcdVcDx (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension to define the outcome diagnosis of a Virtual Consultation (To fulfil their analytics requirement)",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Encounter"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 2
+      },
+      {
+        "id": "Extension.extension:diagnosis",
+        "path": "Extension.extension",
+        "sliceName": "diagnosis",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:diagnosis.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "diagnosis"
+      },
+      {
+        "id": "Extension.extension:diagnosis.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/ncd-vc-dx-my-core"
+        }
+      },
+      {
+        "id": "Extension.extension:combinationDiagnosis",
+        "path": "Extension.extension",
+        "sliceName": "combinationDiagnosis",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:combinationDiagnosis.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "combinationDiagnosis"
+      },
+      {
+        "id": "Extension.extension:combinationDiagnosis.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/ncd-vc-dx-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

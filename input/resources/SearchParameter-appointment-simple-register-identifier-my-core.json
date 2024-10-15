@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "appointment-simple-register-identifier-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/appointment-simple-register-identifier-my-core",
+  "name": "SearchParameterAppointmentSimpleRegisterIdentifierMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Person identifier who made the appointment booking",
+  "code": "simple-register-identifier",
+  "base": [
+    "Appointment"
+  ],
+  "type": "string",
+  "expression": "Appointment.extension('http://fhir.hie.moh.gov.my/StructureDefinition/simple-register-my-core').extension('identifier')"
+}

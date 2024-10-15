@@ -1,0 +1,144 @@
+{
+    "resourceType": "Observation",
+    "id": "example-child-dev-milestone",
+    "meta": {
+        "versionId": "8",
+        "lastUpdated": "2023-05-23T03:19:13.264+08:00",
+        "source": "http://provider.hie.moh.gov.my#LKPLD4mB6Tzk1pvW",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-developmental-milestone-my-core"
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Performed Date</b>: 2023-11-05T08:00:00+08:00</p><p><b>Performer</b>: Saifuldaulah</p><p><b>Developmental Milestone</b>: </p><blockquote><b>Age</b>: 2month<br/><b>Gross Motor</b>: up to 6 weeks of age<br/><b>Fine Motor</b>: up to 3 months of age<br/><b>Speech</b>: up to 9 months of age<br/><b>Social</b>: up to 2 years of age</blockquote></div>"
+    },
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "251803000",
+                "display": "Developmental Milestone"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/3a1fe467-cad5-4ec9-83f8-fd6dfb46470c"
+    },
+    "encounter": {
+        "reference": "Encounter/e8910201-2799-47f2-9056-85bb8c8a5041"
+    },
+    "effectiveDateTime": "2023-11-05T08:00:00+08:00",
+    "issued": "2023-11-05T08:00:00+08:00",
+    "performer": [
+        {
+            "reference": "PractitionerRole/cd16e0cb-3e0f-43bb-9197-901f5daff3ba/_history/27",
+            "identifier": {
+                "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                "value": "81751"
+            },
+            "display": "Saifuldaulah Bin Mohd Hafiz Ngoo"
+        }
+    ],
+    "component": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "397669002",
+                        "display": "Age"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 2,
+                "unit": "month",
+                "system": "http://unitsofmeasure.org",
+                "code": "mo"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/developmental-milestone-my-core",
+                        "code": "gross-motor",
+                        "display": "Gross Motor"
+                    }
+                ]
+            },
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/dev-milestone-gross-motor-my-core",
+                        "code": "g6w",
+                        "display": "up to 6 weeks of age"
+                    }
+                ]
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/developmental-milestone-my-core",
+                        "code": "fine-motor",
+                        "display": "Fine Motor"
+                    }
+                ]
+            },
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/dev-milestone-fine-motor-my-core",
+                        "code": "f3m",
+                        "display": "up to 3 months of age"
+                    }
+                ]
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/developmental-milestone-my-core",
+                        "code": "speech",
+                        "display": "Speech"
+                    }
+                ]
+            },
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/dev-milestone-speech-my-core",
+                        "code": "s9m",
+                        "display": "up to 9 months of age"
+                    }
+                ]
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/developmental-milestone-my-core",
+                        "code": "social",
+                        "display": "Social"
+                    }
+                ]
+            },
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/dev-milestone-social-my-core",
+                        "code": "sc2y",
+                        "display": "up to 2 years of age"
+                    }
+                ]
+            }
+        }
+    ]
+}
+

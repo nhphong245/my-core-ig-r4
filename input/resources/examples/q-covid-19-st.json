@@ -1,0 +1,245 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-covid-19-st",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-covid-19-st",
+  "version": "1.0.0",
+  "name": "QCovid19St",
+  "title": "Covid-19 Self Test",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Where was the swab test done?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "394759007",
+            "display": "Independent provider site"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "309895006",
+            "display": "Private hospital (environment)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "79993009",
+            "display": "Government Hospital (environment)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "409978001",
+            "display": "Self-examination"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "When was the test taken?",
+      "type": "dateTime"
+    },
+    {
+      "linkId": "3",
+      "text": "Please select the outcome of your test",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://loinc.org",
+            "code": "LA33552-3",
+            "display": "COVID-19 negative"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://loinc.org",
+            "code": "LA33551-5",
+            "display": "COVID-19 positive"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://loinc.org",
+            "code": "LA13548-5",
+            "display": "Specimen unsatisfactory for evaluation"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Please upload and snapshot the test result",
+      "type": "string"
+    },
+    {
+      "linkId": "5",
+      "text": "Are you experiencing any COVID-19 symptoms (for example fever, sore throat, nausea and vomiting, diarrhea, cough etc)?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "6",
+      "text": "Line Address",
+      "type": "text"
+    },
+    {
+      "linkId": "7",
+      "text": "District",
+      "type": "string"
+    },
+    {
+      "linkId": "8",
+      "text": "Please select your state",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "00",
+            "display": "No Information"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "01",
+            "display": "Johor"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "02",
+            "display": "Kedah"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "03",
+            "display": "Kelantan"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "04",
+            "display": "Melaka"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "05",
+            "display": "Negeri Sembilan"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "06",
+            "display": "Pahang"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "07",
+            "display": "Pulau Pinang"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "08",
+            "display": "Perak"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "09",
+            "display": "Perlis"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "10",
+            "display": "Selangor"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "11",
+            "display": "Terengganu"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "12",
+            "display": "Sabah"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "13",
+            "display": "Sarawak"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "14",
+            "display": "Wilayah Persekutuan Kuala Lumpur"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "15",
+            "display": "Wilayah Persekutuan Labuan"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "16",
+            "display": "Wilayah Persekutuan Putrajaya"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "98",
+            "display": "Luar Negeri"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+            "code": "99",
+            "display": "Others"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "9",
+      "text": "Please enter your current postcode",
+      "type": "string"
+    }
+  ]
+}

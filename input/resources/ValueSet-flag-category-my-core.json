@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-flag-category-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetFlagCategory (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/flag-category-my-core</tt><p>Flag Category</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/flag-category-my-core",
+  "name": "ValueSetFlagCategoryMyCore",
+  "title": "ValueSetFlagCategory (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Flag Category",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/flag-category-my-core"
+      }
+    ]
+  }
+}

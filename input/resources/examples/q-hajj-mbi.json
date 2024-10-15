@@ -1,0 +1,749 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hajj-mbi",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-mbi",
+  "version": "1.0.0",
+  "name": "QHajjMbi",
+  "title": "Saringan Modified Barthel Index (MBI)",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Kebersihan diri",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "code": "08",
+            "display": "Perlukan bantuan sepenuhnya"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1.0
+            }
+          ],
+          "valueCoding": {
+            "code": "09",
+            "display": "Perlukan bantuan maksima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3.0
+            }
+          ],
+          "valueCoding": {
+            "code": "10",
+            "display": "Perlukan bantuan sederhana"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4.0
+            }
+          ],
+          "valueCoding": {
+            "code": "11",
+            "display": "Perlukan bantuan minima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5.0
+            }
+          ],
+          "valueCoding": {
+            "code": "12",
+            "display": "Berdikari sepenuhnya"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Mandi",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "code": "08",
+            "display": "Perlukan bantuan sepenuhnya"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1.0
+            }
+          ],
+          "valueCoding": {
+            "code": "09",
+            "display": "Perlukan bantuan maksima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3.0
+            }
+          ],
+          "valueCoding": {
+            "code": "10",
+            "display": "Perlukan bantuan sederhana"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4.0
+            }
+          ],
+          "valueCoding": {
+            "code": "11",
+            "display": "Perlukakn bantuan minima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5.0
+            }
+          ],
+          "valueCoding": {
+            "code": "12",
+            "display": "Berdikari sepenuhnya"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Kemahiran ke tandas (Toileting)",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "code": "08",
+            "display": "Perlukan bantuan sepenuhnya"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2.0
+            }
+          ],
+          "valueCoding": {
+            "code": "09",
+            "display": "Perlukan bantuan maksima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5.0
+            }
+          ],
+          "valueCoding": {
+            "code": "10",
+            "display": "Perlukan bantuan sederhana"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6.0
+            }
+          ],
+          "valueCoding": {
+            "code": "11",
+            "display": "Perlukan bantuan minima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 10.0
+            }
+          ],
+          "valueCoding": {
+            "code": "12",
+            "display": "Berdikari sepenuhnya"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Menaiki Tangga",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "code": "08",
+            "display": "Perlukan bantuan sepenuhnya"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2.0
+            }
+          ],
+          "valueCoding": {
+            "code": "09",
+            "display": "Perlukan bantuan maksima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5.0
+            }
+          ],
+          "valueCoding": {
+            "code": "10",
+            "display": "Perlukan bantuan sederhana"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6.0
+            }
+          ],
+          "valueCoding": {
+            "code": "11",
+            "display": "Perlukan bantuan minima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 10.0
+            }
+          ],
+          "valueCoding": {
+            "code": "12",
+            "display": "Berdikari sepenuhnya"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Memakai pakaian",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "code": "08",
+            "display": "Perlukan bantuan sepenuhnya"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2.0
+            }
+          ],
+          "valueCoding": {
+            "code": "09",
+            "display": "Perlukan bantuan maksima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5.0
+            }
+          ],
+          "valueCoding": {
+            "code": "10",
+            "display": "Perlukan bantuan sederhana"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6.0
+            }
+          ],
+          "valueCoding": {
+            "code": "11",
+            "display": "Perlukan bantuan minima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 10.0
+            }
+          ],
+          "valueCoding": {
+            "code": "12",
+            "display": "Berdikari sepenuhnya"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "Makan & minum",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "display": "Perlukan bantuan sepenuhnya"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2.0
+            }
+          ],
+          "valueCoding": {
+            "display": "Perlukan bantuan maksima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5.0
+            }
+          ],
+          "valueCoding": {
+            "display": "Perlukan bantuan sederhana"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6.0
+            }
+          ],
+          "valueCoding": {
+            "display": "Perlukan bantuan minima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 10.0
+            }
+          ],
+          "valueCoding": {
+            "display": "Berdikari sepenuhnya"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "7",
+      "text": "Kawalan pembuangan air kecil",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "code": "08",
+            "display": "Perlukan bantuan sepenuhnya"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2.0
+            }
+          ],
+          "valueCoding": {
+            "code": "09",
+            "display": "Perlukan bantuan maksima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5.0
+            }
+          ],
+          "valueCoding": {
+            "code": "10",
+            "display": "Perlukan bantuan sederhana"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6.0
+            }
+          ],
+          "valueCoding": {
+            "code": "11",
+            "display": "Perlukan bantuan minima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 10.0
+            }
+          ],
+          "valueCoding": {
+            "code": "12",
+            "display": "Berdikari sepenuhnya"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "8",
+      "text": "Kawalan pembuangan air besar",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "code": "08",
+            "display": "Perlukan bantuan sepenuhnya"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2.0
+            }
+          ],
+          "valueCoding": {
+            "code": "09",
+            "display": "Perlukan bantuan maksima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5.0
+            }
+          ],
+          "valueCoding": {
+            "code": "10",
+            "display": "Perlukan bantuan sederhana"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6.0
+            }
+          ],
+          "valueCoding": {
+            "code": "11",
+            "display": "Perlukan bantuan minima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 10.0
+            }
+          ],
+          "valueCoding": {
+            "code": "12",
+            "display": "Berdikari sepenuhnya"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "9",
+      "text": "Pemindahan ke kerusi /  katil",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "code": "08",
+            "display": "Perlukan bantuan sepenuhnya"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3.0
+            }
+          ],
+          "valueCoding": {
+            "code": "09",
+            "display": "Perlukan bantuan maksima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8.0
+            }
+          ],
+          "valueCoding": {
+            "code": "10",
+            "display": "Perlukan bantuan sederhana"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 12.0
+            }
+          ],
+          "valueCoding": {
+            "code": "11",
+            "display": "Perlukan bantuan minima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 15.0
+            }
+          ],
+          "valueCoding": {
+            "code": "12",
+            "display": "Berdikari sepenuhnya"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "10",
+      "text": "Pergerakkan",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "code": "08",
+            "display": "Perlukan bantuan sepenuhnya"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3.0
+            }
+          ],
+          "valueCoding": {
+            "code": "09",
+            "display": "Perlukan bantuan maksima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8.0
+            }
+          ],
+          "valueCoding": {
+            "code": "10",
+            "display": "Perlukan bantuan sederhana"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 12.0
+            }
+          ],
+          "valueCoding": {
+            "code": "11",
+            "display": "Perlukan bantuan minima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 15.0
+            }
+          ],
+          "valueCoding": {
+            "code": "12",
+            "display": "Berdikari sepenuhnya"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "11",
+      "text": "Penggunaan kerusi roda (skor hanya jika pesakit perlu bantuan sepenuhnya untuk bergerak dan telah dilatih berkerusi roda)",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "code": "08",
+            "display": "Perlukan bantuan sepenuhnya"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1.0
+            }
+          ],
+          "valueCoding": {
+            "code": "09",
+            "display": "Perlukan bantuan maksima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3.0
+            }
+          ],
+          "valueCoding": {
+            "code": "10",
+            "display": "Perlukan bantuan sederhana"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4.0
+            }
+          ],
+          "valueCoding": {
+            "code": "11",
+            "display": "Perlukan bantuan minima"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4.0
+            }
+          ],
+          "valueCoding": {
+            "code": "12",
+            "display": "Berdikari sepenuhnya"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "12",
+      "text": "Jumlah markah",
+      "type": "quantity"
+    }
+  ]
+}

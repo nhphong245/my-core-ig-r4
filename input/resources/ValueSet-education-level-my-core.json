@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-education-level-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetEducationLevel (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/education-my-core</tt><p>Education level in Malaysia</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/education-level-my-core",
+  "name": "ValueSetEducationLevelMyCore",
+  "title": "ValueSetEducationLevel (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Education level in Malaysia",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/education-level-my-core"
+      }
+    ]
+  }
+}

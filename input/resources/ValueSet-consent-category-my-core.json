@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-consent-category-my-core",
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/consent-category-my-core",
+  "name": "ValueSetConsentCategoryMyCore",
+  "title": "ValueSetConsentCategory (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:06:31.9155675+00:00",
+  "description": "Consent Category",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/consent-category"
+      },
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/consent-category-my-core"
+      }
+    ]
+  }
+}

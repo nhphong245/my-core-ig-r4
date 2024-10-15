@@ -1,0 +1,30 @@
+{
+    "resourceType": "Patient",
+    "id": "8bc61ffd-43fe-4de7-9de3-3ebab66e6b4e",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Patient-my-core"
+        ]
+    },
+    "identifier": [
+        {
+            "use": "official",
+            "system": "http://fhir.hie.moh.gov.my/sid/my-kad-no",
+            "value": "921005145570"
+        }
+    ],
+    "name": [
+        {
+            "use": "official",
+            "given": [
+                "ZALEHA KAMILLA"
+            ]
+        }
+    ],
+    "gender": "female",
+    "birthDate": "1992-10-05",
+    "managingOrganization": {
+        "reference": "Organization/11-05060009"
+    }
+}

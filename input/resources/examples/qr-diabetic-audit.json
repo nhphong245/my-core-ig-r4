@@ -1,0 +1,1267 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "qr-diabetic-audit",
+    "meta": {
+        "versionId": "2",
+        "lastUpdated": "2024-02-19T09:47:17.139+08:00",
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Authored Date</b>: 22-Jan-2024</p><p><b>Author</b>: SAIFULDAULAH BIN MOHD HAFIZ NGOO</p><blockquote><b>Diabetes Details</b>: <blockquote><b>Diabetes Diagnosis Date</b>: 22-Jan-2024 12:02<br/><b>Estimate/ Presumed</b>: Yes<br/><b>Diabetes Type</b>: Other specified type<br/><b>If other specified type, please specify</b>: Diabetes mellitus due to genetic defects of beta cell function<br/><b>Diabetes Age</b>: 22-Jan-2024 12:02</blockquote><br/><b>Complications</b>: <blockquote><b>Retinopathy</b>: Absent<blockquote><b>If Present, date of diagnosis</b>: 22-Jan-2024 12:02<br/><b>Estimate/ Presumed</b>: No</blockquote><br/><b>Ischaemic heart disease (IHD)</b>: Present<blockquote><b>If Present, date of diagnosis</b>: 22-Jan-2024 12:02<br/><b>Estimate/ Presumed</b>: Yes</blockquote><br/><b>Cerebrovascular disease (ceVD)</b>: Absent<blockquote><b>If Present, date of diagnosis</b>: 22-Jan-2024 12:02<br/><b>Estimate/ Presumed</b>: No</blockquote><br/><b>Nephropathy</b>: Absent<blockquote><b>If Present, date of diagnosis</b>: 22-Jan-2024 12:02<br/><b>Estimate/ Presumed</b>: Yes</blockquote><br/><b>Diabetic foot ulcer</b>: Present<blockquote><b>If Present, date of diagnosis</b>: 22-Jan-2024 12:02<br/><b>Estimate/ Presumed</b>: No</blockquote><br/><b>Amputation</b>: Present<blockquote><b>If Present, date of diagnosis</b>: 22-Jan-2024 12:02<br/><b>Estimate/ Presumed</b>: Yes</blockquote></blockquote><br/><b>Concomitant Co-morbidity</b>: <blockquote><b>Hypertension</b>: No<blockquote><b>If Yes, date of diagnosis</b>: 22-Jan-2024 12:02<br/><b>Estimate/ Presumed</b>: No</blockquote><br/><b>Dyslipidaemia</b>: Yes<blockquote><b>If Yes, date of diagnosis</b>: 22-Jan-2024 12:02<br/><b>Estimate/ Presumed</b>: Yes</blockquote><br/><b>Smoking Status</b>: No</blockquote><br/><b>Clinical Observations</b>: <blockquote><b>Height</b>: No<blockquote><b>Latest Result</b>: 168</blockquote><br/><b>Weight</b>: Yes<blockquote><b>Latest Result</b>: 60<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote><br/><b>Waist Circumference</b>: No<blockquote><b>Latest Result</b>: 30<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote><br/><b>Blood Pressure</b>: Yes<blockquote><b>Systolic</b>: 120<br/><b>Diastolic</b>: 90<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote></blockquote><br/><b>Physical Examination</b>: <blockquote><b>Fundus examination</b>: No<blockquote><b>Examination Outcome</b>: Abnormal<br/><b>Date of Latest Examination</b>: 22-Jan-2024 12:02</blockquote><br/><b>Foot examination</b>: Yes<blockquote><b>Examination Outcome</b>: Normal<br/><b>Date of Latest Examination</b>: 22-Jan-2024 12:02</blockquote><br/><b>Electrocardiogram (ECG)</b>: No<blockquote><b>Examination Outcome</b>: Abnormal<br/><b>Date of Latest Examination</b>: 22-Jan-2024 12:02</blockquote><br/><b>Erectile Dysfunction</b>: Yes<blockquote><b>Examination Outcome</b>: Normal<br/><b>Date of Latest Examination</b>: 22-Jan-2024 12:02</blockquote><br/><b>Seen by a Medical Officer (MO) at least once in a year</b>: No</blockquote><br/><b>Laboratory</b>: <blockquote><b>Random Blood Glucose (RBG)</b>: Yes<blockquote><b>Latest Result</b>: 12.8<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote><br/><b>Fasting Blood Glucose (FBG)</b>: No<blockquote><b>Latest Result</b>: 12.8<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote><br/><b>2-Hour Post Prandial (2HPP)</b>: Yes<blockquote><b>Latest Result</b>: 12.8<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote><br/><b>HbA1c</b>: <blockquote><b>Latest Result</b>: 12.8<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote><br/><b>Total Cholesterol</b>: No<blockquote><b>Latest Result</b>: 12.8<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote><br/><b>Triglycerides (TG)</b>: Yes<blockquote><b>Latest Result</b>: 12.8<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote><br/><b>High-Density Lipoprotein (HDL)</b>: No<blockquote><b>Latest Result</b>: 12.8<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote><br/><b>Low-Density Lipoprotein (LDL)</b>: Yes<blockquote><b>Latest Result</b>: 12.8<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote><br/><b>Serum Creatinine</b>: No<blockquote><b>Latest Result</b>: 12.8<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote><br/><b>Urine Microalbumin</b>: Yes<blockquote><b>Latest Result</b>: 12.8<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote><br/><b>Urine Protein</b>: No<blockquote><b>Latest Result</b>: Positive<br/><b>Date of Latest Result</b>: 22-Jan-2024 12:02</blockquote></blockquote><br/><b>Anti-Diabetic Drugs</b>: <blockquote><b>Biguanides</b>: Yes<br/><b>Sulphonylureas</b>: Yes<br/><b>α-glucosidase inhibitors</b>: Yes<br/><b>Meglitinides</b>: Yes<br/><b>Glitazones</b>: Yes<br/><b>Other</b>: Yes<blockquote><b>If other, please specify</b>: test 1test 2</blockquote></blockquote><br/><b>Anti-hypertensives Drugs</b>: <blockquote><b>ACE-inhibitor</b>: Yes<br/><b>Angiotensin II Receptor Blockers (ARB)</b>: Yes<br/><b>Beta-blockers</b>: Yes<br/><b>Calcium channel blockers</b>: Yes<br/><b>Diuretics</b>: Yes<br/><b>Alpha-blockers</b>: Yes<br/><b>Centrally acting</b>: Yes<br/><b>Other</b>: Yes<blockquote><b>If other, please specify</b>: test 1test 2</blockquote></blockquote><br/><b>Lipid-Lowering Agents</b>: <blockquote><b>Statin</b>: Yes<br/><b>Fibrate</b>: Yes<br/><b>Other</b>: Yes<blockquote><b>If other, please specify</b>: test 1test 2</blockquote></blockquote></blockquote></div>"
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/questionnaire-reference-my-core",
+            "valueReference": {
+                "reference": "QuestionnaireResponse/qr-diabetic-registry"
+            }
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core",
+            "valueReference": {
+                "reference": "Organization/11-05060009"
+            }
+        }
+    ],
+    "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-diabetic-audit",
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/74c778d4-19a4-442e-8918-620733047fce"
+    },
+    "authored": "2024-01-22T12:02:00+08:00",
+    "author": {
+        "reference": "PractitionerRole/b9797173-7e15-4fc3-8f85-d58627935956/_history/19"
+    },
+    "item": [
+        {
+            "linkId": "dm",
+            "text": "Diabetes Details",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-01-22T06:59:57.063Z"
+                        }
+                    ],
+                    "linkId": "dm-dx-date",
+                    "text": "Diabetes Diagnosis Date"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "dm-dx-type",
+                    "text": "Estimate/ Presumed"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://id.who.int/icd/entity/381961554",
+                                "code": "5A13",
+                                "display": "Other specified type"
+                            }
+                        }
+                    ],
+                    "linkId": "dm-type",
+                    "text": "Diabetes Type"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://id.who.int/icd/entity/1651053999",
+                                "code": "5A13.0",
+                                "display": "Diabetes mellitus due to genetic defects of beta cell function"
+                            }
+                        }
+                    ],
+                    "linkId": "dm-other",
+                    "text": "If other specified type, please specify"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-01-22T07:00:34.415Z"
+                        }
+                    ],
+                    "linkId": "dm-age",
+                    "text": "Diabetes Age"
+                }
+            ]
+        },
+        {
+            "linkId": "complication",
+            "text": "Complications",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "2667000",
+                                "display": "Absent"
+                            },
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:00:48.871Z"
+                                        }
+                                    ],
+                                    "linkId": "retinopathy-dx-date",
+                                    "text": "If Present, date of diagnosis"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueBoolean": false
+                                        }
+                                    ],
+                                    "linkId": "retinopathy-dx-type",
+                                    "text": "Estimate/ Presumed"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "retinopathy",
+                    "text": "Retinopathy"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "52101004",
+                                "display": "Present"
+                            },
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:01:14.167Z"
+                                        }
+                                    ],
+                                    "linkId": "ihd-dx-date",
+                                    "text": "If Present, date of diagnosis"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueBoolean": true
+                                        }
+                                    ],
+                                    "linkId": "ihd-dx-type",
+                                    "text": "Estimate/ Presumed"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueBoolean": false
+                                        }
+                                    ],
+                                    "linkId": "ihd-at-dx",
+                                    "text": "Complication at diagnosis"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "ihd",
+                    "text": "Ischaemic heart disease (IHD)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "52101004",
+                                "display": "Present"
+                            },
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:02:02.694Z"
+                                        }
+                                    ],
+                                    "linkId": "cevd-dx-date",
+                                    "text": "If Present, date of diagnosis"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueBoolean": false
+                                        }
+                                    ],
+                                    "linkId": "cevd-dx-type",
+                                    "text": "Estimate/ Presumed"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "cevd",
+                    "text": "Cerebrovascular disease (ceVD)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "52101004",
+                                "display": "Present"
+                            },
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:02:28.996Z"
+                                        }
+                                    ],
+                                    "linkId": "nephropathy-dx-date",
+                                    "text": "If Present, date of diagnosis"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueBoolean": false
+                                        }
+                                    ],
+                                    "linkId": "nephropathy-dx-type",
+                                    "text": "Estimate/ Presumed"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "nephropathy",
+                    "text": "Nephropathy"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "52101004",
+                                "display": "Present"
+                            },
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:02:42.916Z"
+                                        }
+                                    ],
+                                    "linkId": "dfu-dx-date",
+                                    "text": "If Present, date of diagnosis"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueBoolean": true
+                                        }
+                                    ],
+                                    "linkId": "dfu-dx-type",
+                                    "text": "Estimate/ Presumed"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "dfu",
+                    "text": "Diabetic foot ulcer"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "2667000",
+                                "display": "Absent"
+                            }
+                        }
+                    ],
+                    "linkId": "amputation",
+                    "text": "Amputation"
+                }
+            ]
+        },
+        {
+            "linkId": "comorbid",
+            "text": "Concomitant Co-morbidity",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "52101004",
+                                "display": "Yes"
+                            },
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:08.111Z"
+                                        }
+                                    ],
+                                    "linkId": "hpt-dx-date",
+                                    "text": "If Yes, date of diagnosis"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueBoolean": true
+                                        }
+                                    ],
+                                    "linkId": "hpt-dx-type",
+                                    "text": "Estimate/ Presumed"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "hpt",
+                    "text": "Hypertension"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "52101004",
+                                "display": "Yes"
+                            },
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:19.515Z"
+                                        }
+                                    ],
+                                    "linkId": "lipid-dx-date",
+                                    "text": "If Yes, date of diagnosis"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "lipid",
+                    "text": "Dyslipidaemia"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "52101004",
+                                "display": "Yes"
+                            }
+                        }
+                    ],
+                    "linkId": "smoking",
+                    "text": "Smoking Status"
+                }
+            ]
+        },
+        {
+            "linkId": "obs",
+            "text": "Clinical Observations",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 168
+                                        }
+                                    ],
+                                    "linkId": "obs-ht-result",
+                                    "text": "Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "obs-ht",
+                    "text": "Height"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 60
+                                        }
+                                    ],
+                                    "linkId": "obs-wt-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.679Z"
+                                        }
+                                    ],
+                                    "linkId": "obs-wt-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "obs-wt",
+                    "text": "Weight"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 30
+                                        }
+                                    ],
+                                    "linkId": "obs-wc-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "obs-wc-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "obs-wc",
+                    "text": "Waist Circumference"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 20
+                                        }
+                                    ],
+                                    "linkId": "obs-bmi-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "obs-bmi-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "obs-bmi",
+                    "text": "Body Mass Index (BMI)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 120
+                                        }
+                                    ],
+                                    "linkId": "obs-bp-sys-result",
+                                    "text": "Systolic"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 90
+                                        }
+                                    ],
+                                    "linkId": "obs-bp-dia-result",
+                                    "text": "Diastolic"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "obs-bp-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "obs-bp",
+                    "text": "Blood Pressure"
+                }
+            ]
+        },
+        {
+            "linkId": "pe",
+            "text": "Physical Examination",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "52101004",
+                                                "display": "Abnormal"
+                                            }
+                                        }
+                                    ],
+                                    "linkId": "pe-fundus-outcome",
+                                    "text": "Examination Outcome"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "pe-fundus-date",
+                                    "text": "Date of Latest Examination"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "pe-fundus",
+                    "text": "Fundus examination"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "2667000",
+                                                "display": "Normal"
+                                            }
+                                        }
+                                    ],
+                                    "linkId": "pe-foot-outcome",
+                                    "text": "Examination Outcome"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "pe-foot-date",
+                                    "text": "Date of Latest Examination"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "pe-foot",
+                    "text": "Foot examination"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "52101004",
+                                                "display": "Abnormal"
+                                            }
+                                        }
+                                    ],
+                                    "linkId": "pe-ecg-outcome",
+                                    "text": "Examination Outcome"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "pe-ecg-date",
+                                    "text": "Date of Latest Examination"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "pe-ecg",
+                    "text": "Electrocardiogram (ECG)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "2667000",
+                                                "display": "Normal"
+                                            }
+                                        }
+                                    ],
+                                    "linkId": "pe-ed-outcome",
+                                    "text": "Examination Outcome"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "pe-ed-date",
+                                    "text": "Date of Latest Examination"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "pe-ed",
+                    "text": "Erectile Dysfunction"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": false
+                        }
+                    ],
+                    "linkId": "pe-mo",
+                    "text": "Seen by a Medical Officer (MO) at least once in a year"
+                }
+            ]
+        },
+        {
+            "linkId": "lab",
+            "text": "Laboratory",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 12.8
+                                        }
+                                    ],
+                                    "linkId": "lab-rbg-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "lab-rbg-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "lab-rbg",
+                    "text": "Random Blood Glucose (RBG)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 12.8
+                                        }
+                                    ],
+                                    "linkId": "lab-fbg-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "lab-fbg-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "lab-fbg",
+                    "text": "Fasting Blood Glucose (FBG)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 12.8
+                                        }
+                                    ],
+                                    "linkId": "lab-2hpp-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "lab-2hpp-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "lab-2hpp",
+                    "text": "2-Hour Post Prandial (2HPP)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 12.8
+                                        }
+                                    ],
+                                    "linkId": "lab-hba1c-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "lab-hba1c-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "lab-hba1c",
+                    "text": "HbA1c"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 12.8
+                                        }
+                                    ],
+                                    "linkId": "lab-tc-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "lab-tc-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "lab-tc",
+                    "text": "Total Cholesterol"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 12.8
+                                        }
+                                    ],
+                                    "linkId": "lab-tg-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "lab-tg-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "lab-tg",
+                    "text": "Triglycerides (TG)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 12.8
+                                        }
+                                    ],
+                                    "linkId": "lab-hdl-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "lab-hdl-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "lab-hdl",
+                    "text": "High-Density Lipoprotein (HDL)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 12.8
+                                        }
+                                    ],
+                                    "linkId": "lab-ldl-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "lab-ldl-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "lab-ldl",
+                    "text": "Low-Density Lipoprotein (LDL)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 12.8
+                                        }
+                                    ],
+                                    "linkId": "lab-cre-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "lab-cre-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "lab-cre",
+                    "text": "Serum Creatinine"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDecimal": 12.8
+                                        }
+                                    ],
+                                    "linkId": "lab-umalb-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "lab-umalb-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "lab-umalb",
+                    "text": "Urine Microalbumin"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "answer": [
+                                        {
+                                            "valueString": "12.8"
+                                        }
+                                    ],
+                                    "linkId": "lab-upro-result",
+                                    "text": "Latest Result"
+                                },
+                                {
+                                    "answer": [
+                                        {
+                                            "valueDateTime": "2024-01-22T07:03:52.000Z"
+                                        }
+                                    ],
+                                    "linkId": "lab-upro-result-date",
+                                    "text": "Date of Latest Result"
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "lab-upro",
+                    "text": "Urine Protein"
+                }
+            ]
+        },
+        {
+            "linkId": "dm-med",
+            "text": "Anti-Diabetic Drugs",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "dm-med-metformin",
+                    "text": "Metformin"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "dm-med-sulphonylureas",
+                    "text": "Sulphonylureas"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "dm-med-agi",
+                    "text": "α-glucosidase inhibitors"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "dm-med-meglitinides",
+                    "text": "Meglitinides"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "dm-med-glitazones",
+                    "text": "Glitazones"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "dm-med-insulin",
+                    "text": "Insulin"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "linkId": "dm-med-other-details",
+                                    "text": "If other, please specify",
+                                    "answer": [
+                                        {
+                                            "valueString": "test 1"
+                                        },
+                                        {
+                                            "valueString": "test 2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "dm-med-other",
+                    "text": "Other"
+                }
+            ]
+        },
+        {
+            "linkId": "nsaid-med",
+            "text": "NSAID Drugs",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "nsaid-med-asa",
+                    "text": "Acetyl salicylate acid"
+                }
+            ]
+        },
+        {
+            "linkId": "anti-plt-med",
+            "text": "Anti-Platelet Drugs",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "anti-plt-med-ticlopidine",
+                    "text": "Ticlopidine"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "linkId": "anti-plt-med-other-details",
+                                    "text": "If other, please specify",
+                                    "answer": [
+                                        {
+                                            "valueString": "test 1"
+                                        },
+                                        {
+                                            "valueString": "test 2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "anti-plt-med-other",
+                    "text": "Other"
+                }
+            ]
+        },
+        {
+            "linkId": "hpt-med",
+            "text": "Anti-hypertensives Drugs",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "hpt-med-ace",
+                    "text": "ACE-inhibitor"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "hpt-med-arb",
+                    "text": "Angiotensin II Receptor Blockers (ARB)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "hpt-med-bb",
+                    "text": "Beta-blockers"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "hpt-med-ccb",
+                    "text": "Calcium channel blockers"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": false
+                        }
+                    ],
+                    "linkId": "hpt-med-diuretics",
+                    "text": "Diuretics"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "hpt-med-ab",
+                    "text": "Alpha-blockers"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "hpt-med-ca",
+                    "text": "Centrally acting"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "linkId": "hpt-med-other-details",
+                                    "text": "If other, please specify",
+                                    "answer": [
+                                        {
+                                            "valueString": "test 1"
+                                        },
+                                        {
+                                            "valueString": "test 2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "hpt-med-other",
+                    "text": "Other"
+                }
+            ]
+        },
+        {
+            "linkId": "lipid-med",
+            "text": "Lipid-Lowering Agents",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "lipid-med-statin",
+                    "text": "Statin"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "lipid-med-fibrate",
+                    "text": "Fibrate"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "linkId": "lipid-med-other-details",
+                                    "text": "If other, please specify",
+                                    "answer": [
+                                        {
+                                            "valueString": "test 1"
+                                        },
+                                        {
+                                            "valueString": "test 2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "linkId": "lipid-med-other",
+                    "text": "Other"
+                }
+            ]
+        }
+    ]
+}

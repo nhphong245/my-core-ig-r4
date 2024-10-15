@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organization-alias-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/organization-alias-my-core",
+  "name": "SearchParameterOrganizationAliasMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "A list of alternate names that the organization is known as, or was known as in the past",
+  "code": "alias",
+  "base": [
+    "Organization"
+  ],
+  "type": "string",
+  "expression": "Organization.alias"
+}

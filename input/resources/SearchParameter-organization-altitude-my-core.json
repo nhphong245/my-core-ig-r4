@@ -1,0 +1,20 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organization-altitude-my-core",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2023-06-21T17:12:03.716+08:00",
+    "source": "#x7KpbWwpVKEJWBk9"
+  },
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/organization-altitude-my-core",
+  "name": "SearchParameterOrganizationAltitudeMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Organization Altitude",
+  "code": "altitude",
+  "base": [
+    "Organization"
+  ],
+  "type": "number",
+  "expression": "Organization.extension('http://fhir.hie.moh.gov.my/StructureDefinition/Organization-position-my-core').extension('altitude').value as decimal"
+}

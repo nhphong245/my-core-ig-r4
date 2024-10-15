@@ -1,0 +1,97 @@
+{
+    "resourceType": "Composition",
+    "id": "comp-pre-hajj",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Composition-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/location-recorded-my-core",
+            "valueReference": {
+                "reference": "Location/918d92b6-5ea3-428a-8600-06a75b4db45f"
+            }
+        }
+    ],
+    "identifier": {
+        "system": "http://fhir.hie.moh.gov.my/sid/composition-id",
+        "value": "HAJJ-CMP-2310000123"
+    },
+    "status": "final",
+    "type": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-type-my-core",
+                "code": "sub-003",
+                "display": "Hajj Health Record"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-category-my-core",
+                    "code": "sub-record",
+                    "display": "Sub-Record"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7"
+    },
+    "encounter": {
+        "reference": "Encounter/a3b25fc6-7590-4058-a1dd-a76b14347b5e"
+    },
+    "date": "2023-12-14T08:00:00+08:00",
+    "author": [
+        {
+            "reference": "PractitionerRole/4d094dac-9e0e-4e36-b862-98349ff05f5e/_history/2"
+        }
+    ],
+    "title": "Note",
+    "confidentiality": "N",
+    "custodian": {
+        "reference": "Organization/11-05030014",
+        "display": "Hospital Tuanku Ampuan Najihah, Kuala Pilah"
+    },
+    "event": [
+        {
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-event-my-core",
+                            "code": "pre-hajj",
+                            "display": "Pre Hajj Medical Notes"
+                        }
+                    ]
+                }
+            ],
+            "period": {
+                "start": "2023-12-14T08:00:00+08:00"
+            }
+        }
+    ],
+    "section": [
+        {
+            "title": "Clinical Information",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "55752-0",
+                        "display": "Clinical Information"
+                    }
+                ]
+            },
+            "text": {
+                "status": "generated",
+                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Demam%20panas%2C%20ruam%2C%20pening%20kepala%20dan%20muntah</div>"
+            }
+        }
+    ]
+}

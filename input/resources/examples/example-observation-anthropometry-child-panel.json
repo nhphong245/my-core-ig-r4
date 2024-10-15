@@ -1,0 +1,255 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+      {
+          "fullUrl": "urn:uuid:00000001-0001-0001-0001-000000000004",
+          "request": {
+              "method": "POST"
+          },
+          "resource": {
+              "resourceType": "Observation",
+              "meta": {
+                  "profile": [
+                      "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-panel-my-core"
+                  ],
+                  "source": "http://pekab40.moh.gov.my"
+              },
+              "status": "final",
+              "code": {
+                  "coding": [
+                      {
+                          "system": "http://loinc.org",
+                          "code": "0001",
+                          "display": "Child Anthropometry panel"
+                      }
+                  ]
+              },
+                "subject": {
+                    "reference": "Patient/urn:uuid:00000001-0001-0001-0001-000000000001"
+                },
+                "encounter": {
+                    "reference": "Encounter/urn:uuid:00000001-0001-0001-0002-000000000001"
+                },
+              "effectiveDateTime": "2023-01-20T08:00:00+08:00",
+              "issued": "2023-01-20T08:00:00+08:00",
+              "performer": [
+                        {
+                            "identifier": {
+                                "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "81751"
+                            },
+                            "display": "Saifuldaulah Bin Mohd Hafiz Ngoo"
+                        }
+                    ],
+              "hasMember": [
+                  {
+                      "reference": "Observation/urn:uuid:00000012-0005-0005-0005-000000000002"
+                  },
+                  {
+                      "reference": "Observation/urn:uuid:00000012-0005-0005-0005-000000000003"
+                  },
+                  {
+                      "reference": "Observation/urn:uuid:00000012-0005-0005-0005-000000000004"
+                  },
+                  {
+                      "reference": "Observation/urn:uuid:00000012-0005-0005-0005-000000000005"
+                  }
+              ]
+          }
+      },
+      {
+          "fullUrl": "urn:uuid:00000012-0005-0005-0005-000000000002",
+          "request": {
+              "method": "POST"
+          },
+          "resource": {
+              "resourceType": "Observation",
+              "meta": {
+                  "profile": [
+                      "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-weight-my-core"
+                  ],
+                  "source": "http://pekab40.moh.gov.my"
+              },
+              "status": "final",
+              "code": {
+                  "coding": [
+                      {
+                          "system": "http://loinc.org",
+                          "code": "29463-7",
+                          "display": "Weight"
+                      }
+                  ]
+              },
+                "subject": {
+                    "reference": "Patient/urn:uuid:00000001-0001-0001-0001-000000000001"
+                },
+                "encounter": {
+                    "reference": "Encounter/urn:uuid:00000001-0001-0001-0002-000000000001"
+                },
+              "effectiveDateTime": "2023-01-20T08:00:00+08:00",
+              "issued": "2023-01-20T08:00:00+08:00",
+              "performer": [
+                        {
+                            "identifier": {
+                                "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "81751"
+                            },
+                            "display": "Saifuldaulah Bin Mohd Hafiz Ngoo"
+                        }
+                    ],
+              "valueQuantity": {
+                  "value": 55,
+                  "unit": "kg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "kg"
+              }
+          }
+      },
+      {
+          "fullUrl": "urn:uuid:00000012-0005-0005-0005-000000000003",
+          "request": {
+              "method": "POST"
+          },
+          "resource": {
+              "resourceType": "Observation",
+              "meta": {
+                  "profile": [
+                      "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-height-my-core"
+                  ],
+                  "source": "http://pekab40.moh.gov.my"
+              },
+              "status": "final",
+              "code": {
+                  "coding": [
+                      {
+                          "system": "http://loinc.org",
+                          "code": "8302-2",
+                          "display": "Height"
+                      }
+                  ]
+              },
+                "subject": {
+                    "reference": "Patient/urn:uuid:00000001-0001-0001-0001-000000000001"
+                },
+                "encounter": {
+                    "reference": "Encounter/urn:uuid:00000001-0001-0001-0002-000000000001"
+                },
+              "effectiveDateTime": "2023-01-20T08:00:00+08:00",
+              "issued": "2023-01-20T08:00:00+08:00",
+              "performer": [
+                        {
+                            "identifier": {
+                                "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "81751"
+                            },
+                            "display": "Saifuldaulah Bin Mohd Hafiz Ngoo"
+                        }
+                    ],
+              "valueQuantity": {
+                  "value": 168,
+                  "unit": "cm",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "cm"
+              }
+          }
+      },
+      {
+          "fullUrl": "urn:uuid:00000012-0005-0005-0005-000000000004",
+          "request": {
+              "method": "POST"
+          },
+          "resource": {
+              "resourceType": "Observation",
+              "meta": {
+                  "profile": [
+                      "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-bmi-my-core"
+                  ],
+                  "source": "http://pekab40.moh.gov.my"
+              },
+              "status": "final",
+              "code": {
+                  "coding": [
+                      {
+                          "system": "http://loinc.org",
+                          "code": "39156-5",
+                          "display": "BMI"
+                      }
+                  ]
+              },
+                "subject": {
+                    "reference": "Patient/urn:uuid:00000001-0001-0001-0001-000000000001"
+                },
+                "encounter": {
+                    "reference": "Encounter/urn:uuid:00000001-0001-0001-0002-000000000001"
+                },
+              "effectiveDateTime": "2023-01-20T08:00:00+08:00",
+              "issued": "2023-01-20T08:00:00+08:00",
+              "performer": [
+                        {
+                            "identifier": {
+                                "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "81751"
+                            },
+                            "display": "Saifuldaulah Bin Mohd Hafiz Ngoo"
+                        }
+                    ],
+              "valueQuantity": {
+                  "value": 19.5,
+                  "unit": "kg/m2",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "kg/m2"
+              }
+          }
+      },
+      {
+          "fullUrl": "urn:uuid:00000012-0005-0005-0005-000000000005",
+          "request": {
+              "method": "POST"
+          },
+          "resource": {
+              "resourceType": "Observation",
+              "meta": {
+                  "profile": [
+                      "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-waist-my-core"
+                  ],
+                  "source": "http://pekab40.moh.gov.my"
+              },
+              "status": "final",
+              "code": {
+                  "coding": [
+                      {
+                          "system": "http://loinc.org",
+                          "code": "8280-0",
+                          "display": "Waist Circumference"
+                      }
+                  ]
+              },
+                "subject": {
+                    "reference": "Patient/urn:uuid:00000001-0001-0001-0001-000000000001"
+                },
+                "encounter": {
+                    "reference": "Encounter/urn:uuid:00000001-0001-0001-0002-000000000001"
+                },
+              "effectiveDateTime": "2023-01-20T08:00:00+08:00",
+              "issued": "2023-01-20T08:00:00+08:00",
+              "performer": [
+                        {
+                            "identifier": {
+                                "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "81751"
+                            },
+                            "display": "Saifuldaulah Bin Mohd Hafiz Ngoo"
+                        }
+                    ],
+              "valueQuantity": {
+                  "value": 28,
+                  "unit": "cm",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "cm"
+              }
+          }
+      }
+  ]
+}
+

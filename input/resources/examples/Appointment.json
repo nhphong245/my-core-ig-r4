@@ -1,0 +1,128 @@
+{
+                "resourceType": "Appointment",
+                "id": "app-outsource",
+                "meta": {
+                    "source": "http://provider.hie.moh.gov.my",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Appointment-my-core"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/simple-register-my-core",
+                        "extension": [
+                            {
+                                "url": "name",
+                                "valueString": "AHMAD SYAZWAN EIZAIDY"
+                            },
+                            {
+                                "url": "identifier",
+                                "valueString": "000819110137"
+                            },
+                            {
+                                "url": "gender",
+                                "valueCode": "male"
+                            },
+                            {
+                                "url": "telecom",
+                                "valueContactDetail": {
+                                    "telecom": [
+                                        {
+                                            "system": "phone",
+                                            "value": "0165453456"
+                                        },
+                                        {
+                                            "system": "email",
+                                            "value": "syazanurizzatii+1020@gmail.com"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "birthDate",
+                                "valueDate": "2000-08-19"
+                            },
+                            {
+                                "url": "age",
+                                "valueString": "23"
+                            }
+                        ]
+                    }
+                ],
+                "status": "booked",
+                "serviceCategory": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+                                "code": "AMB",
+                                "display": "Outpatient"
+                            }
+                        ]
+                    }
+                ],
+                "serviceType": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                                "code": "06",
+                                "display": "Clinical Support (CS)"
+                            }
+                        ]
+                    }
+                ],
+                "specialty": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core",
+                                "code": "363679005",
+                                "display": "Imaging"
+                            }
+                        ]
+                    }
+                ],
+                "appointmentType": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core",
+                            "code": "outsource",
+                            "display": "Outsource"
+                        }
+                    ]
+                },
+                "supportingInformation": [
+                    {
+                        "reference": "Organization/33-1123121",
+                        "display": "KPJK"
+                    }
+                ],
+                "start": "2023-12-01T08:00:00+08:00",
+                "end": "2023-12-01T08:30:00+08:00",
+                "created": "2023-11-09T10:19:10+08:00",
+                "participant": [
+                    {
+                        "actor": {
+                            "reference": "HealthcareService/9eda6146-dd98-4672-8092-ab7ee93892d8",
+                            "type": "HealthcareService",
+                            "display": "Non-communicable Disease"
+                        },
+                        "status": "accepted"
+                    },
+                    {
+                        "actor": {
+                            "reference": "Patient/810e39c2-81f9-4685-a518-235b47a6f977",
+                            "type": "Patient",
+                            "display": "AHMAD SYAZWAN EIZAIDY"
+                        },
+                        "status": "accepted"
+                    }
+                ],
+                "requestedPeriod": [
+                    {
+                        "start": "2023-11-22T13:00:00+08:00",
+                        "end": "2023-11-22T14:00:00+08:00"
+                    }
+                ]
+            }

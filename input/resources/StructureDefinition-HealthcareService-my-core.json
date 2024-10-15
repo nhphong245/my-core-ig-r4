@@ -1,0 +1,320 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HealthcareService-my-core",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2024-03-06T02:16:01.2621093+00:00"
+  },
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/HealthcareService-my-core",
+  "version": "1.0.0",
+  "name": "HealthcareServiceMyCore",
+  "title": "HealthcareService (MY Core)",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "description": "The details of a healthcare service available at a location.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "HealthcareService",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "HealthcareService.extension:publicBooking",
+        "path": "HealthcareService.extension",
+        "sliceName": "publicBooking",
+        "short": "Extension to determine if this HealthcareService is allowed to be booked publicly (through patients/customer)",
+        "definition": "Extension to determine if this HealthcareService is allowed to be booked publicly (through patients/customer)",
+        "comment": "Allow public to book healthcare service",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/public-booking-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.extension:audit",
+        "path": "HealthcareService.extension",
+        "sliceName": "audit",
+        "short": "Record audit on individual who recorded and updated the data",
+        "definition": "Record audit on individual who recorded and updated the data",
+        "comment": "Record audit on individual who recorded and updated the data",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.extension:additionalInfo",
+        "path": "HealthcareService.extension",
+        "sliceName": "additionalInfo",
+        "short": "Extension to reference additional relevant Resources pertaining to the HealthcareService",
+        "definition": "Extension to reference additional relevant Resources pertaining to the HealthcareService",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/additional-info-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.extension:formRequired",
+        "path": "HealthcareService.extension",
+        "sliceName": "formRequired",
+        "short": "Extension to determine if this ServiceRequest requires a form attached to the request",
+        "definition": "Extension to determine if this ServiceRequest requires a form attached to the request",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/extension-form-required-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.extension:formType",
+        "path": "HealthcareService.extension",
+        "sliceName": "formType",
+        "short": "An extension to define the type of form this ServiceRequest uses when requesting this service",
+        "definition": "An extension to define the type of form this ServiceRequest uses when requesting this service",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/extension-form-type-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.providedBy",
+        "path": "HealthcareService.providedBy",
+        "min": 1
+      },
+      {
+        "id": "HealthcareService.category",
+        "path": "HealthcareService.category",
+        "min": 1
+      },
+      {
+        "id": "HealthcareService.category.coding",
+        "path": "HealthcareService.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "HealthcareService.category.coding:encounterClass",
+        "path": "HealthcareService.category.coding",
+        "sliceName": "encounterClass",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/encounter-class-my-core"
+        }
+      },
+      {
+        "id": "HealthcareService.category.coding:encounterClass.system",
+        "path": "HealthcareService.category.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core"
+      },
+      {
+        "id": "HealthcareService.category.coding:serviceRequestCategory",
+        "path": "HealthcareService.category.coding",
+        "sliceName": "serviceRequestCategory",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/servicerequest-category-my-core"
+        }
+      },
+      {
+        "id": "HealthcareService.category.coding:serviceRequestCategory.system",
+        "path": "HealthcareService.category.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core"
+      },
+      {
+        "id": "HealthcareService.type",
+        "path": "HealthcareService.type",
+        "min": 1,
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/service-type-my-core"
+        }
+      },
+      {
+        "id": "HealthcareService.type.coding",
+        "path": "HealthcareService.type.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "HealthcareService.type.coding:encounterClass",
+        "path": "HealthcareService.type.coding",
+        "sliceName": "encounterClass",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/encounter-class-my-core"
+        }
+      },
+      {
+        "id": "HealthcareService.type.coding:encounterClass.system",
+        "path": "HealthcareService.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core"
+      },
+      {
+        "id": "HealthcareService.type.coding:serviceRequestCategory",
+        "path": "HealthcareService.type.coding",
+        "sliceName": "serviceRequestCategory",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/servicerequest-category-my-core"
+        }
+      },
+      {
+        "id": "HealthcareService.type.coding:serviceRequestCategory.system",
+        "path": "HealthcareService.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core"
+      },
+      {
+        "id": "HealthcareService.type.coding:serviceType",
+        "path": "HealthcareService.type.coding",
+        "sliceName": "serviceType",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/service-type-my-core"
+        }
+      },
+      {
+        "id": "HealthcareService.type.coding:serviceType.system",
+        "path": "HealthcareService.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core"
+      },
+      {
+        "id": "HealthcareService.type.coding:labSubGroup",
+        "path": "HealthcareService.type.coding",
+        "sliceName": "labSubGroup",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/lab-sub-group-my-core"
+        }
+      },
+      {
+        "id": "HealthcareService.type.coding:labSubGroup.system",
+        "path": "HealthcareService.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/lab-sub-group-my-core"
+      },
+      {
+        "id": "HealthcareService.type.coding:lab",
+        "path": "HealthcareService.type.coding",
+        "sliceName": "lab",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/lab-my-core"
+        }
+      },
+      {
+        "id": "HealthcareService.type.coding:lab.system",
+        "path": "HealthcareService.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/lab-my-core"
+      },
+      {
+        "id": "HealthcareService.type.coding:imagingModality",
+        "path": "HealthcareService.type.coding",
+        "sliceName": "imagingModality",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/imaging-modality-my-core"
+        }
+      },
+      {
+        "id": "HealthcareService.type.coding:imagingModality.system",
+        "path": "HealthcareService.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-modality-my-core"
+      },
+      {
+        "id": "HealthcareService.type.coding:imagingRegion",
+        "path": "HealthcareService.type.coding",
+        "sliceName": "imagingRegion",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/imaging-region-my-core"
+        }
+      },
+      {
+        "id": "HealthcareService.type.coding:imagingRegion.system",
+        "path": "HealthcareService.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-region-my-core"
+      },
+      {
+        "id": "HealthcareService.type.coding:imaging",
+        "path": "HealthcareService.type.coding",
+        "sliceName": "imaging",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/imaging-region-my-core"
+        }
+      },
+      {
+        "id": "HealthcareService.type.coding:imaging.system",
+        "path": "HealthcareService.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-my-core"
+      },
+      {
+        "id": "HealthcareService.specialty",
+        "path": "HealthcareService.specialty",
+        "max": "1",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/specialty-my-core"
+        }
+      },
+      {
+        "id": "HealthcareService.name",
+        "path": "HealthcareService.name",
+        "min": 1
+      }
+    ]
+  }
+}

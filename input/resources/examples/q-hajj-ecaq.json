@@ -1,0 +1,72 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hajj-ecaq",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-ecaq",
+  "version": "1.0.0",
+  "name": "QHajjEcaq",
+  "title": "Elderly Cognitive Assessment Questionnaire (Please refer to score table)",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "I want you to remember this number. Can you repeat after me (eg: 2710) I shall be testing you again in 10 mins.",
+      "type": "quantity"
+    },
+    {
+      "linkId": "2",
+      "text": "How old are you?",
+      "type": "quantity"
+    },
+    {
+      "linkId": "3",
+      "text": "When is your birthday? Or in which year were you born?",
+      "type": "quantity"
+    },
+    {
+      "linkId": "4",
+      "text": "What day of the week is today?",
+      "type": "quantity"
+    },
+    {
+      "linkId": "5",
+      "text": "What is the date today?",
+      "type": "quantity"
+    },
+    {
+      "linkId": "6",
+      "text": "What is the month today?",
+      "type": "quantity"
+    },
+    {
+      "linkId": "7",
+      "text": "What is the year today?",
+      "type": "string"
+    },
+    {
+      "linkId": "8",
+      "text": "What is this place called (eg. clinic, hospital)? Not Necessary to give name of place",
+      "type": "quantity"
+    },
+    {
+      "linkId": "9",
+      "text": "What is his / her job (eg. nurse, doctor)?",
+      "type": "quantity"
+    },
+    {
+      "linkId": "10",
+      "text": "Can you recall the number again?",
+      "type": "quantity"
+    },
+    {
+      "linkId": "11",
+      "text": "Jumlah markah",
+      "type": "quantity"
+    },
+    {
+      "linkId": "12",
+      "text": "Remarks",
+      "type": "text"
+    }
+  ]
+}

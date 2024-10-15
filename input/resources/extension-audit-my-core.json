@@ -1,0 +1,152 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-audit-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core",
+  "version": "1.0.0",
+  "name": "ExtensionAuditMyCore",
+  "title": "ExtensionAudit (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension of the individual who recorded and updated the date",
+  "purpose": "Record audit on individual who recorded and updated the data",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    },
+    {
+      "type": "element",
+      "expression": "Encounter"
+    },
+    {
+      "type": "element",
+      "expression": "Location"
+    },
+    {
+      "type": "element",
+      "expression": "PractitionerRole"
+    },
+    {
+      "type": "element",
+      "expression": "Organization"
+    },
+    {
+      "type": "element",
+      "expression": "Schedule"
+    },
+    {
+      "type": "element",
+      "expression": "Slot"
+    },
+    {
+      "type": "element",
+      "expression": "Appointment"
+    },
+    {
+      "type": "element",
+      "expression": "Practitioner"
+    },
+    {
+      "type": "element",
+      "expression": "HealthcareService"
+    },
+    {
+      "type": "element",
+      "expression": "MedicationKnowledge"
+    },
+    {
+      "type": "element",
+      "expression": "Medication"
+    },
+    {
+      "type": "element",
+      "expression": "Condition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:recorder",
+        "path": "Extension.extension",
+        "sliceName": "recorder",
+        "short": "First individual who recorded the record",
+        "definition": "First individual who recorded the record",
+        "comment": "First individual who recorded the record"
+      },
+      {
+        "id": "Extension.extension:recorder.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "recorder"
+      },
+      {
+        "id": "Extension.extension:recorder.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:recordedDate",
+        "path": "Extension.extension",
+        "sliceName": "recordedDate",
+        "short": "First date the record was recorded",
+        "definition": "First date the record was recorded",
+        "comment": "First date the record was recorded"
+      },
+      {
+        "id": "Extension.extension:recordedDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "recordedDate"
+      },
+      {
+        "id": "Extension.extension:recordedDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:lastUpdater",
+        "path": "Extension.extension",
+        "sliceName": "lastUpdater",
+        "short": "Latest individual who updated the record",
+        "definition": "Latest individual who updated the record",
+        "comment": "Latest individual who updated the record"
+      },
+      {
+        "id": "Extension.extension:lastUpdater.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "lastUpdater"
+      },
+      {
+        "id": "Extension.extension:lastUpdater.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

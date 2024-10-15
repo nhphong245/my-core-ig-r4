@@ -1,0 +1,49 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "questionnaire-reference-my-core",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2024-01-31T06:50:47.7794506+08:00",
+    "source": "#oJDZMlbeUPSERy0u"
+  },
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/questionnaire-reference-my-core",
+  "name": "ExtensionQuestionnaireReferenceMyCore",
+  "title": "ExtensionQuestionnaireReference (MY Core)",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "description": "Extension to create reference to Questionnaire's QuestionnaireResponse",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "QuestionnaireResponse"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/questionnaire-reference-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+              "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

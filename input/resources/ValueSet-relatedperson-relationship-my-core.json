@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-relatedperson-relationship-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetRelatedPerson (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/relatedperson-relationship-my-core</tt><p>Related Person Relationship My Core</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/relatedperson-relationship-my-core",
+  "name": "ValueSetRelatedPersonRelationshipMyCore",
+  "title": "ValueSetRelatedPersonRelationship (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Related Person Relationship My Core",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/relatedperson-relationship-my-core"
+      }
+    ]
+  }
+}

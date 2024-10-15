@@ -1,0 +1,136 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "child-identification-type-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/child-identification-my-core",
+  "version": "1.0.0",
+  "name": "ExtensionChildIdentificationMyCore",
+  "title": "ExtensionChildIdentification (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension to store newborn details",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Child identification",
+        "definition": "Child identification",
+        "comment": "Child identification"
+      },
+      {
+        "id": "Extension.extension:child",
+        "path": "Extension.extension",
+        "sliceName": "child",
+        "short": "Whether this record is a newborn identification",
+        "definition": "Whether this record is a newborn identification",
+        "comment": "Whether this record is a newborn identification"
+      },
+      {
+        "id": "Extension.extension:child.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "child"
+      },
+      {
+        "id": "Extension.extension:child.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:childType",
+        "path": "Extension.extension",
+        "sliceName": "childType",
+        "short": "Type of parent identification the child registered as",
+        "definition": "Type of parent identification the child registered as",
+        "comment": "Type of parent identification is the child using"
+      },
+      {
+        "id": "Extension.extension:childType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "childType"
+      },
+      {
+        "id": "Extension.extension:childType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Type of parent identification is the child using",
+        "definition": "Type of parent identification is the child using",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Type of parent identification is the child using",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/child-identification-type-my-core"
+        }
+      },
+      {
+        "id": "Extension.extension:childNo",
+        "path": "Extension.extension",
+        "sliceName": "childNo",
+        "short": "Child number",
+        "definition": "Child number",
+        "comment": "Child number"
+      },
+      {
+        "id": "Extension.extension:childNo.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "childNo"
+      },
+      {
+        "id": "Extension.extension:childNo.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parentIdentification",
+        "path": "Extension.extension",
+        "sliceName": "parentIdentification"
+      },
+      {
+        "id": "Extension.extension:parentIdentification.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "parentIdentification"
+      },
+      {
+        "id": "Extension.extension:parentIdentification.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/child-identification-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "communication-topic-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/communication-topic-my-core",
+  "name": "SearchParameterCommunicationTopicMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Communication topic",
+  "code": "topic",
+  "base": [
+    "Communication"
+  ],
+  "type": "token",
+  "expression": "Communication.topic"
+}

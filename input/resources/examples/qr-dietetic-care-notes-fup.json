@@ -1,0 +1,145 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "qr-dietetic-care-notes-fup",
+  "meta": {
+      "source": "http://provider.hie.moh.gov.my",
+      "profile": [
+          "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+      ]
+  },
+  "identifier": {
+      "system": "http://fhir.hie.moh.gov.my/sid/template-section",
+      "value": "qr-dietetic-care-notes-fup"
+  },
+  "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-dietetic-care-notes-fup",
+  "status": "completed",
+  "subject": {
+      "reference": "Patient/93fd2974-8652-489e-a75e-e5a489796f77"
+  },
+  "authored": "2023-04-27T00:20:14.414Z",
+  "item": [
+    {
+      "linkId": "assessment-progress",
+      "text": "Assessment On Progress",
+      "item": [
+        {
+          "answer": [
+            {
+              "valueDecimal": 12.4
+            }
+          ],
+          "linkId": "wt-previous",
+          "text": "Previous Weight"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 54.6
+            }
+          ],
+          "linkId": "wt-current",
+          "text": "Current Weight"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 68.4
+            }
+          ],
+          "linkId": "wt-dosing",
+          "text": "Dosing Weight"
+        },
+        {
+          "answer": [
+            {
+              "valueString": "Selamat Hari Raya Nizar\n\nHi 1@#$%%\n\n2\n1\n3\n45\n"
+            }
+          ],
+          "linkId": "assessment-progress-entry",
+          "text": "Entry (Biochemical / Clinical / Physical / Dietary entry)"
+        }
+      ]
+    },
+    {
+      "linkId": "nutrition-dx",
+      "text": "Nutrition Diagnosis",
+      "item": [
+        {
+          "answer": [
+            {
+              "valueString": "Selamat Hari Raya Nizar\n\nHi 1@#$%%\n\n2\n1\n3\n45\n"
+            }
+          ],
+          "linkId": "nutrition-dx-entry",
+          "text": "Entry (Problem, Etiology, Sign & Symptoms)"
+        }
+      ]
+    },
+    {
+      "linkId": "nutrition-tx",
+      "text": "Nutrition Intervention Plan",
+      "item": [
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Healthy Plate Model"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "11",
+                "display": "High / Low Phosphate"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "5",
+                "display": "Carbohydrate counring and distribution"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "7",
+                "display": "Recommendation of Fiber intake"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "13",
+                "display": "Functional foods"
+              }
+            }
+          ],
+          "linkId": "nutrition-tx-educate",
+          "text": "Educate on"
+        },
+        {
+          "answer": [
+            {
+              "valueString": "Selamat Hari Raya Nizar\n\nHi 1@#$%%\n\n2\n1\n3\n45\n"
+            }
+          ],
+          "linkId": "nutrition-tx-other",
+          "text": "Other Intervention Entry (Energy requirement, diet prescription, meal plan, enteral feeding, prescription, regime)"
+        }
+      ]
+    },
+    {
+      "linkId": "monitoring-evaluation",
+      "text": "Monitoring And Evaluation",
+      "item": [
+        {
+          "answer": [
+            {
+              "valueString": "Selamat Hari Raya Nizar\n\nHi 1@#$%%\n\n2\n1\n3\n45\n"
+            }
+          ],
+          "linkId": "monitoring-evaluation-entry",
+          "text": "Entry"
+        }
+      ]
+    }
+  ]
+}

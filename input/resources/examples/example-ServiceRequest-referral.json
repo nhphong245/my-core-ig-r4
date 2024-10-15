@@ -1,0 +1,76 @@
+{
+    "resourceType": "ServiceRequest",
+    "id":"example-ServiceRequest-referral",
+    "meta": {
+        "source": "Postman",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/ServiceRequest-my-core"
+        ]
+    },
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/service-request-id",
+            "value": "REF-21"
+        }
+    ],
+    "status": "active",
+    "intent": "directive",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core",
+                    "code": "3457005",
+                    "display": "Patient referral"
+                }
+            ]
+        }
+    ],
+    "priority": "routine",
+    "subject": {
+        "reference": "Patient/ROS-21"
+    },
+    "encounter": {
+        "reference": "Encounter/ROS-ENC-21"
+    },
+    "authoredOn": "2022-11-24T17:05:31+08:00",
+    "requester": {
+        "reference": "Organization/11-05060009",
+        "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+    },
+    "performerType": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core",
+                "code": "affiliate",
+                "display": "Affiliate"
+            }
+        ]
+    },
+    "performer": [
+        {
+            "reference": "HealthcareService/8b48bb07-d59a-4ebd-8930-548a8114e257",
+            "type": "HealthcareService",
+            "display": "Primary Oral Health Care"
+        },
+        {
+            "reference": "Organization/11-05040012",
+            "type": "Organization",
+            "display": "HOSPITAL PORT DICKSON"
+        },
+        {
+            "type": "PractitionerRole",
+            "display": "Dr Hawa"
+        }
+    ],
+    "reasonCode": [
+        {
+            "text": "<p>Referral Reason goes here</p>"
+        }
+    ],
+    "note": [
+        {
+            "text": "<p>Entry Note goes here</p>"
+        }
+    ]
+}

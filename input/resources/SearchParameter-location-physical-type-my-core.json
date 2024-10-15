@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "location-physical-type-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/location-physical-type-my-core",
+  "name": "SearchParameterLocationPhysicalTypeMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Physical form of the location",
+  "code": "physicalType",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
+  "expression": "Location.physicalType"
+}

@@ -1,0 +1,20 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "servicerequest-identifier-value-my-core",
+  "meta": {
+    "versionId": "4",
+    "lastUpdated": "2022-10-11T07:55:03.039+08:00",
+    "source": "#mrvZcF4h1vJYqS6y"
+  },
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/servicerequest-identifier-value-my-core",
+  "name": "ServiceRequestIdentifierString",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Search ServiceRequest identifier value by string",
+  "code": "identifier-value",
+  "base": [
+    "ServiceRequest"
+  ],
+  "type": "string",
+  "expression": "ServiceRequest.identifier.value"
+}

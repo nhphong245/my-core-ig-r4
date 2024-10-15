@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "specimen-request-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/specimen-request-my-core",
+  "name": "SearchParameterSpecimenRequestMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Specimen Request",
+  "code": "request",
+  "base": [
+    "Specimen"
+  ],
+  "type": "reference",
+  "expression": "Specimen.request",
+  "target": [
+    "ServiceRequest"
+  ]
+}

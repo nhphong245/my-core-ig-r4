@@ -1,0 +1,20 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "questionnaire-reference-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/questionnaire-reference-my-core",
+  "name": "SearchParameterQuestionnaireReferenceMyCore",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "description": "Questionnaire Reference",
+  "code": "q-reference",
+  "base": [
+    "QuestionnaireResponse"
+  ],
+  "type": "reference",
+  "expression": "QuestionnaireResponse.extension('http://fhir.hie.moh.gov.my/StructureDefinition/questionnaire-reference-my-core')",
+  "xpathUsage": "normal",
+  "target": [
+    "Questionnaire",
+    "QuestionnaireResponse"
+  ]
+}

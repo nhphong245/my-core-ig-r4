@@ -1,0 +1,15 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CoverageEligibilityRequest-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/CoverageEligibilityRequest-my-core",
+  "name": "CoverageEligibilityRequestMyCore",
+  "title": "CoverageEligibilityRequest (MY Core)",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CoverageEligibilityRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CoverageEligibilityRequest",
+  "derivation": "constraint"
+}

@@ -1,0 +1,83 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-secondary-care-type-my-core",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2022-08-01T09:09:04.915+08:00",
+    "source": "#Itsk0HsI68xa4fFh",
+    "tag": [
+      {
+        "system": "https://smilecdr.com/fhir/NamingSystem/tags",
+        "code": "validation_passed",
+        "display": "Validation Passed"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemSecondaryCareType (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/CodeSystem/secondary-care-type-my-core</tt><p>Secondary care type of healthcare service</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/secondary-care-type-my-core",
+  "name": "CodeSystemSecondaryCareTypeMyCore",
+  "title": "CodeSystemSecondaryCareType (MY Core)",
+  "status": "active",
+  "date": "2024-04-28T23:30:28.824077+00:00",
+  "publisher": "Malaysia MOH - HIE Steering Committee",
+  "contact": [
+    {
+      "name": "Saifuldaulah Bin Mohd Hafiz Ngoo",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "saifuldaulah@mhn.asia"
+        }
+      ]
+    }
+  ],
+  "description": "Secondary care type of healthcare service",
+  "compositional": false,
+  "content": "complete",
+  "count": 2,
+  "property": [
+    {
+      "code": "categoryCode",
+      "type": "code"
+    },
+    {
+      "code": "categoryDisplay",
+      "type": "string"
+    }
+  ],
+  "concept": [
+    {
+      "code": "22232009",
+      "display": "Hospital",
+      "definition": "Hospital",
+      "property": [
+        {
+          "code": "categoryCode",
+          "valueCode": "46111000"
+        },
+        {
+          "code": "categoryDisplay",
+          "valueString": "Secondary care"
+        }
+      ]
+    },
+    {
+      "code": "40143009",
+      "display": "Functional",
+      "definition": "Functional",
+      "property": [
+        {
+          "code": "categoryCode",
+          "valueCode": "45131008"
+        },
+        {
+          "code": "categoryDisplay",
+          "valueString": "Secondary care"
+        }
+      ]
+    }
+  ]
+}

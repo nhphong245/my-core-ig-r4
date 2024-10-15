@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "foreigner-type-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/foreigner-type-my-core",
+  "name": "SearchParameterForeignerTypeMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Foreigner Type",
+  "code": "foreigner-type",
+  "base": [
+    "Patient"
+  ],
+  "type": "token",
+  "expression": "Patient.extension('http://fhir.hie.moh.gov.my/StructureDefinition/foreigner-type-my-core')",
+  "xpathUsage": "normal"
+}

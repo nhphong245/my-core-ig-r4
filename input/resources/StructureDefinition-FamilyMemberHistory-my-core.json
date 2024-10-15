@@ -1,0 +1,28 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "FamilyMemberHistory-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/FamilyMemberHistory-my-core",
+  "version": "1.0.0",
+  "name": "MyFamilyMemberHistory",
+  "title": "FamilyMemberHistory (MY Core)",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "FamilyMemberHistory",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "FamilyMemberHistory.relationship",
+        "path": "FamilyMemberHistory.relationship",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/relationship-my-core"
+        }
+      }
+    ]
+  }
+}

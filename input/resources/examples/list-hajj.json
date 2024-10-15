@@ -1,0 +1,66 @@
+{
+    "resourceType": "List",
+    "id": "hajj-list",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/List-my-core"
+        ]
+    },
+    "status": "current",
+    "mode": "working",
+    "title": "Hajj Health Record 06-Dec-2023",
+    "code": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/sub-record-type-my-core",
+                "code": "sub-003",
+                "display": "Hajj Health Record"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7"
+    },
+    "date": "2023-12-06T09:00:00+08:00",
+    "source": {
+        "reference": "PractitionerRole/b9797173-7e15-4fc3-8f85-d58627935956/_history/16"
+    },
+    "entry": [
+        {
+            "date": "2023-12-06T09:00:00+08:00",
+            "item": {
+                "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7",
+                "display": "Patient"
+            }
+        },
+        {
+            "date": "2023-12-06T09:00:00+08:00",
+            "item": {
+                "reference": "Patient/qr-hajj-1",
+                "display": "Personal Details of Hajj Pilgrims"
+            }
+        },
+        {
+            "date": "2023-12-11T09:00:00+08:00",
+            "item": {
+                "reference": "Observation/90db93d7-4e18-4d28-a53d-3f7fb6bf81ea",
+                "display": "Vital Sign Panel"
+            }
+        },
+        {
+            "date": "2023-12-11T09:00:00+08:00",
+            "item": {
+                "reference": "Observation/f6349322-7617-455d-85c8-f19410036678",
+                "display": "Anthropometry panel"
+            }
+        },
+        {
+            "date": "2023-12-11T09:00:00+08:00",
+            "item": {
+                "reference": "MedicationStatement/medstm-hajj",
+                "display": "Amlodipine 5 mg Tablet"
+            }
+        }
+    ]
+}

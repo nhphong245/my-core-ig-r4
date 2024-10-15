@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-cancelation-reason-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetCancelationReason (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/cancelation-reason-my-core</tt><p>Appointment cancellation reason</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/cancelation-reason-my-core",
+  "name": "ValueSetCancelationReasonMyCore",
+  "title": "ValueSetCancelationReason (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Appointment cancellation reason",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/cancellation-reason-my-core"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "immunization-booster-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/immunization-booster-my-core",
+  "name": "SearchParameterImmunizationBoosterMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Booster",
+  "code": "booster",
+  "base": [
+    "Immunization"
+  ],
+  "type": "token",
+  "expression": "Immunization.protocolApplied.extension('http://fhir.hie.moh.gov.my/StructureDefinition/extension-booster-my-core')",
+  "xpathUsage": "normal"
+}

@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "encounter-outcome-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/encounter-outcome-my-core",
+  "name": "SearchParameterEncounterServiceTypeMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Specific type of service for the encounter",
+  "code": "outcome",
+  "base": [
+    "Encounter"
+  ],
+  "type": "token",
+  "expression": "Encounter.extension('http://fhir.hie.moh.gov.my/StructureDefinition/encounter-outcome-my-core').extension('encounterOutcome')"
+}

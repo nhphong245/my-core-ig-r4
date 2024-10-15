@@ -1,0 +1,49 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "occupation-sector-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/occupation-sector-my-core",
+  "name": "ExtensionOccupationSector",
+  "title": "ExtensionOccupationSector (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "publisher": "Malaysia MOH - Hie Steering Committee",
+  "description": "Extension to categorize an individuals occupational sector",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    },
+    {
+      "type": "element",
+      "expression": "Patient.contact"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/occupation-sector-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/occupation-sector-my-core"
+        }
+      }
+    ]
+  }
+}

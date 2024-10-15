@@ -1,0 +1,75 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ChargeItem-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/ChargeItem-my-core",
+  "name": "ChargeItemMyCore",
+  "title": "ChargeItem (MY Core)",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ChargeItem",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ChargeItem",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ChargeItem.extension:chargeItemDefinitionReference",
+        "path": "ChargeItem.extension",
+        "sliceName": "chargeItemDefinitionReference",
+        "short": "Extension for a ChargeItem to reference a ChargeItemDefinition",
+        "definition": "Extension for a ChargeItem to reference a ChargeItemDefinition",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/chargeitem-cid-reference-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ChargeItem.extension:priceComponentMyCore",
+        "path": "ChargeItem.extension",
+        "sliceName": "priceComponentMyCore",
+        "short": "extension about the details of a line item in ChargeItem",
+        "definition": "extension about the details of a line item in ChargeItem",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/price-component-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ChargeItem.extension:useContextMyCore",
+        "path": "ChargeItem.extension",
+        "sliceName": "useContextMyCore",
+        "short": "Extension to determine the use context",
+        "definition": "Extension to determine the use context",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/use-context-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ChargeItem.code",
+        "path": "ChargeItem.code",
+        "binding": {
+          "strength": "example",
+          "description": "Set of codes that can be used for billing purposes."
+        }
+      }
+    ]
+  }
+}

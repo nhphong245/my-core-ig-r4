@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-vaccine-code-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetVaccineCode (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/vaccine-code-my-core</tt><p>Malaysia vaccine code system</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/vaccine-code-my-core",
+  "version": "1.0.0",
+  "name": "ValueSetVaccineCodeMyCore",
+  "title": "ValueSetVaccineCode (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Malaysia vaccine code system",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/vaccine-code-my-core"
+      }
+    ]
+  }
+}

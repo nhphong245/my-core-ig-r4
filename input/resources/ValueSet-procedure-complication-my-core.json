@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-procedure-complication-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetProcedureComplication (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/procedure-complication-my-core</tt><p>Procedure complication my core</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/procedure-complication-my-core",
+  "name": "ValueSetProcedureComplicationMyCore",
+  "title": "ValueSetProcedureComplication (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Procedure complication my core",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/procedure-complication-my-core"
+      }
+    ]
+  }
+}

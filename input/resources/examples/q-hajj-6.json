@@ -1,0 +1,341 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hajj-6",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-6",
+  "version": "1.0.0",
+  "name": "QHajj6",
+  "title": "Pengakuan Kesihatan Bakal Haji",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "hajj-6.1",
+      "text": "Pernahkan tuan/puan menerima rawatan bagi penyakit-penyakit berikut",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "hajj-6.1.1",
+          "text": "Lelah / Asthma",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.2",
+          "text": "Batuk Kering / Tibi",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.3",
+          "text": "Sakit Jantung",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.4",
+          "text": "Darah Tinggi",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.5",
+          "text": "Kencing Manis / Diabetes",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.6",
+          "text": "Gastrik",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.7",
+          "text": "Sakit Buah Pinggang / Dialisis",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.8",
+          "text": "Batu Karang",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.9",
+          "text": "Barah / Kanser",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.10",
+          "text": "Leukemia",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.11",
+          "text": "Lumpuh / Angin Ahmar / Strok",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.12",
+          "text": "Penyakit Mental / Psikiatri",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.13",
+          "text": "Demensia / Nyanyuk / mudah lupa",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.14",
+          "text": "Sawan / Epilepsi",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.15",
+          "text": "Penyakit Hati / Hepatitis",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.16",
+          "text": "Penyakit kulit yang kronik",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.17",
+          "text": "Sakit sendi / Arthritis",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.1.18",
+          "text": "Penyakit-penyakit lain, nyatakan",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "hajj-6.2",
+      "text": "Adakah tuan/puan mempunyai gejala-gejala kesihatan seperti berikut",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "hajj-6.2.1",
+          "text": "Sesak nafas apabila berjalan (> 30 meter) atau ketika menaiki tangga bangunan dua tingkat",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.2",
+          "text": "Sakit dada semasa aktiviti cergas",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.3",
+          "text": "Batuk berdarah",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.4",
+          "text": "Batuk berpanjangan (> dua minggu)",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.5",
+          "text": "Selalu pitam",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.6",
+          "text": "Selalu pening kepala / Sakit kepala",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.7",
+          "text": "Bengkak kaki (sembab)",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.8",
+          "text": "Selalu dahaga dan kerap kencing",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.9",
+          "text": "Kencing kurang lawas",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.10",
+          "text": "Kencing tidak boleh kawal",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.11",
+          "text": "Kencing sakit",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.12",
+          "text": "Kencing berdarah",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.13",
+          "text": "Sakit sendi",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.14",
+          "text": "Sakit gigi",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.15",
+          "text": "Mudah lupa",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.16",
+          "text": "Alahan (Allergy)",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.17",
+          "text": "Hidung berdarah",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.18",
+          "text": "Senak perut dan muntah",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.19",
+          "text": "Buasir (Haemorrhoid)",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.20",
+          "text": "Burut/ Angin pasang/ Hernia",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.21",
+          "text": "Kurang selera makan",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.22",
+          "text": "Susut berat badan",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.23",
+          "text": "Demam berterusan/berpanjangan",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.24",
+          "text": "Muntah darah",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.25",
+          "text": "Bengkak pada leher",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.26",
+          "text": "Ketulan pada payu dara",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.27",
+          "text": "Adakah anda merokok?",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "hajj-6.2.27.1",
+              "text": "Jika Ya, berapa batang rokok sehari",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "code": "00",
+                    "display": "1-20"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "01",
+                    "display": "21-30"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "02",
+                    "display": ">30"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "hajj-6.2.28",
+          "text": "Adakah anda pernah terlibat dalam penyalahgunaan dadah?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.29",
+          "text": "Adakah anda menjalani Rawatan Terapi Gantian Opiat (methadone atau buprenorphine/naloxone)",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.2.30",
+          "text": "Pernahkah anda menjalani pembedahan?",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "hajj-6.2.30.1",
+              "text": "Jika Ya, nyatakan jenis pembedahan/tahun",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "linkId": "hajj-6.2.31",
+          "text": "Adakah tuan / puan menghidap alergi / alahan ubat-ubatan / makanan / bahan-bahan lain?",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "hajj-6.2.31.1",
+              "text": "Jika Ya, nyatakan jenis ubat/makanan/bahan-bahan lain",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "hajj-6.3",
+      "text": "Pengakuan Khas Bakal Haji Wanita",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "hajj-6.3.1",
+          "text": "Adakah anda mengandung sekarang?",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "hajj-6.3.1.1",
+              "text": "Jika Ya, tarikh haid terakhir",
+              "type": "date"
+            }
+          ]
+        },
+        {
+          "linkId": "hajj-6.3.2",
+          "text": "Adakah anda menghadapi masalah sakit puan",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hajj-6.3.3",
+          "text": "Pernahkah anda mengalami rahim / peranakan turun (\"Uterine prolapse\")?",
+          "type": "boolean"
+        }
+      ]
+    }
+  ]
+}

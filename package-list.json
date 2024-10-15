@@ -1,0 +1,13 @@
+{
+ "package-id" : "hl7.fhir.vn.core.r4",
+ "title" : "Malaysia CORE (MY CORE) IG profies (based on HL7 FHIR Release 4.0.1)", 
+ "canonical" : "http://hl7.org/fhir/ig/vn-core-r4", 
+ "introduction" : "Malaysia core (MY CORE) IG Profiles",
+ "list" : [{
+  "version" : "0.0.1",
+  "desc" : "Continuous Integration Build (latest in version control)",
+  "path" : "http://hl7.org/fhir/ig/my-core-r4",
+  "status" : "ci-build",
+  "current" : true
+ }]
+}

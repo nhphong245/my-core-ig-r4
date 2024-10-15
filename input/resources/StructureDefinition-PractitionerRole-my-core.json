@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PractitionerRole-my-core",
+  "meta": {
+    "versionId": "3",
+    "lastUpdated": "2024-03-06T08:27:45.0142735+00:00",
+    "source": "#6XDXHauCbS3ysd69"
+  },
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/PractitionerRole-my-core",
+  "version": "1.0.0",
+  "name": "PractitionerRoleMyCore",
+  "title": "PractitionerRole (MY Core)",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "publisher": "Malaysia MOH - HIE Steering Committee",
+  "description": "The practitioner roles referenced in the MY Core profiles.",
+  "copyright": "Used by permission of HL7 International, all rights reserved Creative Commons License",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.extension:audit",
+        "path": "PractitionerRole.extension",
+        "sliceName": "audit",
+        "short": "Extension of the individual who recorded and updated the date",
+        "definition": "Extension of the individual who recorded and updated the date",
+        "comment": "Record audit on individual who recorded and updated the data",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "PractitionerRole.extension:drugClassification",
+        "path": "PractitionerRole.extension",
+        "sliceName": "drugClassification",
+        "short": "Extension to define what Classification of medication is allowed for a particular PractitionerRole",
+        "definition": "Extension to define what Classification of medication is allowed for a particular PractitionerRole",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/pr-drug-classification-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "PractitionerRole.extension:schedulingMyCore",
+        "path": "PractitionerRole.extension",
+        "sliceName": "schedulingMyCore",
+        "short": "Whether Schedule is allowed to be created for this Practitioner Role",
+        "definition": "Whether Schedule is allowed to be created for this Practitioner Role",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/scheduling-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "min": 1,
+        "binding": {
+          "strength": "preferred",
+          "description": "The role a person plays representing an organization",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/practitioner-role-my-core"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty",
+        "path": "PractitionerRole.specialty",
+        "min": 1,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/specialty-my-core"
+        }
+      }
+    ]
+  }
+}

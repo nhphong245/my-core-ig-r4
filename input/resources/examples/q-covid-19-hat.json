@@ -1,0 +1,177 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-covid-19-hat",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-covid-19-hat",
+  "version": "1.0.0",
+  "name": "QCovid19Hat",
+  "title": "Covid-19 Home Assessment Tool",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Do you have a fever?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "2",
+      "text": "Do you have a sore throat?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "3",
+      "text": "Do you have any nausea and vomiting?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "4",
+      "text": "Do you have any diarrhea?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "5",
+      "text": "Do you have any cough?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "6",
+      "text": "Do you have difficulty in breathing?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "7",
+      "text": "Do you have any loss of taste?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "8",
+      "text": "Do you have any loss of smell?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "9",
+      "text": "Do you have chest pain / discomfort?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "10",
+      "text": "Is your face or lips turning blue?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "11",
+      "text": "Are you feeling faint drowsy?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "12",
+      "text": "Do you have any other symptoms?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "13",
+      "text": "Are you feeling lethargic?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "14",
+      "text": "Are your symptoms worsening from the day before?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "15",
+      "text": "What is your oxygen saturation % (SPO2)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/code-system-covid-19-hat-my-core",
+            "code": "1",
+            "display": "≥ 95"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/code-system-covid-19-hat-my-core",
+            "code": "2",
+            "display": "< 95"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/code-system-covid-19-hat-my-core",
+            "code": "3",
+            "display": "NA"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "16",
+      "text": "What is your recorded blood pressure (mmHg)? (Note : Input NA if no equipment available)",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "16.1",
+          "text": "Systolic",
+          "type": "quantity"
+        },
+        {
+          "linkId": "16.2",
+          "text": "Diastolic",
+          "type": "quantity"
+        }
+      ]
+    },
+    {
+      "linkId": "17",
+      "text": "What is your heart rate (beats per minute)? (Note : Input NA if no equipment available)",
+      "type": "quantity"
+    },
+    {
+      "linkId": "18",
+      "text": "What is your body temperature (°Celsius)? (Note : Input NA if no equipment available)",
+      "type": "quantity"
+    },
+    {
+      "linkId": "19",
+      "text": "Where are you currently staying?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/code-system-covid-19-hat-my-core",
+            "code": "4",
+            "display": "I'm quarantined at home"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/code-system-covid-19-hat-my-core",
+            "code": "5",
+            "display": "I'm quarantined at a quarantine centre"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/code-system-covid-19-hat-my-core",
+            "code": "6",
+            "display": "I'm being treated at COVID-19 low risk treatment centre"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/code-system-covid-19-hat-my-core",
+            "code": "7",
+            "display": "I'm admitted to a hospital"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "20",
+      "text": "Have you been assessed in any MOH health facility / COVID-19 Assessment Centre (CAC) after you're confirmed to be COVID-19 positive?",
+      "type": "boolean"
+    }
+  ]
+}

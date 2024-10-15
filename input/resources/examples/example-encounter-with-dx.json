@@ -1,0 +1,163 @@
+{
+    "resourceType": "Encounter",
+    "id": "encounter-example-with-dx",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Encounter-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/visit-type-my-core",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/visit-type-my-core",
+                        "code": "01",
+                        "display": "New"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core",
+            "extension": [
+                {
+                    "url": "recorder",
+                    "valueReference": {
+                        "display": "LIANA"
+                    }
+                },
+                {
+                    "url": "recordedDate",
+                    "valueDateTime": "2023-09-18T10:11:07+08:00"
+                },
+                {
+                    "url": "lastUpdater",
+                    "valueReference": {
+                        "display": "LIANA"
+                    }
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/encounter-id",
+            "value": "HTAN-ENC-2309000059"
+        }
+    ],
+    "status": "finished",
+    "statusHistory": [
+        {
+            "status": "arrived",
+            "period": {
+                "start": "2023-09-18T10:11:07+08:00",
+                "end": "2023-09-18T10:12:10+08:00"
+            }
+        },
+        {
+            "status": "in-progress",
+            "period": {
+                "start": "2023-09-18T10:12:10+08:00",
+                "end": "2023-09-18T10:24:02+08:00"
+            }
+        }
+    ],
+    "class": {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+        "version": "1.0.0",
+        "code": "AMB",
+        "display": "Outpatient"
+    },
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                    "code": "150",
+                    "display": "Non-communicable Disease"
+                }
+            ]
+        }
+    ],
+    "serviceType": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                "code": "03",
+                "display": "Outpatient"
+            }
+        ]
+    },
+    "priority": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+                "version": "2018-08-12",
+                "code": "R",
+                "display": "Routine"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/ba70aebe-3804-4bbc-a496-86e031171ca2"
+    },
+    "participant": [
+        {
+            "type": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                            "code": "ATND",
+                            "display": "attender"
+                        }
+                    ]
+                }
+            ],
+            "period": {
+                "start": "2023-09-18T10:12:10+08:00"
+            },
+            "individual": {
+                "display": "LIANA"
+            }
+        }
+    ],
+    "period": {
+        "start": "2023-09-18T10:11:07+08:00",
+        "end": "2023-09-18T10:24:02+08:00"
+    },
+    "diagnosis": [
+        {
+            "condition": {
+                "reference": "Condition/65d66287-c854-44ff-b002-76a7cc207cdc"
+            },
+            "use": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/diagnosis-role-my-core",
+                        "version": "1.0.0",
+                        "code": "01",
+                        "display": "Main Diagnosis"
+                    }
+                ]
+            }
+        }
+    ],
+    "hospitalization": {
+        "dischargeDisposition": {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/discharge-disposition-my-core",
+                    "code": "01",
+                    "display": "Home"
+                }
+            ]
+        }
+    },
+    "serviceProvider": {
+        "reference": "Organization/11-05030014"
+    }
+}

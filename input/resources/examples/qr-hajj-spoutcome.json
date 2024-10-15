@@ -1,0 +1,69 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "qr-hajj-spoutcome",
+  "meta": {
+      "source": "http://provider.hie.moh.gov.my",
+      "profile": [
+          "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+      ]
+  },
+  "identifier": {
+      "system": "http://fhir.hie.moh.gov.my/sid/template-section",
+      "value": "qr-hajj-spoutcome"
+  },
+  "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-spoutcome",
+  "status": "completed",
+  "subject": {
+      "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7"
+  },
+  "authored": "2023-12-07T09:00:00+08:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Menghidap penyakit, keadaannya stabildan LULUS ke Tanah Suci (Diagnosa & Rawatan seperti di m/s 31)",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Menghidap penyakit berisiko tinggi tetapi stabil serta sedang / sudah dirawat dan LULUS  ke Tanah Suci dalam tempoh 6 bulan dari tarikh ini.",
+      "answer": [
+        {
+          "valueBoolean": true,
+          "item": [
+            {
+              "linkId": "3",
+              "text": "Dicadangkan penerbangan pergi lewat dan pulang awal",
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Dirujuk kepada Pegawai Epidemiologi (JK Penilaian Khas Pemeriksaan Kesihatan)",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "TIDAK LULUS dan perlu mendapatkan rawatan lanjut",
+      "answer": [
+        {
+          "valueBoolean": false
+        }
+      ]
+    }
+  ]
+}

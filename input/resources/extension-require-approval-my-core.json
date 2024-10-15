@@ -1,0 +1,40 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "require-approval-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/require-approval-my-core",
+  "name": "ExtensionRequireApprovalMyCore",
+  "title": "ExtensionRequireApproval (MY Core)",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "description": "Whether an appointment booked under this schedule requires approval from the provider side prior booking",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Schedule"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/require-approval-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

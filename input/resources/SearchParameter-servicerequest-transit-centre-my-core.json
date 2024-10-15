@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "servicerequest-transit-centre-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/ServiceRequest-transit-centre-my-core",
+  "name": "SearchParameterServiceRequestTransitCentreMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "ServiceRequest transit-centre",
+  "code": "transit-centre",
+  "base": [
+    "ServiceRequest"
+  ],
+  "type": "reference",
+  "expression": "ServiceRequest.performer.where (identifier.value = 'transit-centre')",
+  "target": [
+    "Organization"
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-primary-care-type-my-core",
+  "meta": {
+    "versionId": "8",
+    "lastUpdated": "2022-08-25T06:19:13.536+08:00",
+    "source": "#fW9AwmYtyUmo5Qs7",
+    "tag": [
+      {
+        "system": "https://smilecdr.com/fhir/NamingSystem/tags",
+        "code": "validation_passed",
+        "display": "Validation Passed"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemPrimaryCareType (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/CodeSystem/primary-care-type-my-core</tt><p>Primary care type</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/primary-care-type-my-core",
+  "name": "CodeSystemPrimaryCareTypeMyCore",
+  "title": "CodeSystemPrimaryCareType (MY Core)",
+  "status": "active",
+  "date": "2024-04-28T23:30:28.824077+00:00",
+  "publisher": "Malaysia MOH - HIE Steering Committee",
+  "contact": [
+    {
+      "name": "Saifuldaulah Bin Mohd Hafiz Ngoo",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "saifuldaulah@mhn.asia"
+        }
+      ]
+    }
+  ],
+  "description": "Primary care type",
+  "compositional": false,
+  "content": "complete",
+  "count": 7,
+  "property": [
+    {
+      "code": "categoryCode",
+      "type": "code"
+    },
+    {
+      "code": "categoryDisplay",
+      "type": "string"
+    }
+  ],
+  "concept": [
+    {
+      "code": "33022008",
+      "display": "OPD",
+      "definition": "Hospital-based outpatient department",
+      "property": [
+        {
+          "code": "categoryDisplay",
+          "valueString": "Primary care"
+        },
+        {
+          "code": "categoryCode",
+          "valueCode": "45131007"
+        }
+      ]
+    },
+    {
+      "code": "40143009",
+      "display": "Functional",
+      "definition": "Functional",
+      "property": [
+        {
+          "code": "categoryDisplay",
+          "valueString": "Primary care"
+        },
+        {
+          "code": "categoryCode",
+          "valueCode": "45131008"
+        }
+      ]
+    },
+    {
+      "code": "264372000",
+      "display": "PHAM",
+      "definition": "Pharmacy",
+      "property": [
+        {
+          "code": "categoryDisplay",
+          "valueString": "Primary care"
+        },
+        {
+          "code": "categoryCode",
+          "valueCode": "45131008"
+        }
+      ]
+    },
+    {
+      "code": "275305005",
+      "display": "MCH",
+      "definition": "Antenatal/postnatal care",
+      "property": [
+        {
+          "code": "categoryDisplay",
+          "valueString": "Primary care"
+        },
+        {
+          "code": "categoryCode",
+          "valueCode": "45131006"
+        }
+      ]
+    },
+    {
+      "code": "386373004",
+      "display": "PZM",
+      "definition": "Nutrition therapy",
+      "property": [
+        {
+          "code": "categoryDisplay",
+          "valueString": "Primary care"
+        },
+        {
+          "code": "categoryCode",
+          "valueCode": "45131009"
+        }
+      ]
+    },
+    {
+      "code": "722176000",
+      "display": "DENTAL",
+      "definition": "Dentistry service",
+      "property": [
+        {
+          "code": "categoryDisplay",
+          "valueString": "Primary care"
+        },
+        {
+          "code": "categoryCode",
+          "valueCode": "45131010"
+        }
+      ]
+    },
+    {
+      "code": "VC",
+      "display": "Virtual Clinic",
+      "definition": "Virtual Clinic",
+      "property": [
+        {
+          "code": "categoryCode",
+          "valueCode": "45131006"
+        },
+        {
+          "code": "categoryDisplay",
+          "valueString": "Primary care"
+        }
+      ]
+    }
+  ]
+}

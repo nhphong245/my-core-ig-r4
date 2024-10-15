@@ -1,0 +1,86 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hajj-19",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-19",
+  "version": "1.0.0",
+  "name": "QHajj19",
+  "title": "Personal Details of Hajj Pilgrims",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "hajj-19.0",
+      "text": "Pengesahan Suntikan Vaksin Meningococcal Dan Vaksin Tambahan",
+      "type": "group",
+      "repeats": true,
+      "item": [
+        {
+          "linkId": "hajj-19.0.1",
+          "text": "Jenis Suntikan Vaksin",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "Vaksin Wajib (Meningococcal Quadrivalent Vaccine ACYW-135)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "Vaksin Tambahan (Pneumococcal)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "02",
+                "display": "Vaksin Tambahan (Infleunza)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "03",
+                "display": "Vaksin Tambahan (Others)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "hajj-19.0.2",
+          "text": "Dose given",
+          "type": "string"
+        },
+        {
+          "linkId": "hajj-19.0.3",
+          "text": "Route",
+          "type": "string"
+        },
+        {
+          "linkId": "hajj-19.0.4",
+          "text": "Batch No of Vaccine",
+          "type": "quantity"
+        },
+        {
+          "linkId": "hajj-19.0.5",
+          "text": "Name of Manufacturer",
+          "type": "text"
+        },
+        {
+          "linkId": "hajj-19.0.6",
+          "text": "Expiry date of vaccine",
+          "type": "dateTime"
+        },
+        {
+          "linkId": "hajj-19.0.7",
+          "text": "Date of Immuzination",
+          "type": "dateTime"
+        },
+        {
+          "linkId": "hajj-19.0.8",
+          "text": "Validity of immunization",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}

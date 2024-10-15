@@ -1,0 +1,20 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "allergyintolerance-encounter-my-core",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-06-26T23:52:14.033+08:00",
+    "source": "#H974Nf0p5pAaHDLr"
+  },
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/allergyintolerance-encounter-my-core",
+  "name": "SearchParameterAllergyintoleranceEncounterMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Encounter created as part of",
+  "code": "encounter",
+  "base": [
+    "AllergyIntolerance"
+  ],
+  "type": "reference",
+  "expression": "AllergyIntolerance.encounter"
+}

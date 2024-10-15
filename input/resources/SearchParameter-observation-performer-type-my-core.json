@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "observation-performer-type",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/observation-performer-type",
+  "name": "SearchParameterObservationPerfomerTypeMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "The uri for Performer",
+  "code": "performer-type",
+  "base": [
+    "Observation"
+  ],
+  "type": "uri",
+  "expression": "Observation.performer.type"
+}

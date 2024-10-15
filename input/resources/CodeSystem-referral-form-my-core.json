@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-referral-form-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemReferralForm (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/CodeSystem/referral-form-my-core</tt><p>Type of referral form</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/referral-form-my-core",
+  "version": "1.0.0",
+  "name": "CodeSystemReferralFormMyCore",
+  "title": "CodeSystemReferralForm (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Task output type code system",
+  "compositional": false,
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "per-pat-301",
+      "display": "PER-PAT 301",
+      "definition": "PER-PAT 301"
+    }
+  ]
+}

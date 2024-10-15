@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-immunization-recommendation-status-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetImmunizationRecommendationStatus (MYCore)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/immunization-recommendation-status-my-core</tt><p>Expansion from base value set 'http://hl7.org/fhir/ValueSet/immunization-recommendation-status'</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/immunization-recommendation-status-my-core",
+  "name": "ValueSetImmunizationRecommendationStatusMyCore",
+  "title": "ValueSetImmunizationRecommendationStatus (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/immunization-recommendation-status-my-core"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+    "resourceType": "Medication",
+    "id": "example-medication",
+    "meta": {
+        "versionId": "10",
+        "lastUpdated": "2022-08-22T08:29:46.670+08:00",
+        "source": "http://provider.hie.moh.gov.my#luMHDWniHDEi418A",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Medication-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core",
+            "extension": [
+                {
+                    "url": "recorder",
+                    "valueReference": {
+                        "reference": "PractitionerRole/8c99c924-ba17-47aa-8bf1-b88cf0e68b61/_history/1",
+                        "display": "HASAN"
+                    }
+                },
+                {
+                    "url": "recordedDate",
+                    "valueDateTime": "2022-08-15T14:48:27+08:00"
+                },
+                {
+                    "url": "lastUpdater",
+                    "valueReference": {
+                        "reference": "HASAN",
+                        "display": "PractitionerRole/8c99c924-ba17-47aa-8bf1-b88cf0e68b61/_history/1"
+                    }
+                }
+            ]
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core",
+            "valueReference": {
+                "reference": "Organization/11-05060009"
+            }
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/medication-knowledge-my-core",
+            "valueReference": {
+                "reference": "MedicationKnowledge/N02BE01000T1001XX"
+            }
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/drug-my-core",
+                "code": "N02BE01000T1001XX",
+                "display": "Paracetamol 500 mg Tablet"
+            }
+        ],
+        "text": "Paracetamol 500mg Tab"
+    },
+    "status": "active"
+}

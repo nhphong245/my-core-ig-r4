@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "task-input-codeableconcept-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/encounter-service-type-my-core",
+  "name": "SearchParameterTaskInputMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Task input codeableconept",
+  "code": "input-codeableconcept",
+  "base": [
+    "Task"
+  ],
+  "type": "token",
+  "expression": "Task.input.value as CodeableConcept"
+}

@@ -1,0 +1,86 @@
+{
+    "resourceType": "Practitioner",
+    "id": "example-practitioner",
+    "meta": {
+        "versionId": "2",
+        "lastUpdated": "2022-09-20T13:56:24.034+08:00",
+        "source": "#gEMvOh7Ox0Q9oTpE",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Practitioner-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core",
+            "extension": [
+                {
+                    "url": "recorder",
+                    "valueReference": {
+                        "reference": "PractitionerRole/null",
+                        "display": "AWAL DANIAL"
+                    }
+                },
+                {
+                    "url": "recordedDate",
+                    "valueDateTime": "2022-09-20T13:53:58+08:00"
+                },
+                {
+                    "url": "lastUpdater",
+                    "valueReference": {
+                        "reference": "PractitionerRole/null",
+                        "display": "null"
+                    }
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/professional-no",
+            "value": "81751"
+        },
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/my-kad-no",
+            "value": "921005146671"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "extension": [
+                {
+                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/person-title-my-core",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/person-title-my-core",
+                                "code": "C040",
+                                "display": "Doktor"
+                            }
+                        ],
+                        "text": "S"
+                    }
+                }
+            ],
+            "text": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "use": "work"
+        },
+        {
+            "system": "email",
+            "value": "saifuldaulah@mhn.asia",
+            "use": "work"
+        }
+    ],
+    "address": [
+        {
+            "country": "MYS"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1992-10-05"
+}

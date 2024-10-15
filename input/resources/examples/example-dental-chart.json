@@ -1,0 +1,208 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "id": "example-dental-chart",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:00000013-0001-0001-0001-000000000001",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "source": "http://provider.hie.moh.gov.my",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-panel-my-core"
+                    ]
+                },
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "32885-6",
+                            "display": "Dental Chart"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/9beb7510-4d2a-46b5-a656-02d5bee01783"
+                },
+                "encounter": {
+                    "reference": "Encounter/37c6a82a-143d-4d5e-9e52-2b96fb696d24"
+                },
+                "effectiveDateTime": "2023-09-25T08:46:25.231+08:00",
+                "issued": "2023-09-25T08:46:25.231+08:00",
+                "performer": [
+                    {
+                        "type":"PractitionerRole",
+                        "display": "Al-amin"
+                    }
+                ],
+                "hasMember": [
+                    {
+                        "reference": "Observation/urn:uuid:00000013-0005-0005-0005-000000000002"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:00000013-0005-0005-0005-000000000003"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00000013-0005-0005-0005-000000000002",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "source": "http://provider.hie.moh.gov.my",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-dental-chart-my-core"
+                    ]
+                },
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/dentitian-my-core",
+                            "code": "16",
+                            "display": "16"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/9beb7510-4d2a-46b5-a656-02d5bee01783"
+                },
+                "encounter": {
+                    "reference": "Encounter/37c6a82a-143d-4d5e-9e52-2b96fb696d24"
+                },
+                "issued": "2023-09-25T08:46:25.231+08:00",
+                "performer": [
+                    {
+                        "reference": "PractitionerRole/2482f854-3bfd-4ecc-8147-f4afdda7bf3f/_history/8"
+                    }
+                ],
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/dental-code-my-core",
+                                "code": "4a",
+                                "display": "For extraction for reasons otner than caries (Xa/xa)"
+                            }
+                        ]
+                    }
+                ],
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/surface-my-core",
+                                    "code": "F",
+                                    "display": "Labial"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/surface-my-core",
+                                    "code": "I",
+                                    "display": "Incisal"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/surface-my-core",
+                                    "code": "M",
+                                    "display": "Mesial"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00000013-0005-0005-0005-000000000003",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "7bd7d6e2-4d80-4e47-bca5-48ef3b80c9c6",
+                "meta": {
+                    "source": "http://provider.hie.moh.gov.my",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-dental-chart-my-core"
+                    ]
+                },
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/dentitian-my-core",
+                            "code": "22",
+                            "display": "22"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/9beb7510-4d2a-46b5-a656-02d5bee01783"
+                },
+                "encounter": {
+                    "reference": "Encounter/37c6a82a-143d-4d5e-9e52-2b96fb696d24"
+                },
+                "issued": "2023-09-25T08:46:25.231+08:00",
+                "performer": [
+                    {
+                        "reference": "PractitionerRole/2482f854-3bfd-4ecc-8147-f4afdda7bf3f/_history/8"
+                    }
+                ],
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/surface-code-my-core",
+                            "code": "8",
+                            "display": "Redo filling"
+                        }
+                    ]
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/dental-code-my-core",
+                                "code": "1",
+                                "display": "Caries (D/d)"
+                            }
+                        ]
+                    }
+                ],
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/surface-my-core",
+                                    "code": "P",
+                                    "display": "Palatal"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "resourceType": "AdverseEvent",
+    "id": "example-adverseevent",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2022-09-23T09:45:55.432+08:00",
+        "source": "http://transfusion.moh.gov.my#MgBDQjbMB8KSB4ZL",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/AdverseEvent-my-core"
+        ]
+    },
+    "identifier": {
+        "value": "PDN-SR-202258-AdverseEvent"
+    },
+    "actuality": "actual",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+                    "code": "unsafe-physical-environment",
+                    "display": "Unsafe Physical Environment"
+                }
+            ]
+        }
+    ],
+    "event": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "82545002",
+                "display": "Blood transfusion reaction"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/57ce090c-e5a5-49f7-8cad-157c1b44c778",
+        "display": "NAQIUDIN NAJMI"
+    },
+    "encounter": {
+        "identifier": {
+            "value": "PDN-SR-202258"
+        }
+    },
+    "date": "2022-03-21T14:02:00+08:00",
+    "detected": "2022-03-21T14:25:00+08:00",
+    "recordedDate": "2022-03-21T00:00:00+08:00",
+    "resultingCondition": [
+        {
+            "display": "Type of Adverse Event - Acute Immune Haemolytic Anaemia , ABO incompatible , Blood is compatible but meant for another patient , Other , Special requirement not met (e.g. irradiated, filtered, phenotyped) , Delayed Heamolytic Transfusion Reaction , Non-immune haemolytic reaction (due to mechanical factor, osmotic, heat, cold, etc) , Febrile Non-Haemolytic Transfusion Reaction (FNHTR) , Allergic Reaction , Mild (Rash/Urticaria) , Transfusion-Related Acute Lung Injury (TRALI) , Transfusion-Associated Circulatory Overload (TACO) , Transfusion-Associated Dyspnoea (TAD) , Transfusion-Associated Graft-versus-Host Disease (TA-GvHD) , Post-Transfusion Purpura (PTP) , Equipment related (e.g. faulty waterbath, transfusion set, etc) , Hypotensive Transfusion Reaction , "
+        },
+        {
+            "display": "Sign & Symptoms : Fever,Palpitations,Flushing,Abdominal pain,null,Anuria,null,"
+        }
+    ],
+    "location": {
+        "display": "HOSPITAL TUANKU JA'AFAR, SEREMBAN"
+    },
+    "outcome": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/adverse-event-outcome",
+                "code": "resolved",
+                "display": "Resolved"
+            }
+        ]
+    },
+    "recorder": {
+        "display": "FARID"
+    },
+    "suspectEntity": [
+        {
+            "instance": {
+                "display": "Whole Blood"
+            }
+        },
+        {
+            "instance": {
+                "display": "Packed Cells"
+            }
+        }
+    ]
+}

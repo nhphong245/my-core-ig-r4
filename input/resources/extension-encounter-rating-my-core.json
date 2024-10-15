@@ -1,0 +1,83 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "encounter-rating-my-core",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2024-01-26T01:08:45.3736654+08:00",
+    "source": "#stK4TBuOyo917RFq"
+  },
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/encounter-rating-my-core",
+  "name": "ExtensionEncounterRatingMyCore",
+  "title": "ExtensionEncounterRating (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension about the rating of an encounter",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Encounter"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:rating",
+        "path": "Extension.extension",
+        "sliceName": "rating"
+      },
+      {
+        "id": "Extension.extension:rating.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "rating"
+      },
+      {
+        "id": "Extension.extension:rating.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/encounter-rating-my-core"
+        }
+      },
+      {
+        "id": "Extension.extension:remark",
+        "path": "Extension.extension",
+        "sliceName": "remark"
+      },
+      {
+        "id": "Extension.extension:remark.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "remark"
+      },
+      {
+        "id": "Extension.extension:remark.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/encounter-rating-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

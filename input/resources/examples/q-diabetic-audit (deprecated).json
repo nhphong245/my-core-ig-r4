@@ -1,0 +1,827 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-diabetic-audit",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-01-31T16:02:25.793+08:00",
+    "source": "#90OyY2Ik2JmDxv9T"
+  },
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-diabetic-audit",
+  "title": "Diabetic Audit",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Komplikasi",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Retinopati",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "1.2",
+          "text": "Ischaemic heart disease",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "1.3",
+          "text": "Cerebrovascular disease",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "1.4",
+          "text": "Nefropati",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "1.5",
+          "text": "Diabetic foot ilcer",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "1.6",
+          "text": "Amputasi",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Concomitant Co-morbodity",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "Hipertensi",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "2.2",
+          "text": "Dyslipidaemia",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Diabetic medications",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "Biguanides (e.g metformin)",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "3.2",
+          "text": "Sulphonylureas (e.g gibenclamide)",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "3.3",
+          "text": "α-glucosidase inhibitors (acarbose)",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "3.4",
+          "text": "Meglitinides (e.g repaglinide)",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "3.5",
+          "text": "Glitazones (e.g rosiglitazones",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "3.6",
+          "text": "Lain-lain",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ],
+          "item": [
+            {
+              "linkId": "3.6.1",
+              "text": "Nyatakan jika lain-lain",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "3.6",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "repeats": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Anti-platelets",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "4.1",
+          "text": "Acetylsalicylate acid",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "4.2",
+          "text": "Ticlopidine",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "4.3",
+          "text": "Lain-lain",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ],
+          "item": [
+            {
+              "linkId": "4.3.1",
+              "text": "Nyatakan jika lain-lain",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "4.3",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "repeats": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Anti-hypertensives",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "5.1",
+          "text": "ACE-inhibitor",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "5.2",
+          "text": "ARB",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "5.3",
+          "text": "Beta-blockers",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "5.4",
+          "text": "Calcium channel blockers",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "5.5",
+          "text": "Diuretics",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "5.6",
+          "text": "Alpha-blockers",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "5.7",
+          "text": "Centrally acting",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "5.8",
+          "text": "Lain-lain",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ],
+          "item": [
+            {
+              "linkId": "5.8.1",
+              "text": "Nyatakan jika lain-lain",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "5.8",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "repeats": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "Lipid-lowering agents",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "6.1",
+          "text": "Statin",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "6.2",
+          "text": "Fibrate",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "6.3",
+          "text": "Lain-lain",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ],
+          "item": [
+            {
+              "linkId": "6.3.1",
+              "text": "Nyatakan jika lain-lain",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "6.3",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "repeats": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "7",
+      "text": "Kriteria",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "7.1",
+          "text": "Tinggi",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.2",
+          "text": "Berat badan",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.3",
+          "text": "Ukut lilit pinggang",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.4",
+          "text": "Indeks jisim tubuh (BMI)",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.5",
+          "text": "Tekanan darah",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.6",
+          "text": "Ujian RBS",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.7",
+          "text": "Ujian FBS",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.8",
+          "text": "Ujian 2HPP",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.9",
+          "text": "Ujian HbA1c",
+          "type": "decimal"
+        },
+        {
+          "linkId": "7.10.1",
+          "text": "Serum kolesterol: Total",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.10.2",
+          "text": "Serum kolesterol: TG",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.10.3",
+          "text": "Serum kolesterol: HDL",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.10.4",
+          "text": "Serum kolesterol: LDL",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.11",
+          "text": "Kreatinin",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.12",
+          "text": "Ujian urin mikroalbumin",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.13",
+          "text": "Ujian urin protin",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.14",
+          "text": "Pemeriksaan fundus",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.15",
+          "text": "Pemeriksaan kaki",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.16",
+          "text": "Ujian ECG",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "7.17",
+          "text": "Saringan untuk Erectile Dysfunction",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              },
+              "initialSelected": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

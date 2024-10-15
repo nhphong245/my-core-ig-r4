@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-nationality-my-core",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2023-03-16T00:41:04.779+08:00",
+    "source": "#kAyBcyTa3ZFLEWYp"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetNationality (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/nationality-my-core</tt><p>Nationality</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/nationality-my-core",
+  "name": "ValueSetNationalityMyCore",
+  "title": "ValueSetNationality (MY Core)",
+  "status": "active",
+  "date": "2024-04-28T23:30:28.824077+00:00",
+  "description": "Nationality",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nationality-my-core"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-encounter-priority-my-core",
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/encounter-priority-my-core",
+  "version": "1.0.0",
+  "name": "ValueSetPriorityMyCore",
+  "title": "ValueSetPriority (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Composition section",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/request-priority",
+        "concept": [
+          {
+            "code": "routine",
+            "display": "Routine"
+          },
+          {
+            "code": "urgent",
+            "display": "Urgent"
+          },
+          {
+            "code": "stat",
+            "display": "STAT"
+          }
+        ]
+      }
+    ]
+  }
+}

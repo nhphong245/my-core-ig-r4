@@ -1,0 +1,24 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "task-location-my-core",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-10-02T02:45:51.959+08:00",
+    "source": "#VGIFV8RODu36vNOt"
+  },
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/task-location-my-core",
+  "name": "SearchParameterTaskLocationMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Task locationCode",
+  "code": "location",
+  "base": [
+    "Task"
+  ],
+  "type": "reference",
+  "expression": "Task.location",
+  "xpathUsage": "normal",
+  "target": [
+    "Location"
+  ]
+}

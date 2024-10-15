@@ -1,0 +1,97 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-problem-list-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemProblemList (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/CodeSystem/problem-list-my-core</tt><p>Phis Frequency</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/problem-list-my-core",
+  "version": "1",
+  "name": "CodeSystemProblemListMyCore",
+  "title": "CodeSystemProblemList (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Phis Frequency",
+  "compositional": false,
+  "content": "complete",
+  "count": 7,
+  "property": [
+    {
+      "code": "foundationURI",
+      "type": "string"
+    }
+  ],
+  "concept": [
+    {
+      "code": "BA00",
+      "display": "Essential hypertension",
+      "definition": "Essential hypertension",
+      "property": [
+        {
+          "code": "foundationURI",
+          "valueString": "http://id.who.int/icd/entity/761947693"
+        }
+      ]
+    },
+    {
+      "code": "5A11",
+      "display": "Type 2 diabetes mellitus",
+      "definition": "Type 2 diabetes mellitus",
+      "property": [
+        {
+          "code": "foundationURI",
+          "valueString": "http://id.who.int/icd/entity/119724091"
+        }
+      ]
+    },
+    {
+      "code": "5C80.0",
+      "display": "Hypercholesterolaemia",
+      "definition": "Hypercholesterolaemia",
+      "property": [
+        {
+          "code": "foundationURI",
+          "valueString": "http://id.who.int/icd/entity/875976032"
+        }
+      ]
+    },
+    {
+      "code": "BA6Z",
+      "display": "Ischaemic heart diseases, unspecified",
+      "definition": "Ischaemic heart diseases"
+    },
+    {
+      "code": "8B20",
+      "display": "Stroke not known if ischaemic or haemorrhagic",
+      "definition": "Cerebrovascular diseases",
+      "property": [
+        {
+          "code": "foundationURI",
+          "valueString": "http://id.who.int/icd/entity/1442995018"
+        }
+      ]
+    },
+    {
+      "code": "GB61",
+      "display": "Chronic kidney disease",
+      "definition": "Chronic kidney disease",
+      "property": [
+        {
+          "code": "foundationURI",
+          "valueString": "http://id.who.int/icd/entity/412389819"
+        }
+      ]
+    },
+    {
+      "code": "CA23",
+      "display": "Unspecified asthma",
+      "definition": "Asthma",
+      "property": [
+        {
+          "code": "foundationURI",
+          "valueString": "http://id.who.int/icd/entity/2138913203"
+        }
+      ]
+    }
+  ]
+}

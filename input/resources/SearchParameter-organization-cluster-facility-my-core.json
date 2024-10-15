@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organization-cluster-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/organization-cluster-my-core",
+  "name": "SearchParameterOrganizationClusterMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "A code of cluster facility for the organization",
+  "code": "cluster",
+  "base": [
+    "Organization"
+  ],
+  "type": "token",
+  "expression": "Organization.extension('http://fhir.hie.moh.gov.my/StructureDefinition/organization-cluster-my-core')",
+  "xpathUsage": "normal"
+}

@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "schedule-type-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/schedule-type-my-core",
+  "name": "ServiceParameterScheduleTypeMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "A code for the type of schedule",
+  "code": "schedule-type",
+  "base": [
+    "Schedule"
+  ],
+  "type": "token",
+  "expression": "Schedule.extension('http://fhir.hie.moh.gov.my/StructureDefinition/schedule-type-my-core')",
+  "xpathUsage": "normal"
+}

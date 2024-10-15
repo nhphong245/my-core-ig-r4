@@ -1,0 +1,89 @@
+{
+    "resourceType": "Composition",
+    "id": "HTJ-PHIS-MC-123",
+    "meta": {
+        "source": "http://phis.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Composition-my-core"
+        ]
+    },
+    "identifier": {
+        "system": "http://fhir.hie.moh.gov.my/sid/composition-id",
+        "value": "HTJ-PHIS-MC-123"
+    },
+    "status": "final",
+    "type": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-type-my-core",
+                "code": "34821-9",
+                "display": "Pharmacology Note"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-category-my-core",
+                    "code": "LP173418-7",
+                    "display": "Note"
+                }
+            ]
+        }
+    ],
+    "confidentiality": "N",
+    "subject": {
+        "reference": "Patient/Patient?identifier=http://fhir.hie.moh.gov.my/sid/patient-mrn|PHIS-123"
+    },
+    "encounter": {
+        "reference": "Encounter/Encounter?identifier=http://fhir.hie.moh.gov.my/sid/encounter-id|PHIS-ENC-2212000101"
+    },
+    "date": "2022-09-29T12:13:00+08:00",
+    "author": [
+        {
+            "display": "Recorder Practitioner Name"
+        }
+    ],
+    "title": "Note",
+    "custodian": {
+        "reference": "Organization/11-05060009",
+        "display": "HOSPITAL TUANKU JA'AFAR"
+    },
+    "event": [
+        {
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-event-my-core",
+                            "code": "0002-0002",
+                            "display": "MC (Medication Counselling)"
+                        }
+                    ]
+                }
+            ],
+            "period": {
+                "start": "2022-09-29T12:13:00+08:00"
+            }
+        }
+    ],
+    "section": [
+        {
+            "title": "Clinical Information",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "55752-0",
+                        "display": "Clinical Information"
+                    }
+                ]
+            },
+            "text": {
+                "status": "generated",
+                "div": " <div xmlns=\"http://www.w3.org/1999/xhtml\"> <p> <b>1. Facility Information</b> </p> <p>Facility name &amp; ID: (Remarks) </p> <br /> <p> <b>2. Patient Information</b> </p> <p>Patient identification: (Remarks) </p> <br /> <p> <b>3. Individual Medication Counseling (Medication Counseling Order)</b> </p> <p>Virtual Session: (Remarks)</p> <p>Appointment Date: (Remarks)</p> <p>Appointment Type: (Remarks)</p> <p>Counselling Type: (Remarks) </p> <p>HMR Type: (Remarks) </p> <p>Counselling Topics: (Remarks) </p> <p>Counselling Sub-topic: (Remarks) </p> <br /> <p> <b>4. Medication Counseling Reporting</b> </p> <p>Understanding: (Remarks)</p> <p>Follow up required: (Remarks) </p></div>"
+            }
+        }
+    ]
+}

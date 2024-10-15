@@ -1,0 +1,108 @@
+{
+  "resourceType": "Appointment",
+  "meta": {
+    "source": "http://BBISv2.moh.gov.my",
+    "profile": [
+      "http://fhir.hie.moh.gov.my/StructureDefinition/Appointment-my-core"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://fhir.hie.moh.gov.my/StructureDefinition/simple-register-my-core",
+      "extension": [
+        {
+          "url": "name",
+          "valueString": "NORFATEEM BINTI RODZI"
+        },
+        {
+          "url": "identifier",
+          "valueString": "911220086174"
+        },
+        {
+          "url": "gender",
+          "valueCode": "female"
+        },
+        {
+          "url": "birthDate",
+          "valueDate": "1991-12-20"
+        },
+        {
+          "url": "age",
+          "valueString": "30"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "value": "HTJ-APT-2200028505"
+    }
+  ],
+  "status": "booked",
+  "serviceCategory": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+          "code": "CS",
+          "display": "Clinical Support"
+        }
+      ]
+    }
+  ],
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+          "code": "06",
+          "display": "Clinical Support"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+          "code": "532",
+          "display": "WHOLE BLOOD DONATION"
+        }
+      ]
+    }
+  ],
+  "appointmentType": {
+    "coding": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core",
+        "code": "public",
+        "display": "Public"
+      }
+    ]
+  },
+  "start": "2023-02-21T13:00:00.000+08:00",
+  "end": "2023-02-21T16:30:00.000+08:00",
+  "slot": [
+    {
+      "reference": "Slot/HTJ-SLT-2200001539"
+    }
+  ],
+  "participant": [
+    {
+      "actor": {
+        "reference": "HealthcareService/ee091de5-70b5-496c-8961-8cc1cea2cedb",
+        "type": "HealthcareService",
+        "display": "WHOLE BLOOD DONATION"
+      },
+      "status": "accepted"
+    },
+    {
+      "actor": {
+        "type": "Location",
+        "display": "HOSPITAL TUANKU JA’AFAR"
+      },
+      "status": "accepted"
+    }
+  ]
+}

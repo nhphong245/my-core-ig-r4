@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-observation-vsc-t-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetObservationVSCT (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/observation-vsc-t-my-core</tt><p>Value Set for Observation vital sign panel LOINC 85353-1</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/observation-vsc-t-my-core",
+  "version": "1.0.0",
+  "name": "ValueSetObservationVSCTMyCore",
+  "title": "ValueSetObservationVSCT (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Value Set for Observation vital sign panel LOINC 85353-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "8327-9",
+            "display": "Body measurement site"
+          },
+          {
+            "code": "8326-1",
+            "display": "Device"
+          },
+          {
+            "code": "8352-7",
+            "display": "Clothing worn"
+          }
+        ]
+      }
+    ]
+  }
+}

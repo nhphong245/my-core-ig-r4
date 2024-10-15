@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "diagnosticreport-imaging-study-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/diagnosticreport-imaging-study-my-core",
+  "name": "SearchParameterDiagnosticReportImagingStudyMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Imaging Study reference",
+  "code": "imaging-study",
+  "base": [
+    "DiagnosticReport"
+  ],
+  "type": "reference",
+  "expression": "DiagnosticReport.imagingStudy",
+  "target": [
+    "ImagingStudy"
+  ]
+}

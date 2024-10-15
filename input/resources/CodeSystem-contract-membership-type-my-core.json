@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-contract-membership-type-my-core",
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/contract-membership-type-my-core",
+  "version": "1.0.0",
+  "name": "CodeSystemContractMembershipType",
+  "title": "CodeSystemContractMembershipType (MY Core)",
+  "status": "active",
+  "date": "2024-04-16T01:09:35.2239695+00:00",
+  "description": "Contract Membership Type",
+  "compositional": false,
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "PPKK",
+      "display": "Panel Penasihat Klinik Kesihatan",
+      "definition": "Panel Penasihat Klinik Kesihatan"
+    },
+    {
+      "code": "ALPH",
+      "display": "Ahli Lembaga Pelawat Hospital",
+      "definition": "Ahli Lembaga Pelawat Hospital"
+    }
+  ]
+}

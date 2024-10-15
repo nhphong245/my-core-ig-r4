@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-vaccine-child-code-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetVaccineChildCode (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/vaccine-child-code-my-core</tt><p>Malaysia vaccine child code system</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/vaccine-child-code-my-core",
+  "version": "1.0.0",
+  "name": "ValueSetVaccineChildCodeMyCore",
+  "title": "ValueSetVaccineChildCode (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Malaysia vaccine child code system",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/vaccine-code-my-core",
+        "concept": [
+          {
+            "code": "J07AN01000P4001XX",
+            "display": "BCG Vaccine Freeze-Dried Injection"
+          },
+          {
+            "code": "J07BC01000P4001a",
+            "display": "Hepatitis B 10mcg Vaccine"
+          },
+          {
+            "code": "J07CA09963P3002",
+            "display": "DTaP-IPV-Hep B-Hib Vaccine"
+          },
+          {
+            "code": "J07BA02000P3001",
+            "display": "Japanese Encephalitis Vaccine 1 mL"
+          },
+          {
+            "code": "J07BD52963P4001XX",
+            "display": "Measles, Mumps and Rubella Vaccine"
+          },
+          {
+            "code": "J07BD01000P4001XX",
+            "display": "Measle's Vaccine (Live Attenuated)"
+          },
+          {
+            "code": "J07AL01000P3001a",
+            "display": "Pneumococcal Vaccine (Polyvalent 13)"
+          }
+        ]
+      }
+    ]
+  }
+}

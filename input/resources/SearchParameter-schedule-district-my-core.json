@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "schedule-district-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/schedule-district-my-core",
+  "name": "ServiceParameterScheduleDistrictMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "A code for the district of schedule",
+  "code": "address-district",
+  "base": [
+    "Schedule"
+  ],
+  "type": "token",
+  "expression": "Schedule.extension('http://fhir.hie.moh.gov.my/StructureDefinition/address-district-my-core')",
+  "xpathUsage": "normal"
+}

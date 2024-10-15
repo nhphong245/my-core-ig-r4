@@ -1,0 +1,42 @@
+{
+    "resourceType": "Immunization",
+    "id": "HTJ-VAC-2200000009",
+    "meta": {
+        "versionId": "2",
+        "lastUpdated": "2022-11-21T13:04:26.539+08:00",
+        "source": "http://provider.hie.moh.gov.my#3UE0n9qenLPX0sLj",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Immunization-my-core"
+        ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/vaccine-code-my-core",
+                "code": "J07BC01000P4001b",
+                "display": "Hepatitis B 20mcg Vaccine"
+            }
+        ]
+    },
+    "patient": {
+        "reference": "Patient/PDN-DNR-1900000132",
+        "display": "MOHD SYAHNAZWAN ABD AZIZ"
+    },
+    "occurrenceDateTime": "2022-11-21T19:18:22+08:00",
+    "recorded": "2022-11-21T19:18:22+08:00",
+    "lotNumber": "UFX21002",
+    "expirationDate": "2023-01-13",
+    "performer": [
+        {
+            "actor": {
+                "reference": "Organization/11-05060009"
+            }
+        }
+    ],
+    "protocolApplied": [
+        {
+            "doseNumberString": "SECOND VACCINATION"
+        }
+    ]
+}

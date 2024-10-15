@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-allergy-negation-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetAllergyNegation (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/allergy-negation-my-core</tt><p>Allergy Negation Statement</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/allergy-negation-my-core",
+  "name": "ValueSetAllergyNegationMyCore",
+  "title": "ValueSetAllergyNegation (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Allergy Negation Statement",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "716186003",
+            "display": "No Known Allergy"
+          },
+          {
+            "code": "1631000175102",
+            "display": "Require Allergy Assessment"
+          },
+          {
+            "code": "370860007",
+            "display": "To Be Confirmed"
+          }
+        ]
+      }
+    ]
+  }
+}

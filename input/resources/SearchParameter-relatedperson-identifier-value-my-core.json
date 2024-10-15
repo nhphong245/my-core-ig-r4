@@ -1,0 +1,20 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "related-person-identifier-value-my-core",
+  "meta": {
+    "versionId": "4",
+    "lastUpdated": "2022-10-11T07:55:03.039+08:00",
+    "source": "#mrvZcF4h1vJYqS6y"
+  },
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/related-person-identifier-value-my-core",
+  "name": "RelatedPersonIdentifierValue",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "A RelatedPerson identifier value by string",
+  "code": "identifier-value",
+  "base": [
+    "RelatedPerson"
+  ],
+  "type": "string",
+  "expression": "RelatedPerson.identifier.value"
+}

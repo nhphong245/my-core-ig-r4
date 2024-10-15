@@ -1,0 +1,126 @@
+{
+    "resourceType": "DiagnosticReport",
+    "id": "dr-img-sample",
+    "meta": {
+        "lastUpdated": "2023-04-11T13:43:55.704+08:00",
+        "source": "sample",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/DiagnosticReport-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/printed-date-my-core",
+            "valueDateTime": "2022-03-27T08:00:08+08:00"
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/amended-reason-my-core",
+            "extension": [
+                {
+                    "url": "amendedDate",
+                    "valueDateTime": "2022-03-27T08:00:08+08:00"
+                },
+                {
+                    "url": "amendedReason",
+                    "valueCodeableConcept": {
+                        "text": "Amended Reason remark goes here"
+                    }
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "urn:dicom:uid",
+            "value": "urn:oid:2.16.124.113543.1154777499.30246.19789.3503430046"
+        }
+    ],
+    "status": "amended",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core",
+                    "code": "363679005",
+                    "display": "Imaging"
+                }
+            ]
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-modality-my-core",
+                    "code": "01",
+                    "display": "GENERAL RADIOGRAPHY"
+                }
+            ]
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-region-my-core",
+                    "code": "001",
+                    "display": "ABDOMEN (GENERAL RADIOGRAPHY)"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-my-core",
+                "code": "002",
+                "display": "Abdomen"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/patient-sample"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter-sample"
+    },
+    "effectiveDateTime": "2022-12-26T08:00:08+08:00",
+    "issued": "2022-12-26T08:00:00+08:00",
+    "performer": [
+        {
+            "type": "PractitionerRole",
+            "identifier": {
+                "value": "primary_performer"
+            },
+            "display": "Amirul Bin Azhar"
+        },
+        {
+            "type": "PractitionerRole",
+            "identifier": {
+                "value": "secondary_performer"
+            },
+            "display": "Izzudin Bin Zaid"
+        },
+        {
+            "type": "PractitionerRole",
+            "identifier": {
+                "value": "verified_by"
+            },
+            "display": "Nizam Bin Zulkifli"
+        },
+        {
+            "type": "PractitionerRole",
+            "identifier": {
+                "value": "validated_by"
+            },
+            "display": "Nizar Bin Zubir"
+        }
+    ],
+    "resultsInterpreter": [
+        {
+            "type": "PractitionerRole",
+            "identifier": {
+                "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                "value": "12345"
+            },
+            "display": "Arumugan A/L Aryan"
+        }
+    ],
+    "conclusion": "Report entry goes here"
+}

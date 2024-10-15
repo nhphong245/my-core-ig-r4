@@ -1,0 +1,39 @@
+{
+    "resourceType": "OrganizationAffiliation",
+    "id": "example-organizationaffiliation",
+    "meta": {
+        "versionId": "2",
+        "lastUpdated": "2022-09-07T09:19:34.092+08:00",
+        "source": "http://provider.hie.moh.gov.my#rbfesXzun4XRKZjx",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/OrganizationAffiliation-my-core"
+        ]
+    },
+    "active": true,
+    "organization": {
+        "reference": "Organization/11-05060009"
+    },
+    "participatingOrganization": {
+        "reference": "Organization/11-05040012",
+        "display": "Hosp. Port Dickson"
+    },
+    "code": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/organization-role",
+                    "code": "provider",
+                    "display": "Provider"
+                }
+            ]
+        }
+    ],
+    "healthcareService": [
+        {
+            "reference": "HealthcareService/8f3ccad0-f414-42c2-98e3-db26e5e19a81"
+        },
+        {
+            "reference": "HealthcareService/7fb6fa16-049e-414b-b964-2156d6da4ba9"
+        }
+    ]
+}

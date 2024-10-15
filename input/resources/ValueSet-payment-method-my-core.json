@@ -1,0 +1,17 @@
+{
+    "resourceType": "ValueSet",
+    "id": "value-set-payment-method-my-core",
+    "url": "http://fhir.hie.moh.gov.my/ValueSet/payment-method-my-core",
+    "name": "ValueSetPaymentMethodMyCore",
+    "title": "ValueSetPaymentMethod (MY Core)",
+    "status": "active",
+    "date": "2023-06-07T07:16:10.3933867+00:00",
+    "description": "Payment Method",
+    "compose": {
+        "include": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/payment-method-my-core"
+            }
+        ]
+    }
+}

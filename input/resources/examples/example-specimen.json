@@ -1,0 +1,22 @@
+{
+    "resourceType": "Specimen",
+    "id": "example-specimen",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2022-09-14T20:36:33.491+08:00",
+        "source": "http://transfusion.moh.gov.my#IW8txInpFoaSwT2P",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Specimen-my-core"
+        ]
+    },
+    "status": "available",
+    "type": {
+        "text": "Red Cells"
+    },
+    "subject": {
+        "reference": "Patient/d879397f-a503-42be-bf4d-aa7c9322dfb3"
+    },
+    "collection": {
+        "collectedDateTime": "2022-09-15T14:46:19+08:00"
+    }
+}

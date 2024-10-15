@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-composition-type-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetCompositionType (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/composition-type-my-core</tt><p>Composition type</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/composition-type-my-core",
+  "name": "ValueSetCompositionTypeMyCore",
+  "title": "ValueSetCompositionType (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Composition type",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-type-my-core"
+      }
+    ]
+  }
+}

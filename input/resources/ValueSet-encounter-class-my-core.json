@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-encounter-class-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetEncounterClass (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/encounter-class-my-core</tt><p>additional class related to PIK code for the base FHIR codesystem encounter class</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/encounter-class-my-core",
+  "name": "ValueSetEncounterClassMyCore",
+  "title": "ValueSetEncounterClass (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "additional class related to PIK code for the base FHIR codesystem encounter class",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core"
+      }
+    ]
+  }
+}

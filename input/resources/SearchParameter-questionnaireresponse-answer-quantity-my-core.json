@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "questionnaireresponse-answer-quantity-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/questionnaireresponse-answer-quantity-my-core",
+  "name": "SearchParameterQuestionnaireResponseAnswerQuantityMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "QuestionnaireResponse answer quantity",
+  "code": "answer-quantity",
+  "base": [
+    "QuestionnaireResponse"
+  ],
+  "type": "quantity",
+  "expression": "QuestionnaireResponse.item.answer.value as Quantity",
+  "xpathUsage": "normal"
+}

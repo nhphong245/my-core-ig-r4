@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "Bundle-composition-subject",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/Bundle-composition-subject",
+  "name": "composition.subject",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Bundle composition subject",
+  "code": "composition.subject",
+  "base": [
+    "Bundle"
+  ],
+  "type": "token",
+  "expression": "Bundle.entry[0].resource.as(Composition).subject"
+}

@@ -1,0 +1,42 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "public-booking-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/public-booking-my-core",
+  "version": "1.0.0",
+  "name": "ExtensionPublicBookingMyCore",
+  "title": "ExtensionPublicBooking (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension to determine if this HealthcareService is allowed to be booked publicly (through patients/customer)",
+  "purpose": "Allow public to book healthcare service",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "HealthcareService"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/public-booking-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,505 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "qr-diabetic-registry",
+  "meta": {
+      "source": "http://provider.hie.moh.gov.my",
+      "profile": [
+          "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+      ]
+  },
+  "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-diabetic-registry",
+  "status": "completed",
+  "subject": {
+      "reference": "Patient/74c778d4-19a4-442e-8918-620733047fce"
+  },
+  "authored": "2024-01-22T12:02:00+08:00",
+  "author": {
+      "reference": "PractitionerRole/b9797173-7e15-4fc3-8f85-d58627935956/_history/19"
+  },
+  "extension": [
+      {
+          "url": "http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core",
+          "valueReference": {
+              "reference": "Organization/11-05060009"
+          }
+      }
+  ],
+  "item": [
+    {
+        "linkId": "dm",
+        "text": "Diabetes Details",
+        "item": [
+            {
+                "answer": [
+                    {
+                        "valueDateTime": "2024-02-14T01:33:12.050Z"
+                    }
+                ],
+                "linkId": "dm-dx-date",
+                "text": "Diabetes Diagnosis Date"
+            },
+            {
+                "answer": [
+                    {
+                        "valueBoolean": true
+                    }
+                ],
+                "linkId": "dm-dx-type",
+                "text": "Estimate/ Presumed"
+            },
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "system": "http://id.who.int/icd/entity/381961554",
+                            "code": "5A13",
+                            "display": "Other specified type"
+                        }
+                    }
+                ],
+                "linkId": "dm-type",
+                "text": "Diabetes Type"
+            },
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "system": "http://id.who.int/icd/entity/119724091",
+                            "code": "5A13.1",
+                            "display": "Diabetes mellitus due to genetic defects in insulin action"
+                        }
+                    }
+                ],
+                "linkId": "dm-other",
+                "text": "If other specified type, please specify"
+            },
+            {
+                "answer": [
+                    {
+                        "valueDateTime": "2024-02-14T01:33:12.000Z"
+                    }
+                ],
+                "linkId": "dm-age",
+                "text": "Diabetes Age"
+            }
+        ]
+    },
+    {
+        "linkId": "complication",
+        "text": "Complications",
+        "item": [
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "52101004",
+                            "display": "Present"
+                        },
+                        "item": [
+                            {
+                                "answer": [
+                                    {
+                                        "valueDateTime": "2024-02-14T01:33:12.000Z"
+                                    }
+                                ],
+                                "linkId": "retinopathy-dx-date",
+                                "text": "If Present, date of diagnosis"
+                            },
+                            {
+                                "answer": [
+                                    {
+                                        "valueBoolean": false
+                                    }
+                                ],
+                                "linkId": "retinopathy-dx-type",
+                                "text": "Estimate/ Presumed"
+                            }
+                        ]
+                    }
+                ],
+                "linkId": "retinopathy",
+                "text": "Retinopathy"
+            },
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "2667000",
+                            "display": "Absent"
+                        },
+                        "item": [
+                            {
+                                "answer": [
+                                    {
+                                        "valueDateTime": "2024-02-14T01:33:12.000Z"
+                                    }
+                                ],
+                                "linkId": "ihd-dx-date",
+                                "text": "If Present, date of diagnosis"
+                            },
+                            {
+                                "answer": [
+                                    {
+                                        "valueBoolean": true
+                                    }
+                                ],
+                                "linkId": "ihd-dx-type",
+                                "text": "Estimate/ Presumed"
+                            }
+                        ]
+                    }
+                ],
+                "linkId": "ihd",
+                "text": "Ischaemic heart disease (IHD)"
+            },
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "373068000",
+                            "display": "Not Known"
+                        },
+                        "item": [
+                            {
+                                "answer": [
+                                    {
+                                        "valueDateTime": "2024-02-14T01:33:12.000Z"
+                                    }
+                                ],
+                                "linkId": "cevd-dx-date",
+                                "text": "If Present, date of diagnosis"
+                            },
+                            {
+                                "answer": [
+                                    {
+                                        "valueBoolean": false
+                                    }
+                                ],
+                                "linkId": "cevd-dx-type",
+                                "text": "Estimate/ Presumed"
+                            }
+                        ]
+                    }
+                ],
+                "linkId": "cevd",
+                "text": "Cerebrovascular disease (ceVD)"
+            },
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "52101004",
+                            "display": "Present"
+                        },
+                        "item": [
+                            {
+                                "answer": [
+                                    {
+                                        "valueDateTime": "2024-02-14T01:33:12.000Z"
+                                    }
+                                ],
+                                "linkId": "nephropathy-dx-date",
+                                "text": "If Present, date of diagnosis"
+                            },
+                            {
+                                "answer": [
+                                    {
+                                        "valueBoolean": true
+                                    }
+                                ],
+                                "linkId": "nephropathy-dx-type",
+                                "text": "Estimate/ Presumed"
+                            }
+                        ]
+                    }
+                ],
+                "linkId": "nephropathy",
+                "text": "Nephropathy"
+            },
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "2667000",
+                            "display": "Absent"
+                        },
+                        "item": [
+                            {
+                                "answer": [
+                                    {
+                                        "valueDateTime": "2024-02-14T01:33:12.000Z"
+                                    }
+                                ],
+                                "linkId": "dfu-dx-date",
+                                "text": "If Present, date of diagnosis"
+                            },
+                            {
+                                "answer": [
+                                    {
+                                        "valueBoolean": false
+                                    }
+                                ],
+                                "linkId": "dfu-dx-type",
+                                "text": "Estimate/ Presumed"
+                            }
+                        ]
+                    }
+                ],
+                "linkId": "dfu",
+                "text": "Diabetic foot ulcer"
+            },
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "373068000",
+                            "display": "Not Known"
+                        },
+                        "item": [
+                            {
+                                "answer": [
+                                    {
+                                        "valueDateTime": "2024-02-14T01:33:12.000Z"
+                                    }
+                                ],
+                                "linkId": "amputation-dx-date",
+                                "text": "If Present, date of diagnosis"
+                            },
+                            {
+                                "answer": [
+                                    {
+                                        "valueBoolean": true
+                                    }
+                                ],
+                                "linkId": "amputation-dx-type",
+                                "text": "Estimate/ Presumed"
+                            }
+                        ]
+                    }
+                ],
+                "linkId": "amputation",
+                "text": "Amputation"
+            }
+        ]
+    },
+    {
+        "linkId": "comorbid",
+        "text": "Concomitant Co-morbidity",
+        "item": [
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "52101004",
+                            "display": "Yes"
+                        },
+                        "item": [
+                            {
+                                "answer": [
+                                    {
+                                        "valueDateTime": "2024-02-14T01:33:12.000Z"
+                                    }
+                                ],
+                                "linkId": "hpt-dx-date",
+                                "text": "If Yes, date of diagnosis"
+                            },
+                            {
+                                "answer": [
+                                    {
+                                        "valueBoolean": false
+                                    }
+                                ],
+                                "linkId": "hpt-dx-type",
+                                "text": "Estimate/ Presumed"
+                            }
+                        ]
+                    }
+                ],
+                "linkId": "hpt",
+                "text": "Hypertension"
+            },
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "2667000",
+                            "display": "No"
+                        },
+                        "item": [
+                            {
+                                "answer": [
+                                    {
+                                        "valueDateTime": "2024-02-14T01:33:12.000Z"
+                                    }
+                                ],
+                                "linkId": "lipid-dx-date",
+                                "text": "If Yes, date of diagnosis"
+                            },
+                            {
+                                "answer": [
+                                    {
+                                        "valueBoolean": true
+                                    }
+                                ],
+                                "linkId": "lipid-dx-type",
+                                "text": "Estimate/ Presumed"
+                            }
+                        ]
+                    }
+                ],
+                "linkId": "lipid",
+                "text": "Dyslipidaemia"
+            },
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "373068000",
+                            "display": "Not Known"
+                        }
+                    }
+                ],
+                "linkId": "smoking",
+                "text": "Smoking Status"
+            }
+        ]
+    },
+    {
+        "linkId": "service",
+        "text": "Services",
+        "item": [
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "52101004",
+                            "display": "Yes"
+                        },
+                        "item": [
+                            {
+                                "answer": [
+                                    {
+                                        "valueDateTime": "2024-02-14T01:33:12.000Z"
+                                    }
+                                ],
+                                "linkId": "mnt-date",
+                                "text": "If Yes, date seen by Dietitian"
+                            }
+                        ]
+                    }
+                ],
+                "linkId": "mnt",
+                "text": "Medical Nutrition Therapy (MNT)"
+            }
+        ]
+    },
+    {
+        "linkId": "monitor",
+        "text": "Monitoring",
+        "item": [
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "2667000",
+                            "display": "No"
+                        }
+                    }
+                ],
+                "linkId": "smbg",
+                "text": "Self-Monitoring of Blood Glucose (SMBG)"
+            }
+        ]
+    },
+    {
+        "linkId": "fup",
+        "text": "Follow-Up Details",
+        "item": [
+            {
+                "answer": [
+                    {
+                        "valueCoding": {
+                            "code": "2",
+                            "display": "Loss to follow-up"
+                        },
+                        "item": [
+                            {
+                                "answer": [
+                                    {
+                                        "valueDateTime": "2024-02-14T01:33:12.000Z"
+                                    }
+                                ],
+                                "linkId": "fup-last-date",
+                                "text": "Last visit date"
+                            },
+                            {
+                                "answer": [
+                                    {
+                                        "valueCoding": {
+                                            "code": "1",
+                                            "display": "Transferred care (government)"
+                                        }
+                                    }
+                                ],
+                                "linkId": "fup-loss-reason",
+                                "text": "Reason loss to follow-up"
+                            }
+                        ]
+                    }
+                ],
+                "linkId": "fup-status",
+                "text": "Follow-up status"
+            }
+        ]
+    },
+    {
+        "linkId": "death",
+        "text": "Deceased Status",
+        "item": [
+            {
+                "answer": [
+                    {
+                        "valueBoolean": true,
+                        "item": [
+                            {
+                                "answer": [
+                                    {
+                                        "valueDateTime": "2024-02-14T01:33:12.000Z"
+                                    }
+                                ],
+                                "linkId": "death-date",
+                                "text": "Deceased date"
+                            },
+                            {
+                                "answer": [
+                                    {
+                                        "valueCoding": {
+                                            "code": "1",
+                                            "display": "Related to Diabetes"
+                                        }
+                                    }
+                                ],
+                                "linkId": "death-reason",
+                                "text": "Cause of death"
+                            }
+                        ]
+                    }
+                ],
+                "linkId": "death-status",
+                "text": "Deceased status"
+            }
+        ]
+    }
+]
+}

@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-servicerequest-category-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetServiceRequestCategory( MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/service-request-category-my-core</tt><p>Service Request Category Value Set</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/servicerequest-category-my-core",
+  "name": "ValueSetServiceRequestCategoryMyCore",
+  "title": "ValueSetServiceRequestCategory( MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Service Request Category Value Set",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core"
+      }
+    ]
+  }
+}

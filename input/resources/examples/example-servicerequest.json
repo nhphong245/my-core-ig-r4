@@ -1,0 +1,87 @@
+{
+    "resourceType": "ServiceRequest",
+    "id": "example-servicerequest",
+    "meta": {
+        "versionId": "13",
+        "lastUpdated": "2022-09-14T21:52:04.258+08:00",
+        "source": "http://provider.hie.moh.gov.my#DkexoxqJmlqB2lwM",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/ServiceRequest-my-core"
+        ]
+    },
+    "identifier": [
+        {
+            "value": "REF-01"
+        }
+    ],
+    "status": "active",
+    "intent": "proposal",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core",
+                    "code": "3457005",
+                    "display": "Patient referral"
+                }
+            ]
+        }
+    ],
+    "priority": "routine",
+    "subject": {
+        "reference": "Patient/7842c301-2870-49f9-a7c9-5ac6b6c1b032"
+    },
+    "encounter": {
+        "reference": "Encounter/0395f145-912e-49d4-8e53-5becbf0a5f32"
+    },
+    "authoredOn": "2022-08-30T08:00:46.838+08:00",
+    "requester": {
+        "reference": "PractitionerRole/cd16e0cb-3e0f-43bb-9197-901f5daff3ba"
+    },
+    "performerType": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core",
+                "code": "internal",
+                "display": "Internal"
+            }
+        ]
+    },
+    "performer": [
+        {
+            "reference": "HealthcareService/e05e8ce4-707b-4d1f-ba56-2b663e689669"
+        },
+        {
+            "reference": "Organization/11-05060009"
+        },
+        {
+            "type": "PractitionerRole",
+            "display": "Dr Alamin"
+        }
+    ],
+    "reasonCode": [
+        {
+            "text": "'Referral Reason' entry goes here"
+        }
+    ],
+    "reasonReference": [
+        {
+            "reference": "Condition/fb3b4a8c-31d0-4173-91f2-8726ae4b6f07",
+            "display": "'Diagnosis' value reference from Condition.code.text and store here"
+        },
+        {
+            "reference": "Condition/9a959939-1c63-48fb-8b0c-174e4e5ebb0b",
+            "display": "e.g. of diagnosis 2"
+        }
+    ],
+    "supportingInfo": [
+        {
+            "reference": "Appointment/0e761c60-17a1-4ae6-a1f9-ebae45d2a0fe"
+        }
+    ],
+    "note": [
+        {
+            "text": "'Entry' entry is stored here. Use a HTML entry box"
+        }
+    ]
+}

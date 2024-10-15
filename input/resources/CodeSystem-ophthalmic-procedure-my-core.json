@@ -1,0 +1,279 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-ophthalmic-procedure-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemOphthalmicProcedure (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/CodeSystem/ophthalmic-procedure-my-core</tt><p>Ophthalmic Procedure</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/ophthalmic-procedure-my-core",
+  "name": "CodeSystemOphthalmicProcedureMyCore",
+  "title": "CodeSystemOphthalmicProcedure (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Ophthalmic Procedure",
+  "compositional": false,
+  "content": "complete",
+  "count": 52,
+  "concept": [
+    {
+      "code": "10",
+      "display": "Nasolacrimal Duct Probing",
+      "definition": "Nasolacrimal Duct Probing"
+    },
+    {
+      "code": "11",
+      "display": "Astigmatic Keratotomy (AK) / Limbal Relaxing Incision (LRI)",
+      "definition": "Astigmatic Keratotomy (AK) / Limbal Relaxing Incision (LRI)"
+    },
+    {
+      "code": "12",
+      "display": "Trabeculectomy (trab)",
+      "definition": "Trabeculectomy (trab)"
+    },
+    {
+      "code": "13",
+      "display": "Ahmed / Baerveldt Valve (tube)",
+      "definition": "Ahmed / Baerveldt Valve (tube)"
+    },
+    {
+      "code": "14",
+      "display": "Iridotomy / Iridectomy",
+      "definition": "Iridotomy / Iridectomy"
+    },
+    {
+      "code": "15",
+      "display": "Trabeculotomy",
+      "definition": "Trabeculotomy"
+    },
+    {
+      "code": "16",
+      "display": "Microinvasive glaucoma surgery",
+      "definition": "Microinvasive glaucoma surgery"
+    },
+    {
+      "code": "17",
+      "display": "Pars Plana Vitrectomy (TPPV)",
+      "definition": "Pars Plana Vitrectomy (TPPV)"
+    },
+    {
+      "code": "18",
+      "display": "Strabismus Surgery",
+      "definition": "Strabismus Surgery"
+    },
+    {
+      "code": "19",
+      "display": "Cataract surgery with IOL implant",
+      "definition": "Cataract surgery with IOL implant"
+    },
+    {
+      "code": "20",
+      "display": "Secondary IOL implant",
+      "definition": "Secondary IOL implant"
+    },
+    {
+      "code": "21",
+      "display": "Corneal T&S",
+      "definition": "Corneal T&S"
+    },
+    {
+      "code": "22",
+      "display": "Corneal-scleral T&S",
+      "definition": "Corneal-scleral T&S"
+    },
+    {
+      "code": "23",
+      "display": "Pterygium excision with conjunctiva autograft",
+      "definition": "Pterygium excision with conjunctiva autograft"
+    },
+    {
+      "code": "24",
+      "display": "Intravitreal Injection",
+      "definition": "Intravitreal Injection"
+    },
+    {
+      "code": "25",
+      "display": "Panretinal Photocoagulation (PRP)",
+      "definition": "Panretinal Photocoagulation (PRP)"
+    },
+    {
+      "code": "26",
+      "display": "Laser Retinopexy",
+      "definition": "Laser Retinopexy"
+    },
+    {
+      "code": "27",
+      "display": "YAG Capsulotomy",
+      "definition": "YAG Capsulotomy"
+    },
+    {
+      "code": "28",
+      "display": "YAG Iridotomy",
+      "definition": "YAG Iridotomy"
+    },
+    {
+      "code": "29",
+      "display": "Selective Laser Trabeculoplasty (SLT)",
+      "definition": "Selective Laser Trabeculoplasty (SLT)"
+    },
+    {
+      "code": "30",
+      "display": "Transcleral Cyclophotocoagulation",
+      "definition": "Transcleral Cyclophotocoagulation"
+    },
+    {
+      "code": "31",
+      "display": "Micropulse Transcleral cyclophotocoagulation",
+      "definition": "Micropulse Transcleral cyclophotocoagulation"
+    },
+    {
+      "code": "32",
+      "display": "Indirect laser PRP",
+      "definition": "Indirect laser PRP"
+    },
+    {
+      "code": "33",
+      "display": "Slitlamp examination",
+      "definition": "Slitlamp examination"
+    },
+    {
+      "code": "34",
+      "display": "Automated Visual field examination",
+      "definition": "Automated Visual field examination"
+    },
+    {
+      "code": "35",
+      "display": "Bjerum Visual field Examination",
+      "definition": "Bjerum Visual field Examination"
+    },
+    {
+      "code": "36",
+      "display": "Automated Refraction keratometer examination",
+      "definition": "Automated Refraction keratometer examination"
+    },
+    {
+      "code": "37",
+      "display": "A-Scan Examination",
+      "definition": "A-Scan Examination"
+    },
+    {
+      "code": "38",
+      "display": "B scan Examination",
+      "definition": "B scan Examination"
+    },
+    {
+      "code": "39",
+      "display": "Refraction examination",
+      "definition": "Refraction examination"
+    },
+    {
+      "code": "40",
+      "display": "Cycloplegic refraction",
+      "definition": "Cycloplegic refraction"
+    },
+    {
+      "code": "41",
+      "display": "Low visual Aid Assessment",
+      "definition": "Low visual Aid Assessment"
+    },
+    {
+      "code": "42",
+      "display": "Contact lens Assessment",
+      "definition": "Contact lens Assessment"
+    },
+    {
+      "code": "43",
+      "display": "Optical coherence tomography examination",
+      "definition": "Optical coherence tomography examination"
+    },
+    {
+      "code": "44",
+      "display": "Optical Biometry examination",
+      "definition": "Optical Biometry examination"
+    },
+    {
+      "code": "45",
+      "display": "Indirect Ophthalmoscope Examination",
+      "definition": "Indirect Ophthalmoscope Examination"
+    },
+    {
+      "code": "46",
+      "display": "Fundus photography examination",
+      "definition": "Fundus photography examination"
+    },
+    {
+      "code": "47",
+      "display": "Anterior segment photography examination",
+      "definition": "Anterior segment photography examination"
+    },
+    {
+      "code": "48",
+      "display": "Fluorescein Fundus Angiography",
+      "definition": "Fluorescein Fundus Angiography"
+    },
+    {
+      "code": "49",
+      "display": "Indentation IOP measurement (tonopen/ Icare)",
+      "definition": "Indentation IOP measurement (tonopen/ Icare)"
+    },
+    {
+      "code": "50",
+      "display": "Exophthalmometer measurement",
+      "definition": "Exophthalmometer measurement"
+    },
+    {
+      "code": "51",
+      "display": "Hess test",
+      "definition": "Hess test"
+    },
+    {
+      "code": "01",
+      "display": "Eye Irrigation",
+      "definition": "Eye Irrigation"
+    },
+    {
+      "code": "02",
+      "display": "Incision and curettage",
+      "definition": "Incision and curettage"
+    },
+    {
+      "code": "03",
+      "display": "Entropion repair",
+      "definition": "Entropion repair"
+    },
+    {
+      "code": "04",
+      "display": "Ectropion repair",
+      "definition": "Ectropion repair"
+    },
+    {
+      "code": "05",
+      "display": "Blepharoplasty",
+      "definition": "Blepharoplasty"
+    },
+    {
+      "code": "06",
+      "display": "Canthotomy/cantholysis",
+      "definition": "Canthotomy/cantholysis"
+    },
+    {
+      "code": "07",
+      "display": "Tarsorrhaphy",
+      "definition": "Tarsorrhaphy"
+    },
+    {
+      "code": "08",
+      "display": "Evisceration",
+      "definition": "Evisceration"
+    },
+    {
+      "code": "09",
+      "display": "Enucleation",
+      "definition": "Enucleation"
+    },
+    {
+      "code": "00",
+      "display": "Other",
+      "definition": "Other"
+    }
+  ]
+}

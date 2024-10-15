@@ -1,0 +1,63 @@
+{
+    "resourceType": "Condition",
+    "id": "example-condition-ed",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Condition-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core",
+            "extension": [
+                {
+                    "url": "lastUpdater",
+                    "valueReference": {
+                        "display": "LIANA"
+                    }
+                }
+            ]
+        }
+    ],
+    "clinicalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "active"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                    "code": "encounter-diagnosis",
+                    "display": "Encounter Diagnosis"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://id.who.int/icd/release/11/2022-02/mms/383352795",
+                "code": "1D47",
+                "display": "Yellow fever"
+            }
+        ],
+        "text": "Yellow fever"
+    },
+    "subject": {
+        "reference": "Patient/1725cc06-9544-4a10-b8e7-6fe5506d4749"
+    },
+    "encounter": {
+        "reference": "Encounter/d3162b1f-8a23-46ec-a881-b2c02f63014e"
+    },
+    "recordedDate": "2023-09-18T15:25:00.000+08:00",
+    "recorder": {
+        "display": "LIANA"
+    }
+}

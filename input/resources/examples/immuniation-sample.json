@@ -1,0 +1,129 @@
+{
+    "resourceType": "Immunization",
+    "id": "immunization-sample",
+    "meta": {
+        "lastUpdated": "2022-08-09T23:55:19.836+08:00",
+        "source": "sample",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Immunization-my-core"
+        ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/vaccine-code-my-core",
+                "code": "J07BX03000P3001",
+                "display": "COVID-19 Vaccine AstraZeneca Inj"
+            }
+        ]
+    },
+    "patient": {
+        "reference": "Patient/patient-sample"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter-sample"
+    },
+    "occurrenceDateTime": "2022-05-12T12:00:00+08:00",
+    "recorded": "2022-05-12T12:15:00+08:00",
+    "primarySource": true,
+    "reportOrigin": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/immunization-origin",
+                "code": "record",
+                "display": "Written Record"
+            }
+        ]
+    },
+    "location": {
+        "display": "bilik 1"
+    },
+    "lotNumber": "12345",
+    "expirationDate": "2022-10-05",
+    "site": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActSite",
+                "code": "LA",
+                "display": "Left arm"
+            }
+        ]
+    },
+    "route": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",
+                "code": "IDINJ",
+                "display": "Injection, intradermal"
+            }
+        ]
+    },
+    "doseQuantity": {
+        "value": 10,
+        "unit": "ml",
+        "system": "http://unitsofmeasure.org",
+        "code": "mL"
+    },
+    "performer": [
+        {
+            "function": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                        "code": "OP",
+                        "display": "Ordering Provider"
+                    }
+                ]
+            },
+            "actor": {
+                "type": "PractitionerRole",
+                "identifier": {
+                    "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                    "value": "12345"
+                },
+                "display": "Arumugan A/L Aryan"
+            }
+        },
+        {
+            "function": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                        "code": "AP",
+                        "display": "Administering Provider"
+                    }
+                ]
+            },
+            "actor": {
+                "type": "PractitionerRole",
+                "identifier": {
+                    "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                    "value": "12345"
+                },
+                "display": "Arumugan A/L Aryan"
+            }
+        }
+    ],
+    "note": [
+        {
+            "authorReference": {
+                "type": "PractitionerRole",
+                "identifier": {
+                    "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                    "value": "12345"
+                },
+                "display": "Arumugan A/L Aryan"
+            },
+            "time": "2022-05-12T12:15:00+08:00",
+            "text": "1st dose covid vaccine"
+        }
+    ],
+    "isSubpotent": false,
+    "protocolApplied": [
+        {
+            "doseNumberPositiveInt": 1,
+            "seriesDosesPositiveInt": 3
+        }
+    ]
+}

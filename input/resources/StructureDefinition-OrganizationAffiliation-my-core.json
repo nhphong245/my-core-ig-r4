@@ -1,0 +1,140 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OrganizationAffiliation-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/OrganizationAffiliation-my-core",
+  "version": "1.0.0",
+  "name": "OrganizationAffiliationMyCore",
+  "title": "OrganizationAffiliation (MY Core)",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "publisher": "Malaysia MOH - HIE Steering Committee",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "OrganizationAffiliation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "OrganizationAffiliation.extension:transitCentre",
+        "path": "OrganizationAffiliation.extension",
+        "sliceName": "transitCentre",
+        "short": "Extension to reference an affiliation transit centre",
+        "definition": "Extension to reference an affiliation transit centre",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/transit-centre-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "OrganizationAffiliation.extension:maxDaily",
+        "path": "OrganizationAffiliation.extension",
+        "sliceName": "maxDaily",
+        "short": "Extension to define the maxium allowed outsource request in a day for an agreed outsource arrangement",
+        "definition": "Extension to define the maxium allowed outsource request in a day for an agreed outsource arrangement",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/oa-max-daily-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "OrganizationAffiliation.extension:regionQuota",
+        "path": "OrganizationAffiliation.extension",
+        "sliceName": "regionQuota",
+        "short": "An extension to define the maximum quota of a agree outsource arrangement for a particular body/category region",
+        "definition": "An extension to define the maximum quota of a agree outsource arrangement for a particular body/category region",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/oa-region-quota-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "OrganizationAffiliation.organization",
+        "path": "OrganizationAffiliation.organization",
+        "min": 1
+      },
+      {
+        "id": "OrganizationAffiliation.participatingOrganization",
+        "path": "OrganizationAffiliation.participatingOrganization",
+        "min": 1
+      },
+      {
+        "id": "OrganizationAffiliation.code",
+        "path": "OrganizationAffiliation.code",
+        "min": 1
+      },
+      {
+        "id": "OrganizationAffiliation.code.coding",
+        "path": "OrganizationAffiliation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "OrganizationAffiliation.code.coding:serviceCategory",
+        "path": "OrganizationAffiliation.code.coding",
+        "sliceName": "serviceCategory",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/VaueSet/servicerequest-category-my-core"
+        }
+      },
+      {
+        "id": "OrganizationAffiliation.code.coding:serviceCategory.system",
+        "path": "OrganizationAffiliation.code.coding.system",
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core"
+      },
+      {
+        "id": "OrganizationAffiliation.code.coding:modality",
+        "path": "OrganizationAffiliation.code.coding",
+        "sliceName": "modality",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/imaging-modality-my-core"
+        }
+      },
+      {
+        "id": "OrganizationAffiliation.code.coding:modality.system",
+        "path": "OrganizationAffiliation.code.coding.system",
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-modality-my-core"
+      },
+      {
+        "id": "OrganizationAffiliation.code.coding:Type",
+        "path": "OrganizationAffiliation.code.coding",
+        "sliceName": "Type",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/schedule-type-my-core"
+        }
+      },
+      {
+        "id": "OrganizationAffiliation.code.coding:Type.system",
+        "path": "OrganizationAffiliation.code.coding.system",
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core"
+      }
+    ]
+  }
+}

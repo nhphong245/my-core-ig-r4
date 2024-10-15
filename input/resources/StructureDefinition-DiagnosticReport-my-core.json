@@ -1,0 +1,237 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DiagnosticReport-my-core",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2024-03-06T09:40:27.8048401+00:00"
+  },
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/DiagnosticReport-my-core",
+  "version": "1.0.0",
+  "name": "DiagnosticReportMyCore",
+  "title": "DiagnosticReport (MY Core)",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "description": "This profile constrains the DiagnosticReport resource to represent diagnostic test and procedure reports in a patient summary.",
+  "purpose": "This profile constrains the DiagnosticReport resource to use the specific MY Core profiles for observations and coded data types.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.extension:printedDate",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "printedDate",
+        "short": "Extension about the DiagnosticReport date printed",
+        "definition": "Extension about the DiagnosticReport date printed",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/printed-date-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "DiagnosticReport.extension:amendment",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "amendment",
+        "short": "Extension to add amended information of this clinical documentation",
+        "definition": "Extension to add amended information of this clinical documentation",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/amended-reason-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "DiagnosticReport.extension:attachmentBoolean",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "attachmentBoolean",
+        "short": "Extension to determine whether this DiagnosticReport provides any external attachment",
+        "definition": "Extension to determine whether this DiagnosticReport provides any external attachment",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/attachment-boolean-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "DiagnosticReport.category",
+        "path": "DiagnosticReport.category",
+        "min": 1,
+        "binding": {
+          "strength": "preferred"
+        }
+      },
+      {
+        "id": "DiagnosticReport.category.coding",
+        "path": "DiagnosticReport.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DiagnosticReport.category.coding:serviceRequestCategory",
+        "path": "DiagnosticReport.category.coding",
+        "sliceName": "serviceRequestCategory",
+        "max": "1",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/servicerequest-category-my-core"
+        }
+      },
+      {
+        "id": "DiagnosticReport.category.coding:serviceRequestCategory.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core"
+      },
+      {
+        "id": "DiagnosticReport.category.coding:imagingModality",
+        "path": "DiagnosticReport.category.coding",
+        "sliceName": "imagingModality",
+        "max": "1",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/imaging-modality-my-core"
+        }
+      },
+      {
+        "id": "DiagnosticReport.category.coding:imagingModality.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-modality-my-core"
+      },
+      {
+        "id": "DiagnosticReport.category.coding:imagingRegion",
+        "path": "DiagnosticReport.category.coding",
+        "sliceName": "imagingRegion",
+        "max": "1",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/imaging-region-my-core"
+        }
+      },
+      {
+        "id": "DiagnosticReport.category.coding:imagingRegion.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-region-my-core"
+      },
+      {
+        "id": "DiagnosticReport.category.coding:labSubGroup",
+        "path": "DiagnosticReport.category.coding",
+        "sliceName": "labSubGroup",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/lab-sub-group-my-core"
+        }
+      },
+      {
+        "id": "DiagnosticReport.category.coding:labSubGroup.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/lab-sub-group-my-core"
+      },
+      {
+        "id": "DiagnosticReport.code",
+        "path": "DiagnosticReport.code",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/loinc-my-core"
+        }
+      },
+      {
+        "id": "DiagnosticReport.code.coding",
+        "path": "DiagnosticReport.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DiagnosticReport.code.coding:lab",
+        "path": "DiagnosticReport.code.coding",
+        "sliceName": "lab",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/lab-my-core"
+        }
+      },
+      {
+        "id": "DiagnosticReport.code.coding:lab.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/lab-my-core"
+      },
+      {
+        "id": "DiagnosticReport.code.coding:imaging",
+        "path": "DiagnosticReport.code.coding",
+        "sliceName": "imaging",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/imaging-my-core"
+        }
+      },
+      {
+        "id": "DiagnosticReport.code.coding:imaging.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-my-core"
+      },
+      {
+        "id": "DiagnosticReport.code.coding:loinc",
+        "path": "DiagnosticReport.code.coding",
+        "sliceName": "loinc"
+      },
+      {
+        "id": "DiagnosticReport.code.coding:loinc.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "DiagnosticReport.subject",
+        "path": "DiagnosticReport.subject",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.encounter",
+        "path": "DiagnosticReport.encounter",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.conclusion",
+        "path": "DiagnosticReport.conclusion",
+        "min": 1
+      }
+    ]
+  }
+}

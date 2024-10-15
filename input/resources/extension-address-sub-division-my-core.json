@@ -1,0 +1,46 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "address-sub-division-my-core",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2024-02-12T10:54:48.7273743+00:00"
+  },
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-sub-division-my-core",
+  "version": "1.0.0",
+  "name": "ExtensionAddressSubDivisionMyCore",
+  "title": "ExtensionAddressSubDivision (MY Core)",
+  "status": "active",
+  "date": "2024-02-14T07:47:10.4519661+00:00",
+  "publisher": "Malaysia MOH - HIE Steering Committee",
+  "description": "Extension to store address sub division (for Sabah | Sarawak) value",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Address"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/address-sub-division-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

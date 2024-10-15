@@ -1,0 +1,525 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-gl-initial",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-gl-initial",
+  "title": "Initial Guarantee Letter",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "item": [
+    {
+      "linkId": "HEADER",
+      "text": "Header",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "GE HOSP_CODE",
+          "text": "GE PROVIDER CODE",
+          "type": "string"
+        },
+        {
+          "linkId": "REQ_TYPE",
+          "text": "Request type",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "PA",
+                "display": "Pre-Authorization Form /Initial GL request"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "EA",
+                "display": "Elective Admission"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "REQ_DATE",
+          "text": "Current date & time stamp",
+          "type": "dateTime"
+        },
+        {
+          "linkId": "HOSP_CASENO",
+          "text": "Hospital admission case no",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "D1",
+      "text": "Details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "REC-ID",
+          "text": "REC-ID",
+          "type": "string",
+          "maxLength": 20
+        },
+        {
+          "linkId": "PATIENT",
+          "text": "Patient Name",
+          "type": "string",
+          "maxLength": 200
+        },
+        {
+          "linkId": "NEWIC",
+          "text": "IC (new)",
+          "type": "string",
+          "maxLength": 14
+        },
+        {
+          "linkId": "IDNUM",
+          "text": "IC (old / others)",
+          "type": "string",
+          "maxLength": 24
+        },
+        {
+          "linkId": "CLTSEX",
+          "text": "Sex",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "code": "male",
+                "display": "Male"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "code": "female",
+                "display": "Female"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CLTAGE",
+          "text": "Age of Patient",
+          "type": "string",
+          "maxLength": 3
+        },
+        {
+          "linkId": "POLICY_NO",
+          "text": "Policy No",
+          "type": "string",
+          "maxLength": 10
+        },
+        {
+          "linkId": "HOSP_CONTACT",
+          "text": "Hospital contact number",
+          "type": "string",
+          "maxLength": 20
+        },
+        {
+          "linkId": "HOSP_FAX",
+          "text": "Hospital Fax number",
+          "type": "string",
+          "maxLength": 20
+        },
+        {
+          "linkId": "ADMISSION_DATE",
+          "text": "Admission /Planned Admission Date & Time",
+          "type": "dateTime"
+        },
+        {
+          "linkId": "EXP_LOS",
+          "text": "Expected days of stay / Discharge date",
+          "type": "string",
+          "maxLength": 10
+        },
+        {
+          "linkId": "SYMPTOMS",
+          "text": "Symtoms /Conditions requiring admission",
+          "type": "text",
+          "maxLength": 500
+        },
+        {
+          "linkId": "BP_PULSE",
+          "text": "Patient's BP/Temp/Pulse",
+          "type": "text",
+          "maxLength": 200
+        },
+        {
+          "linkId": "CLT_AWARE",
+          "text": "How long is patient aware of the condition",
+          "type": "dateTime"
+        },
+        {
+          "linkId": "SYMPTOMS_DATE",
+          "text": "Date symptoms first appeared",
+          "type": "dateTime"
+        },
+        {
+          "linkId": "DATE_CONSULTED",
+          "text": "Date first consulted",
+          "type": "dateTime"
+        },
+        {
+          "linkId": "PREV_CONSULT",
+          "text": "Any previous consultation/treatment/hospitalization for this symptoms/illness or related conditions whether in this hospital or any other facilities",
+          "type": "boolean"
+        },
+        {
+          "linkId": "REFERRED",
+          "text": "Was the patient referred?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "PREV_CONSULT",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "MEDICAL_HIST",
+          "text": "Referred hospital & details",
+          "type": "text",
+          "enableWhen": [
+            {
+              "question": "REFERRED",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "maxLength": 200
+        },
+        {
+          "linkId": "OUTPATIENT",
+          "text": "The condition can be managed under outpatient basis",
+          "type": "boolean"
+        },
+        {
+          "linkId": "REASON_NO_OP",
+          "text": "Reason of admission",
+          "type": "text",
+          "enableWhen": [
+            {
+              "question": "OUTPATIENT",
+              "operator": "=",
+              "answerBoolean": false
+            }
+          ],
+          "maxLength": 200
+        },
+        {
+          "linkId": "ICD_CODE",
+          "text": "Diagnosis Description",
+          "type": "string",
+          "maxLength": 100
+        },
+        {
+          "linkId": "2nd_ICD",
+          "text": "Secondary Diagnosis code",
+          "type": "string",
+          "maxLength": 100
+        },
+        {
+          "linkId": "ICD_DESC",
+          "text": "Expected days of stay / Discharge date",
+          "type": "text",
+          "maxLength": 500
+        },
+        {
+          "linkId": "DIAGNOSIS_DATE",
+          "text": "Diagnosis confirmed on date",
+          "type": "dateTime"
+        },
+        {
+          "linkId": "ADVISED_DATE",
+          "text": "Date when doctor first advised the diagnosis to patient",
+          "type": "dateTime"
+        },
+        {
+          "linkId": "RELAPSE",
+          "text": "Any possibility of relapse",
+          "type": "boolean"
+        },
+        {
+          "linkId": "EST_COST",
+          "text": "Estimated Cost",
+          "type": "decimal"
+        },
+        {
+          "linkId": "ADMISSION_TYPE",
+          "text": "Type of admission",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "IP",
+                "display": "Hospitalisation"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "DC",
+                "display": "Day Care"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "PR",
+                "display": "On patient's request"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "ILLNESS_CONDITION",
+          "text": "selected illness/condition related to the diagnosis",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "a",
+                "display": "Pregnancy / Childbirth / Infertility / Caesarean section/ miscarriage Or any complications arising therefrom"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "b",
+                "display": "Congenital / Hereditary diseases"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "c",
+                "display": "Influence of Drugs / Alcohol"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "d",
+                "display": "Nervous / Mental / Emotional / Sleeping Disorder"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "e",
+                "display": "Cosmetic reason / Dental care / refractive errors correction"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "f",
+                "display": "AIDS / STD / VD / HIV"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "g",
+                "display": "Self-inflicted injuries / Violation of laws / Strike / Riots"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "h",
+                "display": "None of the above"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "TREATMENT_PLAN",
+          "text": "Medical treatment, Investigation and Surgical procedure to be performed",
+          "type": "text",
+          "maxLength": 500
+        },
+        {
+          "linkId": "DIABETES_MELLITUS",
+          "text": "Does the patient have any Diabetes Mellitus condition?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "DIABETES_SINCE_WHEN",
+          "text": "Date first diagnosed with Diabetes Mellitus",
+          "type": "dateTime",
+          "enableWhen": [
+            {
+              "question": "DIABETES_MELLITUS",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "DIABETES_MED_DET",
+          "text": "1) doctor who first diagnosed (Name & Hosp) \n 2) usual treating doctor \n 3) current medications (name/dosage)",
+          "type": "text",
+          "enableWhen": [
+            {
+              "question": "DIABETES_MELLITUS",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "maxLength": 500
+        },
+        {
+          "linkId": "HYPERTENSION",
+          "text": "Does the patient have any hypertension condition?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "HYPERTENSION_SINCE_WHEN",
+          "text": "Date first diagnosed with hypertension",
+          "type": "dateTime",
+          "enableWhen": [
+            {
+              "question": "HYPERTENSION",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "HYPERTENSION_MED_DET",
+          "text": "1) doctor who first diagnosed (Name & Hosp) \n 2) usual treating doctor \n 3) current medications (name/dosage)",
+          "type": "text",
+          "enableWhen": [
+            {
+              "question": "HYPERTENSION",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "maxLength": 500
+        },
+        {
+          "linkId": "HEART_DISEASE",
+          "text": "Does the patient have any heart disease condition?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "HEART_DISEASE_SINCE_WHEN",
+          "text": "Date first diagnosed with heart disease",
+          "type": "dateTime",
+          "enableWhen": [
+            {
+              "question": "HEART_DISEASE",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "HEART_DIASEASE_MED_DET",
+          "text": "1) doctor who first diagnosed (Name & Hosp) \n 2) usual treating doctor \n 3) current medications (name/dosage)",
+          "type": "string",
+          "enableWhen": [
+            {
+              "question": "HEART_DISEASE",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "maxLength": 500
+        },
+        {
+          "linkId": "OTH_MEDICAL",
+          "text": "Other than above 3 specific illness. Does the patient have any other medical condition",
+          "type": "boolean"
+        },
+        {
+          "linkId": "OTH_MEDICAL_DET",
+          "text": "Other than above 3 specific illness. \n Doctor to provide other medical conditions if exist, if possible to provide medical conditions since date",
+          "type": "text",
+          "enableWhen": [
+            {
+              "question": "OTH_MEDICAL",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "PREGNANT",
+          "text": "Was the patient pregnant at the time of hospitalization",
+          "type": "boolean"
+        },
+        {
+          "linkId": "ACCIDENTAL",
+          "text": "Accidental case",
+          "type": "boolean"
+        },
+        {
+          "linkId": "ACCIDENT_DATE",
+          "text": "Date & time of Accident",
+          "type": "dateTime",
+          "enableWhen": [
+            {
+              "question": "ACCIDENTAL",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "ACCIDENT_DET",
+          "text": "Details of Accident",
+          "type": "text",
+          "enableWhen": [
+            {
+              "question": "ACCIDENTAL",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "SURGICAL",
+          "text": "Surgery is required",
+          "type": "boolean"
+        },
+        {
+          "linkId": "SURGICAL_DATE",
+          "text": "Date of Surgical",
+          "type": "dateTime",
+          "enableWhen": [
+            {
+              "question": "SURGICAL",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "INJURY_DESC",
+          "text": "Injury description",
+          "type": "text"
+        },
+        {
+          "linkId": "HOSP_DOCTOR_CODE",
+          "text": "Hospital doctor User Code",
+          "type": "string"
+        },
+        {
+          "linkId": "PHYSICIAN",
+          "text": "Name of Admitting / Treating doctor",
+          "type": "string"
+        },
+        {
+          "linkId": "PHYSICIAN_SPECIALTY",
+          "text": "Physician Specialty",
+          "type": "string"
+        },
+        {
+          "linkId": "GL Number",
+          "text": "GE Guarantee Letter Number",
+          "type": "string"
+        },
+        {
+          "linkId": "Patient_Consent",
+          "text": "Checklist - Patient's Consent and witness signature obtained",
+          "type": "boolean"
+        }
+      ]
+    }
+  ]
+}

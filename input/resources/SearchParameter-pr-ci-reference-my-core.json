@@ -1,0 +1,19 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "pr-ci-reference-my-core",
+    "url": "http://fhir.hie.moh.gov.my/SearchParameter/pr-ci-reference-my-core",
+    "name": "SearchParameterPrChargeItemReferenceMyCore",
+    "status": "active",
+    "date": "2023-05-08T00:49:51.4209074+00:00",
+    "description": "Cmy Organization Reference",
+    "code": "pr-ci-reference",
+    "base": [
+        "PaymentReconciliation"
+    ],
+    "type": "reference",
+    "expression": "PaymentReconciliation.extension('http://fhir.hie.moh.gov.my/StructureDefinition/pr-ci-reference-my-core')",
+    "xpathUsage": "normal",
+    "target": [
+        "ChargeItem"
+    ]
+}

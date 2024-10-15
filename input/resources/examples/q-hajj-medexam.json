@@ -1,0 +1,527 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hajj-medexam",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2023-12-14T10:53:51.495+08:00",
+    "source": "#arh3zn4F91U8O6gv"
+  },
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-medexam",
+  "version": "1.0.0",
+  "name": "QHajjMedexam",
+  "title": "Pemeriksaan Kesihatan",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Pemeriksaan Sistem AM",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Jaundice",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.2",
+          "text": "Cyanosis",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.3",
+          "text": "Clubbing",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.4",
+          "text": "Pallor",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.5",
+          "text": "Pedal Oedema",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Pemeriksaan Sistem Khusus",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "Head & Neck",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "Abnormal"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.2",
+          "text": "Ear, Nose & Throat",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "Abnormal"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.3",
+          "text": "Thyroid",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "Abnormal"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.4",
+          "text": "Lymph Nodes",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "Abnormal"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.5",
+          "text": "Sistem Kardiovaskular",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "Abnormal"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.6",
+          "text": "Sistem Respiratori",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "Abnormal"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.7",
+          "text": "Sistem Gastrointestinal",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "Abnormal"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.8",
+          "text": "Liver",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "02",
+                "display": "Palpable"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "03",
+                "display": "Not Palpable"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.9",
+          "text": "Spleen",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "02",
+                "display": "Palpable"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "03",
+                "display": "Not Palpable"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.10",
+          "text": "Ascites",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "2.11",
+              "text": "Describe",
+              "type": "text",
+              "enableWhen": [
+                {
+                  "question": "2.10",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "2.12",
+          "text": "Hernia",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "2.13",
+              "text": "Describe",
+              "type": "text",
+              "enableWhen": [
+                {
+                  "question": "2.12",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "2.14",
+          "text": "Mass",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "2.15",
+              "text": "Describe",
+              "type": "text",
+              "enableWhen": [
+                {
+                  "question": "2.14",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Sistem Genitourinari",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "Kidney",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "02",
+                "display": "Palpable"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "03",
+                "display": "Not Palpable"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "3.2",
+          "text": "Lain-lain",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Sistem Saraf",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "4.1",
+          "text": "Motor",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "Abnormal"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "4.2",
+          "text": "Sensory",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "Abnormal"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "4.3",
+          "text": "Reflexes",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "Abnormal"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "4.4",
+          "text": "Payudara",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "Abnormal"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "4.5",
+          "text": "Foot Examination",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "Abnormal"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "4.6",
+          "text": "Lain-lain",
+          "type": "text"
+        },
+        {
+          "linkId": "4.7",
+          "text": "Functional Class",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "04",
+                "display": "I"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "05",
+                "display": "II"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "06",
+                "display": "III"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "07",
+                "display": "IV"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Lain-lain Ujian (Jika Terdapat Indikasi)",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "5.1",
+          "text": "X-Ray Dada",
+          "type": "text"
+        },
+        {
+          "linkId": "5.2",
+          "text": "Full Blood Count (FBC)",
+          "type": "string"
+        },
+        {
+          "linkId": "5.3",
+          "text": "Fasting Blood Sugar (FBS) / OGTT",
+          "type": "string"
+        },
+        {
+          "linkId": "5.4",
+          "text": "HbA1c",
+          "type": "quantity"
+        },
+        {
+          "linkId": "5.5",
+          "text": "Renal profile",
+          "type": "string"
+        },
+        {
+          "linkId": "5.6",
+          "text": "Electrocardiogram (ECG)",
+          "type": "text"
+        },
+        {
+          "linkId": "5.7",
+          "text": "UPT (If LNMP more than 4 weeks)",
+          "type": "text"
+        },
+        {
+          "linkId": "5.8",
+          "text": "Lain-lain",
+          "type": "text"
+        },
+        {
+          "linkId": "5.9",
+          "text": "Catatan",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "Pemeriksaan Gigi",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "6.1",
+          "text": "Tarikh Pemeriksaan",
+          "type": "dateTime"
+        },
+        {
+          "linkId": "6.2",
+          "text": "Tempat Pemeriksaan",
+          "type": "string"
+        },
+        {
+          "linkId": "6.3",
+          "text": "Catatan",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}

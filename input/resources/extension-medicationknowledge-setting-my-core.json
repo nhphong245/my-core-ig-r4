@@ -1,0 +1,150 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "medicationknowledge-setting-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/medicationknowledge-setting-my-core",
+  "name": "ExtensionMedicationKnowledgeSettingMyCore",
+  "title": "ExtensionMedicationKnowledgeSetting (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension to define the settings of a particular Master Drug/Medication",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationKnowledge"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:splitDose",
+        "path": "Extension.extension",
+        "sliceName": "splitDose"
+      },
+      {
+        "id": "Extension.extension:splitDose.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "splitDose"
+      },
+      {
+        "id": "Extension.extension:splitDose.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:taperDown",
+        "path": "Extension.extension",
+        "sliceName": "taperDown"
+      },
+      {
+        "id": "Extension.extension:taperDown.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "taperDown"
+      },
+      {
+        "id": "Extension.extension:taperDown.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:taperUp",
+        "path": "Extension.extension",
+        "sliceName": "taperUp"
+      },
+      {
+        "id": "Extension.extension:taperUp.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "taperUp"
+      },
+      {
+        "id": "Extension.extension:taperUp.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:fractionDose",
+        "path": "Extension.extension",
+        "sliceName": "fractionDose"
+      },
+      {
+        "id": "Extension.extension:fractionDose.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "fractionDose"
+      },
+      {
+        "id": "Extension.extension:fractionDose.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:fractionDoseRoundUp",
+        "path": "Extension.extension",
+        "sliceName": "fractionDoseRoundUp"
+      },
+      {
+        "id": "Extension.extension:fractionDoseRoundUp.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "fractionDoseRoundUp"
+      },
+      {
+        "id": "Extension.extension:fractionDoseRoundUp.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:allowDuplicateOrder",
+        "path": "Extension.extension",
+        "sliceName": "allowDuplicateOrder"
+      },
+      {
+        "id": "Extension.extension:allowDuplicateOrder.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "allowDuplicateOrder"
+      },
+      {
+        "id": "Extension.extension:allowDuplicateOrder.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/medicationknowledge-setting-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

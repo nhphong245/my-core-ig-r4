@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "encounter-service-type-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/encounter-service-type-my-core",
+  "name": "SearchParameterEncounterServiceTypeMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Specific type of service for the encounter",
+  "code": "service-type",
+  "base": [
+    "Encounter"
+  ],
+  "type": "token",
+  "expression": "Encounter.serviceType"
+}

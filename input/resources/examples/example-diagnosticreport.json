@@ -1,0 +1,65 @@
+{
+    "resourceType": "DiagnosticReport",
+    "id": "report-lab-example-2",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-10-02T07:57:04.211+08:00",
+        "source": "http://his@kkm.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/DiagnosticReport-my-core"
+        ]
+    },
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/barcode",
+            "value": "00000000example"
+        }
+    ],
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core",
+                    "code": "108252007",
+                    "display": "Laboratory Procedure"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-my-core",
+                "code": "58410-2",
+                "display": "Full Blood Count (FBC)"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/patient-example"
+    },
+    "effectiveDateTime": "2023-09-07T08:00:00+08:00",
+    "issued": "2023-09-07T08:00:00+08:00",
+    "performer": [
+        {
+            "identifier": {
+                "value": "primary_performer"
+            },
+            "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+        },
+        {
+            "identifier": {
+                "value": "verified_by"
+            },
+            "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+        },
+        {
+            "identifier": {
+                "value": "validated_by"
+            },
+            "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+        }
+    ],
+    "conclusion": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Performed Date</b>: 07-Sep-2023 08:00</p><p><b>Performer</b>: SAIFULDAULAH BIN MOHD HAFIZ NGOO</p><p><b>Full Blood Count (FBC)</b>: </p><ul><li><b>White Blood Cell Count (WBC)</b>: 16.9710*3/uL *High (4.078 - 11.370)</li><li><b>Red Blood Cell Count (RBC)</b>: 3.8510*6/uL *Low (4.53 - 5.95)</li><li><b>Hemoglobin (Hb)</b>: 10.7g/dL *Low (13.5 - 17.4)</li><li><b>Hematocrit (HCT)</b>: 20.5% *Low (40.1 - 50.6)</li><li><b>Mean Cell Volume (MCV)</b>: 53.2fL *High (26.9 - 32.3)</li><li><b>Mean Cell Haemoglobin (MCH)</b>: 17.4pg *Low (26.9 - 32.3)</li><li><b>Mean Cell Haemoglobin Concentration (MCHC)</b>: 32.7g/dL (31.9 - 35.3)</li><li><b>Platelet (Plt)</b>: 62610*3/uL *High (142 - 350)</li><li><b>Red Cell Distribution Width - SD</b>: </li><li><b>Red Cell Distribution Width - CV</b>: </li><li><b>Platelet Distribution Width</b>: </li><li><b>Mean Platelet Volume</b>: </li><li><b>Platelet Large Cell Ratio</b>: </li><li><b>Plateletcrit</b>: </li><li><b>Absolute Neutrophil</b>: 8.7510*3/uL *High (3.929 - 7.147)</li><li><b>Absolute Lymphocyte</b>: 6.4510*3/uL *High (1.847 - 4.807)</li><li><b>Absolute Monocyte</b>:  (0.385 - 1.141)</li><li><b>Absolute Eosinophil</b>:  (0.000 - 0.827)</li><li><b>Absolute Basophil</b>: 0.2010*3/uL *High (0.00 - 0.095)</li><li><b>Immature Granulocyte</b>: </li><li><b>Percentage of Neutrophil</b>: </li><li><b>Percentage of Lymphocyte</b>: </li><li><b>Percentage of Monocyte</b>: </li><li><b>Percentage of Eosinophil</b>: </li><li><b>Percentage of Basophil</b>: </li></ul></div>"
+}

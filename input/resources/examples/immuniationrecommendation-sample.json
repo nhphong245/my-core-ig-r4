@@ -1,0 +1,73 @@
+{
+    "resourceType": "ImmunizationRecommendation",
+    "id": "immunizationrecommendation-sample",
+    "meta": {
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/ImmunizationRecommendation-my-core"
+        ],
+        "source": "http://provider.hie.moh.gov.my"
+    },
+    "patient": {
+        "reference": "Patient/patient-sample"
+    },
+    "date": "2022-01-01T10:30:00+08:00",
+    "authority": {
+        "reference": "Organization/11-05060009"
+    },
+    "recommendation": [
+        {
+            "vaccineCode": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/vaccine-code-my-core",
+                            "code": "J07BX03000P3001",
+                            "display": "COVID-19 Vaccine AstraZeneca Inj"
+                        }
+                    ]
+                }
+            ],
+            "targetDisease": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "186747009",
+                        "display": "Coronavirus infection"
+                    }
+                ]
+            },
+            "forecastStatus": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status",
+                        "code": "complete",
+                        "display": "Complete"
+                    }
+                ]
+            },
+            "dateCriterion": [
+                {
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "30980-7",
+                                "display": "Date vaccine due"
+                            }
+                        ]
+                    },
+                    "value": "2022-02-09T10:00:00+08:00"
+                }
+            ],
+            "description": "Protocol details example, According to CPG vaccine guideline, example- immunizationrecommendatio-s09-02",
+            "series": "Name of vaccination series example,example- immunizationrecommendatio-s09-02",
+            "doseNumberPositiveInt": 1,
+            "seriesDosesPositiveInt": 3,
+            "supportingImmunization": [
+                {
+                    "reference": "Immunization/immunization-sample"
+                }
+            ]
+        }
+    ]
+}

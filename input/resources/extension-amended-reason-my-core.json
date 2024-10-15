@@ -1,0 +1,74 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "amended-reason-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/amended-reason-my-core",
+  "name": "ExtensionAmendmentMyCore",
+  "title": "ExtensionAmended (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension to add amended information of this clinical documentation",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DiagnosticReport"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:amendedDate",
+        "path": "Extension.extension",
+        "sliceName": "amendedDate"
+      },
+      {
+        "id": "Extension.extension:amendedDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "amendedDate"
+      },
+      {
+        "id": "Extension.extension:amendedDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:amendedReason",
+        "path": "Extension.extension",
+        "sliceName": "amendedReason"
+      },
+      {
+        "id": "Extension.extension:amendedReason.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "amendedReason"
+      },
+      {
+        "id": "Extension.extension:amendedReason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/amended-reason-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

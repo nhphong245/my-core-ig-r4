@@ -1,0 +1,2026 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id":"example-questionnaireresponse",
+    "identifier": [
+        {
+            "value": "KKS2-123"
+        }
+    ],
+    "meta": {
+        "source": "http://protecthealth.hie.moh.gov.my",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"
+        ]
+    },
+    "questionnaire": "https://fhir.hie.moh.gov.my/baseR4/Questionnaire/mynhs-my-core",
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/PH-001",
+        "display": "NAMA"
+    },
+    "authored": "2022-08-03T04:22:00.113Z",
+    "author": {
+        "display": "LAILA AJWA"
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core",
+            "valueReference": {
+                "reference": "Organization/21-05060180",
+                "display": "Klinik Kesihatan Seremban 2"
+            }
+        }
+    ],
+    "item": [
+        {
+            "linkId": "1",
+            "text": "User Demographic",
+            "item": [
+                {
+                    "linkId": "1.1",
+                    "text": "Name",
+                    "answer": [
+                        {
+                            "valueString": "Abu"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.2",
+                    "text": "MySejahtera ID",
+                    "answer": [
+                        {
+                            "valueString": "921005146620"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.3",
+                    "text": "Contact Number",
+                    "answer": [
+                        {
+                            "valueString": "+60115640217"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.4",
+                    "text": "Type of Identification",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "Ic Numbers"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.5",
+                    "text": "IC Number/Passport",
+                    "answer": [
+                        {
+                            "valueString": "921005146620"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.6",
+                    "text": "Gender",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://hl7.org/fhir/administrative-gender",
+                                "code": "male",
+                                "display": "Male"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.7",
+                    "text": "Nationality",
+                    "answer": [
+                        {
+                            "valueString": "Malaysia"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.8",
+                    "text": "Address",
+                    "answer": [
+                        {
+                            "valueString": "KAMPUNG LAMA SALAK TENGGARA"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.9",
+                    "text": "Occupation",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "02",
+                                "display": "Professional"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.10",
+                    "text": "Ethnicity",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "Malay"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.11",
+                    "text": "Special Category of Population",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "00",
+                                "display": "Not Applicable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.12",
+                    "text": "Industry",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "Accomodations"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.13",
+                    "text": "Comorbidities Present",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "73211009",
+                                "display": "Diabetes Mellitus"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "38341003",
+                                "display": "Hypertension"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "195967001",
+                                "display": "Asthma"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.14",
+                    "text": "Last Screening Date",
+                    "item": [
+                        {
+                            "linkId": "1.14.1",
+                            "text": "Has the patient performed health screening before?",
+                            "answer": [
+                                {
+                                    "valueBoolean": true
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "1.14.2",
+                            "text": "If Yes:",
+                            "answer": [
+                                {
+                                    "valueDate": "2022-08-03"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "2",
+            "text": "Assessments",
+            "item": [
+                {
+                    "linkId": "2.1",
+                    "text": "Does the patient have any family history?",
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "linkId": "2.1.1",
+                                    "text": "If yes:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "38341003",
+                                                "display": "Hypertension"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "13644009",
+                                                "display": "Hypercholesterolemia"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "56265001",
+                                                "display": "Coronary Heart Disease"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "2.2",
+                    "text": "Does the patient have any medical history?",
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "linkId": "2.2.1",
+                                    "text": "If yes:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "73211009",
+                                                "display": "Diabetes Mellitus"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "13644009",
+                                                "display": "Hypercholesterolemia"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "363346000",
+                                                "display": "Cancer"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "3",
+            "text": "Mental Health Assessments",
+            "item": [
+                {
+                    "linkId": "3.1",
+                    "text": "In the past 2 weeks, how often does this patient:",
+                    "item": [
+                        {
+                            "linkId": "3.1.1",
+                            "text": "Felt Down, depressed or hopeless",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "02",
+                                        "display": "> 7 days"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.2",
+                            "text": "Little interest to do things",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "00",
+                                        "display": "Not At All"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.3",
+                            "text": "Trouble falling asleep/staying asleep or sleeping too much",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "03",
+                                        "display": "Almost everyday"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.4",
+                            "text": "Felt tired or having little energy",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "00",
+                                        "display": "Not At All"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.5",
+                            "text": "Had poor appetite or over eating",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "00",
+                                        "display": "Not At All"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.6",
+                            "text": "Felt bad about himself/herself, felt like a failure or he/she has let his/her family down",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "01",
+                                        "display": "Several Days"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.7",
+                            "text": "Trouble concentrating (e.g. watching television or reading newspaper)",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "02",
+                                        "display": "> 7 days"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.8",
+                            "text": "Moved slowly or fidgeted excessively that is noticeable by people around him/her",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "03",
+                                        "display": "Almost everyday"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.9",
+                            "text": "Had thoughts that he/she would be better dead, or hurting yourself",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "00",
+                                        "display": "Not At All"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.10",
+                            "text": "Total Mental Health Test Score",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "02",
+                                        "display": "10-14 : Moderate Depression"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "3.2",
+                    "text": "In the last 2 weeks, indicate how difficult these problems made it for this patient",
+                    "item": [
+                        {
+                            "linkId": "3.2.1",
+                            "text": "Do your work, take care of things at home, or get along with others",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "02",
+                                        "display": "Very difficult"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "4",
+            "text": "Lifestyle Health Assessment",
+            "item": [
+                {
+                    "linkId": "4.1",
+                    "text": "Alcohol consumption",
+                    "item": [
+                        {
+                            "linkId": "4.1.1",
+                            "text": "How often do you consume alcohol?",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "01",
+                                        "display": "Once a month"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.1.2",
+                            "text": "How many alcoholic beverages do you consume in a day?",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "03",
+                                        "display": "7-9"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.1.3",
+                            "text": "How often within the last year,",
+                            "item": [
+                                {
+                                    "linkId": "4.1.3.1",
+                                    "text": "Do you consume 6 or more drink in a day?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "< Once a month"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "4.1.3.2",
+                                    "text": "Were you not able to stop drinking once started?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Once a month"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "4.1.3.3",
+                                    "text": "Were you not able to perform normal activities due to drinking?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "03",
+                                                "display": "Weekly"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "4.1.3.4",
+                                    "text": "You needed to drink first thing in the morning to get going after a heavy drinking session?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Once a month"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "4.1.3.5",
+                                    "text": "That you felt guilt or remorse after drinking?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Once a month"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "4.1.3.6",
+                                    "text": "Were you unable to remember what happened the night before due to drinking?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "03",
+                                                "display": "Weekly"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.1.4",
+                            "text": "Have you or someone else been injured because of your drinking?",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "02",
+                                        "display": "Yes, during last year"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.1.5",
+                            "text": "Has a relative, friend, doctor, been concerned about your drinking habits?",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "01",
+                                        "display": "Yes, but not last year"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.1.6",
+                            "text": "Total Alcohol Consumption Test Score",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "02",
+                                        "display": ">13 High Risk"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "4.2",
+                    "text": "Smoking Status",
+                    "item": [
+                        {
+                            "linkId": "4.2.1",
+                            "text": "Does the patient smoke?",
+                            "answer": [
+                                {
+                                    "valueBoolean": true
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.2.2",
+                            "text": "Cigarettes per Day",
+                            "answer": [
+                                {
+                                    "valueInteger": 10
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.2.3",
+                            "text": "Years of Smoking",
+                            "answer": [
+                                {
+                                    "valueInteger": 10
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.2.4",
+                            "text": "Total pack-years",
+                            "answer": [
+                                {
+                                    "valueQuantity": {
+                                        "value": 10
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "5",
+            "text": "Clinical Parameters",
+            "item": [
+                {
+                    "linkId": "5.1",
+                    "text": "Anthropometry: Height",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 10,
+                                "unit": "cm"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.2",
+                    "text": "Anthropometry: Weight",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 10,
+                                "unit": "kg"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.3",
+                    "text": "Anthropometry: Waistline",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 10,
+                                "unit": "cm"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.4",
+                    "text": "BMI calculation",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 10,
+                                "unit": "kg/m2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.5",
+                    "text": "BMI Outcome",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "02",
+                                "display": "Normal Weight (18.5-24.9)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.6",
+                    "text": "Vital Signs: Blood Pressure (systolic)",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 10,
+                                "unit": "mm[Hg]"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.7",
+                    "text": "Vital Signs: Blood Pressure (diastolic)",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 10,
+                                "unit": "mm[Hg]"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.8",
+                    "text": "Vital Signs: Pulse Rate",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 10,
+                                "unit": "/min"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.9",
+                    "text": "Blood Pressure Outcome",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "02",
+                                "display": "Normal (Systolic <130,Diastolic <85)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.10",
+                    "text": "Point of Care Testing: Blood Glucose",
+                    "item": [
+                        {
+                            "linkId": "5.10.1",
+                            "text": "Fasting",
+                            "answer": [
+                                {
+                                    "valueQuantity": {
+                                        "value": 10,
+                                        "unit": "mmol/L"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "5.10.2",
+                            "text": "Random",
+                            "answer": [
+                                {
+                                    "valueQuantity": {
+                                        "value": 10,
+                                        "unit": "mmol/L"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "5.10.3",
+                            "text": "Blood Glucose Outcome",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "03",
+                                        "display": "Normal Random (<7.8)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.11",
+                    "text": "Point of Care Testing: Blood Cholesterol",
+                    "item": [
+                        {
+                            "linkId": "5.11.1",
+                            "text": "Fasting",
+                            "answer": [
+                                {
+                                    "valueQuantity": {
+                                        "value": 10,
+                                        "unit": "mmol/L"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "5.11.2",
+                            "text": "Random",
+                            "answer": [
+                                {
+                                    "valueQuantity": {
+                                        "value": 10,
+                                        "unit": "mmol/L"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "5.11.3",
+                            "text": "Blood Cholesterol Outcome",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "01",
+                                        "display": "High >= 5.2 mmol/L"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "6",
+            "text": "Advanced Health Screening (Optional)",
+            "item": [
+                {
+                    "linkId": "6.1",
+                    "text": "Cardiovascular",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "Chest Pain"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "02",
+                                "display": "Ankle Swelling"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "04",
+                                "display": "Intermittent claudication"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6.2",
+                    "text": "Gastrointestinal",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "Abdominal pain"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "04",
+                                "display": "Dyspepsia"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "06",
+                                "display": "Cough with or without sputum"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6.3",
+                    "text": "Genitourinary",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "Haematuria"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "03",
+                                "display": "Menstual irregularity - women"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "05",
+                                "display": "Frequency"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6.4",
+                    "text": "Locomotor",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "Joint pain"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "02",
+                                "display": "Change in mobility"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6.5",
+                    "text": "Neurological",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "03",
+                                "display": "Transient loss of function (vision, speech, sight)"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "02",
+                                "display": "Eyesight"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "04",
+                                "display": "Collapses"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6.6",
+                    "text": "ENT Symptoms",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "04",
+                                "display": "Otalgia"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "05",
+                                "display": "Dysphonia"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "06",
+                                "display": "Trismus"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6.7",
+                    "text": "Dermatology",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "03",
+                                "display": "Ulcers"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "02",
+                                "display": "Skin color changes"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "04",
+                                "display": "Skin lesions"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "7",
+            "text": "Advanced Systemic Examination (Optional)",
+            "item": [
+                {
+                    "linkId": "7.1",
+                    "text": "General Appearance",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.1.1",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Dehydrated"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "03",
+                                                "display": "Cachexic"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "04",
+                                                "display": "Abnormal gait"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7.2",
+                    "text": "Hands and Arms:",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "00",
+                                "display": "Normal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.2.1",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Koilonychia"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "03",
+                                                "display": "Leuchonychia"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "04",
+                                                "display": "Palmar erythema"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7.3",
+                    "text": "Head, Ears, Eyes, Nose and Throat",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.3.1",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Discharges"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "Bleeding"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "03",
+                                                "display": "Abnormal Breath"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7.4",
+                    "text": "Eyes:",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "00",
+                                "display": "Normal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.4.1",
+                                    "text": "If Abnormal (Conjuntival):",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "display": "Pallor"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "7.4.2",
+                                    "text": "If Abnormal (Sclera):",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "Jaundice"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Iritis"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "03",
+                                                "display": "Hemorrhage"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "7.4.3",
+                                    "text": "If Abnormal (Cornea):",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "Kaiser Fleischer’s ring (Wilson Disease)"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "03",
+                                                "display": "Protruded eyeballs"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7.5",
+                    "text": "Fundoscopy",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "00",
+                                "display": "Normal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.5.1",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "Absence of red reflex"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "7.5.2",
+                                    "text": "Optic Disc",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "Swollen"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "7.5.3",
+                                    "text": "Retina",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "Arteriolar narrowing"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Arteriovenous nicking"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "03",
+                                                "display": "Cotton-wool spots"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "7.5.4",
+                                    "text": "Macula",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Pigmented"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "Exudates"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7.6",
+                    "text": "Snellen Eye Chart Score:",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "00",
+                                "display": "Normal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.6.1",
+                                    "text": "If Abnormal (Right Eye):",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "60/6"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "7.6.2",
+                                    "text": "If Abnormal (Left Eye):",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "36/6"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7.7",
+                    "text": "Lips:",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.7.1",
+                                    "text": "If Abnormal (Lips):",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "Angular Stomatitis"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Ulceritis"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "7.7.2",
+                                    "text": "If Abnormal (Gums)",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "Gingivitis"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7.8",
+                    "text": "Tongue:",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "00",
+                                "display": "Normal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.8.1",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "glossitis"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "Atrophic"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "05",
+                                                "display": "Tonsils"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7.9",
+                    "text": "Neck",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.9.1",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Neck mass"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "Lymphadenopathy"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "03",
+                                                "display": "Skin lesion"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7.10",
+                    "text": "Cardiorespiratory Examination",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "00",
+                                "display": "Normal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.10.1",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Raised JVP"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "03",
+                                                "display": "Tracheal Deviation"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "05",
+                                                "display": "Peripheal edema"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7.11",
+                    "text": "Abdominal Examination",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "00",
+                                "display": "Normal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.11.1",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Distension"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "04",
+                                                "display": "Striae"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "06",
+                                                "display": "Pigmentation"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7.12",
+                    "text": "Genital Examination",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "00",
+                                "display": "Normal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.12.1",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "03",
+                                                "display": "Discharges"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "04",
+                                                "display": "Anal fissure"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "05",
+                                                "display": "Anal fistula"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7.13",
+                    "text": "Musculoskeletal Examination",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.13.1",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Swelling"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "04",
+                                                "display": "Scars"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "05",
+                                                "display": "Deformities"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7.14",
+                    "text": "Neurological Examination",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "00",
+                                "display": "Normal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "7.14.1",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "01",
+                                                "display": "Muscle Tone (Hypertonia/Hypotonia)"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "02",
+                                                "display": "Muscle Power (Score from 0-5)"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                                "code": "04",
+                                                "display": "Babinski (Present/Absent)"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "8",
+            "text": "Further Investigations",
+            "item": [
+                {
+                    "linkId": "8.1",
+                    "text": "Urine dipstick",
+                    "answer": [
+                        {
+                            "valueString": "10"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "8.2",
+                    "text": "Urine FEME",
+                    "answer": [
+                        {
+                            "valueString": "10"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "8.3",
+                    "text": "ECG",
+                    "answer": [
+                        {
+                            "valueString": "10"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "8.4",
+                    "text": "Haemoglobin",
+                    "answer": [
+                        {
+                            "valueString": "10"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "9",
+            "text": "Diagnosis",
+            "item": [
+                {
+                    "linkId": "9.1",
+                    "text": "Normal Healthy individual?",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "No"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "9.2",
+                    "text": "Diagnosis",
+                    "item": [
+                        {
+                            "linkId": "9.2.1",
+                            "text": "Display",
+                            "answer": [
+                                {
+                                    "valueString": "Dengue NOS"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "9.2.2",
+                            "text": "Code",
+                            "answer": [
+                                {
+                                    "valueString": " 1D2Z"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "9.2.3",
+                            "text": "Code System",
+                            "answer": [
+                                {
+                                    "valueString": "http://hl7.org/fhir/sid/icd-11"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "9.3",
+                    "text": "Provisional diagnosis",
+                    "item": [
+                        {
+                            "linkId": "9.3.1",
+                            "text": "Display",
+                            "answer": [
+                                {
+                                    "valueString": "Hypertension NOS"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "9.3.2",
+                            "text": "Code",
+                            "answer": [
+                                {
+                                    "valueString": "BA00.Z"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "9.3.3",
+                            "text": "Code System",
+                            "answer": [
+                                {
+                                    "valueString": "http://hl7.org/fhir/sid/icd-11"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "9.3",
+                    "text": "Provisional diagnosis",
+                    "item": [
+                        {
+                            "linkId": "9.3.1",
+                            "text": "Display",
+                            "answer": [
+                                {
+                                    "valueString": "Monkeypox"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "9.3.2",
+                            "text": "Code",
+                            "answer": [
+                                {
+                                    "valueString": "1E71"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "9.3.3",
+                            "text": "Code System",
+                            "answer": [
+                                {
+                                    "valueString": "http://hl7.org/fhir/sid/icd-11"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "10",
+            "text": "Management",
+            "item": [
+                {
+                    "linkId": "10.1",
+                    "text": "General management",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "01",
+                                "display": "Dietary advice"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "03",
+                                "display": "Physiotherapy"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "02",
+                                "display": "Smoking cessation"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                "code": "04",
+                                "display": "Physical activity advice"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "10.2",
+                    "text": "Doctor’s notes",
+                    "answer": [
+                        {
+                            "valueString": "This note is a markdown\nIt should save user entry formats"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "10.3",
+                    "text": "Prescription",
+                    "item": [
+                        {
+                            "linkId": "10.3.1",
+                            "text": "Any medication prescribed?",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "01",
+                                        "display": "T. AMLODIPINE 5MG"
+                                    }
+                                },
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "03",
+                                        "display": "T. FELODIPINE 5MG"
+                                    }
+                                },
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "04",
+                                        "display": "T. FELODIPINE 10MG"
+                                    }
+                                },
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "05",
+                                        "display": "T. PERINDOPRIL 4MG"
+                                    }
+                                },
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "06",
+                                        "display": "T. METOPROLOL 50MG"
+                                    }
+                                },
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/questionnaire-my-core",
+                                        "code": "08",
+                                        "display": "T. LOSARTAN 50MG"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "11",
+            "text": "Verified by",
+            "item": [
+                {
+                    "linkId": "11.1",
+                    "text": "Officer incharge",
+                    "answer": [
+                        {
+                            "valueString": "Saiful"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "11.2",
+                    "text": "Registration Number/ IC number",
+                    "answer": [
+                        {
+                            "valueString": "81751"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

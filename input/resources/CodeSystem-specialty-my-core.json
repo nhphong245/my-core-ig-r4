@@ -1,0 +1,4564 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-specialty-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemSpecialty (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core</tt><p>Code System Specialty My Core</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+  "name": "CodeSystemSpecialtyMyCore",
+  "title": "CodeSystemSpecialty (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Code System Specialty My Core",
+  "compositional": false,
+  "content": "complete",
+  "count": 219,
+  "property": [
+    {
+      "code": "Clinic",
+      "type": "string"
+    },
+    {
+      "code": "Dental",
+      "type": "string"
+    },
+    {
+      "code": "Hospital",
+      "type": "string"
+    },
+    {
+      "code": "Clinical Support",
+      "type": "string"
+    },
+    {
+      "code": "SpecialtyString",
+      "type": "string"
+    },
+    {
+      "code": "SpecialtyCode",
+      "type": "string"
+    }
+  ],
+  "concept": [
+    {
+      "code": "10",
+      "display": "Infectious Disease",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "display": "Advanced Internal Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "display": "Medical Oncology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "display": "Nephrology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "display": "Neurology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "display": "Palliative Care",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "display": "Respiratory Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "display": "Rheumatology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "19",
+      "display": "General Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "20",
+      "display": "Breast & Endocrine Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "21",
+      "display": "Burns & Trauma Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "22",
+      "display": "Cardiothoracic Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "23",
+      "display": "Colorectal Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "24",
+      "display": "Surgical Oncology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "display": "Hepatopancreaticobiliary (HPB) Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "26",
+      "display": "Neurosurgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "27",
+      "display": "Paediatric Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "28",
+      "display": "Plastic & Reconstructive Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "29",
+      "display": "Thoracic Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "30",
+      "display": "Upper Gastrointestinal Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "31",
+      "display": "Urology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "32",
+      "display": "Vascular Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "18"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Surgery"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "34",
+      "display": "General Obstetrics & Gynaecology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "33"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Obstetrics & Gynaecology"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "35",
+      "display": "Gynae-oncology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "33"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Obstetrics & Gynaecology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "36",
+      "display": "Maternal Fetal Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "33"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Obstetrics & Gynaecology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "37",
+      "display": "Reproductive Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "33"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Obstetrics & Gynaecology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "38",
+      "display": "Urogynaecology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "33"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Obstetrics & Gynaecology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "40",
+      "display": "General Paediatrics",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "41",
+      "display": "Adolescent Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "42",
+      "display": "Developmental Paeds",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "43",
+      "display": "Clinical Genetics",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "44",
+      "display": "Neonatology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "45",
+      "display": "Paediatric Cardiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "46",
+      "display": "Paediatric Palliative Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "47",
+      "display": "Paediatric Dermatology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "48",
+      "display": "Paediatric Emergency Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "49",
+      "display": "Paediatric Endocrine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "50",
+      "display": "Paediatric Gastroenterology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "51",
+      "display": "Paediatric Haemato-oncology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "52",
+      "display": "Paediatric Infectious Diseases",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "53",
+      "display": "Paediatric Intensive Care",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "54",
+      "display": "Paediatric Rheumatology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "55",
+      "display": "Paediatrics Nephrology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "56",
+      "display": "Paediatrics Neurology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "57",
+      "display": "Paediatrics Respiratory Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "59",
+      "display": "General Orthopaedics",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "58"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Orthopaedics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "60",
+      "display": "Joint Arthroplasty",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "58"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Orthopaedics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "61",
+      "display": "Arthroscopy & Sports Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "58"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Orthopaedics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "62",
+      "display": "Advanced Musculoskeletal Trauma",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "58"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Orthopaedics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "63",
+      "display": "Foot & Ankle Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "58"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Orthopaedics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "64",
+      "display": "Oncology Orthopaedic",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "58"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Orthopaedics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "65",
+      "display": "Paediatric Orthopaedic",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "58"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Orthopaedics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "66",
+      "display": "Spine Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "58"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Orthopaedics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "67",
+      "display": "Upper Limb, Hand  & Microsurgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "58"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Orthopaedics"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "69",
+      "display": "General Ophthalmology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "68"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Ophthalmology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "70",
+      "display": "Cornea",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "68"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Ophthalmology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "71",
+      "display": "Neuro Ophthalmology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "68"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Ophthalmology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "72",
+      "display": "Glaucoma",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "68"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Ophthalmology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "73",
+      "display": "Medical Retinal",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "68"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Ophthalmology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "74",
+      "display": "Oculoplastic Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "68"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Ophthalmology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "75",
+      "display": "Paediatric Ophthalmology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "68"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Ophthalmology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "76",
+      "display": "Vitreoretinal",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "68"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Ophthalmology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "78",
+      "display": "General Otorhinolaryngology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "77"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Otorhinolaryngology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "79",
+      "display": "Head & Neck Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "77"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Otorhinolaryngology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "80",
+      "display": "Otology/Skull Based Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "77"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Otorhinolaryngology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "81",
+      "display": "Paediatric ORL",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "77"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Otorhinolaryngology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "82",
+      "display": "Rhinology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "77"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Otorhinolaryngology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "84",
+      "display": "General Psychiatry",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "83"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Psychiatry"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "85",
+      "display": "Child & Adolescent Psychiatry",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "83"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Psychiatry"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "86",
+      "display": "Addiction & Substance Abuse",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "83"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Psychiatry"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "87",
+      "display": "Community & Rehab Psychiatry",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "83"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Psychiatry"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "88",
+      "display": "Forensic Psychiatry",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "83"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Psychiatry"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "89",
+      "display": "Liaison Psychiatry",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "83"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Psychiatry"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "90",
+      "display": "Neuropsychiatry",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "83"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Psychiatry"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "91",
+      "display": "Psychogeriatrics",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "83"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Psychiatry"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "93",
+      "display": "General Rehabilitation Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "92"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Rehabilitation Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "95",
+      "display": "General Nuclear Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "94"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Nuclear Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "97",
+      "display": "General Radiotherapy/Clinical Oncology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "96"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiotherapy/Clinical Oncology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "105",
+      "display": "General Emergency Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "104"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Emergency Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "107",
+      "display": "General Sports Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "106"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Sports Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "109",
+      "display": "General Anaesthesiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "108"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Anaesthesiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "110",
+      "display": "Obstetric Anaesthesia",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "108"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Anaesthesiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "111",
+      "display": "Paediatric Anaesthesia",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "108"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Anaesthesiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "112",
+      "display": "Adult Intensive Care",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "108"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Anaesthesiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "113",
+      "display": "Cardiac Anaesthesia",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "108"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Anaesthesiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "114",
+      "display": "Neuroanaesthesia & Trauma",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "108"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Anaesthesiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "115",
+      "display": "Pain Management",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "108"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Anaesthesiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "117",
+      "display": "Anatomical Pathology (Histhopathology)",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "116"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Pathology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "118",
+      "display": "Chemical Pathology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "116"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Pathology"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "119",
+      "display": "Haematology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "116"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Pathology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "120",
+      "display": "Medical Microbiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "116"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Pathology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "122",
+      "display": "General Transfusion Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "121"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Transfusion Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "124",
+      "display": "General Radiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "125",
+      "display": "Interventional Radiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "126",
+      "display": "Paediatric Radiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "127",
+      "display": "Breast & Endocrine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "128",
+      "display": "Cardiac Radiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "129",
+      "display": "Gastro Hepatobiliary",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "130",
+      "display": "Uroradiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "131",
+      "display": "Musculoskeletal Radiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "132",
+      "display": "Women's Imaging",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "133",
+      "display": "Forensic Radiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "134",
+      "display": "Neuroradiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "136",
+      "display": "General Forensic Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "135"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Forensic Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "137",
+      "display": "Clinical Forensic Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "135"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Forensic Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "138",
+      "display": "Forensic Anthropology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "135"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Forensic Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "139",
+      "display": "Forensic Pathology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "135"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Forensic Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "140",
+      "display": "Forensic Toxicology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "135"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Forensic Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "142",
+      "display": "General Multi Disciplines",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "141"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Multi Disciplines"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "143",
+      "display": "Obstetrics",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "33"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Obstetrics & Gynaecology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "144",
+      "display": "Gynaecology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "33"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Obstetrics & Gynaecology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "146",
+      "display": "General Family Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "148",
+      "display": "Public Health Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "149",
+      "display": "Communicable Disease",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "150",
+      "display": "Non-communicable Disease",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "151",
+      "display": "Family Health",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "152",
+      "display": "Health Management",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "153",
+      "display": "Occupational Health",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "154",
+      "display": "Environmental Health",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "155",
+      "display": "Military Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "156",
+      "display": "Paediatric Rehabilitation Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "157",
+      "display": "General Paediatrics & Child Health",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "39"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatrics"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "158",
+      "display": "Comprehensive Ophthalmology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "68"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Ophthalmology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "163",
+      "display": "Clinical Toxicology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "104"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Emergency Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "164",
+      "display": "Emergency Critical Care",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "104"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Emergency Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "165",
+      "display": "Emergency Trauma Care",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "104"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Emergency Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "166",
+      "display": "Pre-Hospital Care & Disaster",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "104"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Emergency Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "167",
+      "display": "Paediatric Emergency Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "104"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Emergency Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "168",
+      "display": "Regional Anaethesia",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "108"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Anaesthesiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "169",
+      "display": "General Pathology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "116"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Pathology"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "170",
+      "display": "Oncology Imaging",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "171",
+      "display": "Head & Neck Radiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "172",
+      "display": "Thoracic Imaging",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "173",
+      "display": "Emergency Radiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "123"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Radiology"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "174",
+      "display": "Paediatric Forensic Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "135"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Forensic Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "176",
+      "display": "General Special Care Dentistry",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "175"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Special Care Dentistry"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "178",
+      "display": "General Forensic Odontology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "177"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Forensic Odontology"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "180",
+      "display": "General Oral Pathology & Oral Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "179"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Oral Pathology & Oral Medicine"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "182",
+      "display": "General Oral Maxillofacial Surgery",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "181"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Oral Maxillofacial Surgery"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "184",
+      "display": "General Paediatric Dentistry",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "183"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Paediatric Dentistry"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "186",
+      "display": "General Orthodontics",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "185"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Orthodontics"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "188",
+      "display": "General Dental Public Health",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "187"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Dental Public Health"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "190",
+      "display": "General Periodontology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "189"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Periodontology"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "192",
+      "display": "General Restorative Dentistry",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "191"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Restorative Dentistry"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "194",
+      "display": "General Endodontics",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "193"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Endodontics"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "196",
+      "display": "General Oral Maxillofacial Imaging",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "195"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Oral Maxillofacial Imaging"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "198",
+      "display": "General Prosthodontics",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "197"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Prosthodontics"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "500",
+      "display": "Adult Health (Health screening)",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "501",
+      "display": "Antenatal Clinic",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "502",
+      "display": "Children With Special Need",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "503",
+      "display": "Community Health (Mobile clinic)",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "504",
+      "display": "Dietetic Service",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "505",
+      "display": "DOTS",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "506",
+      "display": "Domicilliary Care",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "507",
+      "display": "Family Planning",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "508",
+      "display": "Home visit - Delivery",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "509",
+      "display": "Home Visit - Others",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "510",
+      "display": "Home visit - Postnatal",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "511",
+      "display": "Methadone Clinic",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "512",
+      "display": "Nutrition Service",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "513",
+      "display": "Mental Health",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "514",
+      "display": "Postnatal Care - Baby",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "515",
+      "display": "Postnatal Care - Mother",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "516",
+      "display": "Pre-pregnancy Care",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "517",
+      "display": "Occupational Therapy Service",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "92"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Rehabilitation Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "518",
+      "display": "Physiotherapy Service",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "92"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Rehabilitation Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "519",
+      "display": "Counselling Service",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "520",
+      "display": "RME - IPT/MRSM/Badan Berkanun",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "521",
+      "display": "RME - Kerajaan (> 40 thn)/Medical Surveillance",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "522",
+      "display": "RME - Orang Awam/Insuran/Lesen/Umrah/Keluarga-Luar Negara",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "523",
+      "display": "RME - Pelantikan Kerajaan/Jemaah Haji/Atlet/PLKN",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "524",
+      "display": "RME - Sekolah Berasrama",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "525",
+      "display": "RME - Warga Asing",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "526",
+      "display": "Saringan Pengantin",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "527",
+      "display": "School Health",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "528",
+      "display": "Smoking Cessation",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "529",
+      "display": "Medical Social Work Service",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "530",
+      "display": "Womens Health (CBE)",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "531",
+      "display": "Diabetic Education",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "532",
+      "display": "Whole Blood Donation",
+      "definition": "BBIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "121"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Transfusion Medicine"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "533",
+      "display": "Vaccination",
+      "definition": "BBIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "534",
+      "display": "Platelet Apheresis Donation (A)",
+      "definition": "BBIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "121"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Transfusion Medicine"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "535",
+      "display": "Platelet Apheresis Donation (B)",
+      "definition": "BBIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "121"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Transfusion Medicine"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "536",
+      "display": "Platelet Apheresis Donation (O)",
+      "definition": "BBIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "121"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Transfusion Medicine"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "537",
+      "display": "Platelet Apheresis Donation (AB)",
+      "definition": "BBIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "121"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Transfusion Medicine"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "538",
+      "display": "Plasma Apheresis Donation (A)",
+      "definition": "BBIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "121"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Transfusion Medicine"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "539",
+      "display": "Plasma Apheresis Donation (B)",
+      "definition": "BBIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "121"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Transfusion Medicine"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "540",
+      "display": "Plasma Apheresis Donation (O)",
+      "definition": "BBIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "121"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Transfusion Medicine"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "541",
+      "display": "Plasma Apheresis Donation (AB)",
+      "definition": "BBIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "121"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Transfusion Medicine"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "542",
+      "display": "Medication Therapy Adherence Clinic (MTAC)",
+      "definition": "PHIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "543",
+      "display": "Medication Counselling (MC)",
+      "definition": "PHIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "544",
+      "display": "Therapeutic Drug Monitoring (TDM)",
+      "definition": "PHIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "545",
+      "display": "Parenteral Nutrition (PN)",
+      "definition": "PHIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "546",
+      "display": "Cytotoxic Drug Reconstitution (CDR)",
+      "definition": "PHIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "547",
+      "display": "Radiopharmaceutical",
+      "definition": "PHIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "548",
+      "display": "IV Admixture",
+      "definition": "PHIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "549",
+      "display": "Galenical",
+      "definition": "PHIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "550",
+      "display": "Ward Pharmacy",
+      "definition": "PHIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "551",
+      "display": "Drug Information & Consumer Education (DICE)",
+      "definition": "PHIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "552",
+      "display": "Primary Oral Health Care",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "187"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Dental Public Health"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "553",
+      "display": "Dental School Health",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "187"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Dental Public Health"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "554",
+      "display": "Men's Health",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "555",
+      "display": "General Health screening",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "556",
+      "display": "Clinical Psychology Service",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "557",
+      "display": "Speech Language Therapy Service",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "558",
+      "display": "Audiology  Service",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "559",
+      "display": "Jabatan Pesakit Luar",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "560",
+      "display": "Procedure",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "156"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Clinical Support"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "561",
+      "display": "National Health Screening (NHSI)",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "562",
+      "display": "Peka B40 Screening",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "147"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Public Health"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "563",
+      "display": "Information Technology",
+      "definition": "KKM",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "563"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Administrative"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        },
+        {
+          "code": "Dental",
+          "valueString": "Y"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        },
+        {
+          "code": "Clinical Support",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "02",
+      "display": "General Medicine",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "03",
+      "display": "Cardiology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "04",
+      "display": "Clinical Haematology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "05",
+      "display": "Dermatology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "06",
+      "display": "Endocrinology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "07",
+      "display": "Gastroenterology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "08",
+      "display": "Geriatric",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "09",
+      "display": "Hepatology",
+      "definition": "SMRP",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueString": "01"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Medicine"
+        },
+        {
+          "code": "Hospital",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "564",
+      "display": "STD Clinic",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueCode": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    },
+    {
+      "code": "565",
+      "display": "Combine Clinic",
+      "definition": "TPC-OHCIS",
+      "property": [
+        {
+          "code": "SpecialtyCode",
+          "valueCode": "145"
+        },
+        {
+          "code": "SpecialtyString",
+          "valueString": "Family Medicine"
+        },
+        {
+          "code": "Clinic",
+          "valueString": "Y"
+        }
+      ]
+    }
+  ]
+}

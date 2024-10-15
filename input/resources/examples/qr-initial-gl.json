@@ -1,0 +1,558 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "qr-gl-initial",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+        ]
+    },
+    "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-gl-initial",
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/74c778d4-19a4-442e-8918-620733047fce"
+    },
+    "authored": "2024-01-22T12:02:00+08:00",
+    "author": {
+        "reference": "PractitionerRole/b9797173-7e15-4fc3-8f85-d58627935956/_history/19"
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core",
+            "valueReference": {
+                "reference": "Organization/11-05060009"
+            }
+        }
+    ],
+    "item": [
+        {
+            "linkId": "HEADER",
+            "text": "Header",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueString": "20"
+                        }
+                    ],
+                    "linkId": "GE HOSP_CODE",
+                    "text": "GE PROVIDER CODE"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "code": "PA",
+                                "display": "Pre-Authorization Form /Initial GL request"
+                            }
+                        }
+                    ],
+                    "linkId": "REQ_TYPE",
+                    "text": "Request type"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-03-04T04:01:58.677Z"
+                        }
+                    ],
+                    "linkId": "REQ_DATE",
+                    "text": "Current date & time stamp"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "123456"
+                        }
+                    ],
+                    "linkId": "HOSP_CASENO",
+                    "text": "Hospital admission case no"
+                }
+            ]
+        },
+        {
+            "linkId": "D1",
+            "text": "Details",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueString": "12345"
+                        }
+                    ],
+                    "linkId": "REC-ID",
+                    "text": "REC-ID"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "Saifuldaulah"
+                        }
+                    ],
+                    "linkId": "PATIENT",
+                    "text": "Patient Name"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "921005146671"
+                        }
+                    ],
+                    "linkId": "NEWIC",
+                    "text": "IC (new)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://hl7.org/fhir/administrative-gender",
+                                "code": "male",
+                                "display": "Male"
+                            }
+                        }
+                    ],
+                    "linkId": "CLTSEX",
+                    "text": "Sex"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "32"
+                        }
+                    ],
+                    "linkId": "CLTAGE",
+                    "text": "Age of Patient"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "123456"
+                        }
+                    ],
+                    "linkId": "POLICY_NO",
+                    "text": "Policy No"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "01156404217"
+                        }
+                    ],
+                    "linkId": "HOSP_CONTACT",
+                    "text": "Hospital contact number"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "123456"
+                        }
+                    ],
+                    "linkId": "HOSP_FAX",
+                    "text": "Hospital Fax number"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-03-04T04:02:36.549Z"
+                        }
+                    ],
+                    "linkId": "ADMISSION_DATE",
+                    "text": "Admission /Planned Admission Date & Time"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "5"
+                        }
+                    ],
+                    "linkId": "EXP_LOS",
+                    "text": "Expected days of stay / Discharge date"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "SYMPTOMS",
+                    "text": "Symtoms /Conditions requiring admission"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "120.3"
+                        }
+                    ],
+                    "linkId": "BP_PULSE",
+                    "text": "Patient's BP/Temp/Pulse"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-01-22T12:02:00+08:00"
+                        }
+                    ],
+                    "linkId": "CLT_AWARE",
+                    "text": "How long is patient aware of the condition"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-01-22T12:02:00+08:00"
+                        }
+                    ],
+                    "linkId": "SYMPTOMS_DATE",
+                    "text": "Date symptoms first appeared"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-01-22T12:02:00+08:00"
+                        }
+                    ],
+                    "linkId": "DATE_CONSULTED",
+                    "text": "Date first consulted"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "PREV_CONSULT",
+                    "text": "Any previous consultation/treatment/hospitalization for this symptoms/illness or related conditions whether in this hospital or any other facilities"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "REFERRED",
+                    "text": "Was the patient referred?"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "MEDICAL_HIST",
+                    "text": "Referred hospital & details"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "OUTPATIENT",
+                    "text": "The condition can be managed under outpatient basis"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "ICD_CODE",
+                    "text": "Diagnosis Description"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "2nd_ICD",
+                    "text": "Secondary Diagnosis code"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "ICD_DESC",
+                    "text": "Expected days of stay / Discharge date"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-01-22T12:02:00+08:00"
+                        }
+                    ],
+                    "linkId": "DIAGNOSIS_DATE",
+                    "text": "Diagnosis confirmed on date"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-01-22T12:02:00+08:00"
+                        }
+                    ],
+                    "linkId": "ADVISED_DATE",
+                    "text": "Date when doctor first advised the diagnosis to patient"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "RELAPSE",
+                    "text": "Any possibility of relapse"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDecimal": 5000.43
+                        }
+                    ],
+                    "linkId": "EST_COST",
+                    "text": "Estimated Cost"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "code": "IP",
+                                "display": "Hospitalisation"
+                            }
+                        }
+                    ],
+                    "linkId": "ADMISSION_TYPE",
+                    "text": "Type of admission"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "code": "e",
+                                "display": "Cosmetic reason / Dental care / refractive errors correction"
+                            }
+                        }
+                    ],
+                    "linkId": "ILLNESS_CONDITION",
+                    "text": "selected illness/condition related to the diagnosis"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "TREATMENT_PLAN",
+                    "text": "Medical treatment, Investigation and Surgical procedure to be performed"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "DIABETES_MELLITUS",
+                    "text": "Does the patient have any Diabetes Mellitus condition?"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-01-22T12:02:00+08:00"
+                        }
+                    ],
+                    "linkId": "DIABETES_SINCE_WHEN",
+                    "text": "Date first diagnosed with Diabetes Mellitus"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "DIABETES_MED_DET",
+                    "text": "1) doctor who first diagnosed (Name & Hosp) \n 2) usual treating doctor \n 3) current medications (name/dosage)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "HYPERTENSION",
+                    "text": "Does the patient have any hypertension condition?"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-01-22T12:02:00+08:00"
+                        }
+                    ],
+                    "linkId": "HYPERTENSION_SINCE_WHEN",
+                    "text": "Date first diagnosed with hypertension"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "HYPERTENSION_MED_DET",
+                    "text": "1) doctor who first diagnosed (Name & Hosp) \n 2) usual treating doctor \n 3) current medications (name/dosage)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "HEART_DISEASE",
+                    "text": "Does the patient have any heart disease condition?"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-01-22T12:02:00+08:00"
+                        }
+                    ],
+                    "linkId": "HEART_DISEASE_SINCE_WHEN",
+                    "text": "Date first diagnosed with heart disease"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "HEART_DIASEASE_MED_DET",
+                    "text": "1) doctor who first diagnosed (Name & Hosp) \n 2) usual treating doctor \n 3) current medications (name/dosage)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "OTH_MEDICAL",
+                    "text": "Other than above 3 specific illness. Does the patient have any other medical condition"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "OTH_MEDICAL_DET",
+                    "text": "Other than above 3 specific illness. \n Doctor to provide other medical conditions if exist, if possible to provide medical conditions since date"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "PREGNANT",
+                    "text": "Was the patient pregnant at the time of hospitalization"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "ACCIDENTAL",
+                    "text": "Accidental case"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-01-22T12:02:00+08:00"
+                        }
+                    ],
+                    "linkId": "ACCIDENT_DATE",
+                    "text": "Date & time of Accident"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "ACCIDENT_DET",
+                    "text": "Details of Accident"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "SURGICAL",
+                    "text": "Surgery is required"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDateTime": "2024-01-22T12:02:00+08:00"
+                        }
+                    ],
+                    "linkId": "SURGICAL_DATE",
+                    "text": "Date of Surgical"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "INJURY_DESC",
+                    "text": "Injury description"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "HOSP_DOCTOR_CODE",
+                    "text": "Hospital doctor User Code"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "PHYSICIAN",
+                    "text": "Name of Admitting / Treating doctor"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "PHYSICIAN_SPECIALTY",
+                    "text": "Physician Specialty"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "This is a text field"
+                        }
+                    ],
+                    "linkId": "GL Number",
+                    "text": "GE Guarantee Letter Number"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueBoolean": true
+                        }
+                    ],
+                    "linkId": "Patient_Consent",
+                    "text": "Checklist - Patient's Consent and witness signature obtained"
+                }
+            ]
+        }
+    ]
+}

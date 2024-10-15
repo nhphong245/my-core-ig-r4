@@ -1,0 +1,70 @@
+{
+    "resourceType": "Observation",
+    "id": "example-obstetric-hb",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-obstetric-hb-my-core"
+        ]
+    },
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "718-7",
+                "display": "Hemoglobin [Mass/volume] in Blood"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/95149eff-6e63-44cc-88cd-ff6d8e72b576"
+    },
+    "encounter": {
+        "reference": "Encounter/6f19f2d5-7f5a-4c39-a6bb-7cb574eec94a"
+    },
+    "effectiveDateTime": "2023-03-06T08:00:00+08:00",
+    "issued": "2023-03-06T08:00:00+08:00",
+    "performer": [
+        {
+            "reference": "PractitionerRole/b9797173-7e15-4fc3-8f85-d58627935956/_history/20"
+        }
+    ],
+    "component": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "18185-9",
+                        "display": "Gestational age"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 140,
+                "unit": "day",
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "718-7",
+                        "display": "Hemoglobin [Mass/volume] in Blood"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 22,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+            }
+        }
+    ]
+}
+

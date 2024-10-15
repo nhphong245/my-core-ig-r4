@@ -1,0 +1,19 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "composition-custodian-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/composition-custodian-my-core",
+  "name": "SearchParameterCompositionCustodianMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Composition custodian",
+  "code": "custodian",
+  "base": [
+    "Composition"
+  ],
+  "type": "reference",
+  "expression": "Composition.custodian",
+  "xpathUsage": "normal",
+  "target": [
+    "Organization"
+  ]
+}

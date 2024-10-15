@@ -1,0 +1,82 @@
+{
+    "resourceType": "PractitionerRole",
+    "id": "example-practitionerrole",
+    "meta": {
+        "versionId": "5",
+        "lastUpdated": "2022-09-23T06:18:15.705+08:00",
+        "source": "http://provider.hie.moh.gov.my#mDknNZGKHwU9ZSrt",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/PractitionerRole-my-core"
+        ]
+    },
+    "active": true,
+    "practitioner": {
+        "reference": "Practitioner/4152a326-2150-4475-80a1-af9a38e3a807",
+        "identifier": {
+            "system": "http://fhir.hie.moh.gov.my/sid/professional-no",
+            "value": "81751"
+        },
+        "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+    },
+    "organization": {
+        "reference": "Organization/MHNEXUS",
+        "display": "MHN"
+    },
+    "code": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/practitioner-role-code-my-core",
+                    "code": "ITO",
+                    "display": "IT Officer"
+                }
+            ]
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                    "code": "105",
+                    "display": "General Emergency Medicine"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "reference": "Location/905614ed-a58e-4d91-8058-cb633055a39d",
+            "display": "BILIK RAWATAN 1"
+        },
+        {
+            "reference": "Location/d935d30a-9273-4f21-a8d2-d49ede5e142b",
+            "display": "WARD A"
+        }
+    ],
+    "healthcareService": [
+        {
+            "reference": "HealthcareService/1a8d7629-fdf7-43c5-9951-32ac96c9c5d4",
+            "display": "Non-communicable Disease"
+        },
+        {
+            "reference": "HealthcareService/795d0d6c-4f92-4be8-bf06-78f00cd65c80",
+            "display": "General Family Medicine"
+        },
+        {
+            "reference": "HealthcareService/b9402722-f0d0-4ccd-ae27-e610f1414c60",
+            "display": "General Medicine"
+        },
+        {
+            "reference": "HealthcareService/90dc8fa7-0951-400d-bcbe-360d7c61ca09",
+            "display": "General Dental Public Health"
+        }
+    ],
+    "telecom": [
+        {
+            "system": "email",
+            "value": "saifuldaulah@mhn.asia",
+            "use": "work"
+        }
+    ]
+}

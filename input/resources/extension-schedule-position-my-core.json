@@ -1,0 +1,109 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "schedule-position-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/schedule-position-my-core",
+  "version": "1.0.0",
+  "name": "ExtensionSchedulePositionMyCore",
+  "title": "ExtensionSchedulePosition (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "publisher": "Malaysia MOH - HIE Steering Committee",
+  "description": "Extension about the Global Positioning System (GPS) position in a Schedule",
+  "purpose": "The absolute geographic location of the schedule",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Schedule"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The absolute geographic location",
+        "definition": "The absolute geographic location",
+        "comment": "The absolute geographic location"
+      },
+      {
+        "id": "Extension.extension:longitude",
+        "path": "Extension.extension",
+        "sliceName": "longitude",
+        "short": "Longitude with WGS84 datum",
+        "definition": "Longitude with WGS84 datum"
+      },
+      {
+        "id": "Extension.extension:longitude.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "longitude"
+      },
+      {
+        "id": "Extension.extension:longitude.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:latitude",
+        "path": "Extension.extension",
+        "sliceName": "latitude",
+        "short": "Latitude with WGS84 datum",
+        "definition": "Latitude with WGS84 datum"
+      },
+      {
+        "id": "Extension.extension:latitude.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "latitude"
+      },
+      {
+        "id": "Extension.extension:latitude.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:altitude",
+        "path": "Extension.extension",
+        "sliceName": "altitude",
+        "short": "Altitude with WGS84 datum",
+        "definition": "Altitude with WGS84 datum"
+      },
+      {
+        "id": "Extension.extension:altitude.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "altitude"
+      },
+      {
+        "id": "Extension.extension:altitude.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/schedule-position-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

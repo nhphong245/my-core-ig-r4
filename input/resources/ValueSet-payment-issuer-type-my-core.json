@@ -1,0 +1,17 @@
+{
+    "resourceType": "ValueSet",
+    "id": "value-set-payment-issuer-type-my-core",
+    "url": "http://fhir.hie.moh.gov.my/ValueSet/payment-issuer-type-my-core",
+    "name": "ValueSetPaymentIssuerTypeMyCore",
+    "title": "ValueSetPaymentIssuerType (MY Core)",
+    "status": "active",
+    "date": "2023-06-07T07:16:10.3933867+00:00",
+    "description": "Payment Issuer Type",
+    "compose": {
+        "include": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/payment-issuer-type-my-core"
+            }
+        ]
+    }
+}

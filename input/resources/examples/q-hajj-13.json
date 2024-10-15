@@ -1,0 +1,32 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hajj-13",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-13",
+  "version": "1.0.0",
+  "name": "QHajj13",
+  "title": "Diagnosa & Rawatan",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "hajj-13.1",
+      "text": "Tiada penyakit yang dikesan",
+      "type": "boolean"
+    },
+    {
+      "linkId": "hajj-13.2",
+      "text": "Penyakit yang dikesan /dihadapi",
+      "type": "string"
+    },
+    {
+      "linkId": "hajj-13.3",
+      "text": "Rawatan",
+      "type": "string"
+    },
+    {
+      "linkId": "hajj-13.4",
+      "text": "Nama ubat",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+    "resourceType": "Organization",
+    "id": "example-Organization",
+    "meta": {
+        "versionId": "4",
+        "lastUpdated": "2022-10-15T04:29:04.551+08:00",
+        "source": "http://provider.hie.moh.gov.my#IiWczSvNeRunbwmI",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Organization-my-core"
+        ],
+        "tag": [
+            {
+                "system": "https://smilecdr.com/fhir/NamingSystem/tags",
+                "code": "validation_failed_with_warning",
+                "display": "Validation Failed with Warning"
+            }
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/organization-category-my-core",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/organization-category-my-core",
+                        "code": "MNS",
+                        "display": "Minor Specialist Hospital (Kkm)"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/organization-category-public-my-core",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/organization-category-my-core",
+                        "code": "STH",
+                        "display": "Hospital"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/cluster-facility-my-core",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/cluster-facility-my-core",
+                        "code": "1",
+                        "display": "Non Lead"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/system-tenant-my-core",
+            "valueBoolean": false
+        }
+    ],
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/organization-id",
+            "value": "11-05040012"
+        }
+    ],
+    "active": true,
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/organization-type-my-core",
+                    "code": "1",
+                    "display": "Government (KKM)"
+                }
+            ]
+        }
+    ],
+    "name": "Hospital Port Dickson",
+    "alias": [
+        "Hosp. Port Dickson"
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "06-6626333"
+        },
+        {
+            "system": "fax",
+            "value": "06-6625003"
+        },
+        {
+            "system": "email",
+            "value": "hpd@moh.gov.my"
+        }
+    ],
+    "address": [
+        {
+            "extension": [
+                {
+                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-state-my-core",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+                                "code": "05",
+                                "display": "Negeri Sembilan"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-district-my-core",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/district-my-core",
+                                "code": "0503",
+                                "display": "Port Dickson"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "use": "work",
+            "type": "physical",
+            "line": [
+                "KM 11, Jalan Pantai, Sirusa"
+            ],
+            "city": "Port Dickson",
+            "district": "Port Dickson",
+            "state": "Negeri Sembilan",
+            "postalCode": "71050",
+            "country": "MYS"
+        }
+    ],
+    "partOf": {
+        "reference": "Organization/11-05060009"
+    },
+    "contact": [
+        {
+            "name": {
+                "text": "Dr. Hjh Zuraini Bt Zainal"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "06-6626333"
+                }
+            ]
+        }
+    ]
+}

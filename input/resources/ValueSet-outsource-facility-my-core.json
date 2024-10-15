@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-outsource-facility-my-core",
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/outsource-facility-my-core",
+  "name": "ValueSetOutsourceFacilityMyCore",
+  "title": "ValueSetOutsourceFacility (MYCore)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Outsource Facility My Core",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/outsource-facility-my-core"
+      }
+    ]
+  }
+}

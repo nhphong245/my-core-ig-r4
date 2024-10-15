@@ -1,0 +1,2540 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "https://fhir.hie.moh.gov.my/baseR4/Patient/patient-sample",
+            "request": {
+                "method": "PUT",
+                "url": "Patient/patient-sample"
+            },
+            "resource": {
+                "resourceType": "Patient",
+                "id": "patient-sample",
+                "meta": {
+                    "lastUpdated": "2023-04-10T07:46:20.943+08:00",
+                    "source": "sample",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Patient-my-core"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/religion-my-core",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/religion-my-core",
+                                    "code": "1",
+                                    "display": "Islam"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/ethnic-my-core",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/ethnic-my-core",
+                                    "code": "01",
+                                    "display": "Melayu"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/education-level-my-core",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/education-level-my-core",
+                                    "code": "4",
+                                    "display": "Tertiary"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/nationality-my-core",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "urn:iso:std:iso:3166",
+                                    "code": "MYS",
+                                    "display": "Malaysia"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/monthly-household-income-my-core",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/monthly-household-income-my-core",
+                                    "code": "02",
+                                    "display": "< RM 500"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/occupation-sector-my-core",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/occupation-sector-my-core",
+                                    "code": "2",
+                                    "display": "Art and Talent"
+                                }
+                            ],
+                            "text": "JURU SENI"
+                        }
+                    },
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core",
+                        "extension": [
+                            {
+                                "url": "recorder",
+                                "valueReference": {
+                                    "type": "PractitionerRole",
+                                    "display": "AMIN"
+                                }
+                            },
+                            {
+                                "url": "recordedDate",
+                                "valueDateTime": "2022-10-05T07:14:38+08:00"
+                            },
+                            {
+                                "url": "lastUpdater",
+                                "valueReference": {
+                                    "type": "PractitionerRole",
+                                    "display": "ASYIQ"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/sid/my-kad-no",
+                        "value": "910503145678"
+                    },
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/sid/patient-mrn",
+                        "value": "HIE-00000003"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "text": "NURUL BINTI SALLEH",
+                        "given": [
+                            "NURUL BINTI SALLEH"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "0102313431",
+                        "use": "mobile"
+                    },
+                    {
+                        "system": "email",
+                        "value": "nurulsalleh@gmail.com",
+                        "use": "mobile"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1991-05-03",
+                "deceasedBoolean": false,
+                "address": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-district-my-core",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/district-my-core",
+                                            "code": "1008",
+                                            "display": "Ulu Langat"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-state-my-core",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+                                            "code": "10",
+                                            "display": "Selangor"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "line": [
+                            "ALAM SARI"
+                        ],
+                        "city": "KAJANG",
+                        "postalCode": "43000",
+                        "country": "MYS"
+                    }
+                ],
+                "maritalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                            "code": "S",
+                            "display": "Never Married"
+                        }
+                    ]
+                },
+                "contact": [
+                    {
+                        "relationship": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/relationship-my-core",
+                                        "code": "04",
+                                        "display": "Father"
+                                    }
+                                ]
+                            }
+                        ],
+                        "name": {
+                            "text": "SALLEH BIN ABU",
+                            "given": [
+                                "SALLEH BIN ABU"
+                            ]
+                        },
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "01156404200",
+                                "use": "mobile"
+                            },
+                            {
+                                "system": "email",
+                                "value": "duniakusegitiga@gmail.com",
+                                "use": "mobile"
+                            }
+                        ],
+                        "address": {
+                            "extension": [
+                                {
+                                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-district-my-core",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/district-my-core",
+                                                "code": "1008",
+                                                "display": "Ulu Langat"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-state-my-core",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+                                                "code": "10",
+                                                "display": "Selangor"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "line": [
+                                "ALAM SARI"
+                            ],
+                            "city": "KAJANG",
+                            "postalCode": "43000",
+                            "country": "MYS"
+                        }
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization/11-05060009",
+                    "display": "HOSPITAL TUANKU JA'AFAR"
+                }
+            }
+        },
+        {
+            "fullUrl": "https://fhir.hie.moh.gov.my/baseR4/Encounter/encounter-sample",
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/encounter-sample"
+            },
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "encounter-sample",
+                "meta": {
+                    "lastUpdated": "2023-04-08T23:51:31.232+08:00",
+                    "source": "sample",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Encounter-my-core"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/sid/encounter-id",
+                        "value": "HTJ-ENC-2211000036"
+                    }
+                ],
+                "status": "finished",
+                "statusHistory": [
+                    {
+                        "status": "planned",
+                        "period": {
+                            "start": "2023-04-26T08:00:00+08:00",
+                            "end": "2023-04-26T09:00:00+08:00"
+                        }
+                    },
+                    {
+                        "status": "arrived",
+                        "period": {
+                            "start": "2023-04-26T08:00:00+08:00",
+                            "end": "2023-04-26T08:15:00+08:00"
+                        }
+                    },
+                    {
+                        "status": "in-progress",
+                        "period": {
+                            "start": "2023-04-26T08:15:00+08:00",
+                            "end": "2023-04-26T09:00:00+08:00"
+                        }
+                    }
+                ],
+                "class": {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+                    "code": "AMB",
+                    "display": "Outpatient"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                                "code": "555",
+                                "display": "General Health screening"
+                            }
+                        ]
+                    }
+                ],
+                "serviceType": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                            "code": "03",
+                            "display": "Outpatient"
+                        }
+                    ]
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+                            "code": "R",
+                            "display": "Routine"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "participant": [
+                    {
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                                        "code": "PPRF",
+                                        "display": "primary performer"
+                                    }
+                                ]
+                            }
+                        ],
+                        "individual": {
+                            "identifier": {
+                                "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                                "value": "81751"
+                            },
+                            "display": "Saifuldaulah Bin Mohd Hafiz Ngoo"
+                        }
+                    }
+                ],
+                "period": {
+                    "start": "2023-01-20T08:00:00+08:00",
+                    "end": "2023-01-20T12:00:00+08:00"
+                },
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/condition-sample"
+                        },
+                        "use": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+                                    "code": "AD",
+                                    "display": "Admission diagnosis"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "condition": {
+                            "reference": "Condition/condition-sample"
+                        },
+                        "use": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+                                    "code": "DD",
+                                    "display": "Discharge diagnosis"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "condition": {
+                            "reference": "Condition/condition-sample"
+                        },
+                        "use": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/diagnosis-role-my-core",
+                                    "code": "01",
+                                    "display": "Main Diagnosis"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "condition": {
+                            "reference": "Condition/condition-sample"
+                        },
+                        "use": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/diagnosis-role-my-core",
+                                    "code": "08",
+                                    "display": "Other Diagnosis"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "serviceProvider": {
+                    "reference": "Organization/11-05060009",
+                    "display": "Hospital Tuanku Ja'afar, Seremban"
+                }
+            }
+        },
+        {
+            "fullUrl": "https://fhir.hie.moh.gov.my/baseR4/Composition/composition-sample",
+            "request": {
+                "method": "PUT",
+                "url": "Composition/composition-sample"
+            },
+            "resource": {
+                "resourceType": "Composition",
+                "id": "composition-sample",
+                "meta": {
+                    "lastUpdated": "2023-04-06T22:58:30.149+08:00",
+                    "source": "sample",
+                    "security": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                            "code": "N"
+                        }
+                    ],
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Composition-my-core"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/location-recorded-my-core",
+                        "valueReference": {
+                            "display": "Ward A"
+                        }
+                    }
+                ],
+                "identifier": {
+                    "system": "http://fhir.hie.moh.gov.my/sid/composition-id",
+                    "value": "HTJ-CMP-2304000003"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-type-my-core",
+                            "code": "18842-5",
+                            "display": "Discharge Summary Note"
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-category-my-core",
+                                "code": "LP72467-1",
+                                "display": "Discharge Summary Note"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "date": "2023-04-07T06:58:00.000+08:00",
+                "author": [
+                    {
+                        "display": "Saw Lee Chin",
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "64325"
+                        }
+                    }
+                ],
+                "attester": [
+                    {
+                        "mode": "professional",
+                        "party": {
+                            "display": "Kamal Bin Arifin",
+                            "type": "PractitionerRole",
+                            "identifier": {
+                                "system": "http://fhir.hie.moh.gov.my/sid/nsr-no",
+                                "value": "23312"
+                            }
+                        },
+                        "time": "2023-04-07T06:58:00.000+08:00"
+                    }
+                ],
+                "title": "Note",
+                "custodian": {
+                    "reference": "Organization/11-05060009",
+                    "display": "HOSPITAL TUANKU JA'AFAR, SEREMBAN"
+                },
+                "event": [
+                    {
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-event-my-core",
+                                        "code": "18842-5",
+                                        "display": "Discharge Summary Note"
+                                    }
+                                ]
+                            }
+                        ],
+                        "period": {
+                            "start": "2023-04-07T06:57:00.000+08:00"
+                        }
+                    }
+                ],
+                "section": [
+                    {
+                        "title": "Clinical Information",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "55752-0",
+                                    "display": "Clinical Information"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Demam%20panas%2C%20ruam%2C%20pening%20kepala%20dan%20muntah</div>"
+                        }
+                    },
+                    {
+                        "title": "Care plan",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "18776-5",
+                                    "display": "Plan of Care"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Demam%20panas%2C%20ruam%2C%20pening%20kepala%20dan%20muntah</div>"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://fhir.hie.moh.gov.my/baseR4/Condition/condition-sample",
+            "request": {
+                "method": "PUT",
+                "url": "Condition/condition-sample"
+            },
+            "resource": {
+                "resourceType": "Condition",
+                "id": "condition-sample",
+                "meta": {
+                    "lastUpdated": "2023-04-10T15:47:44.888+08:00",
+                    "source": "sample",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Condition-my-core"
+                    ]
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active",
+                            "display": "active"
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "encounter-diagnosis",
+                                "display": "Encounter Diagnosis"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-11",
+                            "code": "1D2Z",
+                            "display": "Dengue NOS"
+                        }
+                    ],
+                    "text": "Dengue NOS"
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "recordedDate": "2023-04-10T15:47:00.000+08:00",
+                "recorder": {
+                    "display": "Saw Lee Chin",
+                    "type": "PractitionerRole",
+                    "identifier": {
+                        "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                        "value": "64325"
+                    }
+                }
+            }
+        },
+        {
+            "fullUrl": "https://fhir.hie.moh.gov.my/baseR4/AllergyIntolerance/allergy-sample",
+            "request": {
+                "method": "PUT",
+                "url": "AllergyIntolerance/allergy-sample"
+            },
+            "resource": {
+                "resourceType": "AllergyIntolerance",
+                "id": "allergy-sample",
+                "meta": {
+                    "lastUpdated": "2022-08-17T10:24:11.265+08:00",
+                    "source": "sample",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/AllergyIntolerance-my-core"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/formulary-boolean-my-core",
+                        "valueBoolean": true
+                    }
+                ],
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ]
+                },
+                "category": [
+                    "medication"
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/active-ingredient-my-core",
+                            "code": "41",
+                            "display": "Adenine"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "recordedDate": "2022-06-25T11:00:00.000+08:00",
+                "recorder": {
+                    "display": "Saw Lee Chin",
+                    "type": "PractitionerRole",
+                    "identifier": {
+                        "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                        "value": "64325"
+                    }
+                },
+                "asserter": {
+                    "display": "Tee Wei Sian",
+                    "type": "PractitionerRole",
+                    "identifier": {
+                        "system": "http://fhir.hie.moh.gov.my/sid/nsr-no",
+                        "value": "52416"
+                    }
+                },
+                "lastOccurrence": "2022-06-20T09:00:00.000+08:00",
+                "reaction": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://fhir.hie.moh.gov.my/StructureDefinition/formulary-boolean-my-core",
+                                "valueBoolean": true
+                            }
+                        ],
+                        "substance": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/drug-my-core",
+                                    "code": "PNA00013",
+                                    "display": "Kabiven Central 1900kcal, 2.053L"
+                                }
+                            ]
+                        },
+                        "manifestation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "238995004",
+                                        "display": "Acneiform"
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "56317004",
+                                        "display": "Alopecia"
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "36715001",
+                                        "display": "Erythema multiforme"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "Aspirin",
+                        "onset": "2022-06-25T09:00:00.000+08:00",
+                        "severity": "moderate",
+                        "exposureRoute": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral use"
+                                }
+                            ]
+                        },
+                        "note": [
+                            {
+                                "authorReference": {
+                                    "display": "Saw Lee Chin",
+                                    "type": "PractitionerRole",
+                                    "identifier": {
+                                        "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                                        "value": "64325"
+                                    }
+                                },
+                                "time": "2022-06-25T09:00:00.000+08:00",
+                                "text": "Additional entry related to allergy reaction details"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://fhir.hie.moh.gov.my/baseR4/Observation/obs-lab-sample",
+            "request": {
+                "method": "PUT",
+                "url": "Observation/obs-lab-sample"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "obs-lab-sample",
+                "meta": {
+                    "lastUpdated": "2023-04-11T13:43:55.704+08:00",
+                    "source": "sample",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-lab-result-my-core"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/sid/barcode",
+                        "value": "0000000021"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-my-core",
+                            "code": "00309",
+                            "display": "Full Blood Count (FBC) / Immature platelet fraction (IPF) / Reticulocyte count"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "14196-0",
+                            "display": "Reticulocytes [#/volume] in Blood"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "effectiveDateTime": "2022-10-11T11:48:54+08:00",
+                "issued": "2022-10-11T11:53:54+08:00",
+                "performer": [
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "12345"
+                        },
+                        "display": "Arumugan A/L Aryan"
+                    }
+                ],
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000001",
+                                    "display": "White Blood Cell Count"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 16.97,
+                            "unit": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "10*3/uL"
+                        },
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "H",
+                                        "display": "High"
+                                    }
+                                ]
+                            }
+                        ],
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 4.078
+                                },
+                                "high": {
+                                    "value": 11.370
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000002",
+                                    "display": "Red Blood Cell Count"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 3.85,
+                            "unit": "10*6/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "10*6/uL"
+                        },
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "L",
+                                        "display": "low"
+                                    }
+                                ]
+                            }
+                        ],
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 4.53
+                                },
+                                "high": {
+                                    "value": 5.95
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000003",
+                                    "display": "Hemoglobin"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 6.7,
+                            "unit": "g/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "g/dL"
+                        },
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "LL",
+                                        "display": "Critical low"
+                                    }
+                                ]
+                            }
+                        ],
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 13.5
+                                },
+                                "high": {
+                                    "value": 17.4
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000004",
+                                    "display": "Hematocrit"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 20.5,
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        },
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "L",
+                                        "display": "Low"
+                                    }
+                                ]
+                            }
+                        ],
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 40.1
+                                },
+                                "high": {
+                                    "value": 50.6
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000005",
+                                    "display": "Mean Cell Volume"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 53.2,
+                            "unit": "fL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "fL"
+                        },
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "L",
+                                        "display": "Low"
+                                    }
+                                ]
+                            }
+                        ],
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 26.9
+                                },
+                                "high": {
+                                    "value": 32.3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000006",
+                                    "display": "Mean Cell Haemoglobin"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 17.4,
+                            "unit": "pg",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "pg"
+                        },
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "L",
+                                        "display": "Low"
+                                    }
+                                ]
+                            }
+                        ],
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 26.9
+                                },
+                                "high": {
+                                    "value": 32.3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000007",
+                                    "display": "Mean Cell Haemoglobin Concentration"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 32.7,
+                            "unit": "g/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "g/dL"
+                        },
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 31.9
+                                },
+                                "high": {
+                                    "value": 35.3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000008",
+                                    "display": "Platelet"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 626,
+                            "unit": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "10*3/uL"
+                        },
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "H",
+                                        "display": "High"
+                                    }
+                                ]
+                            }
+                        ],
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 142
+                                },
+                                "high": {
+                                    "value": 350
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000009",
+                                    "display": "Red Cell Distribution Width - SD"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "unit": "fL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "fL"
+                        },
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "H",
+                                        "display": "High"
+                                    }
+                                ]
+                            }
+                        ],
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 4.078
+                                },
+                                "high": {
+                                    "value": 11.370
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000010",
+                                    "display": "Red Cell Distribution Width - CV"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 31.9,
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        },
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "H",
+                                        "display": "High"
+                                    }
+                                ]
+                            }
+                        ],
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 12.0
+                                },
+                                "high": {
+                                    "value": 14.8
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000011",
+                                    "display": "Platelet Distribution Width"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "unit": "fL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "fL"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000012",
+                                    "display": "Mean Platelet Volume"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "unit": "fL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "fL"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000013",
+                                    "display": "Platelet Large Cell Ratio"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000014",
+                                    "display": "Plateletcrit"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000015",
+                                    "display": "Absolute Neutrophil"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 8.75,
+                            "unit": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "10*3/uL"
+                        },
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "H",
+                                        "display": "High"
+                                    }
+                                ]
+                            }
+                        ],
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 3.929
+                                },
+                                "high": {
+                                    "value": 7.147
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000016",
+                                    "display": "Absolute Lymphocyte"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 6.45,
+                            "unit": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "10*3/uL"
+                        },
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "H",
+                                        "display": "High"
+                                    }
+                                ]
+                            }
+                        ],
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 1.847
+                                },
+                                "high": {
+                                    "value": 4.807
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000017",
+                                    "display": "Absolute Monocyte"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 1.07,
+                            "unit": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "10*3/uL"
+                        },
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 0.385
+                                },
+                                "high": {
+                                    "value": 1.141
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000018",
+                                    "display": "Absolute Eosinophil"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 0.50,
+                            "unit": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "10*3/uL"
+                        },
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 0.000
+                                },
+                                "high": {
+                                    "value": 0.827
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000019",
+                                    "display": "Absolute Basophil"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 0.20,
+                            "unit": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "10*3/uL"
+                        },
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "H",
+                                        "display": "High"
+                                    }
+                                ]
+                            }
+                        ],
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 0.00
+                                },
+                                "high": {
+                                    "value": 0.095
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000020",
+                                    "display": "Immature Granulocyte"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 0.21,
+                            "unit": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "10*3/uL"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000021",
+                                    "display": "Percentage of Neutrophil"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 51.6,
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000022",
+                                    "display": "Percentage of Lymphocyte"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 38.0,
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000023",
+                                    "display": "Percentage of Monocyte"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 6.3,
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000024",
+                                    "display": "Percentage of Eosinophil"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 2.9,
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        },
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "H",
+                                        "display": "High"
+                                    }
+                                ]
+                            }
+                        ],
+                        "referenceRange": [
+                            {
+                                "low": {
+                                    "value": 4.078
+                                },
+                                "high": {
+                                    "value": 11.370
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-component-my-core",
+                                    "code": "0000025",
+                                    "display": "Percentage of Basophil"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 1.2,
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://fhir.hie.moh.gov.my/baseR4/Observation/patient-sample",
+            "request": {
+                "method": "PUT",
+                "url": "DiagnosticReport/dr-sample"
+            },
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "dr-sample",
+                "meta": {
+                    "lastUpdated": "2023-04-11T13:43:55.704+08:00",
+                    "source": "sample",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/DiagnosticReport-my-core"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/printed-date-my-core",
+                        "valueDateTime": "2022-03-27T08:00:08+08:00"
+                    },
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/amended-reason-my-core",
+                        "extension": [
+                            {
+                                "url": "amendedDate",
+                                "valueDateTime": "2022-03-27T08:00:08+08:00"
+                            },
+                            {
+                                "url": "amendedReason",
+                                "valueCodeableConcept": {
+                                    "text": "Amended Reason remark goes here"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/sid/barcode",
+                        "value": "0000001000"
+                    }
+                ],
+                "status": "amended",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core",
+                                "code": "108252007",
+                                "display": "Laboratory Procedure"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-my-core",
+                            "code": "00379",
+                            "display": "Full Blood Count (FBC) / Immature platelet fraction (IPF) / Reticulocyte count"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "14196-0",
+                            "display": "Reticulocytes [#/volume] in Blood"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "effectiveDateTime": "2022-12-26T08:00:08+08:00",
+                "issued": "2022-12-26T08:00:00+08:00",
+                "performer": [
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "value": "primary_performer"
+                        },
+                        "display": "Amirul Bin Azhar"
+                    },
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "value": "secondary_performer"
+                        },
+                        "display": "Izzudin Bin Zaid"
+                    },
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "value": "verified_by"
+                        },
+                        "display": "Nizam Bin Zulkifli"
+                    },
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "value": "validated_by"
+                        },
+                        "display": "Nizar Bin Zubir"
+                    },
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "value": "printed_by"
+                        },
+                        "display": "Akasyah Bin Ibrahim"
+                    },
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "value": "amended_by"
+                        },
+                        "display": "Afiq Bin Fhazali"
+                    }
+                ],
+                "resultsInterpreter": [
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "12345"
+                        },
+                        "display": "Arumugan A/L Aryan"
+                    }
+                ],
+                "result": [
+                    {
+                        "reference": "Observation/obs-lab-sample"
+                    }
+                ],
+                "conclusion": "This is a computer generated report. No signature is required"
+            }
+        },
+        {
+            "fullUrl": "https://fhir.hie.moh.gov.my/baseR4/MedicationRequest/dr-sample",
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/dr-sample"
+            },
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "mr-sample",
+                "meta": {
+                    "lastUpdated": "2023-03-06T04:30:43.156+08:00",
+                    "source": "sample",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/MedicationRequest-my-core"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/drug-form-my-core",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/drug-dose-form-my-core",
+                                    "code": "SOLN",
+                                    "display": "Liquid/Solution"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "status": "active",
+                "intent": "order",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                                "code": "inpatient",
+                                "display": "Inpatient"
+                            }
+                        ]
+                    }
+                ],
+                "priority": "routine",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "R06AA52110L2101XX",
+                            "display": "Diphenhydramine HCl Expectorant (Adult)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "authoredOn": "2008-06-17T10:00:00+08:00",
+                "requester": {
+                    "reference": "Organization/21-05060049"
+                },
+                "performer": {
+                    "reference": "Organization/21-05060049"
+                },
+                "recorder": {
+                    "type": "PractitionerRole",
+                    "identifier": {
+                        "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                        "value": "12345"
+                    },
+                    "display": "Arumugan A/L Aryan"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-06-17T00:30:00.000+08:00",
+                                    "end": "2008-06-24T00:30:00.000+08:00"
+                                },
+                                "duration": 5,
+                                "durationUnit": "d"
+                            },
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/phis-frequency-my-core",
+                                        "code": "BID",
+                                        "display": "BD (twice daily)"
+                                    }
+                                ]
+                            }
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/phis-route-my-core",
+                                    "code": "ORAL",
+                                    "display": "Oral"
+                                }
+                            ]
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 15,
+                                    "unit": "ml",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "ml"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://fhir.hie.moh.gov.my/baseR4/Observation/obs-vs-sample",
+            "request": {
+                "method": "PUT",
+                "url": "Observation/obs-vs-sample"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "obs-vs-sample",
+                "meta": {
+                    "lastUpdated": "2023-04-11T13:43:55.704+08:00",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-panel-my-core"
+                    ],
+                    "source": "sample"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "85353-1",
+                            "display": "Vital Sign Panel"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "effectiveDateTime": "2022-01-29T08:00:00+08:00",
+                "issued": "2022-01-29T08:00:00+08:00",
+                "performer": [
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "12345"
+                        },
+                        "display": "Arumugan A/L Aryan"
+                    }
+                ],
+                "hasMember": [
+                    {
+                        "reference": "Observation/urn:uuid:00000011-0005-0005-0005-000000000002"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:00000011-0005-0005-0005-000000000003"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:00000011-0005-0005-0005-000000000004"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:00000011-0005-0005-0005-000000000005"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:00000011-0005-0005-0005-000000000006"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:00000011-0005-0005-0005-000000000007"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:00000011-0005-0005-0005-000000000008"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00000011-0005-0005-0005-000000000002",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-heart-rate-my-core"
+                    ],
+                    "source": "sample"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart Rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "effectiveDateTime": "2022-01-29T08:00:00+08:00",
+                "issued": "2022-01-29T08:00:00+08:00",
+                "performer": [
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "12345"
+                        },
+                        "display": "Arumugan A/L Aryan"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 60,
+                    "unit": "/min",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/min"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8361-8",
+                                    "display": "Heart rate device"
+                                }
+                            ]
+                        },
+                        "valueString": "mobile machine"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8887-2",
+                                    "display": "Body position"
+                                }
+                            ]
+                        },
+                        "valueString": "sitting"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00000011-0005-0005-0005-000000000003",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-respi-rate-my-core"
+                    ],
+                    "source": "sample"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "9279-1",
+                            "display": "Respiratory Rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "effectiveDateTime": "2022-01-29T08:00:00+08:00",
+                "issued": "2022-01-29T08:00:00+08:00",
+                "performer": [
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "12345"
+                        },
+                        "display": "Arumugan A/L Aryan"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 16,
+                    "unit": "/min",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/min"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "3151-8",
+                                    "display": "Inhaled oxygen flow rate"
+                                }
+                            ]
+                        },
+                        "valueString": "under NP 3L/min"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00000011-0005-0005-0005-000000000004",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-oxygen-sat-my-core"
+                    ],
+                    "source": "sample"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "59408-5",
+                            "display": "Oxygen Saturation"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "effectiveDateTime": "2022-01-29T08:00:00+08:00",
+                "issued": "2022-01-29T08:00:00+08:00",
+                "performer": [
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "12345"
+                        },
+                        "display": "Arumugan A/L Aryan"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 94,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "3151-8",
+                                    "display": "Inhaled oxygen flow rate"
+                                }
+                            ]
+                        },
+                        "valueString": "under NP 3L/min"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00000011-0005-0005-0005-000000000005",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-systolic-bp-my-core"
+                    ],
+                    "source": "sample"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8480-6",
+                            "display": "systolic BP"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "effectiveDateTime": "2022-01-29T08:00:00+08:00",
+                "issued": "2022-01-29T08:00:00+08:00",
+                "performer": [
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "12345"
+                        },
+                        "display": "Arumugan A/L Aryan"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 80,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8357-6",
+                                    "display": "Blood pressure method"
+                                }
+                            ]
+                        },
+                        "valueString": "standing"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "41904-4",
+                                    "display": "Measurement site"
+                                }
+                            ]
+                        },
+                        "valueString": "Left arm"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8358-4",
+                                    "display": "Device cuff size"
+                                }
+                            ]
+                        },
+                        "valueString": "medium"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "41901-0",
+                                    "display": "Type of device"
+                                }
+                            ]
+                        },
+                        "valueString": "mobile machine"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00000011-0005-0005-0005-000000000006",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-diastolic-bp-my-core"
+                    ],
+                    "source": "sample"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8462-4",
+                            "display": "Diastolic BP"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "effectiveDateTime": "2022-01-29T08:00:00+08:00",
+                "issued": "2022-01-29T08:00:00+08:00",
+                "performer": [
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "12345"
+                        },
+                        "display": "Arumugan A/L Aryan"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 60,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8357-6",
+                                    "display": "Blood pressure method"
+                                }
+                            ]
+                        },
+                        "valueString": "standing"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "41904-4",
+                                    "display": "Measurement site"
+                                }
+                            ]
+                        },
+                        "valueString": "Left arm"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8358-4",
+                                    "display": "Device cuff size"
+                                }
+                            ]
+                        },
+                        "valueString": "medium"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "41901-0",
+                                    "display": "Type of device"
+                                }
+                            ]
+                        },
+                        "valueString": "mobile machine"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00000011-0005-0005-0005-000000000007",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-body-temp-my-core"
+                    ],
+                    "source": "sample"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "effectiveDateTime": "2022-01-29T08:00:00+08:00",
+                "issued": "2022-01-29T08:00:00+08:00",
+                "performer": [
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "12345"
+                        },
+                        "display": "Arumugan A/L Aryan"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 31,
+                    "unit": "Cel",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8327-9",
+                                    "display": "Body measurement site"
+                                }
+                            ]
+                        },
+                        "valueString": "Below tounge"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8326-1",
+                                    "display": "Device"
+                                }
+                            ]
+                        },
+                        "valueString": "Thermometer"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8352-7",
+                                    "display": "Clothing worn"
+                                }
+                            ]
+                        },
+                        "valueString": "cotton"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00000011-0005-0005-0005-000000000008",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-pain-score-my-core"
+                    ],
+                    "source": "sample"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "72514-3",
+                            "display": "Pain Score"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "effectiveDateTime": "2022-01-29T08:00:00+08:00",
+                "issued": "2022-01-29T08:00:00+08:00",
+                "performer": [
+                    {
+                        "type": "PractitionerRole",
+                        "identifier": {
+                            "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "12345"
+                        },
+                        "display": "Arumugan A/L Aryan"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 8
+                }
+            }
+        }
+    ]
+}

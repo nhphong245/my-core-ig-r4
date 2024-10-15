@@ -1,0 +1,531 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-diabetic-checklist",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-diabetic-checklist",
+  "title": "Diabetic Checklist",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "29544-4",
+          "display": "Physical findings"
+        }
+      ],
+      "text": "Physical Examination",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Weight"
+            }
+          ],
+          "text": "Weight",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "1.2",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "8280-0",
+              "display": "Waist Circumference"
+            }
+          ],
+          "text": "Waist circumference",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "1.3",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "BMI"
+            }
+          ],
+          "text": "BMI",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "1.4",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "35094-2",
+              "display": "Blood pressure"
+            }
+          ],
+          "text": "Blood Pressure",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "1.5",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "LP7218-3",
+              "display": "Eye"
+            }
+          ],
+          "text": "Eye",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "1.5.1",
+              "code": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "98497-1",
+                  "display": "Visual acuity"
+                }
+              ],
+              "text": "Visual acuity",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "398166005",
+                    "display": "Performed"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "262008008",
+                    "display": "Not performed"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "1.5.2",
+              "code": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP149841-1",
+                  "display": "Ophthalmoscopy"
+                }
+              ],
+              "text": "Fundoscopy/Fundus camera",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "398166005",
+                    "display": "Performed"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "262008008",
+                    "display": "Not performed"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "1.6",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "46051-9",
+              "display": "Foot problems and care Set"
+            }
+          ],
+          "text": "Feet",
+          "type": "string",
+          "item": [
+            {
+              "linkId": "1.6.1",
+              "code": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "77194-9",
+                  "display": "Ankle-brachial index"
+                }
+              ],
+              "text": "Pulses/ABI",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "398166005",
+                    "display": "Performed"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "262008008",
+                    "display": "Not performed"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "1.6.2",
+              "code": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP185984-4",
+                  "display": "Peripheral sensory neuropathy grade"
+                }
+              ],
+              "text": "Neuropathy",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "398166005",
+                    "display": "Performed"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "262008008",
+                    "display": "Not performed"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "1.7",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "34045-5",
+              "display": "Oral evaluation exam"
+            }
+          ],
+          "text": "Dental check-up",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "1.8",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "11524-6",
+              "display": "EKG study"
+            }
+          ],
+          "text": "ECG",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "22032-7",
+          "display": "Lab tests Narrative"
+        }
+      ],
+      "text": "Laboratory investigation",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2.1",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "2345-7",
+              "display": "Glucose [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Plasma glucose",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.2",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ],
+          "text": "HbA1c",
+          "type": "decimal"
+        },
+        {
+          "linkId": "2.3",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "24331-1",
+              "display": "Lipid 1996 panel - Serum or Plasma"
+            }
+          ],
+          "text": "Lipid profile",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.4",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "24362-6",
+              "display": "Renal function 2000 panel - Serum or Plasma"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Creatinine/BUSE + eGFR",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.5",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "24325-3",
+              "display": "Hepatic function 2000 panel - Serum or Plasma"
+            }
+          ],
+          "text": "LFT (AST, ALT)",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.6",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "24356-8",
+              "display": "Urinalysis complete panel - Urine"
+            }
+          ],
+          "text": "Urine microscopy",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.7",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "58431-8",
+              "display": "Microalbumin panel - 24 hour Urine"
+            }
+          ],
+          "text": "Urine albumin/microalbumin/spot morning urinary ACR",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "398166005",
+                "display": "Performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262008008",
+                "display": "Not performed"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

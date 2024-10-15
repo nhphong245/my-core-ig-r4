@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "procedure-recorded-date-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/procedure-recorded-date-my-core",
+  "name": "SearchParameterProcedureRecordedDateMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Procedure recorded date",
+  "code": "recorded-date",
+  "base": [
+    "Procedure"
+  ],
+  "type": "date",
+  "expression": "Procedure.extension('http://fhir.hie.moh.gov.my/StructureDefinition/procedure-recorded-my-core')"
+}

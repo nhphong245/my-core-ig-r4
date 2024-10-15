@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-active-ingredient-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetActiveIngredient (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/active-ingredient-my-core</tt><p>Active Ingredient</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/active-ingredient-my-core",
+  "name": "ValueSetActiveIngredientMyCore",
+  "title": "ValueSetActiveIngredient (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Active Ingredient",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/active-ingredient-my-core"
+      }
+    ]
+  }
+}

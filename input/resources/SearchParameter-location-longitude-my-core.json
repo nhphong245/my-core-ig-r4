@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "location-longitude-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/location-longitude-my-core",
+  "name": "SearchParameterLocationLongitudeMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Location Longitude",
+  "code": "longitude",
+  "base": [
+    "Location"
+  ],
+  "type": "number",
+  "expression": "Location.position.longitude"
+}

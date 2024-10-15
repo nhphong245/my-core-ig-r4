@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-state-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetState (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/state-my-core</tt></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/state-my-core",
+  "name": "ValueSetStateMyCore",
+  "title": "ValueSetState (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core"
+      }
+    ]
+  }
+}

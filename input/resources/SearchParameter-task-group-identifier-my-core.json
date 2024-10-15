@@ -1,0 +1,19 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "task-group-identifier-my-core",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-07-26T03:34:55.701+08:00"
+  },
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/Task-group-identifier-my-core",
+  "name": "SearchParameterTaskGroupIdentifierMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Search by group identifier",
+  "code": "group-identifier",
+  "base": [
+    "Task"
+  ],
+  "type": "token",
+  "expression": "Task.groupIdentifier"
+}

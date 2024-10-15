@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "misc-request-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/misc-request-my-core",
+  "name": "ExtensionMiscRequestMyCore",
+  "title": "ExtensionMiscRequest (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension to define this medication is orderd out of the default properties specified by the master Drug/Medication list",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:miscFrequency",
+        "path": "Extension.extension",
+        "sliceName": "miscFrequency"
+      },
+      {
+        "id": "Extension.extension:miscFrequency.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "miscFrequency"
+      },
+      {
+        "id": "Extension.extension:miscFrequency.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:miscRoute",
+        "path": "Extension.extension",
+        "sliceName": "miscRoute"
+      },
+      {
+        "id": "Extension.extension:miscRoute.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "miscRoute"
+      },
+      {
+        "id": "Extension.extension:miscRoute.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:miscUom",
+        "path": "Extension.extension",
+        "sliceName": "miscUom"
+      },
+      {
+        "id": "Extension.extension:miscUom.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "miscUom"
+      },
+      {
+        "id": "Extension.extension:miscUom.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/misc-request-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

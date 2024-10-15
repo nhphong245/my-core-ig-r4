@@ -1,0 +1,574 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Patient-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/Patient-my-core",
+  "version": "1.0.0",
+  "name": "PatientMyCore",
+  "title": "Patient (MY Core)",
+  "status": "active",
+  "date": "2024-04-29T00:16:58.8579833+00:00",
+  "publisher": "Malaysia MOH - HIE Steering Committee",
+  "description": "This profile represents the constraints applied to the Patient resource by MY Core FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the MY Core composition or in one of the referred resources.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.extension:ethnic",
+        "path": "Patient.extension",
+        "sliceName": "ethnic",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/ethnic-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:religion",
+        "path": "Patient.extension",
+        "sliceName": "religion",
+        "short": "Extension about individuals religious affiliation",
+        "definition": "Extension about individuals religious affiliation",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/religion-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:nationality",
+        "path": "Patient.extension",
+        "sliceName": "nationality",
+        "short": "Extension to define the nationality of a particular individual",
+        "definition": "Extension to define the nationality of a particular individual",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/nationality-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:educationLevel",
+        "path": "Patient.extension",
+        "sliceName": "educationLevel",
+        "short": "Extension about an individual education level category",
+        "definition": "Extension about an individual education level category",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/education-level-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:child",
+        "path": "Patient.extension",
+        "sliceName": "child",
+        "short": "Extension to store newborn details",
+        "definition": "Extension to store newborn details",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/child-identification-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:audit",
+        "path": "Patient.extension",
+        "sliceName": "audit",
+        "short": "Extension of the individual who recorded and updated the date",
+        "definition": "Extension of the individual who recorded and updated the date",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:monthlyHouseholdIncome",
+        "path": "Patient.extension",
+        "sliceName": "monthlyHouseholdIncome",
+        "short": "Extension to define the individual monthly household income category",
+        "definition": "Extension to define the individual monthly household income category",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/monthly-household-income-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:occupationSector",
+        "path": "Patient.extension",
+        "sliceName": "occupationSector",
+        "short": "Extension to categorize an individuals occupational sector",
+        "definition": "Extension to categorize an individuals occupational sector",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/occupation-sector-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:foreignerType",
+        "path": "Patient.extension",
+        "sliceName": "foreignerType",
+        "short": "Extension about an individidual foreigner category",
+        "definition": "Extension about an individidual foreigner category",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/foreigner-type-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:citizenship",
+        "path": "Patient.extension",
+        "sliceName": "citizenship",
+        "short": "Extension to define the citizenship status of an individual",
+        "definition": "Extension to define the citizenship status of an individual",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/citizenship-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:systemRating",
+        "path": "Patient.extension",
+        "sliceName": "systemRating",
+        "short": "Extension for patient/customer to rate an Encounter",
+        "definition": "Extension for patient/customer to rate an Encounter",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/system-rating-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:personCategoryArmy",
+        "path": "Patient.extension",
+        "sliceName": "personCategoryArmy",
+        "short": "Extension about the category of the individual in respect to army benefits status",
+        "definition": "Extension about the category of the individual in respect to army benefits status",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/person-category-army-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "ordered": true,
+          "rules": "closed"
+        },
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:myKadNo",
+        "path": "Patient.identifier",
+        "sliceName": "myKadNo",
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:myKadNo.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/sid/mykad-no"
+      },
+      {
+        "id": "Patient.identifier:myKadNo.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:passportNo",
+        "path": "Patient.identifier",
+        "sliceName": "passportNo"
+      },
+      {
+        "id": "Patient.identifier:passportNo.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/sid/passport-no"
+      },
+      {
+        "id": "Patient.identifier:passportNo.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:armyNo",
+        "path": "Patient.identifier",
+        "sliceName": "armyNo",
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:armyNo.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/sid/army-no"
+      },
+      {
+        "id": "Patient.identifier:armyNo.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:policeNo",
+        "path": "Patient.identifier",
+        "sliceName": "policeNo",
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:policeNo.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/sid/police-no"
+      },
+      {
+        "id": "Patient.identifier:policeNo.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:othersNo",
+        "path": "Patient.identifier",
+        "sliceName": "othersNo"
+      },
+      {
+        "id": "Patient.identifier:othersNo.use",
+        "path": "Patient.identifier.use",
+        "definition": "If Other then use=code, if unknown then use=temp",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:othersNo.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/sid/others-no"
+      },
+      {
+        "id": "Patient.identifier:othersNo.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:newbornNo",
+        "path": "Patient.identifier",
+        "sliceName": "newbornNo",
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:newbornNo.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/sid/newborn-no"
+      },
+      {
+        "id": "Patient.identifier:newbornNo.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:permanentResidenceNo",
+        "path": "Patient.identifier",
+        "sliceName": "permanentResidenceNo"
+      },
+      {
+        "id": "Patient.identifier:permanentResidenceNo.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/sid/permanent-residence-no"
+      },
+      {
+        "id": "Patient.identifier:permanentResidenceNo.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:patientMrn",
+        "path": "Patient.identifier",
+        "sliceName": "patientMrn"
+      },
+      {
+        "id": "Patient.identifier:patientMrn.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "http://fhir.hie.moh.gov.my/sid/patient-mrn"
+      },
+      {
+        "id": "Patient.identifier:patientMrn.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "min": 1
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "requirements": "Need to be able to track the patient by multiple names. Examples are your official name and a partner name.\r\nThe Alphabetic representation of the name SHALL be always provided",
+        "min": 1
+      },
+      {
+        "id": "Patient.name.extension:personTitle",
+        "path": "Patient.name.extension",
+        "sliceName": "personTitle",
+        "short": "Extension to define the title of an individual",
+        "definition": "Extension to define the title of an individual",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/person-title-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.name.text",
+        "path": "Patient.name.text",
+        "definition": "Text representation of the full name. Due to the cultural variance around the world a consuming system may not know how to present the name correctly; moreover not all the parts of the name go in given or family. Creators are therefore strongly encouraged to provide through this element a presented version of the name. Future versions of this guide may require this element"
+      },
+      {
+        "id": "Patient.name.family",
+        "path": "Patient.name.family",
+        "mustSupport": false
+      },
+      {
+        "id": "Patient.name.given",
+        "path": "Patient.name.given",
+        "mustSupport": false
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "min": 1
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "min": 1,
+        "mustSupport": false
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/Address-my-core"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.address.extension:state",
+        "path": "Patient.address.extension",
+        "sliceName": "state",
+        "short": "Extension to store address state in a Codeable Concept",
+        "definition": "Extension to store address state in a Codeable Concept"
+      },
+      {
+        "id": "Patient.address.extension:district",
+        "path": "Patient.address.extension",
+        "sliceName": "district",
+        "short": "Extension to store district address in the form of a Codeable Concept",
+        "definition": "Extension to store district address in the form of a Codeable Concept"
+      },
+      {
+        "id": "Patient.address.extension:division",
+        "path": "Patient.address.extension",
+        "sliceName": "division",
+        "short": "Extension to store address division (For Sabah | Sarawak) value",
+        "definition": "Extension to store address division (For Sabah | Sarawak) value"
+      },
+      {
+        "id": "Patient.address.extension:subDivision",
+        "path": "Patient.address.extension",
+        "sliceName": "subDivision",
+        "short": "Extension to store address sub division (for Sabah | Sarawak) value",
+        "definition": "Extension to store address sub division (for Sabah | Sarawak) value"
+      },
+      {
+        "id": "Patient.contact.extension:contactIdentifier",
+        "path": "Patient.contact.extension",
+        "sliceName": "contactIdentifier",
+        "short": "Extension to store contact identifier",
+        "definition": "Extension to store contact identifier",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/patient-contact-identifier-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.contact.extension:occupationSector",
+        "path": "Patient.contact.extension",
+        "sliceName": "occupationSector",
+        "short": "Extension to categorize an individuals occupational sector",
+        "definition": "Extension to categorize an individuals occupational sector",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/occupation-sector-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.contact.relationship",
+        "path": "Patient.contact.relationship",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/relationship-my-core"
+        }
+      },
+      {
+        "id": "Patient.contact.name.extension:personTitle",
+        "path": "Patient.contact.name.extension",
+        "sliceName": "personTitle",
+        "short": "Extension to define the title of an individual",
+        "definition": "Extension to define the title of an individual",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/person-title-my-core"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.contact.address",
+        "path": "Patient.contact.address",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/Address-my-core"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.contact.address.extension:state",
+        "path": "Patient.contact.address.extension",
+        "sliceName": "state",
+        "short": "Extension to store address state in a Codeable Concept",
+        "definition": "Extension to store address state in a Codeable Concept"
+      },
+      {
+        "id": "Patient.contact.address.extension:district",
+        "path": "Patient.contact.address.extension",
+        "sliceName": "district",
+        "short": "Extension to store district address in the form of a Codeable Concept",
+        "definition": "Extension to store district address in the form of a Codeable Concept"
+      },
+      {
+        "id": "Patient.contact.address.extension:division",
+        "path": "Patient.contact.address.extension",
+        "sliceName": "division",
+        "short": "Extension to store address division (For Sabah | Sarawak) value",
+        "definition": "Extension to store address division (for Sabah | Sarawak) value"
+      },
+      {
+        "id": "Patient.contact.address.extension:subDivision",
+        "path": "Patient.contact.address.extension",
+        "sliceName": "subDivision",
+        "short": "Extension to store address sub division (for Sabah | Sarawak) value",
+        "definition": "Extension to store address sub division (for Sabah | Sarawak) value"
+      },
+      {
+        "id": "Patient.managingOrganization",
+        "path": "Patient.managingOrganization",
+        "min": 1
+      }
+    ]
+  }
+}

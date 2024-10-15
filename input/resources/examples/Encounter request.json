@@ -1,0 +1,148 @@
+{
+    "resourceType": "Encounter",
+    "id": "enc-req",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Encounter-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/visit-type-my-core",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/visit-type-my-core",
+                        "code": "01",
+                        "display": "New"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/encounter-rating-my-core",
+            "extension": [
+                {
+                    "url": "rating",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-rating-my-core",
+                                "code": "0",
+                                "display": "No Review"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core",
+            "extension": [
+                {
+                    "url": "recorder",
+                    "valueReference": {
+                        "reference": "PractitionerRole/4e42f222-b404-4f61-b9f5-9bdbd2e8aa37/_history/15",
+                        "display": "PUTERI NAJWA NABILA"
+                    }
+                },
+                {
+                    "url": "recordedDate",
+                    "valueDateTime": "2023-11-08T09:37:13+08:00"
+                },
+                {
+                    "url": "lastUpdater",
+                    "valueReference": {
+                        "reference": "PractitionerRole/4e42f222-b404-4f61-b9f5-9bdbd2e8aa37/_history/15",
+                        "display": "PUTERI NAJWA NABILA"
+                    }
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/encounter-id",
+            "value": "HTJ-ENC-12345"
+        }
+    ],
+    "status": "in-progress",
+    "statusHistory": [
+        {
+            "status": "arrived",
+            "period": {
+                "start": "2023-11-08T09:37:13+08:00",
+                "end": "2023-11-08T09:37:40+08:00"
+            }
+        }
+    ],
+    "class": {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+        "version": "1.0.0",
+        "code": "AMB",
+        "display": "Outpatient"
+    },
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                    "code": "19",
+                    "display": "General Surgery"
+                }
+            ]
+        }
+    ],
+    "serviceType": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                "code": "03",
+                "display": "Outpatient"
+            }
+        ]
+    },
+    "priority": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+                "version": "2018-08-12",
+                "code": "R",
+                "display": "Routine"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/5cac31bd-e264-46dd-93d5-2017b228b0fa"
+    },
+    "participant": [
+        {
+            "type": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                            "code": "ATND",
+                            "display": "attender"
+                        }
+                    ]
+                }
+            ],
+            "period": {
+                "start": "2023-11-08T09:37:40+08:00"
+            },
+            "individual": {
+                "reference": "PractitionerRole/4e42f222-b404-4f61-b9f5-9bdbd2e8aa37/_history/15",
+                "display": "PUTERI NAJWA NABILA"
+            }
+        }
+    ],
+    "period": {
+        "start": "2023-11-08T09:37:13+08:00"
+    },
+    "serviceProvider": {
+        "reference": "Organization/11-10040013",
+        "display": "Hospital Tengku Ampuan Rahimah"
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "qr-bundle",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core",
+            "valueReference": {
+                "reference": "Organization/HIE",
+                "display": "Health Information Exchange"
+            }
+        }
+    ],
+    "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/questionnaire-bundle",
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/bfb81ffe-637d-4b3f-befa-f7a1546ed9f8"
+    },
+    "authored": "2023-01-30T04:22:00.113Z",
+    "author": {
+        "reference": "Patient/bfb81ffe-637d-4b3f-befa-f7a1546ed9f8"
+    },
+    "item": [
+        {
+            "linkId": "A1",
+            "text": "What is your name?",
+            "answer": [
+                {
+                    "valueString": "SaifulDaulah Bin Mohd Hafiz Ngoo"
+                }
+            ]
+        },
+        {
+            "linkId": "A2",
+            "text": "how old are you?",
+            "answer": [
+                {
+                    "valueInteger": 31
+                }
+            ]
+        },
+        {
+            "linkId": "A3",
+            "text": "Please select your gender",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://hl7.org/fhir/administrative-gender",
+                        "code": "male",
+                        "display": "Male"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "B",
+            "text": "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C]",
+            "answer": [
+                {
+                    "valueReference": {
+                        "reference": "QuestionnaireResponse/qr-audit-c"
+                    }
+                }
+            ]
+        }
+    ]
+}

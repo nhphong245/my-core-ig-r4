@@ -1,0 +1,98 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-tertiary-care-type-my-core",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2022-08-01T09:09:15.865+08:00",
+    "source": "#w8zRzQdRdVMvV0aN",
+    "tag": [
+      {
+        "system": "https://smilecdr.com/fhir/NamingSystem/tags",
+        "code": "validation_passed",
+        "display": "Validation Passed"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemTertiaryCareType (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/CodeSystem/tertiary-care-type-my-core</tt><p>Tertiary care healthcare service type in Malaysia</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/tertiary-care-type-my-core",
+  "name": "CodeSystemTertiaryCareTypeMyCore",
+  "title": "CodeSystemTertiaryCareType (MY Core)",
+  "status": "active",
+  "date": "2024-04-28T23:30:28.824077+00:00",
+  "publisher": "Malaysia MOH - HIE Steering Committee",
+  "contact": [
+    {
+      "name": "Saifuldaulah Bin Mohd Hafiz Ngoo",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "saifuldaulah@mhn.asia"
+        }
+      ]
+    }
+  ],
+  "description": "Tertiary care healthcare service type in Malaysia",
+  "compositional": false,
+  "content": "complete",
+  "count": 3,
+  "property": [
+    {
+      "code": "categoryCode",
+      "type": "code"
+    },
+    {
+      "code": "categoryDisplay",
+      "type": "string"
+    }
+  ],
+  "concept": [
+    {
+      "code": "104075000",
+      "display": "Transfusion Medicine Service",
+      "definition": "Transfusion Medicine Service",
+      "property": [
+        {
+          "code": "categoryDisplay",
+          "valueString": "Tertiary care"
+        },
+        {
+          "code": "categoryCode",
+          "valueCode": "20316001"
+        }
+      ]
+    },
+    {
+      "code": "264372000",
+      "display": "Pharmacy",
+      "definition": "Pharmacy",
+      "property": [
+        {
+          "code": "categoryDisplay",
+          "valueString": "Tertiary care"
+        },
+        {
+          "code": "categoryCode",
+          "valueCode": "20316001"
+        }
+      ]
+    },
+    {
+      "code": "40143009",
+      "display": "Functional",
+      "definition": "Functional",
+      "property": [
+        {
+          "code": "categoryDisplay",
+          "valueString": "Tertiary care"
+        },
+        {
+          "code": "categoryCode",
+          "valueCode": "20316001"
+        }
+      ]
+    }
+  ]
+}

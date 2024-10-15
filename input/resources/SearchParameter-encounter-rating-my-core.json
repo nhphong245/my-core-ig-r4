@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "encounter-rating-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/encounter-rating-my-core",
+  "name": "SearchParameterEncounterRatingMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Encounter Rating",
+  "code": "rating",
+  "base": [
+    "Encounter"
+  ],
+  "type": "token",
+  "expression": "Encounter.extension('http://fhir.hie.moh.gov.my/StructureDefinition/encounter-rating-my-core').extension('rating')"
+}

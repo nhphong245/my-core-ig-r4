@@ -1,0 +1,19 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "invoice-chargeitem-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/invoice-chargeitem-my-core",
+  "name": "SearchParameterTaskInputMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Charge Item",
+  "code": "charge-item",
+  "base": [
+    "Invoice"
+  ],
+  "type": "reference",
+  "expression": "Invoice.lineItem.chargeItem as Reference",
+  "xpathUsage": "normal",
+  "target": [
+    "ChargeItem"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-operation-status-my-core",
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/operation-status-my-core",
+  "name": "ValueSetOperationStatusMyCore",
+  "title": "ValueSetOperationStatus (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Operation status",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/operation-status-my-core"
+      }
+    ]
+  }
+}

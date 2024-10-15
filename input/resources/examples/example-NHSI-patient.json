@@ -1,0 +1,166 @@
+{
+    "resourceType": "Patient",
+    "id": "example-NHSI-patient",
+    "meta": {
+        "versionId": "2",
+        "lastUpdated": "2023-01-11T06:13:55.147+08:00",
+        "source": "http://peka40.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Patient-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/education-level-my-core",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/education-level-my-core",
+                        "code": "4",
+                        "display": "tertiary"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/religion-my-core",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/religion-my-core",
+                        "code": "1",
+                        "display": "Islam"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/ethnic-my-core",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/ethnic-code-my-core",
+                        "code": "01",
+                        "display": "Melayu"
+                    }
+                ]
+            }
+        }
+    ],
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/my-kad-no",
+            "value": "921005146671"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "extension": [
+                {
+                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/person-title-my-core",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/person-title-my-core",
+                                "code": "L001",
+                                "display": "Encik"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "given": [
+                "NAMA"
+            ]
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "014454120318",
+            "use": "mobile"
+        },
+        {
+            "system": "email",
+            "value": "hieperson@gmail.com",
+            "use": "home"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1992-10-05",
+    "deceasedBoolean": false,
+    "address": [
+        {
+            "extension": [
+                {
+                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-district-my-core",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/district-my-core",
+                                "code": "0505"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-state-my-core",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+                                "code": "05"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "use": "home",
+            "line": [
+                "No. 1, Jalan Bangsar 7/3"
+            ],
+            "city": "Laman Pelangi",
+            "postalCode": "02196",
+            "country": "MYS"
+        }
+    ],
+    "maritalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "M",
+                "display": "Married"
+            }
+        ]
+    },
+    "contact": [
+        {
+            "relationship": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                            "code": "C",
+                            "display": "Contact person"
+                        }
+                    ]
+                }
+            ],
+            "name": {
+                "use": "usual",
+                "text": "Fatimah Azzahra Binti Saalam"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "01527893031",
+                    "use": "mobile"
+                }
+            ]
+        }
+    ],
+    "managingOrganization": {
+        "reference": "Organization/PH"
+    }
+}

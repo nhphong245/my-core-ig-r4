@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "contract-type-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/contract-type-my-core",
+  "name": "SearchParameterContractTypeMyCore",
+  "status": "active",
+  "date": "2024-04-16T01:09:35.2239695+00:00",
+  "description": "Contract type",
+  "code": "type",
+  "base": [
+    "Contract"
+  ],
+  "type": "token",
+  "expression": "Contract.type"
+}

@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "flag-category-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/flag-category-my-core",
+  "name": "SearchParameterFlagCategoryMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Category of the flag",
+  "code": "category",
+  "base": [
+    "Flag"
+  ],
+  "type": "token",
+  "expression": "Flag.category"
+}

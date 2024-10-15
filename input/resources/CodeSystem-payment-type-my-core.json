@@ -1,0 +1,47 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-payment-type-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemPaymentType (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/CodeSystem/payment-type-my-core</tt><p>Payment Type</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/payment-type-my-core",
+  "name": "CodeSystemPaymentTypeMyCore",
+  "title": "CodeSystemPaymentType (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Payment Type",
+  "compositional": false,
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "cash",
+      "display": "Cash"
+    },
+    {
+      "code": "cashless-fpx",
+      "display": "Cashless - FPX"
+    },
+    {
+      "code": "cashless-duitnow",
+      "display": "Cashless - DuitNow"
+    },
+    {
+      "code": "EFT-C2G",
+      "display": "EFT - C2G"
+    },
+    {
+      "code": "EFT-B2G",
+      "display": "EFT - B2G"
+    },
+    {
+      "code": "Kad Kredit",
+      "display": "Kad Kredit"
+    },
+    {
+      "code": "AMEX",
+      "display": "AMEX"
+    }
+  ]
+}

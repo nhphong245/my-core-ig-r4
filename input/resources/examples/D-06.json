@@ -1,0 +1,39 @@
+{
+  "resourceType": "Flag",
+  "meta": {
+    "source": "http://transfusion.moh.gov.my",
+    "profile": [
+      "http://fhir.hie.moh.gov.my/StructureDefinition/Flag-my-core"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "PDN-VIS-2200000127-Flag",
+      "assigner": {
+        "reference": "Organization/11-14010001"
+      }
+    }
+  ],
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/flag-category",
+          "code": "safety",
+          "display": "Safety"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "text": "Donor is Permanently Deferred from blood donation "
+  },
+  "subject": {
+    "reference": "Patient?identifier=PDN-DNR-2200000073",
+    "display": "RAMZIA RAMZAH"
+  },
+  "author": {
+    "display": "MOHAMAD NAQIUDDIN BIN MOHD NAJMI"
+  }
+}

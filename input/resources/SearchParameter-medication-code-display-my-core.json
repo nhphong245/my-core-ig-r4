@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "medication-code-display-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/medication-code-display-my-core",
+  "name": "MedicationCodeDisplay",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Medication code display",
+  "code": "code-display",
+  "base": [
+    "Medication"
+  ],
+  "type": "string",
+  "expression": "Medication.code.coding.display"
+}

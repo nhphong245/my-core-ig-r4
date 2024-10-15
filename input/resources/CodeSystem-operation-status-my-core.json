@@ -1,0 +1,50 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-operation-status-my-core",
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/operation-status-my-core",
+  "name": "CodeSystemOperationStatusMyCore",
+  "title": "CodeSystemOperationStatus (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Operation Status",
+  "compositional": false,
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "C",
+      "display": "Closed",
+      "definition": "Closed"
+    },
+    {
+      "code": "H",
+      "display": "Booking",
+      "definition": "Booking"
+    },
+    {
+      "code": "O",
+      "display": "Housekeeping",
+      "definition": "Housekeeping"
+    },
+    {
+      "code": "U",
+      "display": "Occupied",
+      "definition": "Occupied"
+    },
+    {
+      "code": "K",
+      "display": "Contaminated",
+      "definition": "Contaminated"
+    },
+    {
+      "code": "I",
+      "display": "Isolated",
+      "definition": "Isolated"
+    },
+    {
+      "code": "B",
+      "display": "Booking",
+      "definition": "Booking"
+    }
+  ]
+}

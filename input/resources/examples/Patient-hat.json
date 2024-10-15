@@ -1,0 +1,86 @@
+{
+    "resourceType": "Patient",
+    "id": "keyclock-id-sample-no1",
+    "meta": {
+        "source": "http://http://selfreg.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Patient-my-core"
+        ]
+    },
+    "identifier": [
+        {
+            "use": "official",
+            "system": "http://fhir.hie.moh.gov.my/sid/my-kad-no",
+            "value": "981101115132"
+        },
+        {
+            "use": "official",
+            "system": "http://fhir.hie.moh.gov.my/sid/patient-mrn",
+            "value": "HIE-00000134"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "use": "official",
+            "text": "NURIN AISYAH",
+            "given": [
+                "NURIN AISYAH"
+            ]
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "0139610411",
+            "use": "mobile"
+        },
+        {
+            "system": "email",
+            "value": "hiepersonn+4000@gmail.com",
+            "use": "mobile"
+        }
+    ],
+    "gender": "female",
+    "birthDate": "1998-11-01",
+    "deceasedBoolean": false,
+    "address": [
+        {
+            "extension": [
+                {
+                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-district-my-core",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/district-my-core",
+                                "code": "1102",
+                                "display": "Dungun"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-state-my-core",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+                                "code": "11",
+                                "display": "Terengganu"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "line": [
+                "12345"
+            ],
+            "city": "DUNGUN",
+            "postalCode": "23000",
+            "country": "MYS"
+        }
+    ],
+    "managingOrganization": {
+        "reference": "Organization/11-05060009"
+    }
+}

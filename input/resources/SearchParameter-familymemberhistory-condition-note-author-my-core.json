@@ -1,0 +1,22 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "familymemberhistory-condition-note-author-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/familymemberhistory-condition-note-author-my-core",
+  "name": "SearchParameterFamilyMemberHistoryConditionNoteAuthorMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Author of the note",
+  "code": "condition-note-author",
+  "base": [
+    "FamilyMemberHistory"
+  ],
+  "type": "reference",
+  "expression": "FamilyMemberHistory.condition.note.author",
+  "target": [
+    "Practitioner",
+    "PractitionerRole",
+    "Patient",
+    "RelatedPerson",
+    "Organization"
+  ]
+}

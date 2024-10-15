@@ -1,0 +1,41 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hajj-female",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-female",
+  "version": "1.0.0",
+  "name": "QHajjFemale",
+  "title": "Pengakuan Khas Bakal Haji Wanita",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Adakah anda mengandung sekarang?",
+      "type": "boolean",
+      "item": [
+        {
+          "linkId": "2",
+          "text": "Jika Ya, tarikh haid terakhir",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "1",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Adakah anda menghadapi masalah sakit puan",
+      "type": "boolean"
+    },
+    {
+      "linkId": "4",
+      "text": "Pernahkah anda mengalami rahim / peranakan turun (\"Uterine prolapse\")?",
+      "type": "boolean"
+    }
+  ]
+}

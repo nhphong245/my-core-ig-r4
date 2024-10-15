@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "patient-ethnic-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/patient-ethnic-my-core",
+  "name": "SearchParameterPatientEthnicMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Patient Ethnic",
+  "code": "ethnic",
+  "base": [
+    "Patient"
+  ],
+  "type": "token",
+  "expression": "Patient.extension('http://fhir.hie.moh.gov.my/StructureDefinition/ethnic-my-core')",
+  "xpathUsage": "normal"
+}

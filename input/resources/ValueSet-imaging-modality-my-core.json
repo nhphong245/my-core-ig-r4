@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-imaging-modality-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetImagingModality (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/imaging-modality-my-core</tt><p>Malaysia imaging modality PIK code</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/imaging-modality-my-core",
+  "name": "ValueSetImagingModalityMyCore",
+  "title": "ValueSetImagingModality (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Malaysia imaging modality PIK code",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-modality-my-core"
+      }
+    ]
+  }
+}

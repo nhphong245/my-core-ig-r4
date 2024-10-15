@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oa-hs-details-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/oa-hs-details-my-core",
+  "version": "1.0.0",
+  "name": "ExtensionOaHsDetailsMyCore",
+  "title": "ExtensionOaHsDetails (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension to further detail an outsource agreement criteria",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "OrganizationAffiliation.healthcareService"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:quota",
+        "path": "Extension.extension",
+        "sliceName": "quota",
+        "short": "Total quota allocated",
+        "definition": "Total quota allocated for service",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:quota.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "quota"
+      },
+      {
+        "id": "Extension.extension:quota.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:available",
+        "path": "Extension.extension",
+        "sliceName": "available",
+        "short": "Amount of request available",
+        "definition": "Amount of request available based on quota",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:available.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "available"
+      },
+      {
+        "id": "Extension.extension:available.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:maxDaily",
+        "path": "Extension.extension",
+        "sliceName": "maxDaily",
+        "short": "Maximum amount allowed per day",
+        "definition": "Maximum amount allowed per day to request service",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:maxDaily.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "maxDaily"
+      },
+      {
+        "id": "Extension.extension:maxDaily.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/oa-hs-details-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

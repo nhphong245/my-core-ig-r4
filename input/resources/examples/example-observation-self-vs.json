@@ -1,0 +1,419 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:00000001-0001-0001-0001-000000000001",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "source": "http://person.hie.moh.gov.my",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-panel-my-core"
+                    ]
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "85353-1",
+                            "display": "Vital Signs"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                },
+                "effectiveDateTime": "2023-09-13T03:39:01.418Z",
+                "issued": "2023-09-13T03:39:13.475Z",
+                "performer": [
+                    {
+                        "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "vitalSign"
+                    }
+                ],
+                "hasMember": [
+                    {
+                        "reference": "Observation/urn:uuid:0000001-0001-0001-0002-000000000001"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:0000001-0001-0001-0003-000000000001"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:0000001-0001-0001-0004-000000000001"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:0000001-0001-0001-0005-000000000001"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:0000001-0001-0001-0006-000000000001"
+                    },
+                    {
+                        "reference": "Observation/urn:uuid:0000001-0001-0001-0007-000000000001"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00000001-0001-0001-0002-000000000001",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "source": "http://person.hie.moh.gov.my",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-respi-rate-my-core"
+                    ]
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "9279-1",
+                            "display": "Respiratory Rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                },
+                "effectiveDateTime": "2023-09-13T03:39:01.418Z",
+                "issued": "2023-09-13T03:39:13.475Z",
+                "performer": [
+                    {
+                        "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 22,
+                    "unit": "/min",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/min"
+                },
+                "note": [
+                    {
+                        "text": "Respiratory Rate"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0000001-0001-0001-0003-000000000001",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "source": "http://person.hie.moh.gov.my",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-heart-rate-my-core"
+                    ]
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart Rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                },
+                "effectiveDateTime": "2023-09-13T03:39:01.418Z",
+                "issued": "2023-09-13T03:39:13.475Z",
+                "performer": [
+                    {
+                        "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 90,
+                    "unit": "/min",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/min"
+                },
+                "note": [
+                    {
+                        "text": "Heart Rate"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0000001-0001-0001-0004-000000000001",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "source": "http://person.hie.moh.gov.my",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-oxygen-sat-my-core"
+                    ]
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "59408-5",
+                            "display": "Oxygen Saturation"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                },
+                "effectiveDateTime": "2023-09-13T03:39:01.418Z",
+                "issued": "2023-09-13T03:39:13.475Z",
+                "performer": [
+                    {
+                        "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 98,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "note": [
+                    {
+                        "text": "Oxygen Saturation"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0000001-0001-0001-0005-000000000001",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "source": "http://person.hie.moh.gov.my",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-body-temp-my-core"
+                    ]
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                },
+                "effectiveDateTime": "2023-09-13T03:39:01.418Z",
+                "issued": "2023-09-13T03:39:13.475Z",
+                "performer": [
+                    {
+                        "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 37,
+                    "unit": "Cel",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel"
+                },
+                "note": [
+                    {
+                        "text": "Body Temperature"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0000001-0001-0001-0006-000000000001",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "source": "http://person.hie.moh.gov.my",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-systolic-bp-my-core"
+                    ]
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8480-6",
+                            "display": "Systolic blood pressure"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                },
+                "effectiveDateTime": "2023-09-13T03:39:01.418Z",
+                "issued": "2023-09-13T03:39:13.475Z",
+                "performer": [
+                    {
+                        "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 120,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                },
+                "note": [
+                    {
+                        "text": "Systolic Pressure"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0000001-0001-0001-0007-000000000001",
+            "request": {
+                "method": "POST"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "meta": {
+                    "source": "http://person.hie.moh.gov.my",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-diastolic-bp-my-core"
+                    ]
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8462-4",
+                            "display": "Diastolic blood pressure"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                },
+                "effectiveDateTime": "2023-09-13T03:39:01.418Z",
+                "issued": "2023-09-13T03:39:13.475Z",
+                "performer": [
+                    {
+                        "reference": "Patient/9b5742e0-bdec-4c1c-94bc-746875264d59"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 90,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                },
+                "note": [
+                    {
+                        "text": "Diastolic Blood Pressure"
+                    }
+                ]
+            }
+        }
+    ]
+}

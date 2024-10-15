@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-organization-category-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetOrganizationCategoryMyCore</h2><tt>http://fhir.hie.moh.gov.my/valueSet/organization-category-my-core</tt><p>Category of Health Care Facility Malaysia</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/organization-category-my-core",
+  "name": "ValueSetOrganizationCategoryMyCore",
+  "title": "ValueSetOrganizationCategory (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Category of Health Care Facility Malaysia",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/organization-category-my-core",
+        "version": "1"
+      }
+    ]
+  }
+}

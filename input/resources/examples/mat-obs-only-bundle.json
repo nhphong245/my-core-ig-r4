@@ -1,0 +1,289 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "List/list-sample"
+            },
+            "resource": {
+                "resourceType": "List",
+                "id": "list-sample",
+                "meta": {
+                    "source": "http://provider.hie.moh.gov.my",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/List-my-core"
+                    ]
+                },
+                "status": "current",
+                "mode": "working",
+                "title": "Maternal Health Record 12-Sep-2023",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/sub-record-type-my-core",
+                            "code": "sub-001",
+                            "display": "Maternal Health Record"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/dba06121-c9c3-4169-bb92-b67a6f337ded/_history/4"
+                },
+                "date": "2023-09-12T01:34:38.641Z",
+                "source": {
+                    "reference": "PractitionerRole/121d966a-ca39-44dd-8e49-345f5ef1e484/_history/1"
+                },
+                "entry": [
+                    {
+                        "item": {
+                            "reference": "Patient/dba06121-c9c3-4169-bb92-b67a6f337ded/_history/4",
+                            "display": "Patient"
+                        }
+                    },
+                    {
+                        "date": "2023-09-12T09:34:41+08:00",
+                        "item": {
+                            "reference": "QuestionnaireResponse/qr-maternal-01-sample",
+                            "display": "maternal-01"
+                        }
+                    },
+                    {
+                        "date": "2023-09-12T10:19:00+08:00",
+                        "item": {
+                            "reference": "Observation/obs-us-15-sample",
+                            "display": "observation-ultrasound"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/obs-us-15-sample"
+            },
+            "resource": {
+    "resourceType": "Observation",
+    "id": "obs-us-15-sample",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-obstetric-us-my-core"
+        ]
+    },
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "LP7830-5",
+                "display": "OB ultrasound"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/dba06121-c9c3-4169-bb92-b67a6f337ded"
+    },
+    "encounter": {
+        "reference": "Encounter/90ff4100-592f-4f41-8dc6-391918db90e5"
+    },
+    "effectiveDateTime": "2023-09-12T02:19:00.307Z",
+    "issued": "2023-09-12T10:19:00+08:00",
+    "performer": [
+        {
+            "reference": "PractitionerRole/121d966a-ca39-44dd-8e49-345f5ef1e484/_history/1",
+            "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+        }
+    ],
+    "note": [
+        {
+            "text": "remark%20goes%20here"
+        }
+    ],
+    "component": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "11779-6",
+                        "display": "EDD"
+                    }
+                ]
+            },
+            "valueDateTime": "2024-05-07"
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "18850-8",
+                        "display": "Presentation"
+                    }
+                ]
+            },
+            "valueString": "cephalic"
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "11615-2",
+                        "display": "FH/FM"
+                    }
+                ]
+            },
+            "valueString": "200"
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "11957-8",
+                        "display": "CRL"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 200,
+                "unit": "cm",
+                "system": "http://unitsofmeasure.org",
+                "code": "cm"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "11820-8",
+                        "display": "BPD"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 200,
+                "unit": "cm",
+                "system": "http://unitsofmeasure.org",
+                "code": "cm"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "8288-3",
+                        "display": "HC"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 200,
+                "unit": "cm",
+                "system": "http://unitsofmeasure.org",
+                "code": "cm"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "11862-0",
+                        "display": "AC"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 200,
+                "unit": "cm",
+                "system": "http://unitsofmeasure.org",
+                "code": "cm"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "11963-6",
+                        "display": "FL"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 200,
+                "unit": "cm",
+                "system": "http://unitsofmeasure.org",
+                "code": "cm"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "11727-5",
+                        "display": "Estimated Fetal Weight"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 2000,
+                "unit": "g",
+                "system": "http://unitsofmeasure.org",
+                "code": "g"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "11995-8",
+                        "display": "Placenta"
+                    }
+                ]
+            },
+            "valueString": "anterior"
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "11627-7",
+                        "display": "AFI"
+                    }
+                ]
+            },
+            "valueString": "200"
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "18185-9",
+                        "display": "Gestational age"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 35,
+                "unit": "day",
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+            }
+        }
+    ]
+}
+        }
+    ]
+}

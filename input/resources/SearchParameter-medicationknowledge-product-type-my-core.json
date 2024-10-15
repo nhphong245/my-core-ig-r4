@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "medicationknowledge-product-type-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/medicationknowledge-product-type-my-core",
+  "name": "SearchParameterMedicationKnowledgeProductTypeMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Medication Knowledge product type",
+  "code": "product-type",
+  "base": [
+    "MedicationKnowledge"
+  ],
+  "type": "token",
+  "expression": "MedicationKnowledge.productType"
+}

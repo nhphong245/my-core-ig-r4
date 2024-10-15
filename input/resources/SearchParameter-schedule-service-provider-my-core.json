@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "schedule-service-provider-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/schedule-service-provider-my-core",
+  "name": "SearchParameterServiceProviderMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Service Provider for schedule",
+  "code": "organization",
+  "base": [
+    "Schedule"
+  ],
+  "type": "reference",
+  "expression": "Schedule.extension('http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core')",
+  "target": [
+    "Organization"
+  ]
+}

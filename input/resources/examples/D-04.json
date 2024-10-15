@@ -1,0 +1,77 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+      {
+        "fullUrl": "PDN-DNR-2200000085",
+        "resource": {
+          "resourceType": "Patient",
+          "id": "PDN-DNR-2200000085",
+          "meta": {
+            "source": "http://bbisv2.moh.gov.my",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/Patient-my-core"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://fhir.hie.moh.gov.my/StructureDefinition/ethnic-my-core",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/ethnic-code-my-core",
+                    "code": "01",
+                    "display": "Melayu"
+                  }
+                ],
+                "text": "ethnic text"
+              }
+            }
+          ],
+          "identifier": [
+            {
+              "use": "official",
+              "system": "http://fhir.hie.moh.gov.my/sid/my-kad-no",
+              "value": "740705086145"
+            },
+            {
+              "use": "official",
+              "system": "http://fhir.hie.moh.gov.my/sid/patient-mrn",
+              "value": "PDN-DNR-2200000085"
+            }
+          ],
+          "active": true,
+          "name": [
+            {
+              "use": "official",
+              "text": "RONALDO",
+              "given": [
+                "RONALDO"
+              ]
+            }
+          ],
+          "gender": "male",
+          "birthDate": "1974-07-05",
+          "deceasedBoolean": false,
+          "address": [
+            {
+              "use": "home",
+              "line": [
+                "LOT 542"
+              ],
+              "city": "PASIR PUTEH",
+              "postalCode": "15485",
+              "country": "MYS"
+            }
+          ],
+          "managingOrganization": {
+            "reference": "Organization/11-14010001"
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Patient/PDN-DNR-2200000085"
+        }
+      }
+    ]
+  }

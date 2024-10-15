@@ -1,0 +1,41 @@
+{
+    "resourceType": "Communication",
+    "id": "com-hat-comp",
+    "status": "completed",
+    "basedOn": [
+        {
+            "reference": "QuestionnaireResponse/eab8f483-d4d0-4f4a-aad1-2ffe759054f5",
+            "display": "HAT D3 Covid-19"
+        }
+    ],
+    "topic": {
+        "coding": [
+            {
+                "display": "Day 1 Home Assessment Tool (HAT) For Covid-19"
+            }
+        ]
+    },  
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/communication-category",
+                    "code": "instruction",
+                    "display": "Instruction"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/keyclock-id-sample-no1",
+        "display": "NURIN AISYAH"
+    },
+    "sent": "2023-12-21T10:00:00+08:00",
+    "payload": [
+        {
+            "contentReference": {
+                "reference": "CarePlan/cp-hat"
+            }
+        }
+    ]
+}

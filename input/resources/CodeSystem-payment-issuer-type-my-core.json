@@ -1,0 +1,30 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "code-system-payment-issuer-type-my-core",
+    "url": "http://fhir.hie.moh.gov.my/CodeSystem/payment-issuer-type-my-core",
+    "name": "CodeSystemPaymentIssuerTypeMyCore",
+    "title": "CodeSystemPaymentIssuerType (MY Core)",
+    "status": "active",
+    "date": "2023-06-07T07:16:10.3933867+00:00",
+    "description": "Payment Issuer Type",
+    "compositional": false,
+    "content": "complete",
+    "count": 3,
+    "concept": [
+        {
+            "code": "nationalinsruance",
+            "display": "BPJS",
+            "definition": "Pembayaran BPJS"
+        },
+        {
+            "code": "insurance",
+            "display": "Asuransi Mandiri",
+            "definition": "An insurer, or party acting on their behalf, which is making payment following a contract, direct or indirect, with the patient to pay for healthcare-related services."
+        },
+        {
+            "code": "patient",
+            "display": "Pribadi",
+            "definition": "The patient or a party issuing payment on behalf of the patient."
+        }
+    ]
+}

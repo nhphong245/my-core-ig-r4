@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-observation-panel-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemObservationPanel (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/CodeSystem/observation-panel-my-core</tt><p>Additonal Observation panel code</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/observation-panel-my-core",
+  "name": "CodeSystemObservationPanel",
+  "title": "CodeSystemObservationPanel (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Additonal Observation panel code",
+  "compositional": false,
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "0001",
+      "display": "Child Anthropometry",
+      "definition": "Child Anthropometry"
+    }
+  ]
+}

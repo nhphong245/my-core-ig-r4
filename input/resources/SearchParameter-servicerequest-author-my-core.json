@@ -1,0 +1,20 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "servicerequest-author-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/ServiceRequest-author-my-core",
+  "name": "SearchParameterServiceRequestAuthorMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "ServiceRequest author reference",
+  "code": "author",
+  "base": [
+    "ServiceRequest"
+  ],
+  "type": "reference",
+  "expression": "ServiceRequest.note.author as Reference",
+  "target": [
+    "PractitionerRole",
+    "Practitioner",
+    "Patient"
+  ]
+}

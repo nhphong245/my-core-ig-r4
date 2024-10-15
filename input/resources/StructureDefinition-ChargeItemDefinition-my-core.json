@@ -1,0 +1,27 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ChargeItemDefinition-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/ChargeItemDefinition-my-core",
+  "name": "ChargeItemDefinitionMyCore",
+  "title": "ChargeItemDefinition (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ChargeItemDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ChargeItemDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ChargeItemDefinition.propertyGroup.priceComponent.code",
+        "path": "ChargeItemDefinition.propertyGroup.priceComponent.code",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/revenue-code-my-core"
+        }
+      }
+    ]
+  }
+}

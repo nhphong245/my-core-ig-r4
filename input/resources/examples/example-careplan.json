@@ -1,0 +1,41 @@
+{
+    "resourceType": "CarePlan",
+    "id": "example-careplan",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2022-06-22T08:43:47.456+08:00",
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/CarePlan-my-core"
+        ],
+        "tag": [
+            {
+                "system": "https://smilecdr.com/fhir/NamingSystem/tags",
+                "code": "validation_failed_with_warning",
+                "display": "Validation Failed with Warning"
+            }
+        ]
+    },
+    "status": "completed",
+    "intent": "plan",
+    "title": "Diabetic mellitus care plan",
+    "subject": {
+        "reference": "Patient/HIE-2200000107"
+    },
+    "encounter": {
+        "reference": "Encounter/HTP-ENC-2206000070"
+    },
+    "period": {
+        "start": "2022-06-22T16:00:00.000+08:00",
+        "end": "2022-07-22T17:00:00.000+08:00"
+    },
+    "created": "2022-06-22T16:00:00.000+08:00",
+    "author": {
+        "reference": "PractitionerRole/example-practitionerrole-01"
+    },
+    "note": [
+        {
+            "text": "This is where user will key in entry for now as free text. will be expanded later during stage 2 hopefully"
+        }
+    ]
+}

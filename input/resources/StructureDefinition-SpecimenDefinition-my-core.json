@@ -1,0 +1,52 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SpecimenDefinition-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/SpecimenDefinition-my-core",
+  "version": "1.0.0",
+  "name": "SpecimenDefinitionMyCore",
+  "title": "SpecimenDefinition (MY Core)",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "SpecimenDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/SpecimenDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "SpecimenDefinition.typeTested.extension",
+        "path": "SpecimenDefinition.typeTested.extension",
+        "min": 1
+      },
+      {
+        "id": "SpecimenDefinition.typeTested.extension:combineSample",
+        "path": "SpecimenDefinition.typeTested.extension",
+        "sliceName": "combineSample",
+        "short": "Extension to determine whether the lab test allows combining the same sample with another lab test",
+        "definition": "Extension to determine whether the lab test allows combining the same sample with another lab test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/specimen-combine-sample-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "SpecimenDefinition.typeTested.container.type",
+        "path": "SpecimenDefinition.typeTested.container.type",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/specimen-container-type-my-core"
+        }
+      }
+    ]
+  }
+}

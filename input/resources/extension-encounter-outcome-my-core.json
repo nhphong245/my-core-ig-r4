@@ -1,0 +1,86 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-encounter-outcome-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/encounter-outcome-my-core",
+  "version": "1.0.0",
+  "name": "ExtensionEncounterOutcomeMyCore",
+  "title": "ExtensionEncounterOutcome (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension about the outcome of an encounter",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Encounter"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:encounterOutcome",
+        "path": "Extension.extension",
+        "sliceName": "encounterOutcome",
+        "definition": "Whether the encounter had an expected Outcome\r\nsuccessful = true\r\nnot successful = false"
+      },
+      {
+        "id": "Extension.extension:encounterOutcome.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "encounterOutcome"
+      },
+      {
+        "id": "Extension.extension:encounterOutcome.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/encounter-outcome-my-core"
+        }
+      },
+      {
+        "id": "Extension.extension:outcomeReason",
+        "path": "Extension.extension",
+        "sliceName": "outcomeReason",
+        "short": "Encounter outcome reason",
+        "definition": "Encounter outcome reason",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/encounter-outcome-reason-my-core"
+        }
+      },
+      {
+        "id": "Extension.extension:outcomeReason.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "outcomeReason"
+      },
+      {
+        "id": "Extension.extension:outcomeReason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/encounter-outcome-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

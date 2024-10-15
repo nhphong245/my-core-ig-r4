@@ -1,0 +1,332 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hajj-declare",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-declare",
+  "version": "1.0.0",
+  "name": "QHajjDeclare",
+  "title": "Pengakuan Kesihatan Bakal Haji",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Pernahkan tuan/puan menerima rawatan bagi penyakit-penyakit berikut",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Lelah / Asthma",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.2",
+          "text": "Batuk Kering / Tibi",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.3",
+          "text": "Sakit Jantung",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.4",
+          "text": "Darah Tinggi",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.5",
+          "text": "Kencing Manis / Diabetes",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.6",
+          "text": "Gastrik",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.7",
+          "text": "Sakit Buah Pinggang / Dialisis",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.8",
+          "text": "Batu Karang",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.9",
+          "text": "Barah / Kanser",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.10",
+          "text": "Leukemia",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.11",
+          "text": "Lumpuh / Angin Ahmar / Strok",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.12",
+          "text": "Penyakit Mental / Psikiatri",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.13",
+          "text": "Demensia / Nyanyuk / mudah lupa",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.14",
+          "text": "Sawan / Epilepsi",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.15",
+          "text": "Penyakit Hati / Hepatitis",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.16",
+          "text": "Penyakit kulit yang kronik",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.17",
+          "text": "Sakit sendi / Arthritis",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.18",
+          "text": "Penyakit-penyakit lain, nyatakan",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Adakah tuan/puan mempunyai gejala-gejala kesihatan seperti berikut",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "Sesak nafas apabila berjalan (> 30 meter) atau ketika menaiki tangga bangunan dua tingkat",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.2",
+          "text": "Sakit dada semasa aktiviti cergas",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.3",
+          "text": "Batuk berdarah",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.4",
+          "text": "Batuk berpanjangan (> dua minggu)",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.5",
+          "text": "Selalu pitam",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.6",
+          "text": "Selalu pening kepala / Sakit kepala",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.7",
+          "text": "Bengkak kaki (sembab)",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.8",
+          "text": "Selalu dahaga dan kerap kencing",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.9",
+          "text": "Kencing kurang lawas",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.10",
+          "text": "Kencing tidak boleh kawal",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.11",
+          "text": "Kencing sakit",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.12",
+          "text": "Kencing berdarah",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.13",
+          "text": "Sakit sendi",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.14",
+          "text": "Sakit gigi",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.15",
+          "text": "Mudah lupa",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.16",
+          "text": "Alahan (Allergy)",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.17",
+          "text": "Hidung berdarah",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.18",
+          "text": "Senak perut dan muntah",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.19",
+          "text": "Buasir (Haemorrhoid)",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.20",
+          "text": "Burut/ Angin pasang/ Hernia",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.21",
+          "text": "Kurang selera makan",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.22",
+          "text": "Susut berat badan",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.23",
+          "text": "Demam berterusan/berpanjangan",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.24",
+          "text": "Muntah darah",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.25",
+          "text": "Bengkak pada leher",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.26",
+          "text": "Ketulan pada payu dara",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.27",
+          "text": "Adakah anda merokok?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.28",
+          "text": "Jika Ya, berapa batang rokok sehari",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "2.27",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "00",
+                "display": "1-20"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "01",
+                "display": "21-30"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "02",
+                "display": ">30"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.29",
+          "text": "Adakah anda pernah terlibat dalam penyalahgunaan dadah?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.30",
+          "text": "Adakah anda menjalani Rawatan Terapi Gantian Opiat (methadone atau buprenorphine/naloxone)",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.31",
+          "text": "Pernahkah anda menjalani pembedahan?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.32",
+          "text": "Jika Ya, nyatakan jenis pembedahan/tahun",
+          "type": "text",
+          "enableWhen": [
+            {
+              "question": "2.31",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "2.33",
+          "text": "Adakah tuan / puan menghidap alergi / alahan ubat-ubatan / makanan / bahan-bahan lain?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.34",
+          "text": "Jika Ya, nyatakan jenis ubat/makanan/bahan-bahan lain",
+          "type": "text",
+          "enableWhen": [
+            {
+              "question": "2.33",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "2.35",
+          "text": "Saya akui perkara di atas adalah benar",
+          "type": "boolean"
+        }
+      ]
+    }
+  ]
+}

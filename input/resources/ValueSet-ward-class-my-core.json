@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-ward-class-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetWardClass (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/ward-class-my-core</tt><p>Ward Class</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/ward-class-my-core",
+  "name": "ValueSetWardClassMyCore",
+  "title": "ValueSetWardClass (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Ward Class",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/ward-class-my-core"
+      }
+    ]
+  }
+}

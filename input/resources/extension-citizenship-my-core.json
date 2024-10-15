@@ -1,0 +1,89 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "citizenship-my-core",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2024-01-31T08:00:38.6929615+08:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/citizenship-my-core",
+  "version": "1.0.0",
+  "name": "ExtensionCitizenshipMyCore",
+  "title": "ExtensionCitizenship (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension to define the citizenship status of an individual",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:citizenship",
+        "path": "Extension.extension",
+        "sliceName": "citizenship"
+      },
+      {
+        "id": "Extension.extension:citizenship.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "citizenship"
+      },
+      {
+        "id": "Extension.extension:citizenship.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:citizenshipStatus",
+        "path": "Extension.extension",
+        "sliceName": "citizenshipStatus"
+      },
+      {
+        "id": "Extension.extension:citizenshipStatus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "citizenshipStatus"
+      },
+      {
+        "id": "Extension.extension:citizenshipStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/citizenship-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

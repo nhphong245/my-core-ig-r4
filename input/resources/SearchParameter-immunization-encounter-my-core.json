@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "immunization-encounter-provider-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/immunization-encounter-provider-my-core",
+  "name": "SearchParameterImmunizationEncounterMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Immunization Encounter",
+  "code": "encounter",
+  "base": [
+    "Immunization"
+  ],
+  "type": "reference",
+  "expression": "Immunization.encounter",
+  "target": [
+    "Encounter"
+  ]
+}

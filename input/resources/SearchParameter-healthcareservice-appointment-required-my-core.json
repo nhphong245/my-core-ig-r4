@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "healthcareservice-appointment-required-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/healthcareservice-appointment-required-my-core-my-core",
+  "name": "SearchParameterHealthcareServiceAppointmentRequiredMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "If an appointment is required for access to this service",
+  "code": "appointment-required",
+  "base": [
+    "HealthcareService"
+  ],
+  "type": "string",
+  "expression": "HealthcareService.appointmentRequired"
+}

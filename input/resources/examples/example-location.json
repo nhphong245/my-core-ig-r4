@@ -1,0 +1,76 @@
+{
+    "resourceType": "Location",
+    "id": "example-location",
+    "meta": {
+        "versionId": "2",
+        "lastUpdated": "2022-08-25T03:03:20.191+08:00",
+        "source": "http://provider.hie.moh.gov.my#q28ggzZtZu141ZN6",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Location-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core",
+            "extension": [
+                {
+                    "url": "recorder",
+                    "valueReference": {
+                        "reference": "PractitionerRole/cd16e0cb-3e0f-43bb-9197-901f5daff3ba/_history/1",
+                        "display": "Saifuldaulah"
+                    }
+                },
+                {
+                    "url": "recordedDate",
+                    "valueDateTime": "2022-08-10T00:11:35.876Z"
+                },
+                {
+                    "url": "lastUpdater",
+                    "valueReference": {
+                        "reference": "PractitionerRole/cd16e0cb-3e0f-43bb-9197-901f5daff3ba/_history/1",
+                        "display": "Saifuldaulah"
+                    }
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "value": "11-05060009-000020"
+        }
+    ],
+    "status": "active",
+    "name": "Ward 1A",
+    "alias": [
+        "W-1A"
+    ],
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/location-type-my-core",
+                    "code": "IMP",
+                    "display": "Inpatient"
+                }
+            ]
+        }
+    ],
+    "physicalType": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                "version": "4.0.1",
+                "code": "bu",
+                "display": "Building"
+            }
+        ]
+    },
+    "managingOrganization": {
+        "reference": "Organization/11-05060009",
+        "display": "HOSPITAL TUANKU JA'AFAR, SEREMBAN"
+    },
+    "partOf": {
+        "reference": "Location/8d988a14-4e08-4b57-a6d2-323218dcb76e",
+        "display": "Main Building"
+    }
+}

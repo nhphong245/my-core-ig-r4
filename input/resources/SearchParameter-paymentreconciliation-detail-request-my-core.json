@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "PaymentReconciliation-detail-request-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/PaymentReconciliation-detail-request-my-core",
+  "name": "SearchParameterPaymentReconciliationDetailRequestMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Payment Reconciliation Detail Request",
+  "code": "detail-request",
+  "base": [
+    "PaymentReconciliation"
+  ],
+  "type": "reference",
+  "expression": "PaymentReconciliation.detail.request",
+  "target": [
+    "Invoice"
+  ]
+}

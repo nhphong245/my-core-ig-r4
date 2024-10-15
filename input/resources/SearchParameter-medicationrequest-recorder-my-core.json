@@ -1,0 +1,19 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "medicationrequest-recorder-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/medicationrequest-recorder-my-core",
+  "name": "SearchParameterMedicationRequestRecorderMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Person who records this medication request",
+  "code": "recorder",
+  "base": [
+    "MedicationRequest"
+  ],
+  "type": "reference",
+  "expression": "MedicationRequest.recorder",
+  "target": [
+    "Practitioner",
+    "PractitionerRole"
+  ]
+}

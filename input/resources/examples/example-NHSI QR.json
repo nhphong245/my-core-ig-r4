@@ -1,0 +1,2113 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "MYSJ-123",
+    "meta": {
+        "source": "http://peka40.moh.gov.my",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core",
+            "valueReference": {
+                "reference": "Organization/PH"
+            }
+        }
+    ],
+    "identifier": {
+        "value": "MYSJ-123"
+    },
+    "questionnaire": "https://fhir.hie.moh.gov.my/baseR4/Questionnaire/nhsi-my-core",
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/example-NHSI-patient"
+    },
+    "authored": "2022-11-16T04:40:46.883Z",
+    "author": {
+        "text":"Dr Susan"
+    },
+    "item": [
+        {
+            "linkId": "1",
+            "text": "User Demographic",
+            "item": [
+                {
+                    "linkId": "1.1",
+                    "text": "Name",
+                    "answer": [
+                        {
+                            "valueString": "Test"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.2",
+                    "text": "MySejahtera ID",
+                    "answer": [
+                        {
+                            "valueString": "123"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.3",
+                    "text": "Contact Number",
+                    "answer": [
+                        {
+                            "valueString": "123"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.4",
+                    "text": "Type of Identification",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Ic Numbers"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.5",
+                    "text": "IC Number/Passport",
+                    "answer": [
+                        {
+                            "valueString": "92100514552"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.6",
+                    "text": "Gender",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://hl7.org/fhir/administrative-gender",
+                                "code": "male",
+                                "display": "Male"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.7",
+                    "text": "Nationality",
+                    "answer": [
+                        {
+                            "valueString": "123"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.8",
+                    "text": "Address",
+                    "answer": [
+                        {
+                            "valueString": "LOT 1655-10B, JALAN SAUJANA KAMPUNG SUNGAI RAMAL DALAM"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.9",
+                    "text": "Occupation",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "02",
+                                "display": "Professional"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.10",
+                    "text": "Ethnicity",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Malay"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.11",
+                    "text": "Special Category of Population",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "00",
+                                "display": "Not Applicable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.12",
+                    "text": "Industry",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "02",
+                                "display": "Advertising & Market Research"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.13",
+                    "text": "Comorbidities Present",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "73211009",
+                                "display": "Diabetes Mellitus"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.14",
+                    "text": "Last Screening Date",
+                    "item": [
+                        {
+                            "linkId": "1.14.1",
+                            "text": "Has the patient performed health screening before?",
+                            "answer": [
+                                {
+                                    "valueBoolean": true
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "1.14.2",
+                            "text": "If Yes:",
+                            "answer": [
+                                {
+                                    "valueDate": "2022-11-16"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "2",
+            "text": "Assessments",
+            "item": [
+                {
+                    "linkId": "2.1",
+                    "text": "Does the patient have any family history?",
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "linkId": "2.1.1",
+                                    "text": "If yes:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "38341003",
+                                                "display": "Hypertension"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "73211009",
+                                                "display": "Diabetes Mellitus"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "13644009",
+                                                "display": "Hypercholesterolemia"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "2.2",
+                    "text": "Does the patient have any medical history?",
+                    "answer": [
+                        {
+                            "valueBoolean": true,
+                            "item": [
+                                {
+                                    "linkId": "2.2.1",
+                                    "text": "If yes:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "13644009",
+                                                "display": "Hypercholesterolemia"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "73211009",
+                                                "display": "Diabetes Mellitus"
+                                            }
+                                        },
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "56265001",
+                                                "display": "Coronary Heart Disease"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "3",
+            "text": "Mental Health Assessments",
+            "item": [
+                {
+                    "linkId": "3.1",
+                    "text": "In the past 2 weeks, how often does this patient:",
+                    "item": [
+                        {
+                            "linkId": "3.1.1",
+                            "text": "Felt Down, depressed or hopeless",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "01",
+                                        "display": "Several Days"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.2",
+                            "text": "Little interest to do things",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "01",
+                                        "display": "Several Days"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.3",
+                            "text": "Trouble falling asleep/staying asleep or sleeping too much",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "02",
+                                        "display": "> 7 days"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.4",
+                            "text": "Felt tired or having little energy",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "01",
+                                        "display": "Several Days"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.5",
+                            "text": "Had poor appetite or over eating",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "00",
+                                        "display": "Not At All"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.6",
+                            "text": "Felt bad about himself/herself, felt like a failure or he/she has let his/her family down",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "03",
+                                        "display": "Almost everyday"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.7",
+                            "text": "Trouble concentrating (e.g. watching television or reading newspaper)",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "00",
+                                        "display": "Not At All"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.8",
+                            "text": "Moved slowly or fidgeted excessively that is noticeable by people around him/her",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "00",
+                                        "display": "Not At All"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.9",
+                            "text": "Had thoughts that he/she would be better dead, or hurting yourself",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "01",
+                                        "display": "Several Days"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3.1.10",
+                            "text": "Total Mental Health Test Score",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "01",
+                                        "display": "5-9 : Mild Depression"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "3.2",
+                    "text": "In the last 2 weeks, indicate how difficult these problems made it for this patient",
+                    "item": [
+                        {
+                            "linkId": "3.2.1",
+                            "text": "Do your work, take care of things at home, or get along with others",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "02",
+                                        "display": "Very difficult"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "4",
+            "text": "Lifestyle Health Assessment",
+            "item": [
+                {
+                    "linkId": "4.1",
+                    "text": "Alcohol consumption",
+                    "item": [
+                        {
+                            "linkId": "4.1.1",
+                            "text": "How often do you consume alcohol?",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "00",
+                                        "display": "Never"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.1.2",
+                            "text": "How many alcoholic beverages do you consume in a day?",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "02",
+                                        "display": "5-6"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.1.3",
+                            "text": "How often within the last year,",
+                            "item": [
+                                {
+                                    "linkId": "4.1.3.1",
+                                    "text": "Do you consume 6 or more drink in a day?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Once a month"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "4.1.3.2",
+                                    "text": "Were you not able to stop drinking once started?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Once a month"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "4.1.3.3",
+                                    "text": "Were you not able to perform normal activities due to drinking?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "03",
+                                                "display": "Weekly"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "4.1.3.4",
+                                    "text": "You needed to drink first thing in the morning to get going after a heavy drinking session?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Once a month"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "4.1.3.5",
+                                    "text": "That you felt guilt or remorse after drinking?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "01",
+                                                "display": "< Once a month"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "4.1.3.6",
+                                    "text": "Were you unable to remember what happened the night before due to drinking?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Once a month"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.1.4",
+                            "text": "Have you or someone else been injured because of your drinking?",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "02",
+                                        "display": "Yes, during last year"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.1.5",
+                            "text": "Has a relative, friend, doctor, been concerned about your drinking habits?",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "00",
+                                        "display": "No"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.1.6",
+                            "text": "Total Alcohol Consumption Test Score",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "01",
+                                        "display": "8-12 Moderate Risk"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "4.2",
+                    "text": "Smoking Status",
+                    "item": [
+                        {
+                            "linkId": "4.2.1",
+                            "text": "Does the patient smoke?",
+                            "answer": [
+                                {
+                                    "valueBoolean": true
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.2.2",
+                            "text": "Cigarettes per Day",
+                            "answer": [
+                                {
+                                    "valueInteger": 1
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.2.3",
+                            "text": "Years of Smoking",
+                            "answer": [
+                                {
+                                    "valueInteger": 12
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "4.2.4",
+                            "text": "Total pack-years",
+                            "answer": [
+                                {
+                                    "valueQuantity": {
+                                        "value": 1
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "5",
+            "text": "Clinical Parameters",
+            "item": [
+                {
+                    "linkId": "5.1",
+                    "text": "Anthropometry: Height",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 168,
+                                "unit": "cm"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.2",
+                    "text": "Anthropometry: Weight",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 58,
+                                "unit": "kg"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.3",
+                    "text": "Anthropometry: Waistline",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 30,
+                                "unit": "cm"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.4",
+                    "text": "BMI calculation",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 30,
+                                "unit": "kg/m2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.5",
+                    "text": "BMI Outcome",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "03",
+                                "display": "Overweight (25-29.9)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.6",
+                    "text": "Vital Signs: Blood Pressure (systolic)",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 120,
+                                "unit": "mm[Hg]"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.7",
+                    "text": "Vital Signs: Blood Pressure (diastolic)",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 90,
+                                "unit": "mm[Hg]"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.8",
+                    "text": "Vital Signs: Pulse Rate",
+                    "answer": [
+                        {
+                            "valueQuantity": {
+                                "value": 80,
+                                "unit": "/min"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.9",
+                    "text": "Blood Pressure Outcome",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "02",
+                                "display": "Normal (Systolic <130,Diastolic <85)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.10",
+                    "text": "Point of Care Testing: Blood Glucose",
+                    "item": [
+                        {
+                            "linkId": "5.10.1",
+                            "text": "Fasting",
+                            "answer": [
+                                {
+                                    "valueQuantity": {
+                                        "value": 12,
+                                        "unit": "mmol/L"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "5.10.2",
+                            "text": "Random",
+                            "answer": [
+                                {
+                                    "valueQuantity": {
+                                        "value": 12,
+                                        "unit": "mmol/L"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "5.10.3",
+                            "text": "Blood Glucose Outcome",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "02",
+                                        "display": "Normal Fasting (<5.6)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5.11",
+                    "text": "Point of Care Testing: Blood Cholesterol",
+                    "item": [
+                        {
+                            "linkId": "5.11.1",
+                            "text": "Fasting",
+                            "answer": [
+                                {
+                                    "valueQuantity": {
+                                        "value": 12,
+                                        "unit": "mmol/L"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "5.11.2",
+                            "text": "Random",
+                            "answer": [
+                                {
+                                    "valueQuantity": {
+                                        "value": 12,
+                                        "unit": "mmol/L"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "5.11.3",
+                            "text": "Blood Cholesterol Outcome",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "01",
+                                        "display": "High >= 5.2 mmol/L"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "6",
+            "text": "Advanced Health Screening (Optional)",
+            "item": [
+                {
+                    "linkId": "6.1",
+                    "text": "Cardiovascular",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "02",
+                                "display": "Ankle Swelling"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "03",
+                                "display": "Shortness of breath"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6.2",
+                    "text": "Gastrointestinal",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "02",
+                                "display": "Nausea and/or vomiting"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "03",
+                                "display": "Bowel pattern and any changes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6.3",
+                    "text": "Genitourinary",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "02",
+                                "display": "Dysuria"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "04",
+                                "display": "Nocturia"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6.4",
+                    "text": "Locomotor",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "02",
+                                "display": "Change in mobility"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Joint pain"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6.5",
+                    "text": "Neurological",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Seizures"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "03",
+                                "display": "Transient loss of function (vision, speech, sight)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6.6",
+                    "text": "ENT Symptoms",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "03",
+                                "display": "Snoring"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "02",
+                                "display": "Epistaxis"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "04",
+                                "display": "Otalgia"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6.7",
+                    "text": "Dermatology",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "02",
+                                "display": "Skin color changes"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Rashes"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "03",
+                                "display": "Ulcers"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "7",
+            "text": "Advanced Systemic Examination (Optional)",
+            "item": [
+                {
+                    "linkId": "7430591698512",
+                    "text": "General Appearance",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "9491690640065",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Cyanosed"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "9385492769029",
+                    "text": "Hands and Arms",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "2706469979386",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "05",
+                                                "display": "Dupuytren’s contracture"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "803255584502",
+                    "text": "Head",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "2706057387357",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "03",
+                                                "display": "Psoriatic plaque"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "5438686906842",
+                    "text": "Neck",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "8525967233111",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Trachea Deviation"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6320853137177",
+                    "text": "Face",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "3567829538338",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "06",
+                                                "display": "Increase of facial hair"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "2775452197874",
+                    "text": "Mouth",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "00",
+                                "display": "Normal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "2293927557638",
+                                    "text": "If Abnormal, Lips:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Stomatitis"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "4080959756844",
+                                    "text": "If Abnormal, Gums:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "01",
+                                                "display": "Gingvitis"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "9937565309207",
+                                    "text": "If Abnormal, Tongue:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "04",
+                                                "display": "Leukplakia"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "681882410657",
+                    "text": "Ears, Nose, Throat",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "1009194092473",
+                                    "text": "If Abnormal, Ears:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "01",
+                                                "display": "Bleeding"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "5071830545688",
+                                    "text": "If Abnormal, Nose:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "01",
+                                                "display": "Epistaxis"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "1032584307566",
+                                    "text": "If Abnormal, Throat:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "03",
+                                                "display": "Deviated uvula"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1760871504781",
+                    "text": "Eyes",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "2830264276824",
+                                    "text": "If Abnormal, General:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Squint"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "9200420167241",
+                                    "text": "If Abnormal, Conjunctiva:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "01",
+                                                "display": "Pallor"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "3896132461914",
+                                    "text": "If Abnormal, Cornea:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Kaiser Fleischer's ring (Wilson Disease)"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "4541398644599",
+                    "text": "Fundoscopy",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "00",
+                                "display": "Normal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "4508425091768",
+                                    "text": "If Abnormal, General:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Others"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "3275429148998",
+                                    "text": "If Abnormal, Optic Disc",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "01",
+                                                "display": "Swollen"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "87716190119",
+                                    "text": "If Abnormal, Retina:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Arteriovenous nicking"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "1106310017866",
+                                    "text": "If Abnormal, Macula:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "01",
+                                                "display": "Exudates"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7802596122190",
+                    "text": "Ishihara Chart:",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "02",
+                                "display": "Abnormal"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1772552914755",
+                    "text": "Snellen Eye Chart Score",
+                    "item": [
+                        {
+                            "linkId": "5634044053426",
+                            "text": "Snellen Eye Chart Right eye With Lens",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "01",
+                                        "display": "6/60"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "6868904614360",
+                            "text": "Snellen Eye Chart Right eye Without Lens",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "02",
+                                        "display": "6/36"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "9535262095025",
+                            "text": "Snellen Eye Chart Left eye With Lens",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "02",
+                                        "display": "6/36"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "3784286555747",
+                            "text": "Snellen Eye Chart Left eye Without Lens",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "02",
+                                        "display": "6/36"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "4357973483106",
+                    "text": "Cardiorespiratory Examination",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "3684125820499",
+                                    "text": "Cardiorespiratory Examination, inspection:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "03",
+                                                "display": "Peripheral edema"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "1021145880907",
+                                    "text": "Cardiorespiratory Examination, palpation:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "01",
+                                                "display": "Tracheal Deviation"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "5331561684920",
+                                    "text": "Cardiorespiratory Examination, percussion:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "01",
+                                                "display": "Chest dullness"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "9727586284871",
+                                    "text": "Cardiorespiratory Examination, auscultation",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Crepitations"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "3445180818234",
+                    "text": "Abdominal Examination",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "1295584939146",
+                                    "text": "Abdominal Examination, inspection:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "03",
+                                                "display": "Prominent viens"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "6163894014798",
+                                    "text": "Abdominal Examination, palpation",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "01",
+                                                "display": "Mass"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "450925187844",
+                                    "text": "Abdominal Examination, percussion:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "01",
+                                                "display": "Shufting dullness"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "9695659964510",
+                                    "text": "Abdominal Examination, auscultation:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Bruits"
+                                            },
+                                            "item": [
+                                                {
+                                                    "linkId": "3097284117717",
+                                                    "text": "Bowel Sound",
+                                                    "answer": [
+                                                        {
+                                                            "valueCoding": {
+                                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                                "code": "02",
+                                                                "display": "Absence"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "896081526011",
+                                    "text": "Abdominal Examination, other",
+                                    "answer": [
+                                        {
+                                            "valueString": "free text"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "8660013226797",
+                    "text": "Breast Examination",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "2152650190448",
+                                    "text": "Breast Examination, inspection:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Scars"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "5834188726294",
+                                    "text": "Breast Examination, palpation",
+                                    "item": [
+                                        {
+                                            "linkId": "7571418373717",
+                                            "text": "Lump",
+                                            "answer": [
+                                                {
+                                                    "valueBoolean": true,
+                                                    "item": [
+                                                        {
+                                                            "linkId": "8412518064517",
+                                                            "text": "To state position, size, shape, consistency, overlying skin changes and mobility",
+                                                            "answer": [
+                                                                {
+                                                                    "valueString": "free text"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "linkId": "7708835727325",
+                                            "text": "Breast Examination, tenderness",
+                                            "answer": [
+                                                {
+                                                    "valueBoolean": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "7928508760431",
+                                    "text": "Breast Examination, lymph node",
+                                    "answer": [
+                                        {
+                                            "valueBoolean": true,
+                                            "item": [
+                                                {
+                                                    "linkId": "5584007098886",
+                                                    "text": "If yes, state location",
+                                                    "answer": [
+                                                        {
+                                                            "valueString": "free text"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "7966899757129",
+                                    "text": "Breast Examination, other",
+                                    "answer": [
+                                        {
+                                            "valueString": "free text"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "4960397935179",
+                    "text": "Genital Examination",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "00",
+                                "display": "Normal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "129761420416",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "01",
+                                                "display": "Skin lesion"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "6294648899702",
+                    "text": "Musculoskeletal Examination",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Abnormal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "6506163486097",
+                                    "text": "If Abnormal:",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "code": "01",
+                                                "display": "Muscle wasting"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "8529069579767",
+                    "text": "Neurological Examination",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "00",
+                                "display": "Normal"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "2933999220096",
+                                    "text": "Neurological Examination, motor",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "01",
+                                                "display": "Right Upper Limb"
+                                            },
+                                            "item": [
+                                                {
+                                                    "linkId": "5139376034252",
+                                                    "text": "Neurological Examination, muscle tone",
+                                                    "answer": [
+                                                        {
+                                                            "valueCoding": {
+                                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                                "code": "02",
+                                                                "display": "Hypotonia"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "linkId": "2810983082307",
+                                                    "text": "Neurological Examination, muscle power",
+                                                    "answer": [
+                                                        {
+                                                            "valueCoding": {
+                                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                                "code": "01",
+                                                                "display": "1"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "9525382653281",
+                                    "text": "Neurological Examination, reflexes",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Left Upper Limb"
+                                            },
+                                            "item": [
+                                                {
+                                                    "linkId": "1871500398585",
+                                                    "text": "Neurological Examination, hyperreflex/hyporeflex",
+                                                    "answer": [
+                                                        {
+                                                            "valueCoding": {
+                                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                                "code": "01",
+                                                                "display": "Hyperreflex"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "3739755767869",
+                                    "text": "Neurological Examination, babinski",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Absent"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "208277417057",
+                                    "text": "Neurological Examination, sensation",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                                "code": "02",
+                                                "display": "Loss of pain sensation"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "969352104031",
+                                    "text": "Neurological Examination, other",
+                                    "answer": [
+                                        {
+                                            "valueString": "asd"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "8",
+            "text": "Further Investigations",
+            "item": [
+                {
+                    "linkId": "8.1",
+                    "text": "Urine dipstick",
+                    "answer": [
+                        {
+                            "valueString": "123"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "8.2",
+                    "text": "Urine FEME",
+                    "answer": [
+                        {
+                            "valueString": "123"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "8.3",
+                    "text": "ECG",
+                    "answer": [
+                        {
+                            "valueString": "123"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "8.4",
+                    "text": "Haemoglobin",
+                    "answer": [
+                        {
+                            "valueString": "123"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "9",
+            "text": "Diagnosis",
+            "item": [
+                {
+                    "linkId": "9.1",
+                    "text": "Normal Healthy individual?",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "02",
+                                "display": "At risk"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "9.2",
+                    "text": "Diagnosis",
+                    "item": [
+                        {
+                            "linkId": "9.2.1",
+                            "text": "Display",
+                            "answer": [
+                                {
+                                    "valueString": "123"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "9.2.2",
+                            "text": "Code",
+                            "answer": [
+                                {
+                                    "valueString": "123"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "9.2.3",
+                            "text": "Code System",
+                            "answer": [
+                                {
+                                    "valueString": "123"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "9.3",
+                    "text": "Provisional diagnosis",
+                    "item": [
+                        {
+                            "linkId": "9.3.1",
+                            "text": "Display",
+                            "answer": [
+                                {
+                                    "valueString": "123"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "9.3.2",
+                            "text": "Code",
+                            "answer": [
+                                {
+                                    "valueString": "123"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "9.3.3",
+                            "text": "Code System",
+                            "answer": [
+                                {
+                                    "valueString": "123"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "10",
+            "text": "Management",
+            "item": [
+                {
+                    "linkId": "10.1",
+                    "text": "General management",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "02",
+                                "display": "Smoking cessation"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "01",
+                                "display": "Dietary advice"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                "code": "04",
+                                "display": "Physical activity advice"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "10.2",
+                    "text": "Doctor’s notes",
+                    "answer": [
+                        {
+                            "valueString": "123"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "10.3",
+                    "text": "Prescription",
+                    "item": [
+                        {
+                            "linkId": "10.3.1",
+                            "text": "Any medication prescribed?",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "03",
+                                        "display": "T. FELODIPINE 5MG"
+                                    }
+                                },
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "02",
+                                        "display": "T. AMLODIPINE 10MG"
+                                    }
+                                },
+                                {
+                                    "valueCoding": {
+                                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/nhsi-my-core",
+                                        "code": "01",
+                                        "display": "T. AMLODIPINE 5MG"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "11",
+            "text": "Verified by",
+            "item": [
+                {
+                    "linkId": "11.1",
+                    "text": "Officer incharge",
+                    "answer": [
+                        {
+                            "valueString": "123"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "11.2",
+                    "text": "Registration Number/ IC number",
+                    "answer": [
+                        {
+                            "valueString": "123"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

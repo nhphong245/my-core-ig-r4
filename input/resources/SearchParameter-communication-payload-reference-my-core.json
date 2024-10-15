@@ -1,0 +1,24 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "communication-payload-reference-my-core",
+  "meta": {
+    "lastUpdated": "2023-06-16T02:03:38.0582516+08:00",
+    "source": "#UNDyq2JNUKIEZdeo"
+  },
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/communication-payload-reference-my-core",
+  "name": "SearchParameterCommunicationPayloadReferenceMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Communication payload reference",
+  "code": "payload-reference",
+  "base": [
+    "Communication"
+  ],
+  "type": "reference",
+  "expression": "Communication.payload.content as Reference",
+  "xpathUsage": "normal",
+  "target": [
+    "Appointment",
+    "Encounter"
+  ]
+}

@@ -1,0 +1,277 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "qr-dietetic-care-notes-new",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+        ]
+    },
+    "identifier": {
+        "system": "http://fhir.hie.moh.gov.my/sid/template-section",
+        "value": "qr-dietetic-care-notes-new"
+    },
+    "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-dietetic-care-notes-new",
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/93fd2974-8652-489e-a75e-e5a489796f77"
+    },
+    "authored": "2023-04-27T00:20:14.414Z",
+    "item": [
+        {
+            "linkId": "anthropometry-measurement",
+            "text": "Anthropometry Measurement",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueDecimal": 50
+                        }
+                    ],
+                    "linkId": "wt",
+                    "text": "Weight (kg)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDecimal": 50
+                        }
+                    ],
+                    "linkId": "wt-child-centile",
+                    "text": "Weight (kg) at 50th centile for children"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDecimal": 50
+                        }
+                    ],
+                    "linkId": "ht",
+                    "text": "Height (m)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDecimal": 50
+                        }
+                    ],
+                    "linkId": "ht-child-centile",
+                    "text": "Height (m) at 50th centile for children"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDecimal": 50
+                        }
+                    ],
+                    "linkId": "bmi",
+                    "text": "BMI (kg/m2)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueDecimal": 50
+                        }
+                    ],
+                    "linkId": "ibw",
+                    "text": "IBW (kg)"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "entry goes here"
+                        }
+                    ],
+                    "linkId": "anthropometry-others",
+                    "text": "Entry Others (WC/ HC/ KH/ MUAC/ Wt Changes/ fat%)"
+                }
+            ]
+        },
+        {
+            "linkId": "clinical-dx",
+            "text": "Clinical Diagnosis",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "code": "4",
+                                "display": "Cardiovascular Disease (CVD)"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "code": "5",
+                                "display": "Failure To Thrive (FTT)"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "code": "8",
+                                "display": "Human Placental Lactogen (HPL)"
+                            }
+                        }
+                    ],
+                    "linkId": "clinical-dx-choice",
+                    "text": "Underlying Issues"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "entry goes here"
+                        }
+                    ],
+                    "linkId": "clinical-dx-entry",
+                    "text": "Entry (Clinical Diagnosis/ Medical History/ Social History/ Family History/ Medication/ Physical Activity/ Food Allergy or intolerance/ Supplement used/ Food Belief/ Alcohol)"
+                }
+            ]
+        },
+        {
+            "linkId": "nutrition-related-biochemstry",
+            "text": "Nutrition Related Biochemistry",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueString": "entry goes here"
+                        }
+                    ],
+                    "linkId": "nutrition-related-biochemstry-entry",
+                    "text": "Entry (Biochemical Data, Medical Test and Procedure)"
+                }
+            ]
+        },
+        {
+            "linkId": "nutrition-focused-pe",
+            "text": "Nutrition Focused Physical Findings",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "code": "3",
+                                "display": "Assisted feeding"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "code": "5",
+                                "display": "Diarrhoea"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "code": "8",
+                                "display": "Edema"
+                            }
+                        }
+                    ],
+                    "linkId": "nutrition-focused-pe-choice",
+                    "text": "BP/ HR/ BP/ Stool Pattern/ etc"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "entry goes here"
+                        }
+                    ],
+                    "linkId": "nutrition-focused-entry",
+                    "text": "Entry"
+                }
+            ]
+        },
+        {
+            "linkId": "dietary-assessment",
+            "text": "Dietary Assessment",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueString": "entry goes here"
+                        }
+                    ],
+                    "linkId": "dietary-assessment-entry",
+                    "text": "Entry (diet recall such as history/ Food checklist/ Summary of Nutrient Intake/ Enteral Feeding"
+                }
+            ]
+        },
+        {
+            "linkId": "nutrition-dx",
+            "text": "Nutrition Diagnosis",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueString": "entry goes here"
+                        }
+                    ],
+                    "linkId": "nutrition-dx-entry",
+                    "text": "Entry (Problem, Etiology, Sign & Symptoms)"
+                }
+            ]
+        },
+        {
+            "linkId": "nutrition-tx",
+            "text": "Nutrition Intervention Plan",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "code": "4",
+                                "display": "Calorie modification"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "code": "5",
+                                "display": "Carbohydrate counting and distribution"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "code": "12",
+                                "display": "High / Low Potassium"
+                            }
+                        }
+                    ],
+                    "linkId": "nutrition-tx-educate",
+                    "text": "Educate on"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "entry goes here"
+                        }
+                    ],
+                    "linkId": "nutrition-monitor",
+                    "text": "Monitoring and evaluation for"
+                },
+                {
+                    "answer": [
+                        {
+                            "valueString": "entry goes here"
+                        }
+                    ],
+                    "linkId": "nutrition-tx-other",
+                    "text": "Other Intervention Entry (Energy requirement, diet prescription, meal plan, enteral feeding, prescription, regime)"
+                }
+            ]
+        },
+        {
+            "linkId": "monitoring-evaluation",
+            "text": "Monitoring And Evaluation",
+            "item": [
+                {
+                    "answer": [
+                        {
+                            "valueString": "entry goes here"
+                        }
+                    ],
+                    "linkId": "monitoring-evaluation-entry",
+                    "text": "Entry"
+                }
+            ]
+        }
+    ]
+}

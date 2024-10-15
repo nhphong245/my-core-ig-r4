@@ -1,0 +1,166 @@
+{
+    "resourceType": "Encounter",
+    "id": "encounter-sample",
+    "meta": {
+        "lastUpdated": "2023-04-08T23:51:31.232+08:00",
+        "source": "sample",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Encounter-my-core"
+        ]
+    },
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/encounter-id",
+            "value": "HTJ-ENC-2211000036"
+        }
+    ],
+    "status": "finished",
+    "statusHistory": [
+        {
+            "status": "planned",
+            "period": {
+                "start": "2023-04-26T08:00:00+08:00",
+                "end": "2023-04-26T09:00:00+08:00"
+            }
+        },
+        {
+            "status": "arrived",
+            "period": {
+                "start": "2023-04-26T08:00:00+08:00",
+                "end": "2023-04-26T08:15:00+08:00"
+            }
+        },
+        {
+            "status": "in-progress",
+            "period": {
+                "start": "2023-04-26T08:15:00+08:00",
+                "end": "2023-04-26T09:00:00+08:00"
+            }
+        }
+    ],
+    "class": {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+        "code": "AMB",
+        "display": "Outpatient"
+    },
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                    "code": "555",
+                    "display": "General Health screening"
+                }
+            ]
+        }
+    ],
+    "serviceType": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                "code": "03",
+                "display": "Outpatient"
+            }
+        ]
+    },
+    "priority": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+                "code": "R",
+                "display": "Routine"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/patient-sample"
+    },
+    "participant": [
+        {
+            "type": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                            "code": "PPRF",
+                            "display": "primary performer"
+                        }
+                    ]
+                }
+            ],
+            "individual": {
+                "identifier": {
+                    "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                    "value": "81751"
+                },
+                "display": "Saifuldaulah Bin Mohd Hafiz Ngoo"
+            }
+        }
+    ],
+    "period": {
+        "start": "2023-01-20T08:00:00+08:00",
+        "end": "2023-01-20T12:00:00+08:00"
+    },
+    "diagnosis": [
+        {
+            "condition": {
+                "reference": "Condition/condition-sample"
+            },
+            "use": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+                        "code": "AD",
+                        "display": "Admission diagnosis"
+                    }
+                ]
+            }
+        },
+        {
+            "condition": {
+                "reference": "Condition/condition-sample"
+            },
+            "use": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+                        "code": "DD",
+                        "display": "Discharge diagnosis"
+                    }
+                ]
+            }
+        },
+        {
+            "condition": {
+                "reference": "Condition/condition-sample"
+            },
+            "use": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/diagnosis-role-my-core",
+                        "code": "01",
+                        "display": "Main Diagnosis"
+                    }
+                ]
+            }
+        },
+        {
+            "condition": {
+                "reference": "Condition/condition-sample"
+            },
+            "use": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/diagnosis-role-my-core",
+                        "code": "08",
+                        "display": "Other Diagnosis"
+                    }
+                ]
+            }
+        }
+    ],
+    "serviceProvider": {
+        "reference": "Organization/11-05060009",
+        "display": "Hospital Tuanku Ja'afar, Seremban"
+    }
+}

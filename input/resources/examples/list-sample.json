@@ -1,0 +1,37 @@
+{
+    "resourceType": "List",
+    "id": "list-sample",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/List-my-core"
+        ]
+    },
+    "status": "current",
+    "mode": "working",
+    "title": "Maternal Health Record 12-Sep-2023",
+    "code": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/sub-record-type-my-core",
+                "code": "sub-001",
+                "display": "Maternal Health Record"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/dba06121-c9c3-4169-bb92-b67a6f337ded/_history/4"
+    },
+    "date": "2023-09-12T01:34:38.641Z",
+    "source": {
+        "reference": "PractitionerRole/121d966a-ca39-44dd-8e49-345f5ef1e484/_history/1"
+    },
+    "entry": [
+        {
+            "item": {
+                "reference": "Patient/dba06121-c9c3-4169-bb92-b67a6f337ded/_history/4",
+                "display": "Patient"
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "condition-recorder-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/condition-recorder-my-core",
+  "name": "SearchParameterConditionRecorderMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Person who records this condition",
+  "code": "recorder",
+  "base": [
+    "Condition"
+  ],
+  "type": "reference",
+  "expression": "Condition.recorder",
+  "target": [
+    "Practitioner",
+    "Patient",
+    "PractitionerRole",
+    "RelatedPerson"
+  ]
+}

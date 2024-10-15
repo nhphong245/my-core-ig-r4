@@ -1,0 +1,427 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-dietetic-care-notes-new",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-dietetic-care-notes-new",
+  "name": "DieteticCareNotes",
+  "title": "Dietetic Care Notes",
+  "status": "active",
+  "date": "2024-04-16T01:09:35.2239695+00:00",
+  "item": [
+    {
+      "linkId": "anthropometry-measurement",
+      "text": "Anthropometry Measurement",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "anthropometry-adult",
+          "text": "Adult",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "wt-adult",
+              "text": "Weight (kg)",
+              "type": "decimal"
+            },
+            {
+              "linkId": "ht-adult",
+              "text": "Height (m)",
+              "type": "decimal"
+            },
+            {
+              "linkId": "bmi-adult",
+              "text": "BMI (kg/m2)",
+              "type": "decimal"
+            },
+            {
+              "linkId": "ibw",
+              "text": "IBW (kg)",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "linkId": "anthropometry-child",
+          "text": "Child",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "wt-child",
+              "text": "Weight (kg) at 50th centile",
+              "type": "decimal"
+            },
+            {
+              "linkId": "ht-child",
+              "text": "Height (m) at 50th centile",
+              "type": "decimal"
+            },
+            {
+              "linkId": "bmi-child",
+              "text": "BMI (kg/m2)",
+              "type": "decimal"
+            }
+          ]
+        },
+        {
+          "linkId": "anthropometry-others",
+          "text": "Entry Others (WC/ HC/ KH/ MUAC/ Wt Changes/ fat%)",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "nutrition-related-hx",
+      "text": "Nutrition Related History",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "nutrition-related-choice",
+          "text": "Underlying Issues",
+          "type": "choice",
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Diabetes Mellitus (DM)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "Hypertension (HPT)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "display": "Cardiovascular Disease (CVD)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "display": "Failure To Thrive (FTT)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "5",
+                "display": "Gout"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "6",
+                "display": "Gestitional Diabetes Mellitus (GDM)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "7",
+                "display": "Human Placental Lactogen (HPL)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "8",
+                "display": "Chronic Kidney Disease (CKD)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "9",
+                "display": "Obesity"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "10",
+                "display": "Others"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "nutrition-related-hx-entry",
+          "text": "Entry (Clinical Diagnosis/ Medical History/ Social History/ Family History/ Medication/ Physical Activity/ Food Allergy or intolerance/ Supllement used/ Food Belief/ Alcohol)",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "nutrition-related-biochemstry",
+      "text": "Nutrition Related Biochemistry",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "nutrition-related-biochemstry-entry",
+          "text": "Entry (Biochemical Data, Medical Test and Procedure)",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "nutrition-focused-pe",
+      "text": "Nutrition Focused Physical Findings",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "nutrition-focused-pe-choice",
+          "text": "BP/ HR/ BP/ Stool Pattern/ etc",
+          "type": "choice",
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Abdominal Distension"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "Ascites"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "display": "Assisted feeding"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "display": "Constipation"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "5",
+                "display": "Diarrhoea"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "6",
+                "display": "Dysphagia"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "7",
+                "display": "Early satiety"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "8",
+                "display": "Edema"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "9",
+                "display": "High aspiration"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "10",
+                "display": "Lethargy"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "11",
+                "display": "Nausea"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "12",
+                "display": "Poor appetite"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "13",
+                "display": "Poor dentition"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "14",
+                "display": "Vomiting"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "dietary-assessment",
+      "text": "Dietary Assessment",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "dietary-assessment-entry",
+          "text": "Entry (diet recall such as history/ Food checklist/ Summary of Nutrient Intake/ Enteral Feeding",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "nutrition-dx",
+      "text": "Nutrition Diagnosis",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "nutrition-dx-entry",
+          "text": "Entry (Problem, Etiology, Sign & Symptoms)",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "nutrition-tx",
+      "text": "Nutrition Intervention Plan",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "nutrition-tx-educate",
+          "text": "Educate on",
+          "type": "choice",
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Healthy Plate Model"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "Meals and snacks"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "display": "Meal timing"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "display": "Calorie modification"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "5",
+                "display": "Carbohydrate counring and distribution"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "6",
+                "display": "Type of fat and fat recommendation"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "7",
+                "display": "Recommendation of Fiber intake"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "8",
+                "display": "Low Sodium"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "9",
+                "display": "Low Purine"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "10",
+                "display": "High / Low Protein"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "11",
+                "display": "High / Low Phosphate"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "12",
+                "display": "High / Low Potassium"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "13",
+                "display": "Functional foods"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "14",
+                "display": "Food choices when eating out"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "15",
+                "display": "Medical food supplements"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "16",
+                "display": "Food label"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "17",
+                "display": "Helthy cooking method"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "18",
+                "display": "Mindful eating"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "19",
+                "display": "Meal planning and modifications"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "20",
+                "display": "Physical activity"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "nutrition-tx-other",
+          "text": "Other Intervention Entry (Energy requirement, diet prescription, meal plan, enteral feeding, prescription, regime)",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}

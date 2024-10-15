@@ -1,0 +1,122 @@
+{
+    "resourceType": "Composition",
+    "id": "composition-myhix-sample",
+    "meta": {
+        "lastUpdated": "2023-04-06T22:58:30.149+08:00",
+        "source": "sample",
+        "security": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                "code": "N"
+            }
+        ],
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Composition-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/location-recorded-my-core",
+            "valueReference": {
+                "display": "Ward A"
+            }
+        }
+    ],
+    "identifier": {
+        "system": "http://fhir.hie.moh.gov.my/sid/composition-id",
+        "value": "HTJ-Hix-2304000001"
+    },
+    "status": "final",
+    "type": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-type-my-core",
+                "code": "18842-5",
+                "display": "Discharge Summary Note"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-category-my-core",
+                    "code": "LP72467-1",
+                    "display": "Discharge Summary Note"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/patient-sample"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter-sample"
+    },
+    "date": "2023-04-07T06:58:00.000+08:00",
+    "author": [
+        {
+            "display": "Saw Lee Chin",
+            "type": "PractitionerRole",
+            "identifier": {
+                "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                "value": "64325"
+            }
+        }
+    ],
+    "attester": [
+        {
+            "mode": "professional",
+            "party": {
+                "display": "Kamal Bin Arifin",
+                "type": "PractitionerRole",
+                "identifier": {
+                    "system": "http://fhir.hie.moh.gov.my/sid/nsr-no",
+                    "value": "23312"
+                }
+            },
+            "time": "2023-04-07T06:58:00.000+08:00"
+        }
+    ],
+    "title": "Note",
+    "custodian": {
+        "reference": "Organization/11-05060009",
+        "display": "HOSPITAL TUANKU JA'AFAR, SEREMBAN"
+    },
+    "event": [
+        {
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-event-my-core",
+                            "code": "18842-5",
+                            "display": "Discharge Summary Note"
+                        }
+                    ]
+                }
+            ],
+            "period": {
+                "start": "2023-04-07T06:57:00.000+08:00"
+            }
+        }
+    ],
+    "section": [
+        {
+            "title": "Clinical Information",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "55752-0",
+                        "display": "Clinical Information"
+                    }
+                ]
+            },
+            "text": {
+                "status": "generated",
+                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><strong>Allergies</strong></h2><ul><li><strong>Allergies and Other Adverse Reactions:</strong><p>Patient allergic to:</p><p>1. Paracetamol</p><p>2. Peanut</p></li></ul><h2><strong>Reason for Care</strong></h2><ul><li><strong>Hospital Admission Diagnosis:</strong><ol><li>RLL pneumonia</li><li>COPD exacerbation</li></ol></li><li><p><strong>History of Present Illness</strong></p><p>72 year old thin white male presented to emergency on 8 JAN 14 with shortness of breath, weakness and dehydration. Chest X-ray showed right lower lobe infiltrate, ABGs unremarkable. Pulse ox on RA was 79%25.</p><ol><li>Pneumonia: treated with ceftriaxone and azithromycin iv. Switched to PO after 72 hours.&nbsp;</li><li>Exacerbation of COPD: patient treated with inhaled and oral steroids, O2 at 2l/nc. On RA at time of discharge&nbsp;</li><li>Weakness and dehydration: secondary to pneumonia and COPD. Responded well to strengthening with PT and regular meals.&nbsp;</li></ol></li></ul><h2><strong>Other Condition Histories</strong></h2><ul><li><strong><strong>Active Problems:</strong></strong><ol><li>RLL pneumonia</li><li>COPD exacerbation</li><li>mild CHF</li><li>osteoarthritis</li></ol></li><li><strong>Discharge Diagnosis:</strong><ol><li>RLL pneumonia</li><li>COPD exacerbation</li><li>mild CHF</li><li>osteoarthritis</li></ol></li><li><strong>Resolved Problems:</strong>&nbsp;none</li><li><strong>List of Surgeries:</strong><ol><li>Craniotomy</li><li>Lumbar Puncture</li></ol></li></ul><h2><strong>Medication</strong></h2><ul><li><strong>Medications: </strong>Zithromycin daily until gone, inhalers #of puffs</li></ul><h2><strong>Relevant Studies</strong></h2><ul><li><strong>Results:</strong>&nbsp;</li></ul><p>Doctor : DR NURUL FAUZAN BIN MOHD PAUZI<br />Registration : 11 OCT 2022 11:48:16 D.O.B. : 10 NOV 2020<br />Clinic : KLINIK PAKAR<br />Completion : 11 OCT 2022 14:53:54</p><p>Validated &amp; Reported By: Siti Zarinawati Binti Johari (Juruteknologi Makmal Perubatan U29)<br />Validated On: 11 OCT 2022 14:53:54<br />Accessed &amp; Printed By: (10.29.194.218) Accessed On: 11 OCT 2022, 17:26:13</p><table><tbody><tr><th>Full Blood Count</th><th>Result</th><th>Unit</th><th>Ref Range</th></tr><tr><td>White Blood Cell Count</td><td>H 16.97</td><td>x 10^3uL</td><td>( 4.078 - 11.370 )</td></tr><tr><td>Red Blood Cell Count</td><td>L 3.85</td><td>x 10^6uL</td><td>( 4.53 - 5.95 )</td></tr><tr><td>Haemoglobin</td><td>LL 6.7</td><td>g/dL</td><td>( 13.5 - 17.4 )</td></tr><tr><td>Hematocrit</td><td>L 20.5</td><td>%25</td><td>( 40.1 - 50.6 )</td></tr><tr><td>Mean Cell Volume</td><td>L 53.2</td><td>fL</td><td>( 80.6 - 95.5 )</td></tr><tr><td>Mean Cell Haemoglobin</td><td>L 17.4</td><td>pg</td><td>( 26.9 - 32.3 )</td></tr><tr><td>Mean Cell Haemoglobin Concentration</td><td>32.7</td><td>g/dL</td><td>( 31.9 - 35.3 )</td></tr></tbody></table><ul><li><strong>Hospital Discharge:</strong>&nbsp;none</li><li><strong>Studies Summary:</strong>&nbsp;none</li></ul><h2><strong>Plans of Care</strong></h2><ul><li><strong>Care Plan:&nbsp;</strong>No activity restriction, regular diet, follow up in two to three weeks with regular physician.</li></ul></div>"
+            }
+        }
+    ]
+}

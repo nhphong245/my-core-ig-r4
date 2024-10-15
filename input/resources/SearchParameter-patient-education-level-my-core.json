@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "education-level-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/education-level-my-core",
+  "name": "SearchParameterEducationLevelMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Patient Education Level",
+  "code": "education-level",
+  "base": [
+    "Patient"
+  ],
+  "type": "token",
+  "expression": "Patient.extension('http://fhir.hie.moh.gov.my/StructureDefinition/education-level-my-core')",
+  "xpathUsage": "normal"
+}

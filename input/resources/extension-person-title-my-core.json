@@ -1,0 +1,50 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "person-title-my-core",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2024-01-26T01:35:37.8583754+08:00"
+  },
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/person-title-my-core",
+  "version": "1.0.0",
+  "name": "ExtensionPersonTitleMyCore",
+  "title": "ExtensionPersonTitle (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "publisher": "Malaysia MOH - HIE Steering Committee",
+  "description": "Extension to define the title of an individual",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "HumanName"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/person-title-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/person-title-my-core"
+        }
+      }
+    ]
+  }
+}

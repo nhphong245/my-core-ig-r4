@@ -1,0 +1,18 @@
+{
+  "resourceType": "Subscription",
+  "id": "lab-request-affiliate",
+  "extension": [
+      {
+          "url": "http://hapifhir.io/fhir/StructureDefinition/subscription-payload-search-criteria",
+          "valueString": "ServiceRequest?_id=${matched_resource_id}&_include=ServiceRequest:subject&_include=ServiceRequest:encounter"
+      }
+  ],
+  "status": "active",
+  "reason": "Lab Requesting Affiliate",
+  "criteria": "ServiceRequest?category=108252007&performer-type=affiliate&status=active,revoked",
+  "channel": {
+      "type": "message",
+      "endpoint": "channel:lab-request-affiliate",
+      "payload": "application/json"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-referral-form-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetReferralForm (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/referral-form-my-core</tt><p>Referral Form Type</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/referral-form-my-core",
+  "name": "ValueSetReferralFormMyCore",
+  "title": "ValueSetReferralForm (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Task Output Type Code System",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/referral-form-my-core"
+      }
+    ]
+  }
+}

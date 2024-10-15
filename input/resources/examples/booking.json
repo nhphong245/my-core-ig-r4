@@ -1,0 +1,233 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "https://fhir.hie.moh.gov.my/baseR4/Appointment/appointment-sample",
+            "request": {
+                "method": "PUT",
+                "url": "Appointment/appointment-sample"
+            },
+            "resource": {
+                "resourceType": "Appointment",
+                "id": "appointment-sample",
+                "meta": {
+                    "source": "sample",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Appointment-my-core"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/simple-register-my-core",
+                        "extension": [
+                            {
+                                "url": "name",
+                                "valueString": "HALIZA BT RAZAK"
+                            },
+                            {
+                                "url": "identifier",
+                                "valueString": "HIE-00000165"
+                            },
+                            {
+                                "url": "gender",
+                                "valueCode": "female"
+                            },
+                            {
+                                "url": "telecom",
+                                "valueContactDetail": {
+                                    "telecom": [
+                                        {
+                                            "system": "phone",
+                                            "value": "01156404217"
+                                        },
+                                        {
+                                            "system": "email",
+                                            "value": "hiepersonn+1912@gmail.com"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "birthDate",
+                                "valueDate": "1992-01-14"
+                            },
+                            {
+                                "url": "age",
+                                "valueString": "31"
+                            }
+                        ]
+                    }
+                ],
+                "status": "booked",
+                "serviceCategory": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+                                "code": "AMB",
+                                "display": "Outpatient"
+                            }
+                        ]
+                    }
+                ],
+                "serviceType": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                                "code": "03",
+                                "display": "Outpatient"
+                            }
+                        ]
+                    }
+                ],
+                "specialty": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                                "code": "02",
+                                "display": "General Medicine"
+                            }
+                        ]
+                    }
+                ],
+                "slot": {
+                    "reference": "Slot/slot-sample"
+                },
+                "appointmentType": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core",
+                            "code": "internal",
+                            "display": "Internal"
+                        }
+                    ]
+                },
+                "start": "2023-05-19T09:00:00+08:00",
+                "end": "2023-05-19T17:00:00+08:00",
+                "created": "2023-05-18T09:00:00+08:00",
+                "participant": [
+                    {
+                        "actor": {
+                            "reference": "HealthcareService/fe5dba17-00d9-474c-90a6-71901c66ecfc",
+                            "type": "HealthcareService",
+                            "display": "General Medicine"
+                        },
+                        "status": "accepted"
+                    },
+                    {
+                        "actor": {
+                            "reference": "Patient/96b71b10-4483-4e61-badb-e5e5a0f0460b",
+                            "type": "Patient",
+                            "display": "HALIZA BT RAZAK"
+                        },
+                        "status": "accepted"
+                    },
+                    {
+                        "actor": {
+                            "type": "Location",
+                            "display": "BILIK RAWATAN 1"
+                        },
+                        "status": "accepted"
+                    }
+                ],
+                "requestedPeriod": [
+                    {
+                        "start": "2023-05-19T09:00:00+08:00",
+                        "end": "2023-05-19T17:00:00+08:00"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://fhir.hie.moh.gov.my/baseR4/Slot/slot-sample",
+            "request": {
+                "method": "PUT",
+                "url": "Slot/slot-sample"
+            },
+            "resource": {
+                "resourceType": "Slot",
+                "id": "slot-sample",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2023-05-15T09:16:00.852+08:00",
+                    "source": "sample",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Slot-my-core"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/slot-quota-my-core",
+                        "extension": [
+                            {
+                                "url": "quota",
+                                "valueString": "9"
+                            },
+                            {
+                                "url": "available",
+                                "valueString": "10"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "value": "HTJ-SLT-2300000102"
+                    }
+                ],
+                "serviceCategory": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+                                "code": "AMB",
+                                "display": "Outpatient"
+                            }
+                        ]
+                    }
+                ],
+                "serviceType": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                                "code": "03",
+                                "display": "Outpatient"
+                            }
+                        ]
+                    }
+                ],
+                "specialty": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                                "code": "02",
+                                "display": "General Medicine"
+                            }
+                        ]
+                    }
+                ],
+                "appointmentType": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core",
+                            "code": "internal",
+                            "display": "Internal"
+                        }
+                    ]
+                },
+                "schedule": {
+                    "reference": "Schedule/schedule-sample"
+                },
+                "status": "free",
+                "start": "2023-05-15T11:00:00+08:00",
+                "end": "2023-05-15T17:00:00+08:00",
+                "comment": "HTJ-KLINIK KELUARGA"
+            }
+        }
+    ]
+}

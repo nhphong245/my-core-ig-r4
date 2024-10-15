@@ -1,0 +1,504 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "qr-hypertension-audit",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core",
+            "valueReference": {
+                "reference": "Organization/11-05060009"
+            }
+        }
+    ],
+    "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-hypertension-audit",
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/74c778d4-19a4-442e-8918-620733047fce"
+    },
+    "authored": "2024-03-04T16:35:00+08:00",
+    "author": {
+        "reference": "PractitionerRole/b9797173-7e15-4fc3-8f85-d58627935956/_history/19"
+    },
+    "item": [
+        {
+          "linkId": "hpt",
+          "text": "Latest Clinical Update",
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueDateTime": "2024-03-07T01:27:24.016Z"
+                }
+              ],
+              "linkId": "hpt-clinic-date",
+              "text": "Date of clinic visit"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "01",
+                    "display": "Kuching"
+                  }
+                }
+              ],
+              "linkId": "hpt-division",
+              "text": "Division"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "04",
+                    "display": "Bau"
+                  }
+                }
+              ],
+              "linkId": "hpt-district",
+              "text": "District"
+            },
+            {
+              "answer": [
+                {
+                  "valueString": "KKIA Bau"
+                }
+              ],
+              "linkId": "hpt-facility",
+              "text": "Health Facility"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "12",
+                    "display": "KK with MO"
+                  }
+                }
+              ],
+              "linkId": "hpt-type-facility",
+              "text": "Type of Health Facility"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "15",
+                    "display": "On Pharmacological treatment"
+                  }
+                }
+              ],
+              "linkId": "hpt-type-treatment",
+              "text": "Type of treatment for Hypertension"
+            }
+          ]
+        },
+        {
+          "linkId": "pe",
+          "text": "Physical examination at follow up visit",
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueDecimal": 140
+                }
+              ],
+              "linkId": "pe-sys-result",
+              "text": "Systolic blood pressure"
+            },
+            {
+              "answer": [
+                {
+                  "valueDecimal": 90
+                }
+              ],
+              "linkId": "pe-dia-result",
+              "text": "Diastolic blood pressure"
+            },
+            {
+              "answer": [
+                {
+                  "valueDecimal": 60
+                }
+              ],
+              "linkId": "pe-wt-result",
+              "text": "Weight at follow up"
+            },
+            {
+              "answer": [
+                {
+                  "valueDecimal": 100
+                }
+              ],
+              "linkId": "pe-wc-result",
+              "text": "Waist circumference at follow up"
+            }
+          ]
+        },
+        {
+          "linkId": "comorbid",
+          "text": "Presence of co-morbidity & complications at follow up visit",
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  },
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDateTime": "2024-03-07T01:28:09.478Z"
+                        }
+                      ],
+                      "linkId": "hpt-dx-date",
+                      "text": "If Yes, date of diagnosis"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "dm",
+              "text": "Diabetes Mellitus"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  },
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDateTime": "2024-03-07T01:28:26.533Z"
+                        }
+                      ],
+                      "linkId": "lipid-dx-date",
+                      "text": "If Yes, date of diagnosis"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "lipid",
+              "text": "Dyslipidaemia"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  },
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDateTime": "2024-03-07T01:28:37.556Z"
+                        }
+                      ],
+                      "linkId": "stroke-dx-date",
+                      "text": "If Yes, date of diagnosis"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "stroke",
+              "text": "Stroke"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  },
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDateTime": "2024-03-07T01:28:45.067Z"
+                        }
+                      ],
+                      "linkId": "renal-dx-date",
+                      "text": "If Yes, date of diagnosis"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "renal",
+              "text": "Renal Failure"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  },
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDateTime": "2024-03-07T01:28:59.187Z"
+                        }
+                      ],
+                      "linkId": "cevd-dx-date",
+                      "text": "If Yes, date of diagnosis"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "cevd",
+              "text": "Cardiovascular Disease"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  },
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDateTime": "2024-03-07T01:29:06.402Z"
+                        }
+                      ],
+                      "linkId": "retinopathy-dx-date",
+                      "text": "If Present, date of diagnosis"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "retinopathy",
+              "text": "Hypertensive Retinopathy"
+            },
+            {
+              "answer": [
+                {
+                  "valueDateTime": "2024-03-07T01:29:11.514Z"
+                }
+              ],
+              "linkId": "record",
+              "text": "Date record updated"
+            }
+          ]
+        },
+        {
+          "linkId": "lab",
+          "text": "Laboratory results at follow up",
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueBoolean": true,
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDecimal": 200
+                        }
+                      ],
+                      "linkId": "lab-tc-result",
+                      "text": "Latest Result"
+                    },
+                    {
+                      "answer": [
+                        {
+                          "valueDateTime": "2024-03-05T01:29:35.276Z"
+                        }
+                      ],
+                      "linkId": "lab-tc-sample-date",
+                      "text": "Date sample taken"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "lab-tc",
+              "text": "Total Cholesterol"
+            },
+            {
+              "answer": [
+                {
+                  "valueBoolean": true,
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDecimal": 100
+                        }
+                      ],
+                      "linkId": "lab-tg-result",
+                      "text": "Latest Result"
+                    },
+                    {
+                      "answer": [
+                        {
+                          "valueDateTime": "2024-03-05T01:29:35.000Z"
+                        }
+                      ],
+                      "linkId": "lab-tg-sample-date",
+                      "text": "Date sample taken"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "lab-tg",
+              "text": "Triglycerides (TG)"
+            },
+            {
+              "answer": [
+                {
+                  "valueBoolean": true,
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDecimal": 50
+                        }
+                      ],
+                      "linkId": "lab-hdl-result",
+                      "text": "Latest Result"
+                    },
+                    {
+                      "answer": [
+                        {
+                          "valueDateTime": "2024-03-05T01:29:35.000Z"
+                        }
+                      ],
+                      "linkId": "lab-hdl-sample-date",
+                      "text": "Date sample taken"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "lab-hdl",
+              "text": "High-Density Lipoprotein (HDL)"
+            },
+            {
+              "answer": [
+                {
+                  "valueBoolean": true,
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDecimal": 60
+                        }
+                      ],
+                      "linkId": "lab-cre-result",
+                      "text": "Latest Result"
+                    },
+                    {
+                      "answer": [
+                        {
+                          "valueDateTime": "2024-03-05T01:29:35.000Z"
+                        }
+                      ],
+                      "linkId": "lab-cre-sample-date",
+                      "text": "Date sample taken"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "lab-cre",
+              "text": "Serum Creatinine"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "167582007",
+                    "display": "Positive"
+                  },
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDateTime": "2024-03-05T01:29:35.000Z"
+                        }
+                      ],
+                      "linkId": "lab-umalb-sample-date",
+                      "text": "Date sample taken"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "lab-umalb",
+              "text": "Urine Microalbumin"
+            },
+            {
+              "answer": [
+                {
+                  "valueBoolean": true,
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDecimal": 100
+                        }
+                      ],
+                      "linkId": "lab-fbg-result",
+                      "text": "Latest Result"
+                    },
+                    {
+                      "answer": [
+                        {
+                          "valueDateTime": "2024-03-05T01:29:35.000Z"
+                        }
+                      ],
+                      "linkId": "lab-fbg-sample-date",
+                      "text": "Date sample taken"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "lab-fbg",
+              "text": "Fasting Blood Glucose (FBG)"
+            }
+          ]
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "413328008",
+                "display": "Transfer Out"
+              },
+              "item": [
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "17",
+                        "display": "To another KK/JPL"
+                      }
+                    }
+                  ],
+                  "linkId": "transfer",
+                  "text": "Transfer to KK/JPL or private facility"
+                }
+              ]
+            }
+          ],
+          "linkId": "status",
+          "text": "Current Status"
+        }
+      ]
+    }

@@ -1,0 +1,20 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organization-longitude-my-core",
+  "meta": {
+    "versionId": "9",
+    "lastUpdated": "2023-06-21T17:13:53.023+08:00",
+    "source": "#qQOGKPHkTpcwH24e"
+  },
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/organization-longitude-my-core",
+  "name": "SearchParameterOrganizationLongitudeMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Organization longitude",
+  "code": "longitude",
+  "base": [
+    "Organization"
+  ],
+  "type": "number",
+  "expression": "Organization.extension('http://fhir.hie.moh.gov.my/StructureDefinition/Organization-position-my-core').extension('longitude').value as decimal"
+}

@@ -1,0 +1,743 @@
+{
+    "resourceType": "Observation",
+    "id": "0aaac46c-9846-443c-a94a-35342b60492a",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2022-12-18T09:50:45.508+08:00",
+        "source": "http://provider.hie.moh.gov.my#9GN0zw9CDwg1jCtR",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-lab-result-my-core"
+        ]
+    },
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "laboratory"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-my-core",
+                "code": "00311",
+                "display": "Full Blood Count (FBC) / Immature platelet fraction (IPF) / Reticulocyte count"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "14196-0",
+                "display": "Reticulocytes [#/volume] in Blood"
+            }
+        ]
+    },
+    "performer": [
+        {
+            "reference": "Organization/KKM"
+        }
+    ],
+    "component": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "01",
+                        "display": "White Blood Cell Count"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 16.97,
+                "unit": "10*3/uL",
+                "system": "http://unitsofmeasure.org",
+                "code": "10*3/uL"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "H",
+                            "display": "High"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 4.078
+                    },
+                    "high": {
+                        "value": 11.370
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "02",
+                        "display": "Red Blood Cell Count"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 3.85,
+                "unit": "10*6/uL",
+                "system": "http://unitsofmeasure.org",
+                "code": "10*6/uL"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "L",
+                            "display": "low"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 4.53
+                    },
+                    "high": {
+                        "value": 5.95
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "03",
+                        "display": "Hemoglobin"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 6.7,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "LL",
+                            "display": "Critical low"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 13.5
+                    },
+                    "high": {
+                        "value": 17.4
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "04",
+                        "display": "Hematocrit"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 20.5,
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "L",
+                            "display": "Low"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 40.1
+                    },
+                    "high": {
+                        "value": 50.6
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "05",
+                        "display": "Mean Cell Volume"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 53.2,
+                "unit": "fL",
+                "system": "http://unitsofmeasure.org",
+                "code": "fL"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "L",
+                            "display": "Low"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 26.9
+                    },
+                    "high": {
+                        "value": 32.3
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "06",
+                        "display": "Mean Cell Haemoglobin"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 17.4,
+                "unit": "pg",
+                "system": "http://unitsofmeasure.org",
+                "code": "pg"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "L",
+                            "display": "Low"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 26.9
+                    },
+                    "high": {
+                        "value": 32.3
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "07",
+                        "display": "Mean Cell Haemoglobin Concentration"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 32.7,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+            },
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 31.9
+                    },
+                    "high": {
+                        "value": 35.3
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "08",
+                        "display": "Platelet"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 626,
+                "unit": "10*3/uL",
+                "system": "http://unitsofmeasure.org",
+                "code": "10*3/uL"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "H",
+                            "display": "High"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 142
+                    },
+                    "high": {
+                        "value": 350
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "09",
+                        "display": "Red Cell Distribution Width - SD"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "unit": "fL",
+                "system": "http://unitsofmeasure.org",
+                "code": "fL"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "H",
+                            "display": "High"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 4.078
+                    },
+                    "high": {
+                        "value": 11.370
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "10",
+                        "display": "Red Cell Distribution Width - CV"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 31.9,
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "H",
+                            "display": "High"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 12.0
+                    },
+                    "high": {
+                        "value": 14.8
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "11",
+                        "display": "Platelet Distribution Width"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "unit": "fL",
+                "system": "http://unitsofmeasure.org",
+                "code": "fL"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "12",
+                        "display": "Mean Platelet Volume"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "unit": "fL",
+                "system": "http://unitsofmeasure.org",
+                "code": "fL"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "13",
+                        "display": "Platelet Large Cell Ratio"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "14",
+                        "display": "Plateletcrit"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "15",
+                        "display": "Absolute Neutrophil"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 8.75,
+                "unit": "10*3/uL",
+                "system": "http://unitsofmeasure.org",
+                "code": "10*3/uL"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "H",
+                            "display": "High"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 3.929
+                    },
+                    "high": {
+                        "value": 7.147
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "16",
+                        "display": "Absolute Lymphocyte"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 6.45,
+                "unit": "10*3/uL",
+                "system": "http://unitsofmeasure.org",
+                "code": "10*3/uL"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "H",
+                            "display": "High"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 1.847
+                    },
+                    "high": {
+                        "value": 4.807
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "17",
+                        "display": "Absolute Monocyte"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 1.07,
+                "unit": "10*3/uL",
+                "system": "http://unitsofmeasure.org",
+                "code": "10*3/uL"
+            },
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 0.385
+                    },
+                    "high": {
+                        "value": 1.141
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "18",
+                        "display": "Absolute Eosinophil"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 0.50,
+                "unit": "10*3/uL",
+                "system": "http://unitsofmeasure.org",
+                "code": "10*3/uL"
+            },
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 0.000
+                    },
+                    "high": {
+                        "value": 0.827
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "19",
+                        "display": "Absolute Basophil"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 0.20,
+                "unit": "10*3/uL",
+                "system": "http://unitsofmeasure.org",
+                "code": "10*3/uL"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "H",
+                            "display": "High"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 0.00
+                    },
+                    "high": {
+                        "value": 0.095
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "20",
+                        "display": "Immature Granulocyte"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 0.21,
+                "unit": "10*3/uL",
+                "system": "http://unitsofmeasure.org",
+                "code": "10*3/uL"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "21",
+                        "display": "Percentage of Neutrophil"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 51.6,
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "22",
+                        "display": "Percentage of Lymphocyte"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 38.0,
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "23",
+                        "display": "Percentage of Monocyte"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 6.3,
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "24",
+                        "display": "Percentage of Eosinophil"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 2.9,
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "H",
+                            "display": "High"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 4.078
+                    },
+                    "high": {
+                        "value": 11.370
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "code": "25",
+                        "display": "Percentage of Basophil"
+                    }
+                ]
+            },
+            "valueQuantity": {
+                "value": 1.2,
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            }
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "resourceType": "Patient",
+    "id": "patient-unknown-sample",
+    "meta": {
+        "lastUpdated": "2023-04-10T07:46:20.943+08:00",
+        "source": "sample",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Patient-my-core"
+        ]
+    },
+    "identifier": [
+        {
+            "use":"temp",
+            "system": "http://fhir.hie.moh.gov.my/sid/others-no",
+            "value": "HTJ-UKN-23000006"
+        },
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/patient-mrn",
+            "value": "HIE-00000005"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "text": "NURUL BINTI SALLEH",
+            "given": [
+                "NURUL BINTI SALLEH"
+            ]
+        }
+    ],
+    "gender": "female",
+    "birthDate": "1991-05-03",
+    "deceasedBoolean": false,
+    "managingOrganization": {
+        "reference": "Organization/11-05060009",
+        "display": "HOSPITAL TUANKU JA'AFAR"
+    }
+}

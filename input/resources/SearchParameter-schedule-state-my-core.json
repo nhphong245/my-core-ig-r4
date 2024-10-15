@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "schedule-state-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/schedule-state-my-core",
+  "name": "ServiceParameterScheduleStateMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "A code for the state of schedule",
+  "code": "address-state",
+  "base": [
+    "Schedule"
+  ],
+  "type": "token",
+  "expression": "Schedule.extension('http://fhir.hie.moh.gov.my/StructureDefinition/address-state-my-core') | Schedule.extension('http://fhir.hie.moh.gov.my/CodeSystem/state-my-core')",
+  "xpathUsage": "normal"
+}

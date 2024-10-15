@@ -1,0 +1,483 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "qr-hajj-medexam",
+  "meta": {
+      "source": "http://provider.hie.moh.gov.my",
+      "profile": [
+          "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+      ]
+  },
+  "identifier": {
+      "system": "http://fhir.hie.moh.gov.my/sid/template-section",
+      "value": "qr-hajj-medexam"
+  },
+  "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-medexam",
+  "status": "completed",
+  "subject": {
+      "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7"
+  },
+  "authored": "2023-12-07T09:00:00+08:00",
+  "item": [
+      {
+          "linkId": "1",
+          "text": "Pemeriksaan Sistem AM",
+          "item": [
+              {
+                  "linkId": "1.1",
+                  "text": "Jaundice",
+                  "answer": [
+                      {
+                          "valueBoolean": false
+                      }
+                  ]
+              },
+              {
+                  "linkId": "1.2",
+                  "text": "Cyanosis",
+                  "answer": [
+                      {
+                          "valueBoolean": false
+                      }
+                  ]
+              },
+              {
+                  "linkId": "1.3",
+                  "text": "Clubbing",
+                  "answer": [
+                      {
+                          "valueBoolean": false
+                      }
+                  ]
+              },
+              {
+                  "linkId": "1.4",
+                  "text": "Pallor",
+                  "answer": [
+                      {
+                          "valueBoolean": false
+                      }
+                  ]
+              },
+              {
+                  "linkId": "1.5",
+                  "text": "Pedal Oedema",
+                  "answer": [
+                      {
+                          "valueBoolean": false
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "linkId": "2",
+          "text": "Pemeriksaan Sistem Khusus",
+          "item": [
+              {
+                  "linkId": "2.1",
+                  "text": "Head & Neck",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "00",
+                              "display": "Normal"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.2",
+                  "text": "Ear, Nose & Throat",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "00",
+                              "display": "Normal"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.3",
+                  "text": "Thyroid",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "00",
+                              "display": "Normal"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.4",
+                  "text": "Lymph Nodes",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "00",
+                              "display": "Normal"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.5",
+                  "text": "Sistem Kardiovaskular",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "00",
+                              "display": "Normal"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.6",
+                  "text": "Sistem Respiratori",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "00",
+                              "display": "Normal"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.7",
+                  "text": "Sistem Gastrointestinal",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "00",
+                              "display": "Normal"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.8",
+                  "text": "Liver",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "02",
+                              "display": "Palpable"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.9",
+                  "text": "Spleen",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "02",
+                              "display": "Palpable"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.10",
+                  "text": "Ascites",
+                  "answer": [
+                      {
+                          "valueBoolean": true,
+                          "item": [
+                              {
+                                  "linkId": "2.11",
+                                  "text": "Describe",
+                                  "answer": [
+                                      {
+                                          "valueString": "Pancreatitis"
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.12",
+                  "text": "Hernia",
+                  "answer": [
+                      {
+                          "valueBoolean": true,
+                          "item": [
+                              {
+                                  "linkId": "2.13",
+                                  "text": "Describe",
+                                  "answer": [
+                                      {
+                                          "valueString": "Femoral Hernia"
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.14",
+                  "text": "Mass",
+                  "answer": [
+                      {
+                          "valueBoolean": true,
+                          "item": [
+                              {
+                                  "linkId": "2.15",
+                                  "text": "Describe",
+                                  "answer": [
+                                      {
+                                          "valueString": "Breast"
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "linkId": "3",
+          "text": "Sistem Genitourinari",
+          "item": [
+              {
+                  "linkId": "3.1",
+                  "text": "Kidney",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "02",
+                              "display": "Palpable"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "3.2",
+                  "text": "Lain-lain",
+                  "answer": [
+                      {
+                          "valueString": "Not Applicable"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "linkId": "4",
+          "text": "Sistem Saraf",
+          "item": [
+              {
+                  "linkId": "4.1",
+                  "text": "Motor",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "00",
+                              "display": "Normal"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "4.2",
+                  "text": "Sensory",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "00",
+                              "display": "Normal"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "4.3",
+                  "text": "Reflexes",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "00",
+                              "display": "Normal"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "4.4",
+                  "text": "Payudara",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "00",
+                              "display": "Normal"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "4.5",
+                  "text": "Foot Examination",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "00",
+                              "display": "Normal"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "4.6",
+                  "text": "Lain-lain",
+                  "answer": [
+                      {
+                          "valueString": "Not Applicable"
+                      }
+                  ]
+              },
+              {
+                  "linkId": "4.7",
+                  "text": "Functional Class",
+                  "answer": [
+                      {
+                          "valueCoding": {
+                              "code": "04",
+                              "display": "I"
+                          }
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "linkId": "5",
+          "text": "Lain-lain Ujian (Jika Terdapat Indikasi)",
+          "item": [
+              {
+                  "linkId": "5.1",
+                  "text": "X-Ray Dada",
+                  "answer": [
+                      {
+                          "valueString": "Normal"
+                      }
+                  ]
+              },
+              {
+                  "linkId": "5.2",
+                  "text": "Full Blood Count (FBC)",
+                  "answer": [
+                      {
+                          "valueString": "Normal"
+                      }
+                  ]
+              },
+              {
+                  "linkId": "5.3",
+                  "text": "Fasting Blood Sugar (FBS) / OGTT",
+                  "answer": [
+                      {
+                          "valueString": "Normal"
+                      }
+                  ]
+              },
+              {
+                  "linkId": "5.4",
+                  "text": "HbA1c",
+                  "answer": [
+                      {
+                          "valueQuantity": {
+                              "value": 4
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "5.5",
+                  "text": "Renal profile",
+                  "answer": [
+                      {
+                          "valueString": "Normal"
+                      }
+                  ]
+              },
+              {
+                  "linkId": "5.6",
+                  "text": "Electrocardiogram (ECG)",
+                  "answer": [
+                      {
+                          "valueString": "T wave"
+                      }
+                  ]
+              },
+              {
+                  "linkId": "5.7",
+                  "text": "UPT (If LNMP more than 4 weeks)",
+                  "answer": [
+                      {
+                          "valueString": "Not Applicable"
+                      }
+                  ]
+              },
+              {
+                  "linkId": "5.8",
+                  "text": "Lain-lain",
+                  "answer": [
+                      {
+                          "valueString": "Not Applicable"
+                      }
+                  ]
+              },
+              {
+                  "linkId": "5.9",
+                  "text": "Catatan",
+                  "answer": [
+                      {
+                          "valueString": "Normal"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "linkId": "6",
+          "text": "Pemeriksaan Gigi",
+          "item": [
+              {
+                  "linkId": "6.1",
+                  "text": "Tarikh Pemeriksaan",
+                  "answer": [
+                      {
+                          "valueDateTime": "2023-12-13T02:45:13.208Z"
+                      }
+                  ]
+              },
+              {
+                  "linkId": "6.2",
+                  "text": "Tempat Pemeriksaan",
+                  "answer": [
+                      {
+                          "valueString": "Klinik Kesihatan Kuala Lumpur"
+                      }
+                  ]
+              },
+              {
+                  "linkId": "6.3",
+                  "text": "Catatan",
+                  "answer": [
+                      {
+                          "valueString": "Normal"
+                      }
+                  ]
+              }
+          ]
+      }
+  ]
+}

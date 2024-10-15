@@ -1,0 +1,27 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-revenue-code-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemRevenueCode (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/CodeSystem/revenue-code-my-core</tt><p>Revenue Code</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/revenue-code-my-core",
+  "name": "CodeSystemRevenueCodeMyCore",
+  "title": "CodeSystemRevenueCode (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Revenue Code",
+  "compositional": false,
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "H0172111",
+      "display": "Bayaran Perkidmatan Kesihatan Pesakit Luar - Warganegara Malaysia"
+    },
+    {
+      "code": "H0272114",
+      "display": "Bayaran Perkidmatan Kesihatan Pesakit Luar - Warganegara Asing"
+    }
+  ]
+}

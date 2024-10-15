@@ -1,0 +1,89 @@
+{
+    "resourceType": "Composition",
+    "id": "HTJ-PHIS-ADR-123",
+    "meta": {
+        "source": "http://phis.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Composition-my-core"
+        ]
+    },
+    "identifier": {
+        "system": "http://fhir.hie.moh.gov.my/sid/composition-id",
+        "value": "HTJ-PHIS-ADR-123"
+    },
+    "status": "final",
+    "type": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-type-my-core",
+                "code": "34821-9",
+                "display": "Pharmacology Note"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-category-my-core",
+                    "code": "LP173418-7",
+                    "display": "Note"
+                }
+            ]
+        }
+    ],
+    "confidentiality": "N",
+    "subject": {
+        "reference": "Patient/Patient?identifier=http://fhir.hie.moh.gov.my/sid/patient-mrn|PHIS-123"
+    },
+    "encounter": {
+        "reference": "Encounter/Encounter?identifier=http://fhir.hie.moh.gov.my/sid/encounter-id|PHIS-ENC-2212000101"
+    },
+    "date": "2022-09-29T12:13:00+08:00",
+    "author": [
+        {
+            "display": "Recorder Practitioner Name"
+        }
+    ],
+    "title": "Note",
+    "custodian": {
+        "reference": "Organization/11-05060009",
+        "display": "HOSPITAL TUANKU JA'AFAR"
+    },
+    "event": [
+        {
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-event-my-core",
+                            "code": "0002-0003",
+                            "display": "ADR (Adverse Drug Event)"
+                        }
+                    ]
+                }
+            ],
+            "period": {
+                "start": "2022-09-29T12:13:00+08:00"
+            }
+        }
+    ],
+    "section": [
+        {
+            "title": "Clinical Information",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "55752-0",
+                        "display": "Clinical Information"
+                    }
+                ]
+            },
+            "text": {
+                "status": "generated",
+                "div": " <div xmlns=\"http://www.w3.org/1999/xhtml\"> <p> <b>1. Facility Information</b> </p> <p>Facility name &amp; ID: (Remarks) </p><br/> <p> <b>2. Patient Information</b> </p> <p>Patient identification: (Remarks) </p><br/> <p> <b>3. Adverse Reaction Description</b> </p> <p>a) Adverse Reaction Description: (Remarks)</p> <p>b) Time to Onset of Reaction (1): (Remarks)</p> <p>b) Time to Onset of Reaction (2): (Remarks)</p> <p>c) Reaction subsided after action taken with suspected drug: (Remarks) </p> <p>d) Reaction reappeared after reintroducing suspected drug: (Remarks) </p> <p>e) Outcome (Remarks) </p><br/> <p> <b>4. Suspected Drug</b> </p> <p>MDC: (Remarks)</p> <p>Product/Generic Name: (Remarks)</p> <p>Drug Type: (Remarks)</p> <p>Dose: (Remarks)</p> <p>Route: (Remarks)</p> <p>Manufacturer: (Remarks)</p> <p>Product Reg No.: (Remarks)</p> <p>Brand: (Remarks)</p> <p>Therapy Start Date: (Remarks)</p> <p>Therapy End Date: (Remarks)</p> <p>Therapy End Date Remark: (Remarks)</p> <p>Indication: (Remarks)</p></div>"
+            }
+        }
+    ]
+}

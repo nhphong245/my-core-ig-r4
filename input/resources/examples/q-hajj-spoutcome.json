@@ -1,0 +1,46 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hajj-spoutcome",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-spoutcome",
+  "version": "1.0.0",
+  "name": "QHajjSpoutcome",
+  "title": "Keputusan Pemeriksaan Kesihatan Bagi Kes Rujukan Pakar",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Menghidap penyakit, keadaannya stabildan LULUS ke Tanah Suci (Diagnosa & Rawatan seperti di m/s 31)",
+      "type": "boolean"
+    },
+    {
+      "linkId": "2",
+      "text": "Menghidap penyakit berisiko tinggi tetapi stabil serta sedang / sudah dirawat dan LULUS  ke Tanah Suci dalam tempoh 6 bulan dari tarikh ini.",
+      "type": "boolean",
+      "item": [
+        {
+          "linkId": "3",
+          "text": "Dicadangkan penerbangan pergi lewat dan pulang awal",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "2",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Dirujuk kepada Pegawai Epidemiologi (JK Penilaian Khas Pemeriksaan Kesihatan)",
+      "type": "boolean"
+    },
+    {
+      "linkId": "5",
+      "text": "TIDAK LULUS dan perlu mendapatkan rawatan lanjut",
+      "type": "boolean"
+    }
+  ]
+}

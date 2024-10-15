@@ -1,0 +1,27 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "CarePlan-supporting-info-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/CarePlan-supporting-info-my-core",
+  "name": "SearchParameterSupportingInfoReference",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Supporting Info Reference",
+  "code": "supporting-info",
+  "base": [
+    "CarePlan"
+  ],
+  "type": "reference",
+  "expression": "CarePlan.supportingInfo",
+  "target": [
+    "Appointment",
+    "MedicationRequest",
+    "Task",
+    "NutritionOrder",
+    "RequestGroup",
+    "VisionPrescription",
+    "DeviceRequest",
+    "ServiceRequest",
+    "CommunicationRequest",
+    "QuestionnaireResponse"
+  ]
+}

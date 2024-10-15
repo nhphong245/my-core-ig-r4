@@ -1,0 +1,1113 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-diabetic-audit",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-diabetic-audit",
+  "title": "Diabetic Audit",
+  "status": "active",
+  "date": "2024-04-28T23:30:28.824077+00:00",
+  "item": [
+    {
+      "linkId": "dm",
+      "text": "Diabetes Details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "dm-dx-date",
+          "text": "Diabetes Diagnosis Date",
+          "type": "dateTime"
+        },
+        {
+          "linkId": "dm-dx-type",
+          "text": "Estimate/ Presumed",
+          "type": "boolean"
+        },
+        {
+          "linkId": "dm-type",
+          "text": "Diabetes Type",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/1651053999",
+                "code": "5A10",
+                "display": "Type 1"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/119724091",
+                "code": "5A11",
+                "display": "Type 2"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/119724091",
+                "code": "5A12",
+                "display": "Malnutrition-related"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/381961554",
+                "code": "5A13",
+                "display": "Other specified type"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/1697306310",
+                "code": "5A14",
+                "display": "Type unspecified"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "dm-other",
+          "text": "If other specified type, please specify",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "dm-type",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://id.who.int/icd/entity/381961554",
+                "code": "5A13",
+                "display": "Other specified type"
+              }
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/1651053999",
+                "code": "5A13.0",
+                "display": "Diabetes mellitus due to genetic defects of beta cell function"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/119724091",
+                "code": "5A13.1",
+                "display": "Diabetes mellitus due to genetic defects in insulin action"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/381961554",
+                "code": "5A13.2",
+                "display": "Diabetes mellitus due to diseases of the exocrine pancreas"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/1697306310",
+                "code": "5A13.3",
+                "display": "Diabetes mellitus due to endocrinopathies"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/1697306310",
+                "code": "5A13.4",
+                "display": "Diabetes mellitus due to drug or chemical"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/1697306310",
+                "code": "5A13.5",
+                "display": "Diabetes mellitus due to uncommon forms of immune-mediated diabetes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/1697306310",
+                "code": "5A13.6",
+                "display": "Diabetes mellitus due to other genetic syndromes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/1697306310",
+                "code": "5A13.7",
+                "display": "Diabetes mellitus due to clinically defined subtypes or syndromes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://id.who.int/icd/entity/1697306310",
+                "code": "5A13.Y",
+                "display": "Diabetes mellitus due to other specified cause"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "dm-age",
+          "text": "Diabetes Age",
+          "type": "dateTime"
+        }
+      ]
+    },
+    {
+      "linkId": "complication",
+      "text": "Complications",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "retinopathy",
+          "text": "Retinopathy",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Present"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Absent"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "retinopathy-dx-date",
+              "text": "If Present, date of diagnosis",
+              "type": "dateTime"
+            },
+            {
+              "linkId": "retinopathy-dx-type",
+              "text": "Estimate/ Presumed",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "linkId": "ihd",
+          "text": "Ischaemic heart disease (IHD)",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Present"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Absent"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "ihd-dx-date",
+              "text": "If Present, date of diagnosis",
+              "type": "dateTime"
+            },
+            {
+              "linkId": "ihd-dx-type",
+              "text": "Estimate/ Presumed",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "linkId": "cevd",
+          "text": "Cerebrovascular disease (ceVD)",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Present"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Absent"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "cevd-dx-date",
+              "text": "If Present, date of diagnosis",
+              "type": "dateTime"
+            },
+            {
+              "linkId": "cevd-dx-type",
+              "text": "Estimate/ Presumed",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "linkId": "nephropathy",
+          "text": "Nephropathy",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Present"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Absent"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "nephropathy-dx-date",
+              "text": "If Present, date of diagnosis",
+              "type": "dateTime"
+            },
+            {
+              "linkId": "nephropathy-dx-type",
+              "text": "Estimate/ Presumed",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "linkId": "dfu",
+          "text": "Diabetic foot ulcer",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Present"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Absent"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "dfu-dx-date",
+              "text": "If Present, date of diagnosis",
+              "type": "dateTime"
+            },
+            {
+              "linkId": "dfu-dx-type",
+              "text": "Estimate/ Presumed",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "linkId": "amputation",
+          "text": "Amputation",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Present"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Absent"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "amputation-dx-date",
+              "text": "If Present, date of diagnosis",
+              "type": "dateTime"
+            },
+            {
+              "linkId": "amputation-dx-type",
+              "text": "Estimate/ Presumed",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "comorbid",
+      "text": "Concomitant Co-morbidity",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "hpt",
+          "text": "Hypertension",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "hpt-dx-date",
+              "text": "If Yes, date of diagnosis",
+              "type": "dateTime"
+            },
+            {
+              "linkId": "hpt-dx-type",
+              "text": "Estimate/ Presumed",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "linkId": "lipid",
+          "text": "Dyslipidaemia",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "lipid-dx-date",
+              "text": "If Yes, date of diagnosis",
+              "type": "dateTime"
+            },
+            {
+              "linkId": "lipid-dx-type",
+              "text": "Estimate/ Presumed",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "linkId": "smoking",
+          "text": "Smoking Status",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "obs",
+      "text": "Clinical Observations",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "obs-ht",
+          "text": "Height",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "obs-ht-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            }
+          ]
+        },
+        {
+          "linkId": "obs-wt",
+          "text": "Weight",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "obs-wt-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            },
+            {
+              "linkId": "obs-wt-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "obs-wc",
+          "text": "Waist Circumference",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "obs-wc-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            },
+            {
+              "linkId": "obs-wc-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "obs-bmi",
+          "text": "Body Mass Index (BMI)",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "obs-bmi-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            },
+            {
+              "linkId": "obs-bmi-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "obs-bp",
+          "text": "Blood Pressure",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "obs-bp-sys-result",
+              "text": "Systolic",
+              "type": "decimal"
+            },
+            {
+              "linkId": "obs-bp-dia-result",
+              "text": "Diastolic",
+              "type": "decimal"
+            },
+            {
+              "linkId": "obs-bp-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "pe",
+      "text": "Physical Examination",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "pe-fundus",
+          "text": "Fundus examination",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "pe-fundus-outcome",
+              "text": "Examination Outcome",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Abnormal"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "pe-fundus-date",
+              "text": "Date of Latest Examination",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "pe-foot",
+          "text": "Foot examination",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "pe-foot-outcome",
+              "text": "Examination Outcome",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Abnormal"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "pe-foot-date",
+              "text": "Date of Latest Examination",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "pe-ecg",
+          "text": "Electrocardiogram (ECG)",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "pe-ecg-outcome",
+              "text": "Examination Outcome",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Abnormal"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "pe-ecg-date",
+              "text": "Date of Latest Examination",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "pe-ed",
+          "text": "Erectile Dysfunction",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "pe-ed-outcome",
+              "text": "Examination Outcome",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Abnormal"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "pe-ed-date",
+              "text": "Date of Latest Examination",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "pe-mo",
+          "text": "Seen by a Medical Officer (MO) at least once in a year",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "linkId": "lab",
+      "text": "Laboratory",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "lab-rbg",
+          "text": "Random Blood Glucose (RBG)",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "lab-rbg-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            },
+            {
+              "linkId": "lab-rbg-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "lab-fbg",
+          "text": "Fasting Blood Glucose (FBG)",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "lab-fbg-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            },
+            {
+              "linkId": "lab-fbg-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "lab-2hpp",
+          "text": "2-Hour Post Prandial (2HPP)",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "lab-2hpp-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            },
+            {
+              "linkId": "lab-2hpp-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "lab-hba1c",
+          "text": "HbA1c",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "lab-hba1c-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            },
+            {
+              "linkId": "lab-hba1c-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "lab-tc",
+          "text": "Total Cholesterol",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "lab-tc-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            },
+            {
+              "linkId": "lab-tc-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "lab-tg",
+          "text": "Triglycerides (TG)",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "lab-tg-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            },
+            {
+              "linkId": "lab-tg-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "lab-hdl",
+          "text": "High-Density Lipoprotein (HDL)",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "lab-hdl-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            },
+            {
+              "linkId": "lab-hdl-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "lab-ldl",
+          "text": "Low-Density Lipoprotein (LDL)",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "lab-ldl-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            },
+            {
+              "linkId": "lab-ldl-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "lab-cre",
+          "text": "Serum Creatinine",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "lab-cre-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            },
+            {
+              "linkId": "lab-cre-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "lab-umalb",
+          "text": "Urine Microalbumin",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "lab-umalb-result",
+              "text": "Latest Result",
+              "type": "decimal"
+            },
+            {
+              "linkId": "lab-umalb-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        },
+        {
+          "linkId": "lab-upro",
+          "text": "Urine Protein",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "lab-upro-result",
+              "text": "Latest Result",
+              "type": "string"
+            },
+            {
+              "linkId": "lab-upro-result-date",
+              "text": "Date of Latest Result",
+              "type": "dateTime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "dm-med",
+      "text": "Anti-Diabetic Drugs",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "dm-med-biguanides",
+          "text": "Biguanides",
+          "type": "boolean"
+        },
+        {
+          "linkId": "dm-med-sulphonylureas",
+          "text": "Sulphonylureas",
+          "type": "boolean"
+        },
+        {
+          "linkId": "dm-med-agi",
+          "text": "α-glucosidase inhibitors",
+          "type": "boolean"
+        },
+        {
+          "linkId": "dm-med-meglitinides",
+          "text": "Meglitinides",
+          "type": "boolean"
+        },
+        {
+          "linkId": "dm-med-glitazones",
+          "text": "Glitazones",
+          "type": "boolean"
+        },
+        {
+          "linkId": "dm-med-other",
+          "text": "Other",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ],
+          "item": [
+            {
+              "linkId": "dm-med-other-details",
+              "text": "If other, please specify",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "dm-med-other",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "repeats": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "hpt-med",
+      "text": "Anti-hypertensives Drugs",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "hpt-med-ace",
+          "text": "ACE-inhibitor",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hpt-med-arb",
+          "text": "Angiotensin II Receptor Blockers (ARB)",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hpt-med-bb",
+          "text": "Beta-blockers",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hpt-med-ccb",
+          "text": "Calcium channel blockers",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hpt-med-diuretics",
+          "text": "Diuretics",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hpt-med-ab",
+          "text": "Alpha-blockers",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hpt-med-ca",
+          "text": "Centrally acting",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hpt-med-other",
+          "text": "Other",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ],
+          "item": [
+            {
+              "linkId": "hpt-med-other-details",
+              "text": "If other, please specify",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "hpt-med-other",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "repeats": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "lipid-med",
+      "text": "Lipid-Lowering Agents",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "lipid-med-statin",
+          "text": "Statin",
+          "type": "boolean"
+        },
+        {
+          "linkId": "lipid-med-fibrate",
+          "text": "Fibrate",
+          "type": "boolean"
+        },
+        {
+          "linkId": "lipid-med-other",
+          "text": "Other",
+          "type": "boolean",
+          "initial": [
+            {
+              "valueBoolean": false
+            }
+          ],
+          "item": [
+            {
+              "linkId": "lipid-med-other-details",
+              "text": "If other, please specify",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "lipid-med-other",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "repeats": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

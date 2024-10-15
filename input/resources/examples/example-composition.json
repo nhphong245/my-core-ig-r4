@@ -1,0 +1,105 @@
+{
+    "resourceType": "Composition",
+    "id":"example-composition",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Composition-general-my-core"
+        ]
+    },
+    "status": "final",
+    "type": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Progress Note"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "11506-3",
+                    "display": "Progress Note"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/example-patient-s01"
+    },
+    "encounter": {
+        "reference": "Encounter/example-encounter-s01-01"
+    },
+    "date": "2022-03-27",
+    "author": [
+        {
+            "reference": "PractitionerRole/example-practitionerrole-01"
+        }
+    ],
+    "title": "Progress Note",
+    "confidentiality": "N",
+    "attester": [
+        {
+            "mode": "legal",
+            "time": "2022-03-27",
+            "party": {
+                "reference": "PractitionerRole/example-practitionerrole-02"
+            }
+        }
+    ],
+    "custodian": {
+        "reference": "Organization/11-05060009",
+        "display": "Hospital Tuanku Ja'afar, Seremban"
+    },
+    "section": [
+        {
+            "title": "Problem list",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "11450-4",
+                        "display": "Problem List"
+                    }
+                ]
+            },
+            "orderedBy": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/list-order",
+                        "code": "category",
+                        "display": "Category"
+                    }
+                ]
+            },
+            "entry": [
+                {
+                    "reference": "Condition/3df0e72d-cc55-4089-b1aa-e2c40613e201"
+                },
+                {
+                    "reference": "Condition/3df0e72d-cc55-4089-b1aa-e2c40613e202"
+                }
+            ]
+        },
+        {
+            "title": "Note",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "34109-9",
+                        "display": "Note"
+                    }
+                ]
+            },
+            "text": {
+                "status": "generated",
+                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t<table>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<b>Code</b>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<b>Date</b>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<b>Type</b>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<b>BodySite</b>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<b>Severity</b>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>Stroke</td>\n\t\t\t\t\t\t<td>2010-07-18</td>\n\t\t\t\t\t\t<td>Diagnosis</td>\n\t\t\t\t\t\t<td/>\n\t\t\t\t\t\t<td/>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>Burnt Ear</td>\n\t\t\t\t\t\t<td>2012-05-24</td>\n\t\t\t\t\t\t<td>Diagnosis</td>\n\t\t\t\t\t\t<td>Left Ear</td>\n\t\t\t\t\t\t<td/>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>Asthma</td>\n\t\t\t\t\t\t<td>2012-11-12</td>\n\t\t\t\t\t\t<td>Finding</td>\n\t\t\t\t\t\t<td/>\n\t\t\t\t\t\t<td>Mild</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</table>\n\t\t\t</div>"
+            }
+        }
+    ]
+}

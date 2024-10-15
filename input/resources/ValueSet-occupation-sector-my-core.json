@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-occupation-sector-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetOccupationSector (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/occupation-sector-my-core</tt><p>Malaysia Occupation Sector Value set</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/occupation-sector-my-core",
+  "name": "ValueSetOccupationSectorMyCore",
+  "title": "ValueSetOccupationSector (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Malaysia Occupation Sector Value set",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/occupation-sector-my-core"
+      }
+    ]
+  }
+}

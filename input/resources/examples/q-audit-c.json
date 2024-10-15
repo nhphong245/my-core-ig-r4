@@ -1,0 +1,332 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-audit-c",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-audit-c",
+  "title": "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C]",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "The AUDIT-C is scored on a scale of 0-12 (scores of 0 reflect no alcohol use). In men, a score of 4 or more is considered positive; in women, a score of 3 or more is considered positive. Generally, the higher the AUDIT-C score, the more likely it is that the person's drinking is affecting his/her health and safety.",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://hl7.org/fhir/CodeSystem/usage-context-type",
+        "code": "workflow",
+        "display": "Workflow Setting"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "self-assessment",
+            "display": "Self-Assessment"
+          }
+        ]
+      }
+    }
+  ],
+  "purpose": "The AUDIT questionnaire is designed to help in the self-assessment of alcohol consumption and to identify any implications for the person's health and wellbeing, now and in the future.",
+  "code": [
+    {
+      "system": "http://loinc.org",
+      "code": "72109-2",
+      "display": "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C]"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "01",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "68518-0",
+          "display": "How often do you have a drink containing alcohol"
+        }
+      ],
+      "prefix": "1",
+      "text": "How often did you have a drink containing alcohol in the past year?",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 1.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18926-8",
+            "display": "Monthly or less"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 2.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18927-6",
+            "display": "Two to four times a month"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 3.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18928-4",
+            "display": "Two to three times per week"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 4.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18929-2",
+            "display": "Four or more times a week"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "02",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "68519-8",
+          "display": "How many standard drinks containing alcohol do you have on a typical day"
+        }
+      ],
+      "prefix": "2",
+      "text": "How many drinks containing alcohol did you have on a typical day when you were drinking in the past year?",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "1 or 2 drinks"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 1.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18926-8",
+            "display": "3 or 4"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 2.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18927-6",
+            "display": "5 to 6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 3.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18928-4",
+            "display": "7 to 9"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 4.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18929-2",
+            "display": "10 or more"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "03",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "68520-6",
+          "display": "How often do you have 6 or more drinks on 1 occasion"
+        }
+      ],
+      "prefix": "3",
+      "text": "How often did you have six or more drinks on one occasion in the past year?",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 0.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 1.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18926-8",
+            "display": "Less than monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 2.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18927-6",
+            "display": "monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 3.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18928-4",
+            "display": "weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue-my-core",
+              "valueDecimal": 4.0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18929-2",
+            "display": "daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "id": "score",
+      "linkId": "04",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "75626-2",
+          "display": "Total score [AUDIT-C]"
+        }
+      ],
+      "prefix": "4",
+      "text": "Total score [AUDIT-C]",
+      "type": "integer",
+      "required": true,
+      "readOnly": true
+    },
+    {
+      "id": "outcome",
+      "linkId": "05",
+      "code": [
+        {
+          "code": "outcome"
+        }
+      ],
+      "prefix": "5",
+      "text": "Outcome Summary [AUDIT]",
+      "type": "choice",
+      "required": true,
+      "readOnly": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/outcome-audit-c-my-core",
+            "code": "a1",
+            "display": "Low-Risk Consumption"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/outcome-audit-c-my-core",
+            "code": "a2",
+            "display": "Alcohol misuse"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://fhir.hie.moh.gov.my/CodeSystem/outcome-audit-c-my-core",
+            "code": "a3",
+            "display": "Alcohol misuse and possible health effected"
+          }
+        }
+      ]
+    }
+  ]
+}

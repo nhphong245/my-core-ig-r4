@@ -1,0 +1,451 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-maternal-23",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2023-06-15T14:31:13.206+08:00",
+    "source": "#fKLxLvjnzIIgwxLT",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Questionnaire"
+    ]
+  },
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-maternal-23",
+  "version": "1.0.0",
+  "name": "QMaternal23",
+  "title": "Perihal Kelahiran (Diisi oleh Penyambut Kelahiran)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "item": [
+    {
+      "linkId": "maternal-23.1",
+      "text": "Perihal Ibu",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "maternal-23.1.1",
+          "text": "Tempat Kelahiran",
+          "type": "string"
+        },
+        {
+          "linkId": "maternal-23.1.2",
+          "text": "Disambut oleh",
+          "type": "string"
+        },
+        {
+          "linkId": "maternal-23.1.3",
+          "text": "Tarikh lahir dan masa",
+          "type": "dateTime"
+        },
+        {
+          "linkId": "maternal-23.1.4",
+          "text": "Suntikan",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "maternal-23.1.4.1",
+              "text": "Syntometrin",
+              "type": "boolean"
+            },
+            {
+              "linkId": "maternal-23.1.4.2",
+              "text": "Syntocinon",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "linkId": "maternal-23.1.5",
+          "text": "Placenta",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                "code": "00",
+                "display": "Lengkap"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                "code": "01",
+                "display": "Tidak Lengkap"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "maternal-23.1.6",
+          "text": "Berat Placenta",
+          "type": "quantity"
+        },
+        {
+          "linkId": "maternal-23.1.7",
+          "text": "Cara Kelahiran",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "maternal-23.1.7.1",
+              "text": "Spontaneous Vagina Delivery",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                    "code": "00",
+                    "display": "Cephalic"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                    "code": "01",
+                    "display": "Breech"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                    "code": "02",
+                    "display": "Assisted Breech"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "maternal-23.1.7.2",
+              "text": "Instrumental Delivery",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                    "code": "00",
+                    "display": "Forcep"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                    "code": "01",
+                    "display": "Vacuum"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "maternal-23.1.7.3",
+              "text": "Indication",
+              "type": "string"
+            },
+            {
+              "linkId": "maternal-23.1.7.4",
+              "text": "Caesarean",
+              "type": "group",
+              "item": [
+                {
+                  "linkId": "maternal-23.1.7.4.1",
+                  "text": "Urgency",
+                  "type": "choice",
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                        "code": "00",
+                        "display": "Elective"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                        "code": "01",
+                        "display": "Emergency"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "maternal-23.1.7.4.2",
+                  "text": "Method",
+                  "type": "choice",
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                        "code": "03",
+                        "display": "LSCS"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                        "code": "04",
+                        "display": "Classical"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "maternal-23.1.7.4.3",
+                  "text": "Indications",
+                  "type": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "maternal-23.1.8",
+          "text": "Komplikasi Semasa Bersalin",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "maternal-23.1.8.1",
+              "text": "Post Partum Hemorhrhage (PPH)",
+              "type": "boolean"
+            },
+            {
+              "linkId": "maternal-23.1.8.2",
+              "text": "Retained Placenta",
+              "type": "boolean"
+            },
+            {
+              "linkId": "maternal-23.1.8.3",
+              "text": "Parineal Tear",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                    "code": "00",
+                    "display": "1st Degree"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                    "code": "01",
+                    "display": "2nd Degree"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                    "code": "02",
+                    "display": "3rd Degree"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "maternal-23.1.8.4",
+              "text": "Lain-lain",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "linkId": "maternal-23.1.9",
+          "text": "Permulaan Penyusuan Susu Ibu dan Sentuhan Kulit ke Kulit (Diisi oleh Hospital)",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "maternal-23.1.9.1",
+              "text": "Bayi diberikan kepada ibu sejurus selepas bersalin",
+              "type": "boolean"
+            },
+            {
+              "linkId": "maternal-23.1.9.2",
+              "text": "Sekiranya bayi tidak diberikan kepada ibu sejurus selepas bersalin, nyatakan sebab",
+              "type": "string"
+            },
+            {
+              "linkId": "maternal-23.1.9.3",
+              "text": "Ibu dan bayi menerima sentuhan kulit ke kulit selama 1 jam",
+              "type": "boolean"
+            },
+            {
+              "linkId": "maternal-23.1.9.4",
+              "text": "Sekiranya ibu dan bayi tidak menerima sentuhan kulit ke kulit selama 1 jam, nyatakan sebab",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "maternal-23.2",
+      "text": "Perihal Bayi",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "maternal-23.2.1",
+          "text": "Berat Lahir",
+          "type": "quantity"
+        },
+        {
+          "linkId": "maternal-23.2.2",
+          "text": "Jantina",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "code": "male",
+                "display": "Male"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "code": "female",
+                "display": "Female"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "code": "other",
+                "display": "Undertermined"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "code": "unknown",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "maternal-23.2.3",
+          "text": "Ukuran Panjang",
+          "type": "quantity"
+        },
+        {
+          "linkId": "maternal-23.2.4",
+          "text": "Lilitan Kepala",
+          "type": "quantity"
+        },
+        {
+          "linkId": "maternal-23.2.5",
+          "text": "Lilitan Dada",
+          "type": "quantity"
+        },
+        {
+          "linkId": "maternal-23.2.6",
+          "text": "Keadaan Bayi",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "maternal-23.2.6.1",
+              "text": "Keadaan",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                    "code": "18",
+                    "display": "Lahir hidup"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/maternal-record-my-core",
+                    "code": "19",
+                    "display": "Lahir mati"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "maternal-23.2.6.2",
+              "text": "Skor Apgar 1 minit",
+              "type": "integer"
+            },
+            {
+              "linkId": "maternal-23.2.6.3",
+              "text": "Skor Apgar 5 minit",
+              "type": "integer"
+            },
+            {
+              "linkId": "maternal-23.2.6.4",
+              "text": "Abnormaliti Kongenital",
+              "type": "boolean"
+            },
+            {
+              "linkId": "maternal-23.2.6.5",
+              "text": "Jika ada abnormaliti, nyatakan",
+              "type": "string"
+            },
+            {
+              "linkId": "maternal-23.2.6.6",
+              "text": "Suntikan Vit K diberi",
+              "type": "boolean",
+              "item": [
+                {
+                  "linkId": "maternal-23.2.6.6.1",
+                  "text": "Tarikh",
+                  "type": "date"
+                },
+                {
+                  "linkId": "maternal-23.2.6.6.2",
+                  "text": "Masa",
+                  "type": "time"
+                },
+                {
+                  "linkId": "maternal-23.2.6.6.3",
+                  "text": "Diberi oleh",
+                  "type": "string"
+                }
+              ]
+            },
+            {
+              "linkId": "maternal-23.2.6.7",
+              "text": "Suntikan Hepatitis B dos 1 diberi",
+              "type": "boolean",
+              "item": [
+                {
+                  "linkId": "maternal-23.2.6.7.1",
+                  "text": "Tarikh",
+                  "type": "date"
+                },
+                {
+                  "linkId": "maternal-23.2.6.7.2",
+                  "text": "Masa",
+                  "type": "time"
+                },
+                {
+                  "linkId": "maternal-23.2.6.7.3",
+                  "text": "Diberikan oleh",
+                  "type": "string"
+                },
+                {
+                  "linkId": "maternal-23.2.6.7.4",
+                  "text": "No Batch",
+                  "type": "string"
+                },
+                {
+                  "linkId": "maternal-23.2.6.7.5",
+                  "text": "Tarikh Luput",
+                  "type": "dateTime"
+                }
+              ]
+            },
+            {
+              "linkId": "maternal-23.2.6.8",
+              "text": "Tarikh diambil G6PD",
+              "type": "dateTime"
+            },
+            {
+              "linkId": "maternal-23.2.6.9",
+              "text": "Tarikh diambil saringan conginetal hypothyodism (T4/TSH)",
+              "type": "dateTime"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

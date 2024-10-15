@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "allergyintolerance-name-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/allergyintolerance-name-my-core",
+  "name": "SearchParameterAllergyintoleranceNameMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Allergy name",
+  "code": "allergy-name",
+  "base": [
+    "AllergyIntolerance"
+  ],
+  "type": "string",
+  "expression": "AllergyIntolerance.code.text"
+}

@@ -1,0 +1,51 @@
+{
+    "resourceType": "Encounter",
+    "id": "Enc-800",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-21T12:12:04.586+08:00",
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Encounter-my-core"
+        ]
+    },
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/encounter-id",
+            "value": "HTJ-ENC-2309000197"
+        }
+    ],
+    "status": "arrived",
+    "class": {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+        "code": "AMB"
+    },
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                    "code": "02"
+                }
+            ]
+        }
+    ],
+    "serviceType": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                "code": "03",
+                "display": "Outpatient"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/8bc61ffd-43fe-4de7-9de3-3ebab66e6b4e"
+    },
+    "period": {
+        "start": "2023-09-07T08:00:00+08:00"
+    },
+    "serviceProvider": {
+        "reference": "Organization/11-05060009"
+    }
+}

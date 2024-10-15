@@ -1,0 +1,21 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "citizenship-my-core",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2023-06-06T10:00:39.686+08:00",
+    "source": "#znR6cXrrvjI92zCR"
+  },
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/citizenship-my-core",
+  "name": "SearchParameterCitizenshipMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Citizenship",
+  "code": "citizenship",
+  "base": [
+    "Patient"
+  ],
+  "type": "token",
+  "expression": "Patient.extension('http://fhir.hie.moh.gov.my/StructureDefinition/citizenship-my-core').extension('citizenship')",
+  "xpathUsage": "normal"
+}

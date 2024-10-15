@@ -1,0 +1,472 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hypertension-registry",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hypertension-registry",
+  "title": "Hypertension Registry",
+  "status": "active",
+  "date": "2024-04-28T23:30:28.824077+00:00",
+  "item": [
+    {
+      "linkId": "hpt-date",
+      "text": "Diagnosis date",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "hpt-dx-date",
+          "text": "Date of Diagnosis",
+          "type": "dateTime"
+        },
+        {
+          "linkId": "hpt-dx-exact",
+          "text": "Exact",
+          "type": "boolean"
+        },
+        {
+          "linkId": "hpt-dx-estimate",
+          "text": "Estimate",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "linkId": "rf",
+      "text": "Presence of cardiovascular risk factors at diagnosis",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "smoking",
+          "text": "Smoking/Vape",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "alcohol",
+          "text": "Alcohol",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "sedentary",
+          "text": "Sedentary Lifestyle",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "history",
+          "text": "Family history of hypertension",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "comorbid",
+      "text": "Presence of co-morbidity & complications at diagnosis",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "dm",
+          "text": "Diabetes Mellitus",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "lipid",
+          "text": "Dyslipidaemia",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "stroke",
+          "text": "Stroke",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "renal",
+          "text": "Renal Failure",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "cevd",
+          "text": "Cardiovascular Disease",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "retinopathy",
+          "text": "Hypertensive Retinopathy",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "pe",
+      "text": "Physical Examination at diagnosis/ earliest value after diagnosis",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "pe-wt",
+          "text": "Weight at diagnosis",
+          "type": "decimal"
+        },
+        {
+          "linkId": "pe-ht",
+          "text": "Height",
+          "type": "decimal"
+        },
+        {
+          "linkId": "pe-wc",
+          "text": "Waist circumference at diagnosis",
+          "type": "decimal"
+        },
+        {
+          "linkId": "pe-ecg",
+          "text": "ECG done at diagnosis",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "pe-ecg-date",
+              "text": "If yes, state the date",
+              "type": "date",
+              "enableWhen": [
+                {
+                  "question": "pe-ecg",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "pe-ecg-result",
+              "text": "Latest Result",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "pe-ecg",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "pe-crx",
+          "text": "Chest x-ray done at diagnosis",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Not Known"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "pe-crx-date",
+              "text": "If yes, state the date",
+              "type": "date",
+              "enableWhen": [
+                {
+                  "question": "pe-crx",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "pe-crx-result",
+              "text": "Latest Result",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "pe-crx",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

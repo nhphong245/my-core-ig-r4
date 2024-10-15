@@ -1,0 +1,35 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hajj-personal",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-personal",
+  "version": "1.0.0",
+  "name": "QHajjPersonal",
+  "title": "Personal Details of Hajj Pilgrims",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Flight Number",
+      "type": "string"
+    },
+    {
+      "linkId": "2",
+      "text": "Next of Kin",
+      "type": "group",
+      "repeats": true,
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "Name",
+          "type": "string"
+        },
+        {
+          "linkId": "2.2",
+          "text": "Phone Number",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}

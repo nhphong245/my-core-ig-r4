@@ -1,0 +1,54 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "cluster-facility-my-core",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2022-06-26T02:49:13.256+08:00",
+        "source": "#yGv7M4wp2ErifrH9"
+    },
+    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/cluster-facility-my-core",
+    "version": "1.0.0",
+    "name": "ExtensionClusterFacilityMyCore",
+    "title": "ExtensionClusterFacility (MY Core)",
+    "status": "active",
+    "date": "2022-04-08T23:27:40.7694005+00:00",
+    "publisher": "Malaysia MOH - HIE Steering Committee",
+    "fhirVersion": "4.0.1",
+    "kind": "complex-type",
+    "abstract": false,
+    "context": [
+        {
+            "type": "element",
+            "expression": "Organization"
+        }
+    ],
+    "type": "Extension",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Extension.url",
+                "path": "Extension.url",
+                "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/cluster-facility-my-core"
+            },
+            {
+                "id": "Extension.value[x]",
+                "path": "Extension.value[x]",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.value[x].coding",
+                "path": "Extension.value[x].coding",
+                "binding": {
+                    "strength": "extensible",
+                    "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/cluster-facility-my-core"
+                }
+            }
+        ]
+    }
+}

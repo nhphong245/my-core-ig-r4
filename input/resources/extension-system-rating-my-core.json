@@ -1,0 +1,97 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "system-rating-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/system-rating-my-core",
+  "name": "ExtensionSystemRatingMyCore",
+  "title": "ExtensionSystemRating (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension for patient/customer to rate an Encounter",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:rating",
+        "path": "Extension.extension",
+        "sliceName": "rating"
+      },
+      {
+        "id": "Extension.extension:rating.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "rating"
+      },
+      {
+        "id": "Extension.extension:rating.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/encounter-rating-my-core"
+        }
+      },
+      {
+        "id": "Extension.extension:remark",
+        "path": "Extension.extension",
+        "sliceName": "remark"
+      },
+      {
+        "id": "Extension.extension:remark.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "remark"
+      },
+      {
+        "id": "Extension.extension:remark.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:lastUpdated",
+        "path": "Extension.extension",
+        "sliceName": "lastUpdated"
+      },
+      {
+        "id": "Extension.extension:lastUpdated.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "lastUpdated"
+      },
+      {
+        "id": "Extension.extension:lastUpdated.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/system-rating-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

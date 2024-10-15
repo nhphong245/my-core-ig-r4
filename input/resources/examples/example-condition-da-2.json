@@ -1,0 +1,62 @@
+{
+    "resourceType": "Condition",
+    "id": "example-condition-da-2",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Condition-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core",
+            "extension": [
+                {
+                    "url": "lastUpdater",
+                    "valueReference": {
+                        "display": "NIZAR"
+                    }
+                }
+            ]
+        }
+    ],
+    "clinicalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/condition-category-my-core",
+                    "code": "dental-alert",
+                    "display": "Dental Alert"
+                }
+            ]
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/dental-alert-code-my-core",
+                    "code": "family-medical-alert",
+                    "display": "Family Medical Alert"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "text": "mother has congenital cavities"
+    },
+    "subject": {
+        "reference": "Patient/b4be86c9-f018-4ef5-a911-6c0c061cd018"
+    },
+    "recordedDate": "2023-09-07T14:39:45+08:00",
+    "recorder": {
+        "display": "NIZAR"
+    }
+}

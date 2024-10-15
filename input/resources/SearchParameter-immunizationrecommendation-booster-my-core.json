@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "immunizationrecommendation-booster-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/immunizationrecommendation-booster-my-core",
+  "name": "SearchParameterImmunizationRecommendationBoosterMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Booster",
+  "code": "booster",
+  "base": [
+    "ImmunizationRecommendation"
+  ],
+  "type": "token",
+  "expression": "ImmunizationRecommendation.recommendation.extension('http://fhir.hie.moh.gov.my/StructureDefinition/extension-booster-my-core')",
+  "xpathUsage": "normal"
+}

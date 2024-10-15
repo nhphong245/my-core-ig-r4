@@ -1,0 +1,343 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "qr-death-certificate",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core",
+            "valueReference": {
+                "reference": "Organization/11-05060009"
+            }
+        }
+    ],
+    "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-death-certificate",
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/74c778d4-19a4-442e-8918-620733047fce"
+    },
+    "authored": "2024-01-22T12:02:00+08:00",
+    "author": {
+        "reference": "PractitionerRole/b9797173-7e15-4fc3-8f85-d58627935956/_history/19"
+    },
+    "item": [
+        {
+            "linkId": "death-date",
+            "text": "Date of death",
+            "answer": [
+                {
+                    "valueDateTime": "2024-02-27T08:00:00+08:00"
+                }
+            ]
+        },
+        {
+            "linkId": "medical",
+            "text": "Frame A: Medical data:Part 1 and 2",
+            "item": [
+                {
+                    "linkId": "terminal-cod",
+                    "text": "Terminal Cause of Death",
+                    "answer": [
+                        {
+                            "valueReference": {
+                                "reference": "Condition/ca7a7904-dd1f-457d-ba70-636d0dda079b",
+                                "display": "Covid-19"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "underlying-cod",
+                    "text": "Underlying Cause of Death",
+                    "answer": [
+                        {
+                            "valueReference": {
+                                "reference": "Condition/f025dc3c-3b68-47d1-bf63-bfc0ec11adc3",
+                                "identifier": {
+                                    "value": "1"
+                                },
+                                "display": "Respiratory Distress"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "underlying-cod",
+                    "text": "Underlying Cause of Death",
+                    "answer": [
+                        {
+                            "valueReference": {
+                                "reference": "Condition/97599303-f4ea-4a26-943f-124b739cf5f1",
+                                "identifier": {
+                                    "value": "2"
+                                },
+                                "display": "Septic Shock"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "underlying-condition",
+                    "text": "Underlying Condition",
+                    "answer": [
+                        {
+                            "valueReference": {
+                                "reference": "Condition/d2614b55-9599-4dfd-b193-d6260d460248",
+                                "display": "Hypertension"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "medical-other",
+            "text": "Frame B: Other medical data",
+            "item": [
+                {
+                    "linkId": "surgery",
+                    "text": "Was surgery performed within the last 4 weeks?",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "52101004",
+                                "display": "Yes"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "surgery-date",
+                                    "text": "If yes please specify date of surgery",
+                                    "answer": [
+                                        {
+                                            "valueDate": "2024-02-26"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "surgery-reason",
+                                    "text": "If yes please specify reason for surgery (disease or condition)",
+                                    "answer": [
+                                        {
+                                            "valueString": "Breast Cancer"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "surgery-autopsy-request",
+                                    "text": "Was an autopsy request",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "52101004",
+                                                "display": "Yes"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "surgery-findings-used",
+                                    "text": "If yes, were the findings used in the certifcation?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "52101004",
+                                                "display": "Yes"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "manner",
+                    "text": "Manner of death:",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "64572001",
+                                "display": "Disease"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "manner-external",
+                                    "text": "If external cause or poisoning:",
+                                    "item": [
+                                        {
+                                            "linkId": "manner-external-injury-date",
+                                            "text": "Date of injury",
+                                            "answer": [
+                                                {
+                                                    "valueDate": "2024-02-26"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "linkId": "manner-external-description",
+                                            "text": "Please describe how external cause occured (If poisoning please specify poisoning agent)",
+                                            "answer": [
+                                                {
+                                                    "valueString": "Patient flew out of ambulance"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "location",
+                    "text": "Place of occurrence of the external cause:",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "74964007",
+                                "display": "Other"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "location-other",
+                                    "text": "Other place (please specify)",
+                                    "answer": [
+                                        {
+                                            "valueString": "In space"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "child",
+                    "text": "Fetal or infant Death",
+                    "item": [
+                        {
+                            "linkId": "child-multiple",
+                            "text": "Multiple pregnancy",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "52101004",
+                                        "display": "Yes"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "child-stillborn",
+                            "text": "Stillborn?",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "52101004",
+                                        "display": "Yes"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "child-hours-survived",
+                            "text": "If death within 24h specify number of hours survived",
+                            "answer": [
+                                {
+                                    "valueTime": "16:40:29"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "child-birth-weight",
+                            "text": "Birth weight (in grams)",
+                            "answer": [
+                                {
+                                    "valueDecimal": 600
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "child-gestation",
+                            "text": "Number of completed weeks of pregnancy",
+                            "answer": [
+                                {
+                                    "valueInteger": 27
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "child-mother-age",
+                            "text": "Age of mother (years)",
+                            "answer": [
+                                {
+                                    "valueInteger": 32
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "child-mother-condition",
+                            "text": "If death was perinatal, please state conditions of mother that affected the fetus and newborn",
+                            "answer": [
+                                {
+                                    "valueString": "She was a chain smoker and was a alcoholic"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "pregnancy",
+                    "text": "For women, was the deceased pregnant?",
+                    "answer": [
+                        {
+                            "valueCoding": {
+                                "system": "http://snomed.info/sct",
+                                "code": "52101004",
+                                "display": "Yes"
+                            },
+                            "item": [
+                                {
+                                    "linkId": "pregnancy-time",
+                                    "text": "If yes specifically up to when was patient in pregnancy prior to death?",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "code": "2",
+                                                "display": "Within 42 days before the death"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "pregnancy-reason-death",
+                                    "text": "did the pregnancy contribute to the death",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "52101004",
+                                                "display": "Yes"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

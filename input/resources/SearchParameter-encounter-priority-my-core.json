@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "encounter-priority-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/encounter-priority-my-core",
+  "name": "SearchParameterPriorityMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Priority for the encounter",
+  "code": "priority",
+  "base": [
+    "Encounter"
+  ],
+  "type": "token",
+  "expression": "Encounter.priority"
+}

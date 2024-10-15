@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-outsource-category-my-core",
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/outsource-category-my-core",
+  "name": "CodeSystemServiceOutsourceCategoryMyCore",
+  "title": "CodeSystemServiceOutsourceCategory (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Outsource Category My Core",
+  "compositional": false,
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "directed",
+      "display": "Directed",
+      "definition": "Directed"
+    },
+    {
+      "code": "open",
+      "display": "Open",
+      "definition": "Open"
+    }
+  ]
+}

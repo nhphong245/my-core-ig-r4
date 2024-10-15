@@ -1,0 +1,159 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "id":"example-glucose-panel",
+  "entry": [
+      {
+          "fullUrl": "urn:uuid:00000013-0001-0001-0001-000000000001",
+          "request": {
+              "method": "POST"
+          },
+          "resource": {
+              "resourceType": "Observation",
+              "meta": {
+                  "profile": [
+                      "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-panel-my-core"
+                  ],
+                  "source": "http://provider.hie.moh.gov.my"
+              },
+              "status": "final",
+              "code": {
+                  "coding": [
+                      {
+                          "system": "http://loinc.org",
+                          "code": "41653-7",
+                          "display": "Glucose panel"
+                      }
+                  ]
+              },
+                "subject": {
+                    "reference": "Patient/urn:uuid:00000001-0001-0001-0001-000000000001"
+                },
+                "encounter": {
+                    "reference": "Encounter/urn:uuid:00000001-0001-0001-0002-000000000001"
+                },
+              "effectiveDateTime": "2023-01-01T08:00:00+08:00",
+              "issued": "2023-01-01T08:00:00+08:00",
+              "performer": [
+                        {
+                            "identifier": {
+                                "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "81751"
+                            },
+                            "display": "Saifuldaulah Bin Mohd Hafiz Ngoo"
+                        }
+                    ],
+              "hasMember": [
+                  {
+                      "reference": "Observation/urn:uuid:00000013-0005-0005-0005-000000000002"
+                  },
+                  {
+                      "reference": "Observation/urn:uuid:00000013-0005-0005-0005-000000000003"
+                  }
+              ]
+          }
+      },
+      {
+          "fullUrl": "urn:uuid:00000013-0005-0005-0005-000000000002",
+          "request": {
+              "method": "POST"
+          },
+          "resource": {
+              "resourceType": "Observation",
+              "meta": {
+                  "profile": [
+                      "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-fasting-glucose-my-core"
+                  ],
+                  "source": "http://provider.hie.moh.gov.my"
+              },
+              "status": "final",
+              "code": {
+                  "coding": [
+                      {
+                          "system": "http://snomed.info/sct",
+                          "code": "271062006",
+                          "display": "Fasting blood glucose"
+                      }
+                  ]
+              },
+                "subject": {
+                    "reference": "Patient/urn:uuid:00000001-0001-0001-0001-000000000001"
+                },
+                "encounter": {
+                    "reference": "Encounter/urn:uuid:00000001-0001-0001-0002-000000000001"
+                },
+              "effectiveDateTime": "2023-01-01T08:00:00+08:00",
+              "issued": "2023-01-01T08:00:00+08:00",
+              "performer": [
+                        {
+                            "identifier": {
+                                "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "81751"
+                            },
+                            "display": "Saifuldaulah Bin Mohd Hafiz Ngoo"
+                        }
+                    ],
+              "valueQuantity": {
+                  "value": 6,
+                  "unit": "mmol/L",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mmol/L"
+              }
+          }
+      },
+      {
+          "fullUrl": "urn:uuid:00000013-0005-0005-0005-000000000003",
+          "request": {
+              "method": "POST"
+          },
+          "resource": {
+              "resourceType": "Observation",
+              "meta": {
+                  "profile": [
+                      "http://fhir.hie.moh.gov.my/StructureDefinition/Observation-random-glucose-my-core"
+                  ],
+                  "source": "http://provider.hie.moh.gov.my"
+              },
+              "status": "final",
+              "code": {
+                  "coding": [
+                      {
+                          "system": "http://snomed.info/sct",
+                          "code": "271061004",
+                          "display": "Random blood glucose"
+                      }
+                  ]
+              },
+                "subject": {
+                    "reference": "Patient/urn:uuid:00000001-0001-0001-0001-000000000001"
+                },
+                "encounter": {
+                    "reference": "Encounter/urn:uuid:00000001-0001-0001-0002-000000000001"
+                },
+              "effectiveDateTime": "2023-01-01T08:00:00+08:00",
+              "issued": "2023-01-01T08:00:00+08:00",
+              "performer": [
+                        {
+                            "identifier": {
+                                "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                            "value": "81751"
+                            },
+                            "display": "Saifuldaulah Bin Mohd Hafiz Ngoo"
+                        }
+                    ],
+                    "valueCodeableConcept": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "166891009",
+                                    "display": "Low"
+                                }
+                            ]
+                        }
+                    ]
+    
+          }
+      }
+  ]
+}

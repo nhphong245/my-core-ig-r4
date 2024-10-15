@@ -1,0 +1,66 @@
+{
+    "resourceType": "Encounter",
+    "id": "vci-enc-example",
+    "meta": {
+        "source": "http://sample",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Encounter-my-core"
+        ]
+    },
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/vc-token",
+            "value": "19d3b96a-6c4d-485a-9514-cbf6ccfeed6b"
+        },
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/encounter-id",
+            "value": "HTJ-ENC-2307000110"
+        }
+    ],
+    "status": "arrived",
+    "statusHistory": [
+        {
+            "status": "planned",
+            "period": {
+                "start": "2023-07-07T17:50:00+08:00",
+                "end": "2023-07-07T18:20:00+08:00"
+            }
+        }
+    ],
+    "class": {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+        "code": "VR",
+        "display": "Virtual"
+    },
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                    "code": "86",
+                    "display": "Addiction & Substance Abuse"
+                }
+            ]
+        }
+    ],
+    "serviceType": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                "code": "VCI",
+                "display": "Individual Virtual Consultation"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/48e364a3-aa9b-4364-8458-d75c1591ef0d",
+        "type": "Patient",
+        "display": "SIVAKUMAR A/L ARUMUGAM "
+    },
+    "period": {
+        "start": "2023-07-07T17:50:35+08:00"
+    },
+    "serviceProvider": {
+        "reference": "Organization/11-05060009"
+    }
+}

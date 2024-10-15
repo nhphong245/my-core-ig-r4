@@ -1,0 +1,99 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Address-my-core",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2024-02-12T10:56:05.9176916+00:00"
+  },
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/Address-my-core",
+  "name": "AddressMyCore",
+  "title": "Address (MY Core)",
+  "status": "active",
+  "date": "2024-02-14T07:47:10.4519661+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Address",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Address",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Address.extension:state",
+        "path": "Address.extension",
+        "sliceName": "state",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/address-state-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Address.extension:district",
+        "path": "Address.extension",
+        "sliceName": "district",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/address-district-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Address.extension:division",
+        "path": "Address.extension",
+        "sliceName": "division",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/address-division-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Address.extension:subDivision",
+        "path": "Address.extension",
+        "sliceName": "subDivision",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/address-sub-division-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Address.city",
+        "path": "Address.city",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/city-my-core"
+        }
+      },
+      {
+        "id": "Address.postalCode",
+        "path": "Address.postalCode",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/postcode-my-core"
+        }
+      }
+    ]
+  }
+}

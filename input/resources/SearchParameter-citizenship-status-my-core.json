@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "citizenship-status-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/citizenship-status-my-core",
+  "name": "SearchParameterCitizenshipStatusMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Citizenship status",
+  "code": "citizenship-status",
+  "base": [
+    "Patient"
+  ],
+  "type": "token",
+  "expression": "Patient.extension('http://fhir.hie.moh.gov.my/StructureDefinition/citizenship-my-core').extension('citizenshipStatus')",
+  "xpathUsage": "normal"
+}

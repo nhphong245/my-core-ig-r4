@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "servicerequest-code-display-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/servicerequest-code-display-my-core",
+  "name": "ServiceRequestCodeDisplay",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "ServiceRequest code display",
+  "code": "code-display",
+  "base": [
+    "ServiceRequest"
+  ],
+  "type": "string",
+  "expression": "ServiceRequest.code.coding.display"
+}

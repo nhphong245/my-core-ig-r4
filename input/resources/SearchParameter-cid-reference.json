@@ -1,0 +1,20 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "charge-item-definition-reference-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/charge-item-definition-reference-my-core",
+  "name": "SearchParameterChargeItemDefinitionReferenceMyCore",
+  "status": "active",
+  "date": "2023-05-08T00:49:51.4209074+00:00",
+  "description": "Charge Item Definition Reference",
+  "code": "cid-reference",
+  "base": [
+      "ChargeItem",
+      "Encounter"
+  ],
+  "type": "reference",
+  "expression": "ChargeItem.extension('http://fhir.hie.moh.gov.my/StructureDefinition/charge-item-definition-reference-my-core')",
+  "xpathUsage": "normal",
+  "target": [
+      "ChargeItemDefinition"
+  ]
+}

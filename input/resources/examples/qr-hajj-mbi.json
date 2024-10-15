@@ -1,0 +1,164 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "qr-hajj-mbi",
+  "meta": {
+      "source": "http://provider.hie.moh.gov.my",
+      "profile": [
+          "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+      ]
+  },
+  "identifier": {
+      "system": "http://fhir.hie.moh.gov.my/sid/template-section",
+      "value": "qr-hajj-mbi"
+  },
+  "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-mbi",
+  "status": "completed",
+  "subject": {
+      "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7"
+  },
+  "authored": "2023-12-07T09:00:00+08:00",
+  "item": [
+        {
+          "linkId": "1",
+          "text": "Kebersihan diri",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "12",
+                "display": "Berdikari sepenuhnya"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2",
+          "text": "Mandi",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "12",
+                "display": "Berdikari sepenuhnya"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "3",
+          "text": "Kemahiran ke tandas (Toileting)",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "12",
+                "display": "Berdikari sepenuhnya"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "4",
+          "text": "Menaiki Tangga",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "12",
+                "display": "Berdikari sepenuhnya"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "5",
+          "text": "Memakai pakaian",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "12",
+                "display": "Berdikari sepenuhnya"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "6",
+          "text": "Makan & minum",
+          "answer": [
+            {
+              "valueCoding": {
+                "display": "Berdikari sepenuhnya"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "7",
+          "text": "Kawalan pembuangan air kecil",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "12",
+                "display": "Berdikari sepenuhnya"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "8",
+          "text": "Kawalan pembuangan air besar",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "12",
+                "display": "Berdikari sepenuhnya"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "9",
+          "text": "Pemindahan ke kerusi /  katil",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "12",
+                "display": "Berdikari sepenuhnya"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "10",
+          "text": "Pergerakkan",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "12",
+                "display": "Berdikari sepenuhnya"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "11",
+          "text": "Penggunaan kerusi roda (skor hanya jika pesakit perlu bantuan sepenuhnya untuk bergerak dan telah dilatih berkerusi roda)",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "12",
+                "display": "Berdikari sepenuhnya"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "12",
+          "text": "Jumlah markah",
+          "answer": [
+            {
+              "valueQuantity": {
+                "value": 104
+              }
+            }
+          ]
+        }
+      ]
+    }

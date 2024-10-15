@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "pr-print-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/pr-print-my-core",
+  "name": "ExtensionPRPrintMyCore",
+  "title": "ExtensionPRPrint (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Extension to define whether this PaymentReconciliation has been printed at least once or not",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PaymentReconciliation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:printDate",
+        "path": "Extension.extension",
+        "sliceName": "printDate"
+      },
+      {
+        "id": "Extension.extension:printDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "printDate"
+      },
+      {
+        "id": "Extension.extension:printDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:printBy",
+        "path": "Extension.extension",
+        "sliceName": "printBy"
+      },
+      {
+        "id": "Extension.extension:printBy.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "printBy"
+      },
+      {
+        "id": "Extension.extension:printBy.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.hie.moh.gov.my/StructureDefinition/pr-print-my-core"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

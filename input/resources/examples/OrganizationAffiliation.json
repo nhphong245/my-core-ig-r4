@@ -1,0 +1,118 @@
+{
+    "resourceType": "OrganizationAffiliation",
+    "id": "oa-outsource",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/OrganizationAffiliation-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/oa-max-daily-my-core",
+            "valueInteger": 5
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/oa-region-quota-my-core",
+            "extension": [
+                {
+                    "url": "region",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-region-my-core",
+                                "code": "280",
+                                "display": "HEAD & NECK"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "quota",
+                    "valueInteger": 100
+                },
+                {
+                    "url": "available",
+                    "valueInteger": 79
+                }
+            ]
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/oa-region-quota-my-core",
+            "extension": [
+                {
+                    "url": "region",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-region-my-core",
+                                "code": "303",
+                                "display": "MRI SPINES"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "quota",
+                    "valueInteger": 100
+                },
+                {
+                    "url": "available",
+                    "valueInteger": 100
+                }
+            ]
+        }
+    ],
+    "active": true,
+    "period": {
+        "start": "2023-12-01T08:00:00+08:00",
+        "end": "2024-05-01T18:00:00+08:00"
+    },
+    "organization": {
+        "reference": "Organization/11-10040013",
+        "display": "Hospital Tengku Ampuan Rahimah"
+    },
+    "participatingOrganization": {
+        "reference": "Organization/33-14010092",
+        "display": "KPJK"
+    },
+    "code": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core",
+                    "code": "363679005",
+                    "display": "Imaging"
+                },
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/imaging-modality-my-core",
+                    "code": "11",
+                    "display": "MRI"
+                },
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core",
+                    "code": "outsource",
+                    "display": "Outsource"
+                }
+            ]
+        }
+    ],
+    "healthcareService": [
+        {
+            "reference": "HealthcareService/hs-1",
+            "display": "MRI Brain"
+        },
+        {
+            "reference": "HealthcareService/hs-2",
+            "display": "MRI Brain Stem"
+        },
+        {
+            "reference": "HealthcareService/hs-3",
+            "display": "MRI Spine - Cervical"
+        },
+        {
+            "reference": "HealthcareService/hs-4",
+            "display": "MRI Spine - Lumbar"
+        }
+    ]
+}

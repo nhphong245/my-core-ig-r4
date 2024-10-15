@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "encounter-date-start-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/encounter-date-start-my-core",
+  "name": "SearchParameterEncounterDateStartMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Encounter Date Start",
+  "code": "date-start",
+  "base": [
+    "Encounter"
+  ],
+  "type": "date",
+  "expression": "Encounter.period.start"
+}

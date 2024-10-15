@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-person-category-army-my-core",
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/person-category-army-my-core",
+  "name": "CodeSystemPersonCategoryMyCore",
+  "title": "CodeSystemPersonCategory (My Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Breakdown of individual based of military category",
+  "compositional": false,
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "00",
+      "display": "Tiada Maklumat",
+      "definition": "Tiada Maklumat"
+    },
+    {
+      "code": "01",
+      "display": "Tentera",
+      "definition": "Tentera"
+    },
+    {
+      "code": "02",
+      "display": "Keluarga tentera",
+      "definition": "Keluarga tentera"
+    },
+    {
+      "code": "03",
+      "display": "Veteran ATM",
+      "definition": "No Information"
+    },
+    {
+      "code": "04",
+      "display": "Awam",
+      "definition": "Awam"
+    }
+  ]
+}

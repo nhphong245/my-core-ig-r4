@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-billing-type-my-core",
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/billing-type-my-core",
+  "name": "ValueSetBillingTypeMyCore",
+  "title": "ValueSetBillingType (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Billing type",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/billing-type-my-core"
+      }
+    ]
+  }
+}

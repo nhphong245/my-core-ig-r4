@@ -1,0 +1,29 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-hajj-diagnosis",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-diagnosis",
+  "version": "1.0.0",
+  "name": "QHajjDiagnosis",
+  "title": "Diagnosa",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Tiada Penyakit yang dikesan",
+      "type": "boolean"
+    },
+    {
+      "linkId": "2",
+      "text": "Penyakit yang dikesan / dihadapi",
+      "type": "string",
+      "enableWhen": [
+        {
+          "question": "1",
+          "operator": "=",
+          "answerBoolean": false
+        }
+      ]
+    }
+  ]
+}

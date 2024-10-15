@@ -1,0 +1,56 @@
+{
+    "resourceType": "DiagnosticReport",
+    "id":"exmple-DiagnosticReport-lab-ip1",
+    "meta": {
+        "source": "Postman",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/DiagnosticReport-my-core"
+        ]
+    },
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/barcode",
+            "value": "UAT0000000021"
+        }
+    ],
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core",
+                    "code": "108252007",
+                    "display": "Laboratory Procedure"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-my-core",
+                "code": "00309",
+                "display": "Full Blood Count (FBC) / Immature platelet fraction (IPF) / Reticulocyte count"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "14196-0"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/ROS-21"
+    },
+    "encounter": {
+        "reference": "Encounter/ROS-ENC-21"
+    },
+    "effectiveDateTime": "2022-10-11T11:48:54+08:00",
+    "issued": "2022-10-11T11:48:54+08:00",
+    "resultsInterpreter": [
+        {
+            "reference": "PractitionerRole/ac4d23e5-4a9e-4589-ae3e-94a4e475a0a2/_history/5",
+            "display": "MODYA"
+        }
+    ],
+    "conclusion": "Remark diagnostic report goes here"
+}

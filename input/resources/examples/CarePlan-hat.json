@@ -1,0 +1,65 @@
+{
+    "resourceType": "CarePlan",
+    "id": "cp-hat",
+    "meta": {
+        "versionId": "2",
+        "lastUpdated": "2023-12-19T17:47:42.590+08:00",
+        "source": "http://notprovider.hie.moh.gov.my#YM7FC3Hfu7xdXsv5",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/CarePlan-my-core"
+        ]
+    },
+    "status": "unknown",
+    "intent": "order",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/StructureDefinition/careplan-category-my-core",
+                    "code": "hat",
+                    "display": "Home Assessment Tool"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/keyclock-id-sample-no1",
+        "display": "NURIN AISYAH"
+    },
+    "period": {
+        "start": "2023-12-17",
+        "end": "2023-12-21"
+    },
+    "created": "2023-12-18",
+    "supportingInfo": [
+        {
+            "reference": "QuestionnaireResponse/062236d3-966a-474c-b228-31f216e47fa6",
+            "display": "Covid-19 Self Test"
+        }
+    ],
+    "activity": [
+        {
+            "outcomeCodeableConcept": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/StructureDefinition/covid-19-category-my-core",
+                            "code": "cat-2a",
+                            "display": "symptomatic, no pnuemonia"
+                        }
+                    ]
+                }
+            ],
+            "outcomeReference": [
+                {
+                    "reference": "QuestionnaireResponse/01695904-658f-4c3d-946c-f5a15f382299",
+                    "display": "HAT D2 Covid-19"
+                },
+                {
+                    "reference": "QuestionnaireResponse/eab8f483-d4d0-4f4a-aad1-2ffe759054f5",
+                    "display": "HAT D3 Covid-19"
+                }
+            ]
+        }
+    ]
+}

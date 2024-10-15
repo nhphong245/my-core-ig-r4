@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "chargeitem-status-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/chargeitem-status-my-core",
+  "name": "SearchParameterChargeItemStatusMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Charge Item Status",
+  "code": "status",
+  "base": [
+    "ChargeItem"
+  ],
+  "type": "token",
+  "expression": "ChargeItem.status"
+}

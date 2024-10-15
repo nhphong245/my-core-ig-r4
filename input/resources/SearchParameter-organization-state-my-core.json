@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organization-state-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/organization-state-my-core",
+  "name": "ServiceParameterOrganizationStateMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "A code for the state of organzation",
+  "code": "organization-state",
+  "base": [
+    "Organization"
+  ],
+  "type": "token",
+  "expression": "Organization.address[0].extension('http://fhir.hie.moh.gov.my/StructureDefinition/address-state-my-core').value.as(CodeableConcept).coding.code.first()",
+  "xpathUsage": "normal"
+}

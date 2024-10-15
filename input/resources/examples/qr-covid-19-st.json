@@ -1,0 +1,114 @@
+{"resourceType": "QuestionnaireResponse",
+"id": "qr-covid-19-st",
+  "meta": {
+    "source": "http://provider.hie.moh.gov.my",
+    "profile": [
+        "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+    ]
+},
+"identifier": {
+    "system": "http://fhir.hie.moh.gov.my/sid/template-section",
+    "value": "qr-covid-19-st"
+},
+"questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-covid-19-st",
+"status": "completed",
+"subject": {
+    "reference": "Patient/keyclock-id-sample-no1"
+},
+"authored": "2023-12-17T09:00:00+08:00",
+"item": [
+  {
+    "linkId": "1",
+    "text": "Where was the swab test done?",
+    "answer": [
+      {
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "79993009",
+          "display": "Government Hospital (environment)"
+        }
+      }
+    ]
+  },
+  {
+    "linkId": "2",
+    "text": "When was the test taken?",
+    "answer": [
+      {
+        "valueDateTime": "2023-12-17T02:14:01.237Z"
+      }
+    ]
+  },
+  {
+    "linkId": "3",
+    "text": "Please select the outcome of your test",
+    "answer": [
+      {
+        "valueCoding": {
+          "system": "https://loinc.org",
+          "code": "LA33551-5",
+          "display": "COVID-19 positive"
+        }
+      }
+    ]
+  },
+  {
+    "linkId": "4",
+    "text": "Please upload and snapshot the test result",
+    "answer": [
+      {
+        "valueString": "Upload Later"
+      }
+    ]
+  },
+  {
+    "linkId": "5",
+    "text": "Are you experiencing any COVID-19 symptoms (for example fever, sore throat, nausea and vomiting, diarrhea, cough etc)?",
+    "answer": [
+      {
+        "valueBoolean": true
+      }
+    ]
+  },
+  {
+    "linkId": "6",
+    "text": "Line Address",
+    "answer": [
+      {
+        "valueString": "8-2-8 Apartment Indah "
+      }
+    ]
+  },
+  {
+    "linkId": "7",
+    "text": "District",
+    "answer": [
+      {
+        "valueString": "Kuala Lumpur"
+      }
+    ]
+  },
+  {
+    "linkId": "8",
+    "text": "Please select your state",
+    "answer": [
+      {
+        "valueCoding": {
+          "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+          "code": "14",
+          "display": "Wilayah Persekutuan Kuala Lumpur"
+        }
+      }
+    ]
+  },
+  {
+    "linkId": "9",
+    "text": "Please enter your current postcode",
+    "answer": [
+      {
+        "valueString": "53300"
+      }
+    ]
+  }
+]
+}

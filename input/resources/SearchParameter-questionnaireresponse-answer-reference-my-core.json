@@ -1,0 +1,35 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "questionnaireresponse-answer-reference-my-core",
+  "meta": {
+    "versionId": "4",
+    "lastUpdated": "2023-01-19T05:06:15.112+08:00",
+    "source": "#dmm9NOhVbbjrltTO"
+  },
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/task-output-reference-my-core",
+  "name": "SearchParameterTaskOutputReferenceMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "QuestionnaireResponse answer reference",
+  "code": "answer-reference",
+  "base": [
+    "QuestionnaireResponse"
+  ],
+  "type": "reference",
+  "expression": "QuestionnaireResponse.item.item.answer.value as Reference | QuestionnaireResponse.item.answer.value as Reference | QuestionnaireResponse.item.item.answer.item.answer.value as Reference",
+  "xpathUsage": "normal",
+  "target": [
+    "Patient",
+    "Observation",
+    "Encounter",
+    "Composition",
+    "Condition",
+    "Procedure",
+    "DiagnosticReport",
+    "MedicationRequest",
+    "CarePlan",
+    "FamilyMemberHistory",
+    "QuestionnaireResponse",
+    "RiskAssessment"
+  ]
+}

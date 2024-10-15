@@ -1,0 +1,135 @@
+{
+    "resourceType": "Procedure",
+    "id": "example-procedure",
+    "meta": {
+        "versionId": "2",
+        "lastUpdated": "2022-09-07T09:04:34.378+08:00",
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Procedure-my-core"
+        ]
+    },
+    "status": "completed",
+    "category": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "387713003",
+                "display": "Surgical procedure"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/procedure-code-my-core",
+                "code": "34",
+                "display": "Operations on chest wall, pleura, mediastinum, and diaphragm"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/f92c383f-68de-46c1-8cde-970efa2d0f15"
+    },
+    "encounter": {
+        "reference": "Encounter/5579c35d-97af-463a-b4d7-df2d9e3dc267"
+    },
+    "performedPeriod": {
+        "start": "2022-06-28T15:30:00.000+08:00",
+        "end": "2022-06-28T18:00:00.000+08:00"
+    },
+    "recorder": {
+        "reference": "PractitionerRole/cd16e0cb-3e0f-43bb-9197-901f5daff3ba"
+    },
+    "asserter": {
+        "reference": "PractitionerRole/6f1d7a69-b46b-4464-ade6-08a967eb518f"
+    },
+    "performer": [
+        {
+            "function": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "309294001",
+                        "display": "Accident and emergency doctor"
+                    }
+                ]
+            },
+            "actor": {
+                "reference": "PractitionerRole/6f1d7a69-b46b-4464-ade6-08a967eb518f"
+            },
+            "onBehalfOf": {
+                "reference": "Organization/11-05040012"
+            }
+        },
+        {
+            "function": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "158972004",
+                        "display": "House officer"
+                    }
+                ]
+            },
+            "actor": {
+                "reference": "PractitionerRole/cd16e0cb-3e0f-43bb-9197-901f5daff3ba"
+            },
+            "onBehalfOf": {
+                "reference": "Organization/11-05060009"
+            }
+        }
+    ],
+    "location": {
+        "reference": "Location/8d988a14-4e08-4b57-a6d2-323218dcb76e"
+    },
+    "bodySite": [
+        {
+            "text": "Left thorax structure"
+        }
+    ],
+    "outcome": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "385669000",
+                "display": "Successful"
+            }
+        ]
+    },
+    "complication": [
+        {
+            "text": "Complication 1"
+        },
+        {
+            "text": "Complication 2"
+        }
+    ],
+    "note": [
+        {
+            "authorReference": {
+                "reference": "PractitionerRole/cd16e0cb-3e0f-43bb-9197-901f5daff3ba"
+            },
+            "time": "2022-06-28T18:00:00.000+08:00",
+            "text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Procedure: Left chest tube insertion.\nIndication: Left lung hemothorax post MVA\n\n- Explained to patient procedure indication and complication. Patient understood and agreed\n- Positioned patient in a lying supine position with left arm above the head\n- Placed the patient on the cardiac monitor, pulse oximetry and supplemental oxygen\n- 2 large 16G bore cannula secured \n- Safety triangle landmark identified, cleaned and draped\n- Chest tube 22fr prepared and clamped with Kelly clamp\n- LA 10ml given around incision area\n- 3cm incision done between 4th and 5th  rib intercostal space, mid axillary line\n- Kelly clamp used to bluntly dissect the underlying subcutaneous tissue muscle until left lung pleura reached\n- Index finger inserted into incision and used to sweep inside left chest cavity\n- chests tube size 22fr inserted with index finger guidance and chest tube connected to functioning underwater seal\n- incision site cleaned and chest tube secured with Prolene 1 purse-string suture.</div>"
+        },
+        {
+            "authorReference": {
+                "reference": "PractitionerRole/6f1d7a69-b46b-4464-ade6-08a967eb518f"
+            },
+            "time": "2022-06-28T18:10:00.000+08:00",
+            "text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Keep left chest tube in secured\nmonitor VS every 30m, keep BP &gt; 120/90\nContinue NP 3L/min\nProvide adequate analgesia\nSend for repeat chest PA once patient more conscious\nTrace CT brain preliminary report\nUpdate surgical team on finding, push for admission once patient return from X-ray</div>"
+        }
+    ],
+    "usedCode": [
+        {
+            "text": "Silk suture"
+        },
+        {
+            "text": "Forceps"
+        },
+        {
+            "text": "Cannula, tube AND/OR catheter"
+        }
+    ]
+}

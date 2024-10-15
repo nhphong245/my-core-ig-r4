@@ -1,0 +1,164 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Procedure-my-core",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2024-03-06T08:30:56.4478747+00:00"
+  },
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/Procedure-my-core",
+  "version": "1.0.0",
+  "name": "ProcedureMyCore",
+  "title": "Procedure (MY Core)",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "publisher": "Malaysia MOH - HIE Steering Committee",
+  "description": "An action that is or was performed on or for a patient. This can be a physical intervention like an operation, or less invasive like long term services, counseling, or hypnotherapy.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.extension:recorded",
+        "path": "Procedure.extension",
+        "sliceName": "recorded",
+        "short": "Extension about the date procedure was recorded",
+        "definition": "Extension about the date procedure was recorded",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/procedure-recorded-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Procedure.extension:primaryDiscipline",
+        "path": "Procedure.extension",
+        "sliceName": "primaryDiscipline",
+        "short": "Extension about the discipline performing the procedure",
+        "definition": "Extension about the discipline performing the procedure",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/procedure-primary-discipline-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Procedure.extension:sessionType",
+        "path": "Procedure.extension",
+        "sliceName": "sessionType",
+        "short": "Extension about the type of procedure session",
+        "definition": "Extension about the type of procedure session",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/procedure-session-type-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/procedure-category-my-core"
+        }
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "min": 1,
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/procedure-code-my-core"
+        }
+      },
+      {
+        "id": "Procedure.encounter",
+        "path": "Procedure.encounter",
+        "min": 1
+      },
+      {
+        "id": "Procedure.performed[x]",
+        "path": "Procedure.performed[x]",
+        "min": 1
+      },
+      {
+        "id": "Procedure.performer.function",
+        "path": "Procedure.performer.function",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/procedure-performer-role-my-core"
+        }
+      },
+      {
+        "id": "Procedure.bodySite",
+        "path": "Procedure.bodySite",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.id"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Procedure.bodySite:side",
+        "path": "Procedure.bodySite",
+        "sliceName": "side",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/side-my-core"
+        }
+      },
+      {
+        "id": "Procedure.bodySite:side.coding.id",
+        "path": "Procedure.bodySite.coding.id",
+        "min": 1,
+        "fixedString": "side"
+      },
+      {
+        "id": "Procedure.bodySite:site",
+        "path": "Procedure.bodySite",
+        "sliceName": "site",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/site-my-core"
+        }
+      },
+      {
+        "id": "Procedure.bodySite:site.coding.id",
+        "path": "Procedure.bodySite.coding.id",
+        "min": 1,
+        "fixedString": "site"
+      },
+      {
+        "id": "Procedure.complication",
+        "path": "Procedure.complication",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/procedure-complication-my-core"
+        }
+      }
+    ]
+  }
+}

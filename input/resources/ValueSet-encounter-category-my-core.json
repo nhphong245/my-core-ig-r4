@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-encounter-category-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetEncounterCategory (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/encounter-category-my-core</tt><p>Encounter Category</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/encounter-category-my-core",
+  "name": "ValueSetEncounterCategoryMyCore",
+  "title": "ValueSetEncounterCategory (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Encounter Category",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-category-my-core"
+      }
+    ]
+  }
+}

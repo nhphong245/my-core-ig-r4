@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-foreigner-type-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetForeignerType (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/foreigner-type-my-core</tt><p>Foreigner Type</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/foreigner-type-my-core",
+  "name": "ValueSetForeignerTypeMyCore",
+  "title": "ValueSetForeignerType (MY Core)",
+  "status": "active",
+  "date": "2024-04-28T23:30:28.824077+00:00",
+  "description": "Foreigner Type",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/foreigner-type-my-core"
+      }
+    ]
+  }
+}

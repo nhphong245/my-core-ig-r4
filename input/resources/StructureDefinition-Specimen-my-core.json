@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Specimen-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/Specimen-my-core",
+  "version": "1.0.0",
+  "name": "SpecimenMyCore",
+  "title": "Specimen (MY Core)",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "publisher": "Health Level Seven International - Patient Care Work Group",
+  "purpose": "Minimal specimen attributes, usable for the laboratory results section and entry of a patient summary.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen.type",
+        "path": "Specimen.type",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/specimen-type-my-core"
+        }
+      },
+      {
+        "id": "Specimen.container.extension:combineSample",
+        "path": "Specimen.container.extension",
+        "sliceName": "combineSample",
+        "short": "Extension to determine whether the lab test allows combining the same sample with another lab test",
+        "definition": "Extension to determine whether the lab test allows combining the same sample with another lab test",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/specimen-combine-sample-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Specimen.container.type",
+        "path": "Specimen.container.type",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/specimen-container-type-my-core"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "qr-hajj-outcome",
+  "meta": {
+      "source": "http://provider.hie.moh.gov.my",
+      "profile": [
+          "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+      ]
+  },
+  "identifier": {
+      "system": "http://fhir.hie.moh.gov.my/sid/template-section",
+      "value": "qr-hajj-outcome"
+  },
+  "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-outcome",
+  "status": "completed",
+  "subject": {
+      "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7"
+  },
+  "authored": "2023-12-07T09:00:00+08:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "SIHAT & LULUS untuk ke Tanah Suci",
+      "answer": [
+        {
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Menghidap penyakit, keadaannya stabil dan LULUS ke Tanah Suci (Diagnosa & Rawatan seperti di m/s 31)",
+      "answer": [
+        {
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Memerlukan RUJUKAN PAKAR",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Tarikh dirujuk",
+      "answer": [
+        {
+          "valueDate": "2023-12-15"
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Pakar rujukan",
+      "answer": [
+        {
+          "valueString": "Dr Ali"
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "Mengalami masalah kesihatan yang kronik / serius dan dinasihatkan suapaya MENANGGUHKAN pemergian ke Tanah Suci",
+      "answer": [
+        {
+          "valueBoolean": false
+        }
+      ]
+    }
+  ]
+}

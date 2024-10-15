@@ -1,0 +1,22 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-maternal-25",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-maternal-25",
+  "version": "1.0.0",
+  "name": "QMaternal25",
+  "title": "Masalah Dikesan Semasa Postnatal, Pengendalian dan Rawatan",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "item": [
+    {
+      "linkId": "maternal-25.1",
+      "text": "Masalah",
+      "type": "text"
+    },
+    {
+      "linkId": "maternal-25.2",
+      "text": "Pengendalian dan rawatan",
+      "type": "text"
+    }
+  ]
+}

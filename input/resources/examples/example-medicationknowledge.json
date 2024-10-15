@@ -1,0 +1,223 @@
+{
+    "resourceType": "MedicationKnowledge",
+    "id": "example-medicationknowledge",
+    "meta": {
+        "versionId": "13",
+        "lastUpdated": "2022-11-21T04:00:45.010+08:00",
+        "source": "http://provider.hie.moh.gov.my#rwi365bx5QqvBsy2",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/MedicationKnowledge-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core",
+            "extension": [
+                {
+                    "url": "recorder",
+                    "valueReference": {
+                        "reference": "PractitionerRole/8c99c924-ba17-47aa-8bf1-b88cf0e68b61/_history/1",
+                        "display": "HASAN"
+                    }
+                },
+                {
+                    "url": "recordedDate",
+                    "valueDateTime": "2022-08-15T14:48:27+08:00"
+                },
+                {
+                    "url": "lastUpdater",
+                    "valueReference": {
+                        "reference": "HASAN",
+                        "display": "PractitionerRole/8c99c924-ba17-47aa-8bf1-b88cf0e68b61/_history/1"
+                    }
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/drug-my-core",
+                "code": "N02BE01000T1001XX",
+                "display": "Paracetamol 500 mg Tablet"
+            }
+        ],
+        "text": "Paracetamol 500mg Tab"
+    },
+    "status": "active",
+    "doseForm": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/drug-dose-form-my-core",
+                "code": "270",
+                "display": "Oral Tablet"
+            }
+        ]
+    },
+    "synonym": [
+        "N/A"
+    ],
+    "productType": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/drug-type-my-core",
+                    "code": "PN",
+                    "display": "PN"
+                }
+            ]
+        }
+    ],
+    "ingredient": [
+        {
+            "itemCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/active-ingredient-my-core",
+                        "code": "410",
+                        "display": "Amino acid+ dextrose+ lipid+ electrolytes"
+                    }
+                ],
+                "text": "Amino acid+ dextrose+ lipid+ electrolytes"
+            },
+            "strength": {
+                "numerator": {
+                    "value": 500,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                },
+                "denominator": {
+                    "value": 1,
+                    "unit": "tablet",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "tablet"
+                }
+            }
+        }
+    ],
+    "administrationGuidelines": [
+        {
+            "dosage": [
+                {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/drug-sub-group-my-core",
+                                "code": "70",
+                                "display": "Parenteral Nutrition"
+                            }
+                        ]
+                    },
+                    "dosage": [
+                        {
+                            "additionalInstruction": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/drug-special-instruction-my-core",
+                                            "code": "10",
+                                            "display": "Administer 15-30 minutes before _____"
+                                        }
+                                    ],
+                                    "text": "Administer 15-30 minutes before _____"
+                                },
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/drug-cautionary-my-core",
+                                            "code": "60",
+                                            "display": "Avoid contact with eyes"
+                                        }
+                                    ],
+                                    "text": "Avoid contact with eyes"
+                                }
+                            ],
+                            "patientInstruction": "Apply as directed",
+                            "timing": {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                                            "code": "BID",
+                                            "display": "BID"
+                                        }
+                                    ]
+                                }
+                            },
+                            "route": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "26643006",
+                                        "display": "Oral route"
+                                    }
+                                ]
+                            },
+                            "doseAndRate": [
+                                {
+                                    "doseQuantity": {
+                                        "value": 500,
+                                        "unit": "mg",
+                                        "system": "http://unitsofmeasure.org",
+                                        "code": "mg"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "medicineClassification": [
+        {
+            "extension": [
+                {
+                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/formulary-boolean-my-core",
+                    "valueBoolean": true
+                }
+            ],
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/drug-sub-group-my-core",
+                        "code": "70",
+                        "display": "Parenteral Nutrition"
+                    }
+                ]
+            },
+            "classification": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/drug-category-my-core",
+                            "code": "B",
+                            "display": "B"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "regulatory": [
+        {
+            "regulatoryAuthority": {
+                "display": "placeholder"
+            },
+            "schedule": [
+                {
+                    "schedule": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/drug-schedule-my-core",
+                                "code": "SP",
+                                "display": "Schedule Poison"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

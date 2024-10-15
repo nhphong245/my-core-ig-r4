@@ -1,0 +1,558 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "q-death-certificate",
+  "url": "http://fhir.hie.moh.gov.my/Questionnaire/q-death-certificate",
+  "title": "Death Certificate",
+  "status": "active",
+  "date": "2024-03-01T02:25:07.0445554+00:00",
+  "item": [
+    {
+      "linkId": "death-date",
+      "text": "Date of death",
+      "type": "dateTime"
+    },
+    {
+      "linkId": "medical",
+      "text": "Frame A: Medical data:Part 1 and 2",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "terminal-cod",
+          "text": "Terminal Cause of Death",
+          "type": "reference"
+        },
+        {
+          "linkId": "underlying-cod",
+          "text": "Underlying Cause of Death",
+          "type": "reference",
+          "repeats": true
+        },
+        {
+          "linkId": "underlying-condition",
+          "text": "Underlying Condition",
+          "type": "reference"
+        }
+      ]
+    },
+    {
+      "linkId": "medical-other",
+      "text": "Frame B: Other medical data",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "surgery",
+          "text": "Was surgery performed within the last 4 weeks?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "surgery-date",
+              "text": "If yes please specify date of surgery",
+              "type": "date",
+              "enableWhen": [
+                {
+                  "question": "surgery",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "surgery-reason",
+              "text": "If yes please specify reason for surgery (disease or condition)",
+              "type": "text",
+              "enableWhen": [
+                {
+                  "question": "surgery",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "surgery-autopsy-request",
+              "text": "Was an autopsy request",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "No"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "373068000",
+                    "display": "Unknown"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "surgery-findings-used",
+              "text": "If yes, were the findings used in the certifcation?",
+              "type": "choice",
+              "enableWhen": [
+                {
+                  "question": "surgery-autopsy-request",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "No"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "373068000",
+                    "display": "Unknown"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "manner",
+          "text": "Manner of death:",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "64572001",
+                "display": "Disease"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "55566008",
+                "display": "Accident"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "418420002",
+                "display": "Intentional self harm"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52684005",
+                "display": "Assault"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "418635006",
+                "display": "Legal intervention"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "418781000",
+                "display": "War"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "65037004",
+                "display": "Could not be determined"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "716348004",
+                "display": "Pending investigation"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "manner-external",
+              "text": "If external cause or poisoning:",
+              "type": "group",
+              "item": [
+                {
+                  "linkId": "manner-external-injury-date",
+                  "text": "Date of injury",
+                  "type": "date"
+                },
+                {
+                  "linkId": "manner-external-description",
+                  "text": "Please describe how external cause occured (If poisoning please specify poisoning agent)",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "location",
+          "text": "Place of occurrence of the external cause:",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "876879006",
+                "display": "At home"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "105530003",
+                "display": "Residential institution"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "257698009",
+                "display": "School, other institution, public administrative area"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "257704009",
+                "display": "Sports and athletics area"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "257710009",
+                "display": "Street and highway"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "284443006",
+                "display": "Trade and service area"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "75414001",
+                "display": "Industrial and construction area"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "257609008",
+                "display": "Farm"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "74964007",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "location-other",
+              "text": "Other place (please specify)",
+              "type": "text",
+              "enableWhen": [
+                {
+                  "question": "location",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "74964007",
+                    "display": "Other"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "child",
+          "text": "Fetal or infant Death",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "child-multiple",
+              "text": "Multiple pregnancy",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "No"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "373068000",
+                    "display": "Unknown"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "child-stillborn",
+              "text": "Stillborn?",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "No"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "373068000",
+                    "display": "Unknown"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "child-hours-survived",
+              "text": "If death within 24h specify number of hours survived",
+              "type": "time"
+            },
+            {
+              "linkId": "child-birth-weight",
+              "text": "Birth weight (in grams)",
+              "type": "decimal"
+            },
+            {
+              "linkId": "child-gestation",
+              "text": "Number of completed weeks of pregnancy",
+              "type": "integer"
+            },
+            {
+              "linkId": "child-mother-age",
+              "text": "Age of mother (years)",
+              "type": "integer"
+            },
+            {
+              "linkId": "child-mother-condition",
+              "text": "If death was perinatal, please state conditions of mother that affected the fetus and newborn",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "linkId": "pregnancy",
+          "text": "For women, was the deceased pregnant?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "52101004",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373068000",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "pregnancy-time",
+              "text": "If yes specifically up to when was patient in pregnancy prior to death?",
+              "type": "choice",
+              "enableWhen": [
+                {
+                  "question": "pregnancy",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "display": "At time of death"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "display": "Within 42 days before the death"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "display": "Between 42 days up to 1 year before death"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "373068000",
+                    "display": "Unknown"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "pregnancy-reason-death",
+              "text": "did the pregnancy contribute to the death",
+              "type": "choice",
+              "enableWhen": [
+                {
+                  "question": "pregnancy",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "No"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "373068000",
+                    "display": "Unknown"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

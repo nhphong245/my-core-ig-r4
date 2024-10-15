@@ -1,0 +1,70 @@
+{
+    "resourceType": "Condition",
+    "id": "example-condition-pl",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Condition-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core",
+            "extension": [
+                {
+                    "url": "lastUpdater",
+                    "valueReference": {
+                        "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+                    }
+                }
+            ]
+        }
+    ],
+    "clinicalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                    "code": "problem-list-item",
+                    "display": "Comorbidities Item"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://id.who.int/icd/entity/119724091",
+                "code": "5A11",
+                "display": "Type 2 diabetes mellitus"
+            }
+        ],
+        "text": "Type 2 diabetes mellitus"
+    },
+    "subject": {
+        "reference": "Patient/219ac63e-91c7-4db8-93ab-4c9892ecbfb6"
+    },
+    "recordedDate": "2023-09-12T13:23:45+08:00",
+    "recorder": {
+        "type": "PractitionerRole",
+        "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+    },
+    "note": [
+        {
+            "authorReference": {
+                "display": "SAIFULDAULAH BIN MOHD HAFIZ NGOO"
+            },
+            "time": "2023-09-12T13:23:45+08:00",
+            "text": "<p>Patient on OHA x2years</p><p><br></p><p>T metformin 2tab BD</p>"
+        }
+    ]
+}

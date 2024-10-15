@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "encounter-admit-source-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/encounter-admit-source-my-core",
+  "name": "SearchParameterAdmitSourceMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Admit source for the encounter",
+  "code": "admit-source",
+  "base": [
+    "Encounter"
+  ],
+  "type": "token",
+  "expression": "Encounter.hospitalization.admitSource"
+}

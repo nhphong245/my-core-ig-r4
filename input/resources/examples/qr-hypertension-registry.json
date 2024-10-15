@@ -1,0 +1,304 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "qr-hypertension-registry",
+    "meta": {
+        "source": "http://provider.hie.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core",
+            "valueReference": {
+                "reference": "Organization/11-05060009"
+            }
+        }
+    ],
+    "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-hypertension-registry",
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/74c778d4-19a4-442e-8918-620733047fce"
+    },
+    "authored": "2024-03-05T17:35:00+08:00",
+    "author": {
+        "reference": "PractitionerRole/b9797173-7e15-4fc3-8f85-d58627935956/_history/19"
+    },
+    "item": [
+        {
+          "linkId": "hpt-date",
+          "text": "Diagnosis date",
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueDateTime": "2024-03-04T04:23:04.982Z"
+                }
+              ],
+              "linkId": "hpt-dx-date",
+              "text": "Date of Diagnosis"
+            },
+            {
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ],
+              "linkId": "hpt-dx-exact",
+              "text": "Exact"
+            },
+            {
+              "answer": [
+                {
+                  "valueBoolean": false
+                }
+              ],
+              "linkId": "hpt-dx-estimate",
+              "text": "Estimate"
+            }
+          ]
+        },
+        {
+          "linkId": "rf",
+          "text": "Presence of cardiovascular risk factors at diagnosis",
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "No"
+                  }
+                }
+              ],
+              "linkId": "smoking",
+              "text": "Smoking/Vape"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "No"
+                  }
+                }
+              ],
+              "linkId": "alcohol",
+              "text": "Alcohol"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "No"
+                  }
+                }
+              ],
+              "linkId": "sedentary",
+              "text": "Sedentary Lifestyle"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "linkId": "history",
+              "text": "Family history of hypertension"
+            }
+          ]
+        },
+        {
+          "linkId": "comorbid",
+          "text": "Presence of co-morbidity & complications at diagnosis",
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  }
+                }
+              ],
+              "linkId": "dm",
+              "text": "Diabetes Mellitus"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "No"
+                  }
+                }
+              ],
+              "linkId": "lipid",
+              "text": "Dyslipidaemia"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "No"
+                  }
+                }
+              ],
+              "linkId": "stroke",
+              "text": "Stroke"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "No"
+                  }
+                }
+              ],
+              "linkId": "renal",
+              "text": "Renal Failure"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "No"
+                  }
+                }
+              ],
+              "linkId": "cevd",
+              "text": "Cardiovascular Disease"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "2667000",
+                    "display": "No"
+                  }
+                }
+              ],
+              "linkId": "retinopathy",
+              "text": "Hypertensive Retinopathy"
+            }
+          ]
+        },
+        {
+          "linkId": "pe",
+          "text": "Physical Examination at diagnosis/ earliest value after diagnosis",
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueDecimal": 60
+                }
+              ],
+              "linkId": "pe-wt",
+              "text": "Weight at diagnosis"
+            },
+            {
+              "answer": [
+                {
+                  "valueDecimal": 165
+                }
+              ],
+              "linkId": "pe-ht",
+              "text": "Height"
+            },
+            {
+              "answer": [
+                {
+                  "valueDecimal": 100
+                }
+              ],
+              "linkId": "pe-wc",
+              "text": "Waist circumference at diagnosis"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  },
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDate": "2024-03-04"
+                        }
+                      ],
+                      "linkId": "pe-ecg-date",
+                      "text": "If yes, state the date"
+                    },
+                    {
+                      "answer": [
+                        {
+                          "valueString": "Normal"
+                        }
+                      ],
+                      "linkId": "pe-ecg-result",
+                      "text": "Latest Result"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "pe-ecg",
+              "text": "ECG done at diagnosis"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "52101004",
+                    "display": "Yes"
+                  },
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueDate": "2024-03-04"
+                        }
+                      ],
+                      "linkId": "pe-crx-date",
+                      "text": "If yes, state the date"
+                    },
+                    {
+                      "answer": [
+                        {
+                          "valueString": "Normal"
+                        }
+                      ],
+                      "linkId": "pe-crx-result",
+                      "text": "Latest Result"
+                    }
+                  ]
+                }
+              ],
+              "linkId": "pe-crx",
+              "text": "Chest x-ray done at diagnosis"
+            }
+          ]
+        }
+      ]
+    }
+    

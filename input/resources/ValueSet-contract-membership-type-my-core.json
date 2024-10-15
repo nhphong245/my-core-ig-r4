@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-contract-membership-type-my-core",
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/contract-membership-type-my-core",
+  "name": "ValueSetContractMembershipTypeMyCore",
+  "title": "ValueSetContractMembershipType (MY Core)",
+  "status": "active",
+  "date": "2024-04-16T01:09:35.2239695+00:00",
+  "description": "Contract Membership Type",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/contract-membership-type-my-core"
+      }
+    ]
+  }
+}

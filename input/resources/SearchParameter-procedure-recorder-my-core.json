@@ -1,0 +1,19 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "procedure-recorder-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/procedure-recorder-my-core",
+  "name": "SearchParameterProcedureRecorderMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Procedure recorder",
+  "code": "recorder",
+  "base": [
+    "Procedure"
+  ],
+  "type": "reference",
+  "expression": "Procedure.recorder",
+  "target": [
+    "Practitioner",
+    "PractitionerRole"
+  ]
+}

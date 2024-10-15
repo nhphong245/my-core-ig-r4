@@ -1,0 +1,65 @@
+{
+    "resourceType": "Patient",
+    "id": "patient-newborn-sample",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-04-17T07:30:33.049+08:00",
+        "source": "sample#fk9DGrWUtTteSzau",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Patient-my-core"
+        ]
+    },
+                    "extension": [
+                    {
+                        "url": "http://fhir.hie.moh.gov.my/StructureDefinition/child-identification-my-core",
+                        "extension": [
+                            {
+                                "url": "childType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "72705000",
+                                            "display": "Mother"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "child",
+                                "valueBoolean": true
+                            },
+                            {
+                                "url": "parentIdentification",
+                                "valueString": "921105146670"
+                            }
+                        ]
+                    }
+                ],
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/newborn-no",
+            "value": "921105146670 E/1"
+        },
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/patient-mrn",
+            "value": "HIE-00000004"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "text": "NURUL BINTI SALLEH",
+            "given": [
+                "NURUL BINTI SALLEH"
+            ]
+        }
+    ],
+    "gender": "female",
+    "birthDate": "1991-05-03",
+    "deceasedBoolean": false,
+    "managingOrganization": {
+        "reference": "Organization/11-05060009",
+        "display": "HOSPITAL TUANKU JA'AFAR"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "medication-medication-knowledge-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/medication-medication-knowledge-my-core",
+  "name": "SearchParameterMedicationMedicationKnowledgeMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Medication knowledge for this medication provided",
+  "code": "medication-knowledge",
+  "base": [
+    "Medication"
+  ],
+  "type": "reference",
+  "expression": "Medication.extension('http://fhir.hie.moh.gov.my/StructureDefinition/medication-knowledge-my-core')",
+  "xpathUsage": "normal",
+  "target": [
+    "MedicationKnowledge"
+  ]
+}

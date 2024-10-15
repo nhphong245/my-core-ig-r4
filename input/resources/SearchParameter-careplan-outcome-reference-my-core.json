@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "CarePlan-outcome-reference-my-core",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2023-12-19T17:01:35.225+08:00",
+    "source": "#DWjkZ08nPKjqd4nc"
+  },
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/CarePlan-outcome-reference-my-core",
+  "name": "SearchParameterOutcomeReference",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Outcome Reference",
+  "code": "outcome-reference",
+  "base": [
+    "CarePlan"
+  ],
+  "type": "reference",
+  "expression": "CarePlan.activity.outcomeReference",
+  "target": [
+    "Appointment",
+    "MedicationRequest",
+    "Task",
+    "NutritionOrder",
+    "RequestGroup",
+    "VisionPrescription",
+    "DeviceRequest",
+    "ServiceRequest",
+    "CommunicationRequest",
+    "QuestionnaireResponse"
+  ]
+}

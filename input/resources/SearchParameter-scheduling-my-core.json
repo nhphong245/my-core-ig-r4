@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "scheduling-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/scheduling-my-core",
+  "name": "SearchParameterSchedulingMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "ServiceRequest reason reference",
+  "code": "scheduling",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "token",
+  "expression": "PractitionerRole.extension('http://fhir.hie.moh.gov.my/StructureDefinition/scheduling-my-core')",
+  "xpathUsage": "normal"
+}

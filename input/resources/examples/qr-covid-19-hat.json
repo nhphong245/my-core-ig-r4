@@ -1,0 +1,233 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "qr-covid-19-hat",
+  "meta": {
+      "source": "http://provider.hie.moh.gov.my",
+      "profile": [
+          "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+      ]
+  },
+  "identifier": {
+      "system": "http://fhir.hie.moh.gov.my/sid/template-section",
+      "value": "qr-covid-19-hat-2"
+  },
+  "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-covid-19-hat",
+  "status": "completed",
+  "subject": {
+      "reference": "Patient/keyclock-id-sample-no1"
+  },
+  "authored": "2023-12-18T09:00:00+08:00",
+  "item": [
+      {
+          "linkId": "1",
+          "text": "Do you have a fever?",
+          "answer": [
+              {
+                  "valueBoolean": true
+              }
+          ]
+      },
+      {
+          "linkId": "2",
+          "text": "Do you have a sore throat?",
+          "answer": [
+              {
+                  "valueBoolean": false
+              }
+          ]
+      },
+      {
+          "linkId": "3",
+          "text": "Do you have any nausea and vomiting?",
+          "answer": [
+              {
+                  "valueBoolean": true
+              }
+          ]
+      },
+      {
+          "linkId": "4",
+          "text": "Do you have any diarrhea?",
+          "answer": [
+              {
+                  "valueBoolean": false
+              }
+          ]
+      },
+      {
+          "linkId": "5",
+          "text": "Do you have any cough?",
+          "answer": [
+              {
+                  "valueBoolean": true
+              }
+          ]
+      },
+      {
+          "linkId": "6",
+          "text": "Do you have difficulty in breathing?",
+          "answer": [
+              {
+                  "valueBoolean": false
+              }
+          ]
+      },
+      {
+          "linkId": "7",
+          "text": "Do you have any loss of taste?",
+          "answer": [
+              {
+                  "valueBoolean": true
+              }
+          ]
+      },
+      {
+          "linkId": "8",
+          "text": "Do you have any loss of smell?",
+          "answer": [
+              {
+                  "valueBoolean": false
+              }
+          ]
+      },
+      {
+          "linkId": "9",
+          "text": "Do you have chest pain / discomfort?",
+          "answer": [
+              {
+                  "valueBoolean": true
+              }
+          ]
+      },
+      {
+          "linkId": "10",
+          "text": "Is your face or lips turning blue?",
+          "answer": [
+              {
+                  "valueBoolean": false
+              }
+          ]
+      },
+      {
+          "linkId": "11",
+          "text": "Are you feeling faint drowsy?",
+          "answer": [
+              {
+                  "valueBoolean": true
+              }
+          ]
+      },
+      {
+          "linkId": "12",
+          "text": "Do you have any other symptoms?",
+          "answer": [
+              {
+                  "valueBoolean": false
+              }
+          ]
+      },
+      {
+          "linkId": "13",
+          "text": "Are you feeling lethargic?",
+          "answer": [
+              {
+                  "valueBoolean": true
+              }
+          ]
+      },
+      {
+          "linkId": "14",
+          "text": "Are your symptoms worsening from the day before?",
+          "answer": [
+              {
+                  "valueBoolean": false
+              }
+          ]
+      },
+      {
+          "linkId": "15",
+          "text": "What is your oxygen saturation % (SPO2)?",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "system": "http://fhir.hie.moh.gov.my/CodeSystem/code-system-covid-19-hat-my-core",
+                      "code": "1",
+                      "display": "> 95"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "16",
+          "text": "What is your recorded blood pressure (mmHg)? (Note : Input NA if no equipment available)",
+          "item": [
+              {
+                  "linkId": "16.1",
+                  "text": "Systolic",
+                  "answer": [
+                      {
+                          "valueQuantity": {
+                              "value": 99
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "16.2",
+                  "text": "Diastolic",
+                  "answer": [
+                      {
+                          "valueQuantity": {
+                              "value": 80
+                          }
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "linkId": "17",
+          "text": "What is your heart rate (beats per minute)? (Note : Input NA if no equipment available)",
+          "answer": [
+              {
+                  "valueQuantity": {
+                      "value": 88
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "18",
+          "text": "What is your body temperature (°Celsius)? (Note : Input NA if no equipment available)",
+          "answer": [
+              {
+                  "valueQuantity": {
+                      "value": 36.6
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "19",
+          "text": "Where are you currently staying?",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "system": "http://fhir.hie.moh.gov.my/CodeSystem/code-system-covid-19-hat-my-core",
+                      "code": "4",
+                      "display": "I'm quarantined at home"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "20",
+          "text": "Have you been assessed in any MOH health facility / COVID-19 Assessment Centre (CAC) after you're confirmed to be COVID-19 positive?",
+          "answer": [
+              {
+                  "valueBoolean": false
+              }
+          ]
+      }
+  ]
+}

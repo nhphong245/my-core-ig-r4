@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-payment-type-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetPaymentType (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/payment-type-my-core</tt><p>Payment Type</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/payment-type-my-core",
+  "name": "ValueSetPaymentType_MyCore",
+  "title": "ValueSetPaymentType (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Payment Type",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/payment-type-my-core"
+      }
+    ]
+  }
+}

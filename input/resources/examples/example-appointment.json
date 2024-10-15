@@ -1,0 +1,128 @@
+{
+    "resourceType": "Appointment",
+    "id": "example-appointment",
+    "meta": {
+        "versionId": "3",
+        "lastUpdated": "2022-09-26T02:20:47.904+08:00",
+        "source": "http://provider.hie.moh.gov.my#h7hBXS7SKx69jrLs",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Appointment-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/simple-register-my-core",
+            "extension": [
+                {
+                    "url": "name",
+                    "valueString": "BALQIS"
+                },
+                {
+                    "url": "identifier",
+                    "valueString": "000119141214"
+                },
+                {
+                    "url": "gender",
+                    "valueCode": "female"
+                },
+                {
+                    "url": "telecom",
+                    "valueContactDetail": {
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "0132256487"
+                            },
+                            {
+                                "system": "email",
+                                "value": "balqis@gmail.com"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "birthDate",
+                    "valueDate": "2000-01-19"
+                },
+                {
+                    "url": "age",
+                    "valueString": "22"
+                }
+            ]
+        }
+    ],
+    "status": "fulfilled",
+    "serviceCategory": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/encounter-class-my-core",
+                    "code": "AMB",
+                    "display": "Outpatient"
+                }
+            ]
+        }
+    ],
+    "serviceType": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/service-type-my-core",
+                    "code": "10",
+                    "display": "Outpatient HC"
+                }
+            ]
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/specialty-my-core",
+                    "code": "86",
+                    "display": "Addiction & Substance Abuse"
+                }
+            ]
+        }
+    ],
+    "appointmentType": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core",
+                "code": "internal",
+                "display": "Internal"
+            }
+        ]
+    },
+    "start": "2022-09-23T09:00:00+08:00",
+    "end": "2022-09-23T17:00:00+08:00",
+    "slot": [
+        {
+            "reference": "Slot/79adda31-2fe5-431c-9783-4dbaf6d25a86"
+        }
+    ],
+    "participant": [
+        {
+            "actor": {
+                "reference": "HealthcareService/21ca5ecf-a548-4a50-bb65-f332da1c51ba",
+                "type": "HealthcareService",
+                "display": "Addiction & Substance Abuse"
+            },
+            "status": "accepted"
+        },
+        {
+            "actor": {
+                "reference": "Patient/1bf0acf5-2de4-45c9-b64d-a0be8fc7648c",
+                "type": "Patient",
+                "display": "BALQIS"
+            },
+            "status": "accepted"
+        }
+    ],
+    "requestedPeriod": [
+        {
+            "start": "2022-09-23T09:00:00+08:00",
+            "end": "2022-09-23T17:00:00+08:00"
+        }
+    ]
+}

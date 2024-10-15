@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "code-system-sub-record-type-my-core",
+  "url": "http://fhir.hie.moh.gov.my/CodeSystem/sub-record-type-my-core",
+  "version": "1.0.0",
+  "name": "CodeSystemSubRecordTypeMyCore",
+  "title": "CodeSystemSubRecordType (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Sub Record Type",
+  "compositional": false,
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "sub-001",
+      "display": "Maternal Health Record"
+    },
+    {
+      "code": "sub-002",
+      "display": "Child Health Record"
+    },
+    {
+      "code": "sub-003",
+      "display": "Hajj Health Record"
+    },
+    {
+      "code": "medication-prescription",
+      "display": "Medication Prescription List"
+    }
+  ]
+}

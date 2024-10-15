@@ -1,0 +1,122 @@
+{
+    "resourceType": "Composition",
+    "id": "composition-myhix-template",
+    "meta": {
+        "lastUpdated": "2023-04-06T22:58:30.149+08:00",
+        "source": "sample",
+        "security": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                "code": "N"
+            }
+        ],
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Composition-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/location-recorded-my-core",
+            "valueReference": {
+                "display": "Ward A"
+            }
+        }
+    ],
+    "identifier": {
+        "system": "http://fhir.hie.moh.gov.my/sid/composition-id",
+        "value": "HTJ-Hix-2304000001"
+    },
+    "status": "final",
+    "type": {
+        "coding": [
+            {
+                "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-type-my-core",
+                "code": "18842-5",
+                "display": "Discharge Summary Note"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-category-my-core",
+                    "code": "LP72467-1",
+                    "display": "Discharge Summary Note"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/patient-sample"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter-sample"
+    },
+    "date": "2023-04-07T06:58:00.000+08:00",
+    "author": [
+        {
+            "display": "Saw Lee Chin",
+            "type": "PractitionerRole",
+            "identifier": {
+                "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                "value": "64325"
+            }
+        }
+    ],
+    "attester": [
+        {
+            "mode": "professional",
+            "party": {
+                "display": "Kamal Bin Arifin",
+                "type": "PractitionerRole",
+                "identifier": {
+                    "system": "http://fhir.hie.moh.gov.my/sid/nsr-no",
+                    "value": "23312"
+                }
+            },
+            "time": "2023-04-07T06:58:00.000+08:00"
+        }
+    ],
+    "title": "Note",
+    "custodian": {
+        "reference": "Organization/11-05060009",
+        "display": "HOSPITAL TUANKU JA'AFAR, SEREMBAN"
+    },
+    "event": [
+        {
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/composition-event-my-core",
+                            "code": "18842-5",
+                            "display": "Discharge Summary Note"
+                        }
+                    ]
+                }
+            ],
+            "period": {
+                "start": "2023-04-07T06:57:00.000+08:00"
+            }
+        }
+    ],
+    "section": [
+        {
+            "title": "Clinical Information",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "55752-0",
+                        "display": "Clinical Information"
+                    }
+                ]
+            },
+            "text": {
+                "status": "generated",
+                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><strong>Document Set</strong></h2><ul><li><strong>Document unique id: </strong>entry goes here</li><li><strong>Document repository unique id:</strong>&nbsp;entry goes here</li><li><strong>Document title:</strong>&nbsp;entry goes here</li><li><strong>Document confidentiality:</strong>&nbsp;entry goes here</li><li><strong>Document creation time:</strong>&nbsp;entry goes here</li><li><strong>Parent document id:</strong>&nbsp;entry goes here</li><li><strong>Parent document relationship:</strong>&nbsp;entry goes here</li></ul><h2><strong>Custodian</strong></h2><ul><li><strong>OID:</strong>&nbsp;entry goes here</li><li><strong>Name:</strong>&nbsp;entry goes here</li><li><strong>Address:</strong>&nbsp;entry goes here</li></ul><h2><strong>Patient</strong></h2><ul><li><strong>Name:</strong>&nbsp;entry goes here</li><li><strong>Gender:</strong>&nbsp;entry goes here</li><li><strong>DOB:</strong>&nbsp;entry goes here</li><li><strong>Race:</strong>&nbsp;entry goes here</li><li><strong>MRN:</strong>&nbsp;entry goes here</li><li><strong>Address:</strong>&nbsp;entry goes here</li><li><strong>Phone home:</strong>&nbsp;entry goes here</li><li><strong>Phone office:</strong>&nbsp;entry goes here</li><li><strong>Fax:</strong>&nbsp;entry goes here</li><li><strong>Email address:</strong>&nbsp;entry goes here</li><li><strong>National id:</strong>&nbsp;entry goes here</li></ul><h2><strong>Author</strong></h2><ul><li><strong>Name:</strong>&nbsp;entry goes here</li><li><strong>MMC:</strong>&nbsp;entry goes here</li><li><strong>Facility OID:</strong>&nbsp;entry goes here</li><li><strong>Facility name:</strong>&nbsp;entry goes here</li><li><strong>Time:</strong>&nbsp;entry goes here</li></ul><h2><strong>Consultant</strong></h2><ul><li><strong>Name:</strong>&nbsp;entry goes here</li><li><strong>MMC:</strong>&nbsp;entry goes here</li><li><strong>NSR:</strong>&nbsp;entry goes here</li><li><strong>Facility OID:</strong>&nbsp;entry goes here</li><li><strong>Facility name:</strong>&nbsp;entry goes here</li><li><strong>Time:</strong>&nbsp;entry goes here</li></ul><h2><strong>Visit / EncounterAdmission date</strong></h2><ul><li><strong>Discharge date:</strong>&nbsp;entry goes here</li><li><strong>Visit id:</strong>&nbsp;entry goes here</li><li><strong>Time:</strong>&nbsp;entry goes here</li><li><strong>Assign doctor name:</strong>&nbsp;entry goes here</li><li><strong>Assign doctor:</strong>&nbsp;entry goes here</li><li><strong>MMC:</strong>&nbsp;entry goes here</li><li><strong>Assign doctor facility OID:</strong>&nbsp;entry goes here</li><li><strong>Assign doctor facility name:&nbsp;</strong>entry goes here</li><li><strong>Service id:&nbsp;</strong>entry goes here</li><li><strong>Service name:&nbsp;</strong>entry goes here</li></ul><h2><strong>Allergies</strong></h2><ul><li><strong>Allergies and Other Adverse Reactions:</strong>&nbsp;entry goes here</li></ul><h2><strong>Reason for Care</strong></h2><ul><li><strong>Hospital Admission Diagnosis:</strong>&nbsp;entry goes here</li></ul><h2><strong>Other Condition Histories</strong></h2><ul><li><strong>Active Problems:</strong>&nbsp;entry goes here</li><li><strong>Discharge Diagnosis:</strong>&nbsp;entry goes here</li><li><strong>Resolved Problems:</strong>&nbsp;entry goes here</li><li><strong>List of Surgeries:</strong>&nbsp;entry goes here</li></ul><h2><strong>Medication</strong></h2><ul><li><strong>Medications:&nbsp;entry goes here</strong></li></ul><h2><strong>Relevant Studies</strong></h2><ul><li><strong>Results:</strong>&nbsp;entry goes here</li><li><strong>Hospital Discharge:</strong>&nbsp;entry goes here</li><li><strong>Studies Summary:</strong>&nbsp;entry goes here</li></ul><h2><strong>Plans of Care</strong></h2><ul><li><strong>Care Plan:&nbsp;</strong>entry goes here</li></ul><h2><strong>Correspondence Facility</strong></h2><ul><li><strong>OID:</strong>&nbsp;entry goes here</li><li><strong>NameAddress:</strong>&nbsp;entry goes here</li></ul></div>"
+            }
+        }
+    ]
+}

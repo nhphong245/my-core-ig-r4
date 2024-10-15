@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Medication-my-core",
+  "url": "http://fhir.hie.moh.gov.my/StructureDefinition/Medication-my-core",
+  "version": "1.0.0",
+  "name": "MedicationMyCore",
+  "title": "Medication (MY Core)",
+  "status": "active",
+  "date": "2024-03-13T01:41:41.3395961+00:00",
+  "description": "Medication catalogue for local organization",
+  "purpose": "Medication catalogue for local organization",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Medication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication.extension:recommended",
+        "path": "Medication.extension",
+        "sliceName": "recommended",
+        "short": "Extension to define the default property of a facility medication list  template",
+        "definition": "Extension to define the default property of a facility medication list  template",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/medication-recommended-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Medication.extension:packDescription",
+        "path": "Medication.extension",
+        "sliceName": "packDescription",
+        "short": "Extension to define the pack description template of this medication",
+        "definition": "Extension to define the pack description template of this medication",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/medication-pack-description-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Medication.extension:serviceProvider",
+        "path": "Medication.extension",
+        "sliceName": "serviceProvider",
+        "short": "Extension to reference the custodian of this Resource",
+        "definition": "Extension to reference the custodian of this Resource",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/service-provider-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Medication.extension:medicationKnowledge",
+        "path": "Medication.extension",
+        "sliceName": "medicationKnowledge",
+        "short": "Extension to reference the MedicationKnowledge (Master Drug/Medication List) Resource",
+        "definition": "Extension to reference the MedicationKnowledge (Master Drug/Medication List) Resource",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/medication-knowledge-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Medication.extension:audit",
+        "path": "Medication.extension",
+        "sliceName": "audit",
+        "short": "Extension of the individual who recorded and updated the date",
+        "definition": "Extension of the individual who recorded and updated the date",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Medication.form",
+        "path": "Medication.form",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.hie.moh.gov.my/ValueSet/drug-dose-form-my-core"
+        }
+      }
+    ]
+  }
+}

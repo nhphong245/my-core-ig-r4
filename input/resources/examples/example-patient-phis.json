@@ -1,0 +1,174 @@
+{
+    "resourceType": "Patient",
+    "id": "example-patient-phis",
+    "meta": {
+        "versionId": "4",
+        "lastUpdated": "2022-12-19T06:54:52.308+08:00",
+        "source": "http://phis.moh.gov.my",
+        "profile": [
+            "http://fhir.hie.moh.gov.my/StructureDefinition/Patient-my-core"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/audit-my-core",
+            "extension": [
+                {
+                    "url": "recorder",
+                    "valueReference": {
+                        "display": "First Recorder Practitioner Name"
+                    }
+                },
+                {
+                    "url": "recordedDate",
+                    "valueDateTime": "2022-12-19T12:34:00+08:00"
+                },
+                {
+                    "url": "lastUpdater",
+                    "valueReference": {
+                        "display": "Last Updater Practitioner Name"
+                    }
+                }
+            ]
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/education-level-my-core",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/education-level-my-core",
+                        "code": "4",
+                        "display": "tertiary"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/religion-my-core",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/religion-my-core",
+                        "code": "1",
+                        "display": "Islam"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://fhir.hie.moh.gov.my/StructureDefinition/ethnic-my-core",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/CodeSystem/ethnic-my-core",
+                        "code": "01",
+                        "display": "Melayu"
+                    }
+                ]
+            }
+        }
+    ],
+    "identifier": [
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/my-kad-no",
+            "value": "921005141234"
+        },
+        {
+            "system": "http://fhir.hie.moh.gov.my/sid/patient-mrn",
+            "value": "PHIS-123"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "extension": [
+                {
+                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/person-title-my-core",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/person-title-my-core",
+                                "code": "L001",
+                                "display": "Encik"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "given": [
+                "PHIS patient name example"
+            ]
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "014454120315"
+        },
+        {
+            "system": "email",
+            "value": "hieperson@gmail.com"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1992-10-05",
+    "deceasedBoolean": false,
+    "address": [
+        {
+            "extension": [
+                {
+                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-district-my-core",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/district-my-core",
+                                "code": "0505",
+                                "display": "Seremban"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://fhir.hie.moh.gov.my/StructureDefinition/address-state-my-core",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/state-my-core",
+                                "code": "05",
+                                "display": "Negeri Sembilan"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "use": "home",
+            "line": [
+                "No. 1, Jalan Bangsar 7/3"
+            ],
+            "city": "Laman Pelangi",
+            "postalCode": "02196",
+            "country": "MYS"
+        }
+    ],
+    "contact": [
+        {
+            "name": {
+                "given": [
+                    "PHIS contact name example"
+                ]
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "01527893031",
+                    "use": "mobile"
+                }
+            ],
+            "gender": "male"
+        }
+    ],
+    "managingOrganization": {
+        "reference": "Organization/PHIS",
+        "display": "Pharmacy Information System (PhIS)"
+    }
+}

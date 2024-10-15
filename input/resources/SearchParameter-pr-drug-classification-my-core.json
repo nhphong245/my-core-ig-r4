@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "pr-drug-classification",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/drug-classification-my-core",
+  "name": "ServiceParameterPRDrugClassificationMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Practitioner Role allowed orderable based on drug classification",
+  "code": "drug-classification",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "token",
+  "expression": "PractitionerRole.extension('http://fhir.hie.moh.gov.my/StructureDefinition/pr-drug-classification-my-core').value as CodeableConcept",
+  "xpathUsage": "normal"
+}

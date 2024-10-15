@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-lab-sub-group-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetLabSubGroup (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/lab-sub-group-my-core</tt><p>Lab Sub Group</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/lab-sub-group-my-core",
+  "name": "ValueSetLabSubGroupMyCore",
+  "title": "ValueSetLabSubGroup (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "Lab Sub Group",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-sub-group-my-core"
+      }
+    ]
+  }
+}

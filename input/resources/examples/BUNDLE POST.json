@@ -1,0 +1,118 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+      {
+          "fullUrl": "urn:uuid:00000001-0001-0001-0001-000000000001",
+          "request": {
+              "method": "POST"
+          },
+          "resource": {
+              "resourceType": "ServiceRequest",
+              "meta": {
+                  "source": "http://provider.hie.moh.gov.my",
+                  "profile": [
+                      "http://fhir.hie.moh.gov.my/StructureDefinition/ServiceRequest-my-core"
+                  ]
+              },
+              "status": "active",
+              "intent": "order",
+              "category": [
+                  {
+                      "coding": [
+                          {
+                              "system": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core",
+                              "code": "108252007",
+                              "display": "Laboratory Procedure"
+                          }
+                      ]
+                  }
+              ],
+              "priority": "routine",
+              "code": {
+                  "coding": [
+                      {
+                          "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-my-core",
+                          "code": "0344",
+                          "display": "Blood Count"
+                      }
+                  ]
+              },
+              "subject": {
+                  "reference": "Patient/f92c383f-68de-46c1-8cde-970efa2d0f15"
+              },
+              "authoredOn": "2022-10-11T09:30:00.000+08:00",
+              "requester": {
+                  "reference": "PractitionerRole/af73f5ef-4f44-4735-be15-f06f76273e03",
+                  "display": "Saifuldaulah Bin Mohd Hafiz Ngoo (Medical Officer UD43)"
+              },
+              "performerType": {
+                  "coding": [
+                      {
+                          "system": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core",
+                          "code": "internal",
+                          "display": "Internal"
+                      }
+                  ]
+              },
+              "performer": [
+                  {
+                      "reference": "HealthcareService/15dfb3a9-b9ac-4d03-948a-cf5efad6084d"
+                  },
+                  {
+                      "reference": "Organization/11-05060009"
+                  }
+              ],
+              "specimen": [
+                  {
+                      "reference": "Specimen/urn:uuid:00000001-0001-0001-0001-000000000002"
+                  }
+              ],
+              "note": [
+                  {
+                      "text": "'remark' entry is stored here. Use a HTML entry box"
+                  }
+              ]
+          }
+      },
+      {
+          "fullUrl": "urn:uuid:00000001-0001-0001-0001-000000000002",
+          "request": {
+              "method": "POST"
+          },
+          "resource": {
+              "resourceType": "Specimen",
+              "meta": {
+                  "source": "http://provider.hie.moh.gov.my",
+                  "profile": [
+                      "http://fhir.hie.moh.gov.my/StructureDefinition/Specimen-my-core"
+                  ]
+              },
+              "status": "available",
+              "subject": {
+                  "reference": "Patient/f92c383f-68de-46c1-8cde-970efa2d0f15"
+              },
+              "receivedTime": "2022-10-11T11:30:00.000+08:00",
+              "request": [
+                  {
+                      "reference": "ServiceRequest/urn:uuid:00000001-0001-0001-0001-000000000001"
+                  }
+              ],
+              "container": [
+                  {
+                      "description": "purple cap",
+                      "type": {
+                          "coding": [
+                              {
+                                  "system": "http://fhir.hie.moh.gov.my/CodeSystem/specimen-container-type-my-core",
+                                  "code": "01",
+                                  "display": "EDTA Tube"
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      }
+  ]
+}

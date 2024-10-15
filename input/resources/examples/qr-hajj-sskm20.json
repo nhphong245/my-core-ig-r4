@@ -1,0 +1,273 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "qr-hajj-sskm20",
+  "meta": {
+      "source": "http://provider.hie.moh.gov.my",
+      "profile": [
+          "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+      ]
+  },
+  "identifier": {
+      "system": "http://fhir.hie.moh.gov.my/sid/template-section",
+      "value": "qr-hajj-sskm20"
+  },
+  "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-sskm20",
+  "status": "completed",
+  "subject": {
+      "reference": "Patient/5a6a0bc3-2c32-4e01-bcb4-56ddcb4d34c7"
+  },
+  "authored": "2023-12-07T09:00:00+08:00",
+  "item": [
+      {
+          "linkId": "1",
+          "text": "Sedih (atau susah hati)",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "14",
+                      "display": "Kadang-kadang"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "2",
+          "text": "Mudah marah",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "14",
+                      "display": "Kadang-kadang"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "3",
+          "text": "Tidak minat bercakap",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "14",
+                      "display": "Kadang-kadang"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "4",
+          "text": "Kerap terjaga dari tidur",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "14",
+                      "display": "Kerap"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "5",
+          "text": "Sakit-sakit badan / sendi",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "14",
+                      "display": "Kadang-kadang"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "6",
+          "text": "Hilang minat pada perkara yang biasa dinikmati",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "14",
+                      "display": "Kadang-kadang"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "7",
+          "text": "Menangis atau rasa hendak menangis",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "14",
+                      "display": "Kadang-kadang"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "8",
+          "text": "Rasa sunyi",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "13",
+                      "display": "Tiada"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "9",
+          "text": "Takut pada sesuatu objek atau keadaan",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "13",
+                      "display": "Tiada"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "10",
+          "text": "Badan lemah, lesu dan tidak bertenaga",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "13",
+                      "display": "Tiada"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "11",
+          "text": "Tidak suka bercampur dengan orang lain (menyendiri)",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "13",
+                      "display": "Tiada"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "12",
+          "text": "Perasaan ingin mati",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "13",
+                      "display": "Tiada"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "13",
+          "text": "Kurang daya ingatan atau mudah terlupa",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "14",
+                      "display": "Kadang-kadang"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "14",
+          "text": "Otot tegang",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "13",
+                      "display": "Tiada"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "15",
+          "text": "Keyakinan pada diri sendiri yang berlebihan",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "13",
+                      "display": "Tiada"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "16",
+          "text": "Buah fikiran yang pantas seolah berlumba-lumba",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "13",
+                      "display": "Tiada"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "17",
+          "text": "Kurang keyakinan pada diri sendiri",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "13",
+                      "display": "Tiada"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "18",
+          "text": "Rasa tiada jalan keluar",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "13",
+                      "display": "Tiada"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "19",
+          "text": "Rasa seronok",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "16",
+                      "display": "Sentiasa"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "20",
+          "text": "Susah hendak menyesuaikan diri dengan keadaan",
+          "answer": [
+              {
+                  "valueCoding": {
+                      "code": "14",
+                      "display": "Kadang-kadang"
+                  }
+              }
+          ]
+      },
+      {
+          "linkId": "21",
+          "text": "Jumlah markah",
+          "answer": [
+              {
+                  "valueQuantity": {
+                      "value": 13
+                  }
+              }
+          ]
+      }
+  ]
+}

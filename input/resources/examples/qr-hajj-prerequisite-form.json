@@ -1,0 +1,267 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "qr-hajj-prerequisite-form",
+  "meta": {
+      "source": "http://provider.hie.moh.gov.my",
+      "profile": [
+          "http://fhir.hie.moh.gov.my/StructureDefinition/QuestionnaireResponse-my-core"
+      ]
+  },
+  "identifier": {
+      "system": "http://fhir.hie.moh.gov.my/sid/template-section",
+      "value": "qr-hajj-prerequisite-form"
+  },
+  "questionnaire": "http://fhir.hie.moh.gov.my/Questionnaire/q-hajj-prerequisite-form",
+  "status": "completed",
+  "subject": {
+      "reference": "Patient/e2f8f010-3794-4483-a826-56b64cde179b"
+  },
+  "authored": "2024-01-12T01:57:38.298Z",
+  "item": [
+      {
+          "linkId": "1",
+          "text": "Details",
+          "item": [
+              {
+                  "linkId": "1.1",
+                  "text": "No. Akaun",
+                  "answer": [
+                      {
+                          "valueString": "1234567898765434"
+                      }
+                  ]
+              },
+              {
+                  "linkId": "1.2",
+                  "text": "Tempat Pemeriksaan",
+                  "answer": [
+                      {
+                          "valueString": "Hospital Kuala Lumpur"
+                      }
+                  ]
+              },
+              {
+                  "linkId": "1.3",
+                  "text": "Tarikh Pemeriksaan",
+                  "answer": [
+                      {
+                          "valueDateTime": "2024-01-21T07:15:54.310Z"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "linkId": "2",
+          "text": "Details",
+          "item": [
+              {
+                  "linkId": "2.1",
+                  "text": "Tekanan Darah",
+                  "item": [
+                      {
+                          "linkId": "2.1.1",
+                          "text": "Sistolik",
+                          "answer": [
+                              {
+                                  "valueQuantity": {
+                                      "value": 110
+                                  }
+                              }
+                          ]
+                      },
+                      {
+                          "linkId": "2.1.2",
+                          "text": "Diastolik",
+                          "answer": [
+                              {
+                                  "valueQuantity": {
+                                      "value": 80
+                                  }
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.3",
+                  "text": "Denyutan Nadi",
+                  "answer": [
+                      {
+                          "valueQuantity": {
+                              "value": 98
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.4",
+                  "text": "Kadar Penafasan",
+                  "answer": [
+                      {
+                          "valueQuantity": {
+                              "value": 15
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.5",
+                  "text": "Hemoglobin",
+                  "answer": [
+                      {
+                          "valueQuantity": {
+                              "value": 12.5
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.6",
+                  "text": "Berat",
+                  "answer": [
+                      {
+                          "valueQuantity": {
+                              "value": 60
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.7",
+                  "text": "Tinggi",
+                  "answer": [
+                      {
+                          "valueQuantity": {
+                              "value": 167
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.8",
+                  "text": "BMI",
+                  "answer": [
+                      {
+                          "valueQuantity": {
+                              "value": 18
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.9",
+                  "text": "Kadar Oksigen",
+                  "answer": [
+                      {
+                          "valueQuantity": {
+                              "value": 99
+                          }
+                      }
+                  ]
+              },
+              {
+                  "linkId": "2.10",
+                  "text": "Lain-lain ujian berkaitan",
+                  "answer": [
+                      {
+                          "valueBoolean": true,
+                          "item": [
+                              {
+                                  "linkId": "2.10.1",
+                                  "text": "Lain-lain ujian berkaitan",
+                                  "answer": [
+                                      {
+                                          "valueString": "Kadar gula normal"
+                                      },
+                                      {
+                                          "valueString": "Suhu badan normal"
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "linkId": "3",
+          "text": "Diagnosis lengkap",
+          "item": [
+              {
+                  "linkId": "3.1",
+                  "text": "Kardiovaskular",
+                  "answer": [
+                      {
+                          "valueBoolean": false
+                      }
+                  ]
+              },
+              {
+                  "linkId": "3.2",
+                  "text": "Psikiatri",
+                  "answer": [
+                      {
+                          "valueBoolean": false
+                      }
+                  ]
+              },
+              {
+                  "linkId": "3.3",
+                  "text": "Kanser",
+                  "answer": [
+                      {
+                          "valueBoolean": false
+                      }
+                  ]
+              },
+              {
+                  "linkId": "3.4",
+                  "text": "Tuberkulosis",
+                  "answer": [
+                      {
+                          "valueBoolean": false
+                      }
+                  ]
+              },
+              {
+                  "linkId": "3.5",
+                  "text": "Strok",
+                  "answer": [
+                      {
+                          "valueBoolean": false
+                      }
+                  ]
+              },
+              {
+                  "linkId": "3.6",
+                  "text": "Penyakit Ginjal Kronik",
+                  "answer": [
+                      {
+                          "valueBoolean": false
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "linkId": "4",
+          "text": "Rawatan",
+          "answer": [
+              {
+                  "valueString": "Tiada"
+              }
+          ]
+      },
+      {
+          "linkId": "5",
+          "text": "Ulasan/Catatan",
+          "answer": [
+              {
+                  "valueString": "Normal"
+              }
+          ]
+      }
+  ]
+}

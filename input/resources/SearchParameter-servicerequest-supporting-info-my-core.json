@@ -1,0 +1,20 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "servicerequest-supporting-info-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/ServiceRequest-supporting-info-my-core",
+  "name": "SearchParameterServiceRequestSupportingInfoMyCore",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "ServiceRequest reason reference",
+  "code": "supporting-info",
+  "base": [
+    "ServiceRequest"
+  ],
+  "type": "reference",
+  "expression": "ServiceRequest.supportingInfo",
+  "target": [
+    "ImagingStudy",
+    "Appointment",
+    "QuestionnaireResponse"
+  ]
+}

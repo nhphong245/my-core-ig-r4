@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "id": "value-set-external-referral-source-type-my-core",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetExternalReferralSourceType (MY Core)</h2><tt>http://fhir.hie.moh.gov.my/ValueSet/external-referral-source-type-my-core</tt><p>external Referral Source Type</p></div>"
+  },
+  "url": "http://fhir.hie.moh.gov.my/ValueSet/external-referral-source-type-my-core",
+  "name": "ValueSetExternalReferralSourceTypeMyCore",
+  "title": "ValueSetExternalReferralSourceType (MY Core)",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "external Referral Source Type",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.hie.moh.gov.my/CodeSystem/external-referral-source-type-my-core"
+      }
+    ]
+  }
+}

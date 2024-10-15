@@ -1,0 +1,175 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ServiceRequest/sr-lab-sample"
+            },
+            "resource": {
+                "resourceType": "ServiceRequest",
+                "id": "sr-lab-sample",
+                "meta": {
+                    "lastUpdated": "2023-04-09T23:19:39.908+08:00",
+                    "source": "sample",
+                    "security": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                            "code": "N"
+                        }
+                    ],
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/ServiceRequest-my-core"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://fhir.hie.moh.gov.my/sid/service-request-id",
+                        "value": "HTJ-LBO-2307000113"
+                    }
+                ],
+                "status": "active",
+                "intent": "order",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/servicerequest-category-my-core",
+                                "code": "108252007",
+                                "display": "Laboratory Procedure"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-sub-group-my-core",
+                                "code": "01",
+                                "display": "Chemical Pathology"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/lab-my-core",
+                            "code": "00061",
+                            "display": "C-Reactive Protein (CRP)"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "1988-5",
+                            "display": "C reactive protein [Mass/volume] in Serum or Plasma"
+                        }
+                    ]
+                },
+                "priority": "routine",
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "encounter": {
+                    "reference": "Encounter/encounter-sample"
+                },
+                "occurrenceDateTime": "2023-07-26T16:18:08+08:00",
+                "authoredOn": "2023-07-26T16:18:08+08:00",
+                "requester": {
+                    "type": "PractitionerRole",
+                    "identifier": {
+                        "system": "http://fhir.hie.moh.gov.my/sid/mmc-no",
+                        "value": "76212"
+                    },
+                    "display": "Wong Ah Liu"
+                },
+                "performerType": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/schedule-type-my-core",
+                            "code": "affiliate",
+                            "display": "Affiliate"
+                        }
+                    ]
+                },
+                "performer": [
+                    {
+                        "reference": "HealthcareService/881dbdbf-8660-4f92-bffa-5c2615b61805"
+                    },
+                    {
+                        "reference": "Organization/11-05060009",
+                        "identifier": {
+                            "value": "requester-facility"
+                        },
+                        "display": "HOSPITAL TUANKU JA'AFAR"
+                    },
+                    {
+                        "reference": "Organization/21-05060049",
+                        "identifier": {
+                            "value": "performer-facility"
+                        },
+                        "display": "Klinik Kesihatan Seremban"
+                    }
+                ]
+            }
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Specimen/specimen-sample"
+            },
+            "resource": {
+                "resourceType": "Specimen",
+                "id": "specimen-sample",
+                "meta": {
+                    "source": "sample",
+                    "profile": [
+                        "http://fhir.hie.moh.gov.my/StructureDefinition/Specimen-my-core"
+                    ]
+                },
+                "accessionIdentifier": {
+                    "system": "http://fhir.hie.moh.gov.my/sid/service-request-id",
+                    "value": "HTJ-LBO-2307000113"
+                },
+                "status": "available",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.hie.moh.gov.my/CodeSystem/specimen-type-my-core",
+                            "code": "001",
+                            "display": "Blood"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/patient-sample"
+                },
+                "receivedTime": "2023-07-26T16:18:08+08:00",
+                "request": [
+                    {
+                        "reference": "ServiceRequest/sr-lab-sample"
+                    }
+                ],
+                "container": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://fhir.hie.moh.gov.my/StructureDefinition/specimen-combine-sample-my-core",
+                                "valueBoolean": true
+                            }
+                        ],
+                        "description": "Plain tube",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.hie.moh.gov.my/CodeSystem/specimen-container-type-my-core",
+                                    "code": "001",
+                                    "display": "Plain tube"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

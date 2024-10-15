@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "condition-code-value-my-core",
+  "url": "http://fhir.hie.moh.gov.my/SearchParameter/condition-code-value-my-core",
+  "name": "PatientIdentifierString",
+  "status": "active",
+  "date": "2024-02-12T04:04:09.5621857+00:00",
+  "description": "A Condition code by string",
+  "code": "code-value",
+  "base": [
+    "Condition"
+  ],
+  "type": "string",
+  "expression": "Condition.code.coding.code"
+}
