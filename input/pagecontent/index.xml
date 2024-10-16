@@ -1,7 +1,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
   <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
   
-	<p class="stu-note">THIS IS A FOLKED VERSION!!! THE ORIGINAL VERSION LINK: https://simplifier.net/guide/mycore?version=current </p>
+	<p class="stu-note">THIS IS A FOLKED VERSION!!! THE ORIGINAL VERSION LINK: <a href="https://simplifier.net/guide/mycore?version=current">https://simplifier.net/guide/mycore?version=current</a> </p>
 	
 	<a name="background"> </a>
 	<h3>Background: Malaysia's Drive for Standardized Healthcare Data Exchange</h3>
@@ -24,7 +24,7 @@
 	
 	Future implementation guide and specification in Malaysia can be further derived from MY Core to further address specific profile constraint beyond the national specification. These derived profiles must conform to the specifications defined in MY Core Profile to ensure national interoperability adhereance.
 	
-	Following the 80/20 rule, the [base HL7 FHIR]((https://hl7.org/fhir/R4/resourcelist.html) specifications focuses on the 20% of requirements that satisfy 80% of the interoperability needs. MY Core will attempt to fill in the local context gap not addressed by the base HL7 FHIR specification.
+	Following the 80/20 rule, the [base HL7 FHIR]((<a href="https://hl7.org/fhir/R4/resourcelist.html">https://hl7.org/fhir/R4/resourcelist.html</a>) specifications focuses on the 20% of requirements that satisfy 80% of the interoperability needs. MY Core will attempt to fill in the local context gap not addressed by the base HL7 FHIR specification.
 	</p>
 	
 	<a name="object"> </a>
