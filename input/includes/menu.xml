@@ -35,7 +35,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a target="_blank" href="{{site.data.fhir.path}}index.html">Bộ tiêu chuẩn HL7 FHIR<!-- <img src="external.png" style="text-align: baseline"/> --></a>
+        <a target="_blank" href="{{site.data.fhir.path}}index.html">HL7 FHIR Standard<!-- <img src="external.png" style="text-align: baseline"/> --></a>
       </li>
       <!-- <li>
         <a href="validation.html">Validation tools</a>
