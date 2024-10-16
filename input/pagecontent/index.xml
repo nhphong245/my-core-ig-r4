@@ -33,7 +33,7 @@
 	This implementation guide has two primary objectives:
 	</p>
 	<ul>
-		<li><strong>Offer a comprehensive Implementation Guide for the Malaysia FHIR standard</strong> known as the Malaysia Core (MY Core) to equip developers & implementor with the necessary knowledge and tools to seamlessly integrate the standard into their healthcare software solutions.
+		<li><strong>Offer a comprehensive Implementation Guide for the Malaysia FHIR standard</strong> known as the Malaysia Core (MY Core) to equip developers &amp; implementor with the necessary knowledge and tools to seamlessly integrate the standard into their healthcare software solutions.
 		</li>
 		<li><strong>Provide the profile development process for the Malaysia FHIR standard</strong> to ensures a well-defined and nationally recognized approach to data exchange.
 		</li>
